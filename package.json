@@ -4,6 +4,8 @@
   "description": "The Wikilear web site",
   "main": "main.js",
   "scripts": {
+    "start": "npm run css-build && npx @11ty/eleventy --serve",
+    "css-build": "npx tailwindcss build src/css/styles.css -o dist/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrea Leardini",
