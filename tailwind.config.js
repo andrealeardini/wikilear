@@ -5,7 +5,12 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+           // Site-specific row configuration
+         'layout': '60px 1fr 200px',
+        }
+    },
   },
   variants: {},
   plugins: [],
