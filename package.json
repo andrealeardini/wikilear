@@ -4,16 +4,17 @@
   "description": "The Wikilear web site",
   "main": "main.js",
   "scripts": {
-    "start": "npm run css-build && npx @11ty/eleventy --serve",
+    "start": "npm run css-watch & npx @11ty/eleventy --serve",
     "css-build": "npx tailwindcss build src/css/styles.css -o dist/css/styles.css",
+    "css-watch": "watch \"npm run css-build\" \"src/css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrea Leardini",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
     "tailwindcss": "^1.9.6",
-    "@11ty/eleventy": "^0.11.1"
+    "watch": "^1.0.2"
   }
 }
