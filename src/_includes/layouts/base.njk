@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="h-screen box-border">
+    <div class="min-h-full grid grid-cols-12 grid-rows-layout">
+      <div class="col-span-12 row-start-1 row-end-5">
+        <div class="col-span-12 z-10 row-start-1 row-end-2">
+          {% include "components/navbar.njk" %}
+        </div>
+        <div id="content" class="col-span-12 row-start-2 row-end-5 pt-6 px-4">
+          {{ content | safe }}
+        </div>
+      </div>
+      <div
+        id="footer"
+        class="col-span-12 row-start-5 row-end-6 mt-10 pt-6 px-4 pb-6 bg-gray-300"
+      >
+        <div class="m-auto text-center">
+          <a class="font-semibold hover:underline mr-4" href="/chi-sono">Chi sono</a>
+          <a class="font-semibold hover:underline mr-4" href="/privacy">Privacy</a>
+        </div>
+        <p class="m-auto max-w-lg text-center text-sm mt-6">
+          Copyright © 2011-2020 Andrea Leardini.<span class="md:hidden"><br></span> Quest'opera è distribuita con
+          <a class="font-semibold hover:underline" href="http://creativecommons.org/licenses/by/4.0/">licenza Creative Commons Attribuzione 4.0 Internazionale.</a> Salvo
+          diversa indicazione, il codice è distribuito con licenza MIT.
+        </p>
+      </div>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
