@@ -4,7 +4,8 @@
   "description": "The Wikilear web site",
   "main": "main.js",
   "scripts": {
-    "start": "npm run css-watch & npx @11ty/eleventy --serve",
+    "start": "rimraf 'dist' && npm run css-watch & npx @11ty/eleventy --serve",
+    "build": "rimraf 'dist' && NODE_ENV=production npm run css-build && npx @11ty/eleventy",
     "css-build": "npx tailwindcss build src/css/styles.css -o dist/css/styles.css",
     "css-watch": "watch \"npm run css-build\" \"src/css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +15,7 @@
   "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "rimraf": "^3.0.2",
     "tailwindcss": "^1.9.6",
     "watch": "^1.0.2"
   }
