@@ -1,0 +1,41 @@
+<div id="post-list">
+  <div>
+    {% if postListHeadline %}
+    <h2>
+      {{ postListHeadline }}
+    </h2>
+    {% endif %}
+    <div>
+      <ul>
+      {% for item in postListItems.slice(0,2) %}
+      <li class="mt-4">
+        <a href="{{ item.url }}" class="font-semibold hover:underline">{{ item.data.title }}</a>
+        <p class="mt-1 pt-0 text-sm md:text-base font-semibold text-gray-700" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
+        {% if item.data.image %}
+        <img
+          src="{{ item.data.image }}"
+          {% if image-description %}
+          alt="{{ item.data.image-description }}"
+          {% else %}
+          alt=""
+          {% endif %}
+          {% if image-title %}
+          title="{{ item.data.image-title }}"
+          {% endif %}
+          class="list-item-image"
+        />
+        {% endif %}
+
+        <p>{{ item.data.subtitle }}</p>
+        {% include 'components/tags-post.njk' %}
+        {% if home and loop.last %}
+          <hr class="mt-4 last:hidden">
+        {% else %}
+          <hr class="mt-4">
+        {% endif %}
+      </li>
+      {%- endfor -%}
+    </ul>
+    </div>
+  </div>
+</div>

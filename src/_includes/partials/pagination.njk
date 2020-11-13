@@ -1,0 +1,19 @@
+{# Only renders this section if there are links to render #}
+{% if pagination.href.next or pagination.href.previous %}
+  <footer>
+    <div>
+      <nav class="w-full mt-2 flex justify-between font-semibold" aria-label="Pagination links">
+        {% if pagination.href.previous %}
+          <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" class="w-full" data-direction="backwards">
+            <span>{{ paginationPrevText if paginationPrevText else 'Post più recenti' }}</span>
+          </a>
+        {% endif %}
+        {% if pagination.href.next %}
+          <a href="{{ pagination.href.next }}{{ paginationAnchor }}" class="w-full text-right" data-direction="forwards">
+            <span>{{ paginationNextText if paginationNextText else 'Post più vecchi' }}</span>
+          </a>
+        {% endif %}
+      </nav>
+    </div>
+  </footer>
+{% endif %}

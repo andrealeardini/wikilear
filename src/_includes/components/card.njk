@@ -1,0 +1,24 @@
+<div class="flex flex-wrap justify-around mt-6">
+  {% for card in cards %}
+  <div class="border-gray-600 border rounded-lg flex flex-wrap flex-row mb-6">
+    <div
+      class="h-8 md:h-12 mt-0 mb-6 pl-2 rounded-t-lg bg-gray-800 text-white w-full flex items-center"
+    >
+      <h2>
+        {{ card.title | safe }}
+      </h2>
+    </div>
+    <div class="px-2">
+      <img src="{{ card.imageUrl | url }}" alt="{{ card.imageAlt | safe }}" />
+      <p class="mt-4 justify-center text-center">
+        {{ card.description | safe }}
+      </p>
+      {% set postListItems = collections.blog %}
+      {% set home = "true" %}
+      <div class="p-4">
+        {% include "partials/post-list.njk" %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

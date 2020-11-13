@@ -1,0 +1,10 @@
+<section class="">
+  <p class="">Tutte le etichette</p>
+  <ul class="tags-list">
+    {%- for tag, posts in collections | dictsort %} {% if tag | tagIsValid %}
+    <li class="">
+      <a href="/tag/{{ tag | slug }}"  class="tags-list-link">{{ tag }} ({{ posts | length }})</a>
+    </li>
+    {% endif %} {%- endfor -%}
+  </ul>
+</section>

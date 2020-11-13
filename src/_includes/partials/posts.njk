@@ -1,0 +1,7 @@
+<div class="p-4">
+{% for item in collections.blog %}
+  <p>{{ item.data.title }}</p>
+  <p class="mt-0 text-sm md:text-base">{{ item.data.description}}</p>
+  {% include "components/tags-post.njk" %}
+{% endfor %}
+</div>

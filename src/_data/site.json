@@ -1,0 +1,23 @@
+{
+  "name": "Wikilear",
+  "url": "https://www.wikilear.it",
+  "authorName": "Andrea Leardini",
+  "authorEmail": "andrea@wikilear.it",
+  "topics": [
+    {
+      "text": "Documenti Google",
+      "url": "/tag/documenti-google/",
+      "image": "/images/docs_48dp.png"
+    },
+    {
+      "text": "Fogli Google",
+      "url": "/tag/fogli-google/",
+      "image": "/images/sheets_48dp.png"
+    },
+    {
+      "text": "Google Apps Script",
+      "url": "/tag/google-apps-script/",
+      "image": "/images/apps_script_48dp.png"
+    }
+  ]
+}
