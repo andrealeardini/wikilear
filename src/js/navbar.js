@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // gestisco il pulsante del menu
   let body = document.getElementsByTagName("body")[0];
-  let content = document.getElementById("content");
+  let inert = document.getElementById("inert");
   let pulsante = document.getElementById("pulsante");
   let menu = document.getElementById("menu");
   let panel = document.getElementById("panel");
@@ -9,14 +9,33 @@ document.addEventListener("DOMContentLoaded", () => {
   let isOpen = false;
   pulsante.addEventListener("click", () => {
     if (!isOpen) {
-      panel.classList.remove("hidden");
-      menu.classList.add("hidden");
-      close.classList.remove("hidden");
+      showMenu();
+      inert.addEventListener(
+        "click",
+        () => {
+          hideMenu();
+        },
+        { once: true }
+      );
     } else {
-      panel.classList.add("hidden");
-      menu.classList.remove("hidden");
-      close.classList.add("hidden");
+      hideMenu();
     }
-    isOpen = !isOpen;
   });
+
+  function showMenu() {
+    panel.classList.remove("hidden");
+    menu.classList.add("hidden");
+    close.classList.remove("hidden");
+    inert.classList.remove("hidden");
+    isOpen = !isOpen;
+  }
+
+  function hideMenu() {
+    panel.classList.add("hidden");
+    menu.classList.remove("hidden");
+    close.classList.add("hidden");
+    inert.classList.add("hidden");
+    isOpen = !isOpen;
+  }
 });
+
