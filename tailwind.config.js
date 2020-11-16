@@ -8,10 +8,12 @@ module.exports = {
     extend: {
       gridTemplateRows: {
         // Site-specific row configuration
-        layout: "60px 1fr 200px",
+        layout: "auto 1fr auto",
       },
       maxWidth: {
-        ch: "70ch",
+        "ch-60": "60ch",
+        "ch-70": "70ch",
+        "ch-80": "80ch",
       },
     },
   },
