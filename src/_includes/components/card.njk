@@ -1,24 +1,27 @@
 <div class="flex flex-wrap justify-around mt-6">
-  {% for card in cards %}
-  <div class="border-gray-600 border rounded-lg flex flex-wrap flex-row mb-6">
+  {% for card in cards %} {% if card.title == title %}
+  <div
+    class="border-gray-600 border rounded-lg shadow-lg flex flex-wrap flex-row mb-6"
+  >
     <div
       class="h-8 md:h-12 mt-0 mb-6 pl-2 rounded-t-lg bg-gray-800 text-white w-full flex items-center"
     >
       <h2>
-        {{ card.title | safe }}
+        <a href="{{ card.url | url }}">{{ card.title | safe }}</a>
       </h2>
     </div>
     <div class="px-2">
-      <img src="{{ card.imageUrl | url }}" alt="{{ card.imageAlt | safe }}" />
-      <p class="mt-4 justify-center text-center">
-        {{ card.description | safe }}
-      </p>
-      {% set postListItems = collections.blog %}
-      {% set home = "true" %}
-      <div class="p-4">
-        {% include "partials/post-list.njk" %}
-      </div>
+      <a href="{{ card.url | url }}">
+        <img src="{{ card.imageUrl | url }}" alt="{{ card.imageAlt | safe }}" />
+      </a>
+      {% if title == "Blog"%} {% set postListItems = collections.blog %} {% set
+      home = "true" %} {% else %} {% set postListItems = collections.tutorial %}
+      {% set home = "true" %} {% endif %}
+      <div class="px-1 py-2 md:p-4">{% include "partials/post-list.njk" %}</div>
     </div>
+    <p class="mb-2 ml-6 hover:underline text-sm md:text-base">
+      <a href="{{ card.url | url }}">{{ card.more }}</a>
+    </p>
   </div>
-  {% endfor %}
+  {% endif %} {% endfor %}
 </div>
