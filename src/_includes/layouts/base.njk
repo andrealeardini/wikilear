@@ -6,10 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body class="h-screen box-border">
+  <body class="h-screen box-border bg-gray-200">
     <div class="min-h-full grid grid-cols-12 grid-rows-layout">
       <div class="col-start-1 col-end-13 row-start-1 row-end-5">
-        <div class="z-10 row-start-1 row-end-2">
+        <div class="z-10 row-start-1 row-end-2 fixed h-12 w-full">
           {% include "components/navbar.njk" %}
         </div>
         <button id="inert"class="h-full w-full fixed bg-white opacity-50 cursor-default hidden"></button>
