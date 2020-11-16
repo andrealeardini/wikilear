@@ -8,6 +8,7 @@
   }
 
   p {
-    @apply mt-4;
+    @apply pt-1;
+    @apply pb-2;
   }
 }
