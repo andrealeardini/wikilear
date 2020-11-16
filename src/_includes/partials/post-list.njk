@@ -7,11 +7,13 @@
     {% endif %}
     <div>
       <ul>
-      {% for item in postListItems.slice(0,2) %}
-      <li class="mt-4">
+      {% if home %}
+        {% set postListItems = postListItems.slice(0,2) %}
+      {% endif %}
+      {% for item in postListItems %}
+      <li class="mt-4 p-4 shadow-lg border border-gray-300">
         <a href="{{ item.url }}" class="font-semibold hover:underline">{{ item.data.title }}</a>
-        <p class="mt-1 pt-0 text-sm md:text-base font-semibold text-gray-700" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
-        {% if item.data.image %}
+        {% if item.data.image and not home %}
         <img
           src="{{ item.data.image }}"
           {% if image-description %}
@@ -22,17 +24,12 @@
           {% if image-title %}
           title="{{ item.data.image-title }}"
           {% endif %}
-          class="list-item-image"
+          class="mt-4"
         />
         {% endif %}
-
-        <p>{{ item.data.subtitle }}</p>
+        <p class="text-sm md:text-base font-semibold text-gray-700" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
+        <p class="mt-0">{{ item.data.subtitle }}</p>
         {% include 'components/tags-post.njk' %}
-        {% if home and loop.last %}
-          <hr class="mt-4 last:hidden">
-        {% else %}
-          <hr class="mt-4">
-        {% endif %}
       </li>
       {%- endfor -%}
     </ul>
