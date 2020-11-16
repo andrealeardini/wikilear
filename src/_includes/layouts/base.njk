@@ -13,6 +13,7 @@
           {% include "components/navbar.njk" %}
         </div>
         <button id="inert"class="h-full w-full fixed bg-white opacity-50 cursor-default hidden"></button>
+        <div id="content" class="mt-12 h-full bg-white mx-auto pt-6 px-4 md:px-8 max-w-ch-80 text-base md:text-md lg:text-lg">
           {{ content | safe }}
           {% block content %}{% endblock %}
         </div>
