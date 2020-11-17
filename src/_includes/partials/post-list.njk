@@ -12,7 +12,7 @@
       {% endif %}
       {% for item in postListItems %}
       <li class="mt-4 p-4 shadow-lg border border-gray-300">
-        <a href="{{ item.url }}" class="font-semibold hover:underline">{{ item.data.title }}</a>
+        <a href="{{ item.url }}" class="font-semibold hover:underline dm:text-yellow-400">{{ item.data.title }}</a>
         {% if item.data.image and not home %}
         <img
           src="{{ item.data.image }}"
@@ -27,7 +27,7 @@
           class="mt-4"
         />
         {% endif %}
-        <p class="text-sm md:text-base font-semibold text-gray-700" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
+        <p class="text-sm md:text-base font-semibold text-gray-700 dm:text-yellow-300" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
         <p class="mt-0">{{ item.data.subtitle }}</p>
         {% include 'components/tags-post.njk' %}
       </li>

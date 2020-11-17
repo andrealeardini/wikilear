@@ -3,28 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
     <title>Document</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="h-screen box-border bg-gray-200">
-    <div class="min-h-full grid grid-cols-12 grid-rows-layout">
+    <div class="min-h-full grid grid-cols-12 grid-rows-layout bg-white dm:text-gray-100 dm:bg-gray-700">
       <div class="col-start-1 col-end-13 row-start-1 row-end-5">
         <div class="z-10 row-start-1 row-end-2 fixed h-12 w-full">
           {% include "components/navbar.njk" %}
         </div>
         <button id="inert"class="h-full w-full fixed bg-white opacity-50 cursor-default hidden"></button>
-        <div id="content" class="mt-12 h-full bg-white mx-auto pt-6 px-4 md:px-8 max-w-ch-80 text-base md:text-md lg:text-lg">
+        <div id="content" class="mt-12 h-full mx-auto pt-6 px-4 md:px-8 max-w-ch-80 text-base dm:bg-gray-900 md:text-md lg:text-lg">
           {{ content | safe }}
           {% block content %}{% endblock %}
         </div>
       </div>
       <div
         id="footer"
-        class="col-start-1 col-end-13 row-start-5 row-end-6 mt-10 pt-6 px-4 pb-6 bg-gray-300"
+        class="col-start-1 col-end-13 row-start-5 row-end-6 mt-10 pt-6 px-4 pb-6 bg-gray-300 dm:bg-gray-700"
       >
         <div class="m-auto text-center">
           <a
-            class="font-semibold hover:underline mr-4"
+            class="font-semibold hover:underline mr-4 dm:text-yellow-400"
             href="/termini-uso-privacy"
             >Privacy</a
           >
@@ -35,7 +36,7 @@
           /></span>
           Quest'opera è distribuita con
           <a
-            class="font-semibold hover:underline"
+            class="font-semibold hover:underline dm:text-yellow-400"
             href="http://creativecommons.org/licenses/by/4.0/"
             target="_blank"
             rel="noopener noreferrer"
@@ -43,7 +44,7 @@
           >
           Salvo diversa indicazione, il codice è distribuito con
           <a
-            class="font-semibold hover:underline"
+            class="font-semibold hover:underline dm:text-yellow-400"
             href="https://opensource.org/licenses/MIT"
             target="_blank"
             rel="noopener noreferrer"

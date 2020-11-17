@@ -15,6 +15,9 @@ module.exports = {
         "ch-70": "70ch",
         "ch-80": "80ch",
       },
+      screens: {
+        dm: { raw: "(prefers-color-scheme: dark)" },
+      },
     },
   },
   variants: {

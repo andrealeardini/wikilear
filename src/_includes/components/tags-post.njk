@@ -1,10 +1,10 @@
 {% if item.data.tags %}
 <ul class="flex flex-wrap">
   {% for tag in item.data.tags %}
-  <li class="mt-4 mr-4 text-gray-700">
+  <li class="mt-4 mr-4 text-gray-700 dm:text-yellow-200">
     <a
       href="/tag/{{ tag | slug }}/"
-      class="px-2 py-1 text-sm border rounded-lg hover:bg-gray-300"
+      class="px-2 py-1 text-sm border rounded-lg hover:bg-gray-300 dm:hover:text-gray-700"
       >{{ tag | title }}</a
     >
   </li>
