@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Document</title>
+    {% if environment.NODE_ENV=="production" %}
+      <!-- capture the CSS content as a Nunjucks variable -->
+      {% set css %}
+        {% include "css/styles.css" %}
+      {% endset %}
+      <!-- feed it through our cssmin filter to minify -->
+      <style>
+        {{ css | cssmin | safe }}
+      </style>
+    {% else %}
     <link rel="stylesheet" href="/css/styles.css" />
+    {% endif %}
   </head>
   <body class="h-screen box-border bg-gray-200">
     <div

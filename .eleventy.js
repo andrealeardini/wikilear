@@ -1,3 +1,5 @@
+const CleanCSS = require("clean-css");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
@@ -23,6 +25,9 @@ module.exports = function (eleventyConfig) {
     "w3DateFilter",
     require("./src/_filters/w3-date-filter.js")
   );
+  eleventyConfig.addFilter("cssmin", function (code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
   // Returns a collection of blog posts in reverse date order
   eleventyConfig.addCollection("blog", (collection) => {
