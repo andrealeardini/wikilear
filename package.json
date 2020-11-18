@@ -4,9 +4,13 @@
   "description": "The Wikilear web site",
   "main": "main.js",
   "scripts": {
-    "start": "rimraf 'dist' && npm run css-watch & NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy --serve",
-    "build": "rimraf 'dist' && NODE_ENV=production npm run css-build && NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy",
-    "css-build": "npx tailwindcss build src/css/styles.css -o dist/css/styles.css",
+    "start": "rimraf 'dist' && npm run css-watch & npm run js-watch & npm run eleventy-watch",
+    "build": "rimraf 'dist' && npm run css-build & npm run js-build && npm run eleventy",
+    "eleventy": "NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy",
+    "eleventy-watch": "NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy --serve",
+    "js-watch": "npx rollup -c -w",
+    "js-build": "NODE_ENV=production npx rollup -c",
+    "css-build": "NODE_ENV=production npx tailwindcss build src/css/styles.css -o dist/css/styles.css",
     "css-watch": "watch \"npm run css-build\" \"src/css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +26,8 @@
     "luxon": "^1.25.0",
     "markdown-it-attrs": "^3.0.3",
     "rimraf": "^3.0.2",
+    "rollup": "^2.33.3",
+    "rollup-plugin-terser": "^7.0.2",
     "tailwindcss": "^1.9.6",
     "watch": "^1.0.2"
   }

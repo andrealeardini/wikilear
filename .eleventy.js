@@ -2,8 +2,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/images");
-  eleventyConfig.addPassthroughCopy("src/js");
-  eleventyConfig.addWatchTarget("./src/js/");
 
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
   eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
