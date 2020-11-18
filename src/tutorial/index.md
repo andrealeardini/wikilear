@@ -1,4 +1,8 @@
 ---
+eleventyNavigation:
+  key: Tutorial
+  parent: Home
+  showLast: true
 title: 'Wikilear Tutorial'
 layout: 'layouts/feed.njk'
 pagination:

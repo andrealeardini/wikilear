@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/js/");
 
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
+  eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
 
   let markdownIt = require("markdown-it");
   let markdownItAttrs = require("markdown-it-attrs");

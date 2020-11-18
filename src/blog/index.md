@@ -1,4 +1,8 @@
 ---
+eleventyNavigation:
+  key: Blog
+  parent: Home
+  showLast: true
 title: 'Blog'
 layout: 'layouts/feed.njk'
 pagination:

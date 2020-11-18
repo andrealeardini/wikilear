@@ -1,4 +1,7 @@
 ---
+eleventyNavigation:
+  key: Documenti Google
+  parent: Tutorial
 tags: tutorial
 topics: Documenti Google
 layout: 'layouts/base.njk'
@@ -9,8 +12,8 @@ Tutto su Documenti Google
 
 ## Nozioni base
 
-- [Come selezionare testo, immagini od oggetti](come-selezionare-paragrafi-google-documenti/){rel="noopener noreferrer" target="_blank"}
+- [Come selezionare testo, immagini od oggetti](come-selezionare-paragrafi-google-documenti/)
 
 ## Nozioni intermedie
 
-- [Come impostare il carattere predefinito](come-impostare-carattere-predefinito-google-documenti/){rel="noopener noreferrer" target="_blank"}
+- [Come impostare il carattere predefinito](come-impostare-carattere-predefinito-google-documenti/)
