@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Document</title>
-    <link rel="canonical" href="https://test.wikilear.it{{ page.url | url }}"/>
-    <link rel="preload" as="script" href="js/main.js">
+    <link rel="preload" as="script" href="/js/main.js">
     {% if environment.NODE_ENV=="production" %}
       <!-- capture the CSS content as a Nunjucks variable -->
       {% set css %}
@@ -75,6 +74,6 @@
         </p>
       </div>
     </div>
-    <script async type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
