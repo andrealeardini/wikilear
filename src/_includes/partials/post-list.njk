@@ -7,11 +7,8 @@
     {% endif %}
     <div>
       <ul>
-      {% if home %}
-        {% set postListItems = postListItems.slice(0,2) %}
-      {% endif %}
       {% for item in postListItems %}
-      <li class="mt-4 p-4 shadow-lg border border-gray-300">
+      <li class="mt-4 p-4 shadow-lg border border-gray-300 rounded-lg">
         <a href="{{ item.url }}" class="font-semibold hover:underline dm:text-yellow-400">{{ item.data.title }}</a>
         {% if item.data.image and not home %}
         <img

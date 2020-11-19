@@ -14,5 +14,3 @@ paginationNextText: 'Post più vecchi'
 paginationAnchor: '#post-list'
 feed: ''
 ---
-
-Le ultime notizie riportate sul sito:
