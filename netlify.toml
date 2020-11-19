@@ -19,6 +19,6 @@
 
 [[redirects]]
   from = "https://wikilear.netlify.app/*"
-  to = "https://test.wikilear.it/"
+  to = "https://test.wikilear.it/:splat"
   status = 301
   force = true
