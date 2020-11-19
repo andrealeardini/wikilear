@@ -18,7 +18,7 @@
   compress = false
 
 [[redirects]]
-  from = "https://wikilear.netlify.app/*"
-  to = "https://test.wikilear.it/*"
+  from = "https://wikilear.netlify.app/**/*"
+  to = "https://test.wikilear.it/"
   status = 301
   force = true
