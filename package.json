@@ -4,7 +4,7 @@
   "description": "The Wikilear web site",
   "main": "main.js",
   "scripts": {
-    "start": "rimraf 'dist' && npm run css-watch && npm run js-watch & npm run eleventy-watch",
+    "start": "rimraf 'dist' && npm run css-watch & npm run js-watch & npm run eleventy-watch",
     "build": "rimraf 'dist' && npm run css-build && npm run js-build && npm run eleventy",
     "eleventy": "NODE_ICU_DATA='./node_modules/full-icu' NODE_ENV=production npx @11ty/eleventy",
     "eleventy-watch": "NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy --serve",
