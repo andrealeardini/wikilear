@@ -3,7 +3,7 @@ eleventyNavigation:
   key: Tutorial
   parent: Home
   showLast: true
-title: 'Wikilear Tutorial'
+title: 'Tutorial'
 layout: 'layouts/feed.njk'
 pagination:
   data: collections.tutorial
