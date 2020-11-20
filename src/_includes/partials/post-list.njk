@@ -24,7 +24,7 @@
           class="mt-4"
         />
         {% endif %}
-        <p class="text-sm md:text-base font-semibold text-gray-700 dm:text-yellow-300" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
+        <p class="text-sm xl:text-base font-semibold text-gray-700 dm:text-yellow-300" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
         <p class="mt-0">{{ item.data.subtitle }}</p>
         {% include 'components/tags-post.njk' %}
       </li>
