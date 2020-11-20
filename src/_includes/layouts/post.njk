@@ -25,6 +25,7 @@
       {% if image-title %}
       title="{{ image-title }}"
       {% endif %}
+      class="mb-4"
     />
   {% endif %}
 
@@ -34,7 +35,7 @@
     <p class="font-semibold" id="tags-desc">
       Etichette
     </p>
-    <div aria-describedby="tags-desc">
+    <div class="mb-8" aria-describedby="tags-desc">
       {% include "components/tags-post.njk" %}
     </div>
   {% endif %}
