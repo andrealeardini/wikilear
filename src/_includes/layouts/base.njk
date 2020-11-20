@@ -35,8 +35,11 @@
           class="mt-12 h-full mx-auto pt-6 px-4 md:px-8 max-w-ch-80 text-base dm:bg-gray-900 md:text-md lg:text-lg"
         >
           {% include "components/breadcrumbs.njk" %}
-          {{ content | safe }}
-          {% block content %}{% endblock %}
+          <article>
+            {% set _title = pageHeaderTitle or title %}
+            <h1 class="mt-10 mb-4 font-bold text-xl">{{_title}}</h1>
+            {% block content %}{% endblock %}
+          </article>
         </div>
       </div>
       <div
