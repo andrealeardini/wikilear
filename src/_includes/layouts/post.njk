@@ -1,0 +1,51 @@
+{% extends "layouts/base.njk" %}
+{% set pageHeaderTitle = title %}
+{# Grab other posts that aren’t this one for the 'more from the blog' feed #}
+{% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
+{# Render post date#}
+{% set pageHeaderSummary %}
+  <p class="text-sm">
+    <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+  </p>
+{% endset %}
+
+{% block content %}
+  {% include "partials/page-header.njk" %}
+  {% if subtitle %}
+    <p>{{ subtitle }}</p>
+  {% endif %}
+  {% if image %}
+    <img
+      src="{{ image }}"
+      {% if image-description %}
+      alt="{{ image-description }}"
+      {% else %}
+      alt=""
+      {% endif %}
+      {% if image-title %}
+      title="{{ image-title }}"
+      {% endif %}
+    />
+  {% endif %}
+
+  {{ content | safe }}
+
+  {% if tags %}
+    <p class="font-semibold" id="tags-desc">
+      Etichette
+    </p>
+    <div aria-describedby="tags-desc">
+      {% include "components/tags-post.njk" %}
+    </div>
+  {% endif %}
+
+  {% if recommendedPosts %}
+  <footer class="recommended-posts">
+    {% set postListItems = recommendedPosts %}
+    {% set postListHeadline = 'Altri
+    articoli dal blog' %}
+    {% include "partials/post-list.njk" %}
+  </footer>
+  {% endif %}
+
+{% endblock %}
