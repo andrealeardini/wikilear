@@ -1,6 +1,6 @@
-{% if item.data.tags %}
+{% if tags %}
 <ul class="flex flex-wrap">
-  {% for tag in item.data.tags %}
+  {% for tag in tags %}
   <li class="mt-4 mr-4 text-gray-700 dm:text-yellow-200">
     <a
       href="/tag/{{ tag | slug }}/"
