@@ -32,10 +32,10 @@
   {{ content | safe }}
 
   {% if tags %}
-    <p class="font-semibold" id="tags-desc">
+    <p class="mt-8 font-semibold" id="tags-desc">
       Etichette
     </p>
-    <div class="mb-8" aria-describedby="tags-desc">
+    <div class="mb-6" aria-describedby="tags-desc">
       {% include "components/tags-post.njk" %}
     </div>
   {% endif %}
@@ -43,8 +43,7 @@
   {% if recommendedPosts %}
   <footer class="recommended-posts">
     {% set postListItems = recommendedPosts %}
-    {% set postListHeadline = 'Altri
-    articoli dal blog' %}
+    {% set postListHeadline = 'Altri articoli dal blog' %}
     {% include "partials/post-list.njk" %}
   </footer>
   {% endif %}

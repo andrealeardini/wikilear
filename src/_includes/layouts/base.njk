@@ -20,7 +20,7 @@
   </head>
   <body class="h-screen box-border bg-gray-200">
     <div
-      class="min-h-full grid grid-cols-12 grid-rows-layout bg-white dm:text-gray-100 dm:bg-gray-600"
+      class="grid grid-cols-12 grid-rows-layout dm:text-gray-100 dm:bg-gray-600"
     >
       <div class="col-start-1 col-end-13 row-start-1 row-end-5">
         <div class="z-10 row-start-1 row-end-2 fixed h-12 w-full">
@@ -32,12 +32,12 @@
         ></button>
         <div
           id="content"
-          class="mt-12 h-full mx-auto pt-6 px-4 md:px-8 max-w-ch-80 text-base dm:bg-gray-900 md:text-md lg:text-lg"
+          class="mt-12 h-full mx-auto pt-6 px-4 md:px-8 max-w-ch-80 text-base bg-white dm:bg-gray-900 md:text-md lg:text-lg"
         >
           {% include "components/breadcrumbs.njk" %}
           <article>
             {% set _title = pageHeaderTitle or title %}
-            <h1 class="mt-6 mb-4 font-bold text-xl">{{_title}}</h1>
+            <h1 class="mt-6 mb-4 font-bold text-xl xl:text-2xl">{{_title}}</h1>
             {% block content %}{% endblock %}
           </article>
         </div>
