@@ -10,7 +10,9 @@
       {% for item in postListItems %}
       <li class="mt-4 p-4 shadow-lg border border-gray-300 rounded-lg">
         <a href="{{ item.url }}" class="font-semibold hover:underline dm:text-yellow-400">{{ item.data.title }}</a>
-        {% if item.data.image and not home %}
+        <p class="text-sm xl:text-base font-semibold text-gray-700 dm:text-yellow-300" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
+        <p class="mt-0">{{ item.data.subtitle }}</p>
+        {% if item.data.image %}
         <img
           src="{{ item.data.image }}"
           {% if image-description %}
@@ -24,8 +26,7 @@
           class="mt-4"
         />
         {% endif %}
-        <p class="text-sm xl:text-base font-semibold text-gray-700 dm:text-yellow-300" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
-        <p class="mt-0">{{ item.data.subtitle }}</p>
+        {% set tags = item.data.tags %}
         {% include 'components/tags-post.njk' %}
       </li>
       {%- endfor -%}
