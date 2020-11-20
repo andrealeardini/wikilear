@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/base.njk'
+layout: 'layouts/page.njk'
 title: Termini d'uso e privacy
 ---
 Di seguito mi riferisco a me stesso (Andrea Leardini) come autore e proprietario del sito Wikilear. Questo è un sito personale, non è legato a un'attività commerciale o di tipo professionale. Se decidi di consultare questo sito tiene presente quanto segue:
