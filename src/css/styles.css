@@ -7,6 +7,20 @@
     min-width: 300px;
   }
 
+  h1 {
+    @apply text-lg;
+    @apply md:text-xl;
+    @apply font-bold;
+    @apply mt-6;
+    @apply mb-4;
+  }
+
+  h2 {
+    @apply font-semibold;
+    @apply mt-4;
+    @apply mb-2;
+  }
+
   p {
     @apply pt-1;
     @apply pb-2;
