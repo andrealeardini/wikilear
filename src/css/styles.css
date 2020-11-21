@@ -25,4 +25,15 @@
     @apply pt-1;
     @apply pb-2;
   }
+
+  .markdown ul {
+    @apply list-disc;
+    @apply m-4;
+  }
+
+
+  .markdown li {
+    @apply m-3;
+  }
 }
+
