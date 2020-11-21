@@ -1,4 +1,5 @@
 {
   "layout": "layouts/post.njk",
+  "feed": "true",
   "style": "markdown"
 }
