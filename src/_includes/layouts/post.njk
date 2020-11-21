@@ -29,7 +29,10 @@
     />
   {% endif %}
 
-  {{ content | safe }}
+  <article class="{{ style }}">
+    <h1>{{title}}</h1>
+    {{ content | safe }}
+  </article>
 
   {% if tags %}
     <p class="mt-8 font-semibold" id="tags-desc">

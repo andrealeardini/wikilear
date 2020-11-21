@@ -1,4 +1,7 @@
 {% extends "layouts/base.njk" %}
 {% block content %}
-  {{ content | safe }}
+   <article class="{{ style }} mx-auto">
+    <h1>{{title}}</h1>
+    {{ content | safe }}
+  </article>
 {% endblock %}
