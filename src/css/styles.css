@@ -8,16 +8,20 @@
   }
 
   h1 {
-    @apply text-lg;
-    @apply md:text-xl;
+    @apply text-xl;
+    @apply md:text-2xl;
+    @apply lg:text-3xl;
     @apply font-bold;
     @apply mt-6;
     @apply mb-4;
   }
 
   h2 {
+    @apply text-lg;
+    @apply md:text-xl;
+    @apply lg:text-2xl;
     @apply font-semibold;
-    @apply mt-4;
+    @apply mt-8;
     @apply mb-2;
   }
 
@@ -31,9 +35,124 @@
     @apply m-4;
   }
 
-
   .markdown li {
     @apply m-3;
   }
-}
 
+  /* impostazioni di base per rendere una tabella responsive.
+  sotto il valore di soglia le righe si trasformano in flex
+  e le colonne si dispongono in base ai valori impostati per ogni colonna */
+
+  .markdown table.responsive-table {
+    @apply w-full;
+    @apply mt-6;
+    @apply text-base;
+  }
+
+  .markdown table.responsive-table thead {
+    @apply hidden;
+  }
+
+  .markdown table.responsive-table td.responsive-table-header {
+    @apply font-bold;
+    width: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .markdown table.responsive-table tr {
+    @apply flex;
+    @apply flex-wrap;
+    @apply mb-6;
+  }
+
+  .markdown table.responsive-table td.first-column {
+    width: 15%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .markdown table.responsive-table td.second-column {
+    width: 65%;
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
+
+  .markdown table.responsive-table td {
+    @apply block;
+  }
+
+  .markdown table.responsive-table th {
+    @apply text-center;
+  }
+
+  .markdown table.responsive-table td {
+    @apply text-left;
+  }
+
+  .markdown table.responsive-table td.responsive-table-header {
+    @apply lg:hidden;
+  }
+
+  .markdown table.responsive-table td.first-column,
+  .markdown table.responsive-table td.second-column,
+  .markdown table.responsive-table th,
+  .markdown table.responsive-table td {
+    @apply lg:w-auto;
+    @apply lg:h-auto;
+  }
+  .markdown table.responsive-table thead {
+    @apply lg:table-header-group;
+  }
+  .markdown table.responsive-table td {
+    @apply lg:table-cell;
+  }
+  .markdown table.responsive-table tr {
+    @apply lg:table-row;
+  }
+
+  table {
+    @apply border-collapse;
+    @apply w-full;
+    @apply my-6;
+    @apply mx-auto;
+  }
+
+  th {
+    @apply bg-gray-200;
+  }
+
+  td {
+    @apply self-center;
+    @apply p-1;
+  }
+
+  td.table-cell-icon16h {
+    @apply w-auto;
+    @apply h-auto;
+    min-width: 32px;
+    @apply content-center;
+    @apply self-center;
+  }
+
+  td.table-cell-icon16h img {
+    height: 16px;
+    @apply w-auto;
+    @apply m-auto;
+  }
+
+  td,
+  th {
+    @apply lg:border-b;
+    @apply lg:border-solid;
+    @apply lg:text-gray-600;
+  }
+
+  blockquote,
+  .note {
+    width: 96%;
+    margin: 32px auto;
+    padding: 16px;
+    background-color: whitesmoke;
+  }
+}
