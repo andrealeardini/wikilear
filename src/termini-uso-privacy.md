@@ -1,10 +1,11 @@
 ---
 layout: 'layouts/page.njk'
 title: Termini d'uso e privacy
+style: markdown
 ---
 Di seguito mi riferisco a me stesso (Andrea Leardini) come autore e proprietario del sito Wikilear. Questo è un sito personale, non è legato a un'attività commerciale o di tipo professionale. Se decidi di consultare questo sito tiene presente quanto segue:
 
-## Cookies
+## Cookie
 
 Ho deciso di non tracciare gli utenti del sito, neanche per scopi statistici. Eventuali cookie salvati sul dispositivo sono da considerarsi di tipo tecnico, necessario quindi all'utilizzo stesso del sito. La disabilitazione dei cookie non comprommette l'utilizzo del sito anche se alcune funzionalità avanzate potrebbero non essere disponibili o funzionare solo in parte (salvataggio delle preferenze di visualizzazione, impostazioni del sito, ecc.).
 

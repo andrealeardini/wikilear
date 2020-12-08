@@ -1,5 +1,6 @@
 
   <div>
+    <h1>{{ pageHeaderTitle or title | safe }}</h1>
     {% if pageHeaderSummary %}
     <div>
       {{ pageHeaderSummary | safe }}
