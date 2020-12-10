@@ -39,6 +39,20 @@
     @apply m-3;
   }
 
+  /* image and video captions */
+  .markdown video + strong,
+  .markdown picture + strong,
+  .markdown img + strong {
+    width: 90%;
+    @apply mt-4;
+    @apply mb-8;
+    @apply mx-auto;
+    @apply font-light;
+    display: inherit;
+    @apply text-center;
+    @apply text-sm md:text-base;
+  }
+
   /* impostazioni di base per rendere una tabella responsive.
   sotto il valore di soglia le righe si trasformano in flex
   e le colonne si dispongono in base ai valori impostati per ogni colonna */
