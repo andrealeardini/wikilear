@@ -47,6 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", "system");
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       html.classList.add("dark");
+    } else {
+      html.classList.remove("dark");
     };
     darkModeState.innerText = "Modalità scura auto";
     state = "system";

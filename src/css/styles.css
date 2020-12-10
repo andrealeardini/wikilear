@@ -120,6 +120,7 @@
 
   th {
     @apply bg-gray-200;
+    @apply dark:bg-gray-600;
   }
 
   td {
@@ -145,14 +146,27 @@
   th {
     @apply lg:border-b;
     @apply lg:border-solid;
-    @apply lg:text-gray-600;
+    /* @apply lg:text-gray-600; */
   }
 
   blockquote,
   .note {
     width: 96%;
     margin: 32px auto;
-    padding: 16px;
-    background-color: whitesmoke;
+    @apply p-6;
+    @apply bg-gray-50;
+    @apply dark:bg-gray-700;
+  }
+
+  :root {
+    --image-filter: grayscale(50%);
+  }
+
+  .dark img:not([src*=".svg"]) {
+    filter: var(--image-filter);
+  }
+
+  .dark img.invert {
+    filter: invert();
   }
 }
