@@ -1,8 +1,5 @@
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
+  darkMode: 'class',
   purge: ["./src/**/*.md", "./src/**/*.njk", "./src/**/*.js"],
   theme: {
     extend: {
@@ -17,7 +14,6 @@ module.exports = {
       },
       screens: {
         sm: "400px",
-        dm: { raw: "(prefers-color-scheme: dark)" },
       },
     },
   },
