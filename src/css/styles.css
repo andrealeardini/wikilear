@@ -150,37 +150,28 @@
     @apply self-center;
   }
 
-  td.table-cell-icon16h img {
-    height: 16px;
-    @apply w-auto;
-    @apply m-auto;
+  /* aspect ratio */
+  /* https://css-tricks.com/aspect-ratio-boxes/#using-custom-properties */
+
+  [style*="--aspect-ratio"] > :first-child {
+    width: 100%;
+  }
+  [style*="--aspect-ratio"] > img {
+    height: auto;
   }
 
-  td,
-  th {
-    @apply lg:border-b;
-    @apply lg:border-solid;
-    /* @apply lg:text-gray-600; */
+  [style*="--aspect-ratio"] {
+    position: relative;
   }
-
-  blockquote,
-  .note {
-    width: 96%;
-    margin: 32px auto;
-    @apply p-6;
-    @apply bg-gray-50;
-    @apply dark:bg-gray-700;
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
   }
-
-  :root {
-    --image-filter: grayscale(50%);
-  }
-
-  .dark img:not([src*=".svg"]) {
-    filter: var(--image-filter);
-  }
-
-  .dark img.invert {
-    filter: invert();
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
   }
 }
