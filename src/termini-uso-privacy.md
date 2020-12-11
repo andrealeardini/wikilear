@@ -7,7 +7,12 @@ Di seguito mi riferisco a me stesso (Andrea Leardini) come autore e proprietario
 
 ## Cookie
 
-Ho deciso di non tracciare gli utenti del sito, neanche per scopi statistici. Eventuali cookie salvati sul dispositivo sono da considerarsi di tipo tecnico, necessario quindi all'utilizzo stesso del sito. La disabilitazione dei cookie non comprommette l'utilizzo del sito anche se alcune funzionalità avanzate potrebbero non essere disponibili o funzionare solo in parte (salvataggio delle preferenze di visualizzazione, impostazioni del sito, ecc.).
+Eventuali cookie salvati sul dispositivo sono da considerarsi di tipo tecnico, necessario quindi all'utilizzo stesso del sito. La disabilitazione dei cookie non comprommette l'utilizzo del sito anche se alcune funzionalità avanzate potrebbero non essere disponibili o funzionare solo in parte (salvataggio delle preferenze di visualizzazione, impostazioni del sito, ecc.).
+
+Saltuariamente potrebbero essere usati alcuni servizi di Google come Google Drive per l'hosting dei file, Google Maps per visualizzare mappe interattive o YouTube per i video (per quest'ultimo con impostazione di [privacy avanzata](https://support.google.com/youtube/answer/171780?expand=PrivacyEnhancedMode#privacy){rel="noopener noreferrer" target="_blank"}, i cookie vengono installati solo se guardi il video). Tutti questi servizi sono gestiti da Google e nessun dato viene condiviso con Wikilear. L'utilizzo dei cookie da parte di Google potrebbe includere alcune informazioni relative al tuo account Google se utilizzi Wikilear quando sei loggato nell'account. Per la gestione dei cookie da parte di Google puoi trovare maggiori informazioni leggendo queste pagine:
+
+- [In che modo Google utilizza i cookie](https://www.google.com/policies/technologies/cookies/){rel="noopener noreferrer" target="_blank"}
+- [Modalità di utilizzo dei dati da parte di Google quando si utilizzano siti o app dei nostri partner](https://www.google.com/policies/privacy/partners/){rel="noopener noreferrer" target="_blank"}
 
 Per maggiori informazioni su come disabilitare i cookies puoi consultare la documentazione relativa al tuo browser:
 
@@ -35,4 +40,4 @@ Questo sito contiene link verso siti esterni di titolarità di terzi. Questi sit
 
 ## Privacy
 
-Tramite il sito non raccolgo informazioni di nessun tipo. Questo vuol dire che la tua navigazione sul sito per quanto mi riguarda è completamente anonima. Se decidi di contattarmi tramite uno dei canali Social indicati nei contatti o tramite email vige la normale netiquette che regolamenta il comportamento degli utenti sul web, fermo restando eventuali obblighi di legge in merito. Va da sè che se mi scrivi entrerò in possesso del tuo indirizzo email. Se mi mandi un tweet o mi contatti su GitHub conoscerò l'esistenza del tuo profilo social. Questi contatti e le informazioni che mi comunicherai saranno usati solo per rispondere al tuo messaggio e non saranno divulgati a terzi (ricordati che i messaggi sui social sono pubblici). In qualsiasi momento puoi richiedere la cancellazione di eventuali dati in mio possesso (indirizzo email o quant'altro hai fornito scrivendomi).
+Se hai bisogno di contattarmi puoi scrivermi all'indirizzo andrea@wikilear.it o tramite uno dei canali social indicati nei contatti. Eventuali informazioni personali di cui potrei venire a conoscenza non saranno passate a terzi (ad esclusione degli obblighi di legge e su richiesta delle autorità competenti) e saranno utilizzate e/o conservate solo per ottemperare allo scopo per cui sono destinate. In ottemperanza alle attuali disposizioni di legge puoi richiedere di cancellare eventuali registrazioni in mio possesso (email o quant'altro) che ti riguardano.
