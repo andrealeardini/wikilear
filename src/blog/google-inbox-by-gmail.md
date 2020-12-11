@@ -46,7 +46,11 @@ Puoi decidere di posticipare l'elemento a un determinato orario o di visualizzar
 
 In questo video in cui puoi vedere Inbox by Gmail all'opera su un dispositivo mobile.
 
-<iframe allowfullscreen="" loading="lazy" frameborder="0" height="270" src="https://www.youtube-nocookie.com/embed/bzNTjpUMOp4?rel=0" rel="nopener noreferrer" width="480"></iframe>
+<div style="--aspect-ratio:16/9;">
+<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/bzNTjpUMOp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen rel="nopener noreferrer"></iframe>
+</div>
+
+
 
 ## Come avere Inbox
 
