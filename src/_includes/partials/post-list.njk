@@ -9,8 +9,8 @@
       <ul>
       {% for item in postListItems %}
       <li class="mt-4 p-4 shadow-lg border border-gray-300 rounded-lg">
-        <a href="{{ item.url | url }}" class="font-semibold hover:underline dark:text-yellow-400">{{ item.data.title }}</a>
-        <p class="text-sm xl:text-base font-semibold text-gray-700 dark:text-yellow-300" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
+        <a href="{{ item.url | url }}" class="font-semibold">{{ item.data.title }}</a>
+        <p class="text-sm xl:text-base font-semibold text-gray-700" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
         <p class="mt-0">{{ item.data.subtitle }}</p>
         {% if item.data.image %}
         <img
@@ -28,7 +28,7 @@
         {% endif %}
         {% set tags = item.data.tags %}
         {% include 'components/tags-post.njk' %}
-        <p class="mt-4 hover:underline"><a href="{{item.url | url}}">Leggi l'intero articolo...</a></p>
+        <p class="mt-4"><a href="{{item.url | url}}">Leggi l'intero articolo...</a></p>
       </li>
       {%- endfor -%}
     </ul>

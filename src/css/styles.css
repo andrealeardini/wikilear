@@ -8,31 +8,62 @@
   }
 
   h1 {
-    @apply text-xl;
-    @apply md:text-2xl;
-    @apply lg:text-3xl;
-    @apply font-bold;
-    @apply mt-6;
-    @apply mb-4;
+    @apply text-xl text-gray-900 md:text-2xl lg:text-3xl font-bold mt-6 mb-4 dark:text-gray-300;
   }
 
   h2 {
-    @apply text-lg;
-    @apply md:text-xl;
-    @apply lg:text-2xl;
-    @apply font-semibold;
-    @apply mt-8;
-    @apply mb-2;
+    @apply text-lg text-gray-900 md:text-xl lg:text-2xl font-semibold mt-8 mb-2  dark:text-gray-300;
+  }
+
+  a {
+    @apply text-blue-600 hover:text-blue-800 dark:text-yellow-400 dark:hover:text-yellow-600;
   }
 
   p {
-    @apply pt-1;
-    @apply pb-2;
+    @apply mb-4 text-gray-900 dark:text-gray-300;
   }
 
+  strong {
+    @apply text-gray-900 dark:text-gray-300;
+  }
+
+  table {
+    @apply border-collapse w-full my-6 mx-auto;
+  }
+
+  th {
+    @apply bg-gray-200 dark:bg-gray-600;
+  }
+
+  td {
+    @apply self-center;
+    @apply p-1;
+  }
+
+  td.table-cell-icon16h {
+    @apply w-auto h-auto content-center self-center;
+    min-width: 32px;
+  }
+
+  td.table-cell-icon16h img {
+    @apply w-auto m-auto;
+    height: 16px;
+  }
+
+  td,
+  th {
+    @apply lg:border-b lg:border-solid;
+  }
+
+  blockquote,
+  .note {
+    @apply w-11/12 mt-1 mb-5 mx-auto p-6 bg-gray-50 dark:bg-gray-700;
+  }
+}
+
+@layer components {
   .markdown ul {
-    @apply list-disc;
-    @apply m-4;
+    @apply list-disc m-4 mb-8;
   }
 
   .markdown li {
@@ -44,13 +75,8 @@
   .markdown picture + strong,
   .markdown img + strong {
     width: 90%;
-    @apply mt-4;
-    @apply mb-8;
-    @apply mx-auto;
-    @apply font-light;
     display: inherit;
-    @apply text-center;
-    @apply text-sm md:text-base;
+    @apply mt-4 mb-4 mx-auto font-light text-center text-sm md:text-base;
   }
 
   /* impostazioni di base per rendere una tabella responsive.
@@ -58,9 +84,7 @@
   e le colonne si dispongono in base ai valori impostati per ogni colonna */
 
   .markdown table.responsive-table {
-    @apply w-full;
-    @apply mt-6;
-    @apply text-base;
+    @apply w-full mt-6 text-base;
   }
 
   .markdown table.responsive-table thead {
@@ -75,9 +99,7 @@
   }
 
   .markdown table.responsive-table tr {
-    @apply flex;
-    @apply flex-wrap;
-    @apply mb-6;
+    @apply flex flex-wrap mb-6;
   }
 
   .markdown table.responsive-table td.first-column {
@@ -112,8 +134,7 @@
   .markdown table.responsive-table td.second-column,
   .markdown table.responsive-table th,
   .markdown table.responsive-table td {
-    @apply lg:w-auto;
-    @apply lg:h-auto;
+    @apply lg:w-auto lg:h-auto;
   }
   .markdown table.responsive-table thead {
     @apply lg:table-header-group;
@@ -124,30 +145,19 @@
   .markdown table.responsive-table tr {
     @apply lg:table-row;
   }
+}
 
-  table {
-    @apply border-collapse;
-    @apply w-full;
-    @apply my-6;
-    @apply mx-auto;
+@layer utilities {
+  :root {
+    --image-filter: grayscale(50%);
   }
 
-  th {
-    @apply bg-gray-200;
-    @apply dark:bg-gray-600;
+  .dark img:not([src*=".svg"]) {
+    filter: var(--image-filter);
   }
 
-  td {
-    @apply self-center;
-    @apply p-1;
-  }
-
-  td.table-cell-icon16h {
-    @apply w-auto;
-    @apply h-auto;
-    min-width: 32px;
-    @apply content-center;
-    @apply self-center;
+  .dark img.invert {
+    filter: invert();
   }
 
   /* aspect ratio */

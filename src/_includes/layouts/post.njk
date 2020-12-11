@@ -4,7 +4,7 @@
 {% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
 {# Render post date#}
 {% set pageHeaderSummary %}
-  <p class="text-sm">
+  <p class="text-sm md:text-base">
     <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
   </p>
 {% endset %}
