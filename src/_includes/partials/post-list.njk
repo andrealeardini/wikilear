@@ -10,7 +10,7 @@
       {% for item in postListItems %}
       <li class="mt-4 p-4 shadow-lg border border-gray-300 rounded-lg">
         <a href="{{ item.url | url }}" class="font-semibold">{{ item.data.title }}</a>
-        <p class="text-sm xl:text-base font-semibold text-gray-700" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
+        <p class="text-sm xl:text-base font-semibold" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
         <p class="mt-0">{{ item.data.subtitle }}</p>
         {% if item.data.image %}
         <img
