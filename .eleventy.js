@@ -9,12 +9,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
   eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
 
-  let markdownIt = require("markdown-it");
-  let markdownItAttrs = require("markdown-it-attrs");
-  let options = {
+  const markdownIt = require("markdown-it");
+  const markdownItAttrs = require("markdown-it-attrs");
+  const markdownItAnchor = require("markdown-it-anchor");
+  const options = {
     html: true,
+    breaks: true,
+    linkify: true,
   };
-  let markdownLib = markdownIt(options).use(markdownItAttrs);
+  let markdownLib = markdownIt(options)
+    .use(markdownItAttrs)
+    .use(markdownItAnchor, {
+      permalink: true,
+      permalinkClass: "direct-link",
+      permalinkSymbol: "#",
+    });
   eleventyConfig.setLibrary("md", markdownLib);
 
   // Add filters

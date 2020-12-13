@@ -20,6 +20,20 @@
     @apply text-blue-700 hover:text-blue-900 dark:text-yellow-400 dark:hover:text-yellow-600;
   }
 
+  a[href].direct-link,
+  a[href].direct-link:visited {
+    @apply invisible;
+  }
+
+  :focus > a[href].direct-link,
+  :focus > a[href].direct-link:visited,
+  :hover > a[href].direct-link,
+  :hover > a[href].direct-link:visited,
+  a[href].direct-link:focus,
+  a[href].direct-link:focus:visited {
+    @apply text-blue-700 dark:text-yellow-400 font-bold visible;
+  }
+
   p {
     @apply mb-4;
   }
