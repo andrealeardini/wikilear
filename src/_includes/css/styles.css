@@ -596,6 +596,25 @@ a:hover {
   color: rgba(217, 119, 6, var(--tw-text-opacity));
 }
 
+a[href].direct-link, a[href].direct-link:visited {
+  visibility: hidden;
+}
+
+:focus > a[href].direct-link, :focus > a[href].direct-link:visited, :hover > a[href].direct-link, :hover > a[href].direct-link:visited, a[href].direct-link:focus, a[href].direct-link:focus:visited {
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.dark :focus > a[href].direct-link, .dark :focus > a[href].direct-link:visited, .dark :hover > a[href].direct-link, .dark :hover > a[href].direct-link:visited, .dark a[href].direct-link:focus, .dark a[href].direct-link:focus:visited {
+  --tw-text-opacity: 1;
+  color: rgba(251, 191, 36, var(--tw-text-opacity));
+}
+
+:focus > a[href].direct-link, :focus > a[href].direct-link:visited, :hover > a[href].direct-link, :hover > a[href].direct-link:visited, a[href].direct-link:focus, a[href].direct-link:focus:visited {
+  visibility: visible;
+}
+
 p {
   margin-bottom: 1rem;
 }
