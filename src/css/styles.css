@@ -58,7 +58,7 @@
 
   blockquote,
   .note {
-    @apply w-11/12 mt-1 mb-5 mx-auto p-6 bg-gray-50 dark:bg-gray-700;
+    @apply w-11/12 mt-1 mb-5 mx-auto p-6 border-l-8 border-yellow-600 bg-gray-200 dark:bg-gray-700;
   }
 }
 
