@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // gestisco il pulsante del menu
   let body = document.getElementsByTagName("body")[0];
   let inert = document.getElementById("inert");
-  let pulsante = document.getElementById("pulsante");
+  let menuBtn = document.getElementById("menuBtn");
   let menu = document.getElementById("menu");
   let panel = document.getElementById("panel");
   let close = document.getElementById("close");
   let isOpen = false;
-  pulsante.addEventListener("click", () => {
+  menuBtn.addEventListener("click", () => {
     if (!isOpen) {
       showMenu();
       inert.addEventListener(
