@@ -27,24 +27,28 @@
     max-age=300'''
 
   for ="/img/*"
+  [headers.values]
     cache-control = '''
     public
     max-age=31536000
     immutable'''
 
   for = "/js/*"
+  [headers.values]
     cache-control = '''
     public
     max-age=31536000
     immutable'''
 
   for = "/fonts/*"
+  [headers.values]
     cache-control = '''
     public
     max-age=31536000
     immutable'''
 
   for = "/favicon.svg"
+  [headers.values]
     cache-control = '''
     public
     max-age=3600'''
