@@ -2,10 +2,6 @@ module.exports = {
   darkMode: "class",
   purge: {
     content: ["./src/**/*.md", "./src/**/*.njk", "./src/**/*.js"],
-    // direc-link class is added by markdown-anchor (eleventy) after purge process
-    options: {
-      safelist: ["direct-link"],
-    },
   },
   theme: {
     extend: {
