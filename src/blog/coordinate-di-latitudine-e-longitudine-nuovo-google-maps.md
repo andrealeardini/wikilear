@@ -33,13 +33,17 @@ Puoi utilizzare uno dei seguenti formati:
 
 Per trovare le coordinate di un qualsiasi punto sulla mappa che **non sia un segnaposto o un indicatore** (attività commerciale, punto di interesse, ecc.) devi fare clic nella posizione desiderata. Sotto la casella di ricerca, apparirà una scheda informativa con le coordinate.
 
-![Esempio di come si ricavano le coordinate di un punto su una mappa](/images/google-maps-trovare-latitudine-con-un-clic.gif "Fai clic su un punto della mappa per ricavarne le coordinate")
-**Posiziona il mouse sulle coordinate che hai ricavato per avere la conferma che si riferiscono al punto desiderato.**
+<video autoplay loop>
+  <source src="/images/google-maps-trovare-latitudine-con-un-clic.mp4">
+</video>
+<strong>Posiziona il mouse sulle coordinate che hai ricavato per avere la conferma che si riferiscono al punto desiderato</strong>
 
 Se invece vuoi conoscere latitudine e longitudine di un **punto di interesse** visualizzato sulla mappa devi fare clic sull'indicatore del luogo con il **pulsante destro** del mouse e scegliere **Cosa c'è qui** per mostrare la scheda informativa con le coordinate.
 
-![Ricavare latitudine e longitudine usando il comando Cosa c'è qui](/images/google-maps-trovare-latitudine-con-cosa-ce-qui.gif "Fai clic con il pulsante destro del mouse sul luogo desiderato e scegli il comando Cosa c'è qui?")
-**Puoi usare questo metodo con qualsiasi luogo visualizzato sulla mappa**
+<video autoplay loop>
+  <source src="/images/google-maps-trovare-latitudine-con-cosa-ce-qui.mp4">
+</video>
+<strong>Puoi usare questo metodo con qualsiasi luogo visualizzato sulla mappa</strong>
 
 Ora che sai come utilizzare le coordinate di latitudine e longitudine potrai usare Google Maps per trovare e condividere qualsiasi punto o zona della mappa, anche quelle più remote! Se l'articolo ti è stato utile non dimenticare di condividerlo con i tuoi amici!
 

@@ -30,8 +30,7 @@ Usa la crittografia al posto dei codici di verifica e funziona automaticamente s
 - Non richiede connessione al tuo operatore telefonico e quindi puoi usarlo in zone dove la ricezione del segnale è scarsa o assente
 - È facilmente trasportabile, puoi agganciarlo ad un mazzo di chiavi o metterlo nel taschino del portafoglio
 
-![Token di sicurezza agganciato ad un portachiavi](/images/token-di-sicurezza-portachiavi.jpg){.width-80x}
-**Il token di sicurezza può essere agganciato a qualsiasi portachiavi**
+![Token di sicurezza agganciato ad un portachiavi](/images/token-di-sicurezza-portachiavi.jpg){.width-80x} **Il token di sicurezza può essere agganciato a qualsiasi portachiavi**
 
 ## Requisiti per utilizzare il token di sicurezza
 

@@ -20,37 +20,43 @@ Inbox estende il concetto di categorie introdotto in Gmail lo scorso anno. Puoi 
 
 Oltre alle etichette predefinite puoi creare etichette personalizzate e scegliere quando vederle nella posta in arrivo. E se non vuoi che le email vengano raggruppate, puoi disattivare il raggruppamento per tutte o solo per alcune etichette.
 
-![Google Inbox by Gmail - Gruppi](/images/google-inbox-by-gmail-gruppi.gif)
-**Usa i gruppi predefiniti o creane di nuovi per organizzare i messaggi in arrivo**
+<video autoplay loop>
+  <source src="/images/google-inbox-by-gmail-gruppi.mp4">
+</video>
+<strong>Usa i gruppi predefiniti o creane di nuovi per organizzare i messaggi in arrivo</strong>
 
 ## In evidenza: le informazioni importanti sempre a portata di mano
 
 Se il messsaggio che ricevi contiene foto, informazioni su eventi, voli, acquisti, ecc. viene messo in evidenza nella posta in arrivo. Alcune informazioni in evidenza si aggiornano in tempo reale, ad esempio puoi verificare lo stato della spedizione di un pacco o consultare l'orario aggiornato di un volo che hai acquistato.
 
-![Inbox by Gmail - Elementi in evidenza](/images/google-inbox-by-gmail-elementi-in-evidenza.gif)
-**Gli elementi in evidenza rimangono sempre in primo piano**
+<video autoplay loop>
+  <source src="/images/google-inbox-by-gmail-elementi-in-evidenza.mp4">
+</video>
+<strong>Gli elementi in evidenza rimangono sempre in primo piano</strong>
 
 ## Promemoria, suggerimenti, e posticipa: gestisci le tue attività al meglio
 
 Puoi tenere traccia di tutte le cose da fare aggiungendo dei promemoria personali che compariranno direttamente nella tua posta in arrivo. Quando crei un promemoria, Inbox aggiunge automaticamente alcune informazioni pertinenti come numeri di telefono e link per aiutarti a completare la tua attività in modo più produttivo.
 
-![Inbox by Gmail - Promemoria e suggerimenti](/images/google-inbox-by-gmail-aggiungi-promemoria.gif "Non dimenticare un'attività importante. Imposta un promemoria per leggere in seguito il messaggio")
-**Puoi aggiungere un promemoria per non dimenticare le cose importanti**
+<video autoplay loop>
+  <source src="/images/google-inbox-by-gmail-aggiungi-promemoria.mp4">
+</video>
+<strong>Puoi aggiungere un promemoria per non dimenticare le cose importanti</strong>
 
 > Le informazioni pertinenti sono prese da fonti disponibili pubblicamente, come i risultati di ricerca di Google sul Web o i video di YouTube. Possono essere inclusi anche dettagli aggiuntivi in base alle informazioni associate al tuo account Google.
 
 Puoi decidere di posticipare l'elemento a un determinato orario o di visualizzare l'email quando ti trovi in un luogo specifico, ad esempio a casa, al luogo di lavoro o al supermercato. I promemoria creati in Inbox by Gmail saranno visibili anche su **Google Now** e viceversa.
 
-![Inbox by Gmail - Posticipare un promemoria](/images/google-inbox-by-gmail-posticipa-messaggi-e-promemoria.gif "I promemoria possono essere rimandati in base al tempo o scegliendo un luogo")
-**Puoi rimandare un promemoria con la funzione Posticipa**
+<video autoplay loop>
+  <source src="/images/google-inbox-by-gmail-posticipa-messaggi-e-promemoria.mp4">
+</video>
+<strong>Puoi rimandare un promemoria con la funzione Posticipa</strong>
 
 In questo video in cui puoi vedere Inbox by Gmail all'opera su un dispositivo mobile.
 
 <div style="--aspect-ratio:16/9;">
-<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/bzNTjpUMOp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen rel="nopener noreferrer"></iframe>
+<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/bzNTjpUMOp4" frameborder="0" allowfullscreen rel="nopener noreferrer"></iframe>
 </div>
-
-
 
 ## Come avere Inbox
 
