@@ -7,17 +7,17 @@
     {
       "text": "Documenti Google",
       "url": "/tag/documenti-google/",
-      "image": "/images/docs_48dp.png"
+      "image": "/images/docs_48dp.webp"
     },
     {
       "text": "Fogli Google",
       "url": "/tag/fogli-google/",
-      "image": "/images/sheets_48dp.png"
+      "image": "/images/sheets_48dp.webp"
     },
     {
       "text": "Google Apps Script",
       "url": "/tag/google-apps-script/",
-      "image": "/images/apps_script_48dp.png"
+      "image": "/images/apps_script_48dp.webp"
     }
   ]
 }

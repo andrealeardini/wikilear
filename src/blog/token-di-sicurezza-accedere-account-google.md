@@ -11,7 +11,7 @@ topics:
 title: Token di sicurezza per accedere all'account Google
 description: Quando e come usare il token di sicurezza per accedere al tuo account Google
 subtitle: Google aggiunge la possibilità di utilizzare un token di sicurezza per accedere all'account
-image: /images/google-chrome-token-di-sicurezza-verifica-a-due-passaggi.png
+image: /images/google-chrome-token-di-sicurezza-verifica-a-due-passaggi.webp
 image-title:
 image-descrition: Token di sicurezza - verifica in due passaggi con Google Chrome
 old-url: /2014/10/token-di-sicurezza-accedere-account-google.html
@@ -41,7 +41,7 @@ Un aspetto da tenere in considerazione è che il token di sicurezza funziona sol
 ## Dove posso comprare il token di sicurezza?
 
 <div class="clearfix">
-<img alt='Logo FIDO U2F' src='/images/marchio-FIDO-U2F-token-di-sicurezza.png' class='img-responsive-30x-start'>
+<img alt='Logo FIDO U2F' src='/images/marchio-FIDO-U2F-token-di-sicurezza.webp' class='img-responsive-30x-start'>
 <p>Come token di sicurezza puoi utilizzare qualsiasi dispositivo che sia conforme allo standard aperto (open standard) "FIDO Universal 2nd Factor (U2F)". Se non lo trovi nel tuo negozio di fiducia puoi sempre <a href='http://www.amazon.it/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=FIDO%20U2F%20Security%20Key' rel='noopener noreferrer' >comprarlo da Amazon</a> o altri vendor online.</p>
 </div>
 

@@ -63,7 +63,7 @@ async function getDataURI(src) {
     .png()
     .toBuffer();
   const result = {
-    src: parser.format(".png", buffer).content,
+    src: parser.format(".webp", buffer).content,
     width: info.width,
     height: info.height,
   };
