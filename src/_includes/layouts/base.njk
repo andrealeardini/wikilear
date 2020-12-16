@@ -11,14 +11,11 @@
       if (
         theme === "dark"
       ) {
-        console.log("dark mode");
         document.querySelector("html").classList.add("dark");
       } else if (theme === "light") {
-        console.log("light mode");
         document.querySelector("html").classList.remove("dark");
       } else if (theme === "system" ||
         !theme) {
-            console.log("system mode");
             localStorage.setItem('theme', 'system');
             if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
               document.querySelector("html").classList.add("dark");
@@ -27,7 +24,7 @@
     </script>
     {% if environment.NODE_ENV=="production" %}
     <!-- capture the CSS content as a Nunjucks variable -->
-    {% set css %} {% include "css/styles.css" %} {% endset %}
+    {% set css %} {% include "../../../dist/css/styles.css" %} {% endset %}
     <!-- feed it through our cssmin filter to minify -->
     <style>
       {{ css | cssmin | safe }}

@@ -10,7 +10,7 @@
     "eleventy-watch": "NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy --serve",
     "js-watch": "npx rollup -c -w",
     "js-build": "NODE_ENV=production npx rollup -c",
-    "css-build": "NODE_ENV=production npx tailwindcss build src/css/styles.css -o src/_includes/css/styles.css",
+    "css-build": "NODE_ENV=production npm run tailwindcss",
     "css-watch": "watch \"npm run tailwindcss\" \"src/css\"",
     "tailwindcss": "npx tailwindcss build src/css/styles.css -o dist/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
