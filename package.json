@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run clean && npm run css-watch & npm run js-watch & npm run eleventy-watch",
     "build": "npm run clean && npm run eleventy && npm run css-build && npm run js-build",
-    "clean": "find ./dist -mindepth 1 ! -regex '^./dist/images\\(/.*\\)?' -delete || echo dist not found",
+    "clean": "set -e && find ./dist -mindepth 1 ! -regex '^./dist/images\\(/.*\\)?' -delete || echo dist not found",
     "eleventy": "NODE_ICU_DATA='./node_modules/full-icu' NODE_ENV=production npx @11ty/eleventy",
     "eleventy-watch": "NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy --serve",
     "js-watch": "npx rollup -c -w",
