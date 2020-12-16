@@ -34,3 +34,15 @@ document.body.addEventListener(
   },
   /* capture */ "true"
 );
+
+document.addEventListener(
+  "DOMContentLoaded",
+  (e) => {
+    if (e.target.tagName != "IMG") {
+      return;
+    }
+    // Ensure the browser doesn't try to draw the placeholder when the real image is present.
+    e.target.style.backgroundImage = "none";
+  },
+  /* capture */ "true"
+);
