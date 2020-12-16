@@ -97,7 +97,8 @@
   /* image and video captions */
   .markdown video + strong,
   .markdown picture + strong,
-  .markdown img + strong {
+  .markdown img + strong,
+  .caption {
     width: 90%;
     display: inherit;
     @apply mt-4 mb-4 mx-auto font-light text-center text-sm md:text-base;
