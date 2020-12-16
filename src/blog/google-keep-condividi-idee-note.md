@@ -17,13 +17,27 @@ Google Keep riceve due aggiornamenti nel giro di pochi giorni. Oltre al nuovo st
 
 Grazie alla nuova funzione per condividere le note puoi creare una lista della spesa e condividerla con altri familiari per completarla o suddividere gli acquisti. Oppure puoi prendere nota al volo di un'idea interessante e condividerla con i tuoi colleghi per sentire la loro opinione.
 
-![Elenchi e note condivisi su Google Keep](/images/google-keep-condivisione-note.webp "Condividi note ed elenchi con amici e parenti"){.width-80x}
+<div class="flex justify-between h-2/5 w-auto">
 
-![Elenco della spesa condiviso con Google Keep](/images/google-keep-condivisione-elenco-spesa.webp "Elenco della spesa condiviso con altri utenti"){.width-80x} **Puoi condividere le note con altri utenti e visualizzare le modifiche in tempo reale**
+![Elenchi e note condivisi su Google Keep](/images/google-keep-condivisione-note.webp "Condividi note ed elenchi con amici e parenti")
+
+![Elenco della spesa condiviso con Google Keep](/images/google-keep-condivisione-elenco-spesa.webp "Elenco della spesa condiviso con altri utenti")
+
+</div>
+
+**Puoi condividere le note con altri utenti e visualizzare le modifiche in tempo reale**{.caption}
 
 Prendere un appunto al volo è utile, ma a cosa servirebbe avere tante note se poi non riesci a trovare quello che stai cercando? Google Keep non solo ti permette di creare note (sia di testo che vocali), ma ti offre una versatile funzione di ricerca. Puoi cercare una nota in base al testo che contiene, oppure puoi filtrare tutti gli elenchi, le note vocali o che contengono immagini, quelle che sono state **condivise con altri** o i promemoria. E se assegni un **colore specifico** alla nota puoi ricercarla in un secondo tempo insieme a tutte quelle della stessa categoria (cioè dello stesso colore).
 
-![Ricerca di una nota in base al colore in Google Keep](/images/google-keep-ricerca-note-per-colore.webp "Assegna colori diversi alle note per suddividerle in categorie"){.width-80x} **Puoi cercare una nota in base al suo colore**
+<div class="flex justify-center h-2/5 w-auto">
+<div class="basis">
+
+![Ricerca di una nota in base al colore in Google Keep](/images/google-keep-ricerca-note-per-colore.webp "Assegna colori diversi alle note per suddividerle in categorie")
+
+</div>
+</div>
+
+ **Puoi cercare una nota in base al suo colore**{.caption}
 
 Le nuove funzioni di Google Keep sono già utilizzabili nella versione desktop (tramite [web](https://keep.google.com/){rel="noopener noreferrer" target="_blank"} o con l'apposita [app per Chrome](https://chrome.google.com/webstore/detail/google-keep/hmjkmjkepdijhoojdojkdfohbdgmmhki?hl=it){rel="noopener noreferrer" target="_blank"}).
 
