@@ -52,10 +52,10 @@ Puoi decidere di posticipare l'elemento a un determinato orario o di visualizzar
 </video>
 <strong>Puoi rimandare un promemoria con la funzione Posticipa</strong>
 
-In questo video in cui puoi vedere Inbox by Gmail all'opera su un dispositivo mobile.
+In questo video puoi vedere Inbox by Gmail all'opera su un dispositivo mobile.
 
 <div style="--aspect-ratio:16/9;">
-<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/bzNTjpUMOp4" frameborder="0" allowfullscreen rel="nopener noreferrer"></iframe>
+<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/bzNTjpUMOp4" frameborder="0" allowfullscreen rel="nopener noreferrer" title="The Inbox that works for you"></iframe>
 </div>
 
 ## Come avere Inbox
