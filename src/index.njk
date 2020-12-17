@@ -3,23 +3,27 @@ eleventyNavigation:
   key: Home
 layout: layouts/page.njk
 title: Wikilear, tutorial e codelab
----
-
-<p>Benvenuto sul nuovo Wikilear!</p>
-
-<p>
-  Wikilear si rinnova e diventa un sito. Un nuovo formato, nuovi contenuti e
+description: Wikilear si rinnova e diventa un sito. Un nuovo formato, nuovi contenuti e
   tutorial ma la stessa semplicità e praticità che ha contraddistinto il blog
   fin dalla sua nascita.
-</p>
+---
+
+<div>
+  <img src="/images/home.webp" alt="Concetto di apprendimento online" class="rounded-lg shadow-lg">
+</div>
+
+<h2>Benvenuto sul nuovo Wikilear!</h2>
+
+<p>{{description}}</p>
+<p>Leggi uno degli ultimi articoli pubblicati sul sito o consulta una delle <a href="#sections">sezioni tematiche</a> </p>
 
 {% set postListItems = collections.feed.slice(0,3) %}
 <div class="px-1 py-2 md:p-4">
   {% include "partials/post-list.njk" %}
 </div>
-
+<a id="sections"></a>
 {% include 'components/card.njk' %}
 
 <p>
-  Wikilear è stato compilato con Eleventy e TailwindCSS,  ed è ospitato su Netflix. Trovi il codice sorgente su GitHub.
+  Wikilear è stato creato con Eleventy e TailwindCSS, ed è ospitato su Netflix. Trovi il codice sorgente su GitHub.
 </p>
