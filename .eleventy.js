@@ -1,4 +1,51 @@
+/**
+ * Copyright (c) 2020 Andrea Leardini
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of
+ * this software and associated documentation files (the "Software"), to deal in
+ * the Software without restriction, including without limitation the rights to
+ * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ * the Software, and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+/**
+ * Copyright (c) 2020 Google Inc
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of
+ * this software and associated documentation files (the "Software"), to deal in
+ * the Software without restriction, including without limitation the rights to
+ * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ * the Software, and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
 const CleanCSS = require("clean-css");
+const { DateTime } = require("luxon");
+const fs = require("fs");
+const { promisify } = require("util");
+const stat = promisify(fs.stat);
+const execFile = promisify(require("child_process").execFile);
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
@@ -39,6 +86,53 @@ module.exports = function (eleventyConfig) {
   );
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
+  });
+
+  // https://github.com/google/eleventy-high-performance-blog/blob/624aaa9ede9df609e2d4656f23d819621f5cb464/.eleventy.js#L94
+
+  async function lastModifiedDate(filename) {
+    try {
+      const { stdout } = await execFile("git", [
+        "log",
+        "-1",
+        "--format=%cd",
+        filename,
+      ]);
+      return new Date(stdout);
+    } catch (e) {
+      console.error(e.message);
+      // Fallback to stat if git isn't working.
+      const stats = await stat(filename);
+      return stats.mtime; // Date
+    }
+  }
+  // Cache the lastModifiedDate call because shelling out to git is expensive.
+  // This means the lastModifiedDate will never change per single eleventy invocation.
+  const lastModifiedDateCache = new Map();
+  eleventyConfig.addNunjucksAsyncFilter(
+    "lastModifiedDate",
+    function (filename, callback) {
+      const call = (result) => {
+        result.then((date) => callback(null, date));
+        result.catch((error) => callback(error));
+      };
+      const cached = lastModifiedDateCache.get(filename);
+      if (cached) {
+        return call(cached);
+      }
+      const promise = lastModifiedDate(filename);
+      lastModifiedDateCache.set(filename, promise);
+      call(promise);
+    }
+  );
+
+  // https://github.com/google/eleventy-high-performance-blog/blob/624aaa9ede9df609e2d4656f23d819621f5cb464/.eleventy.js#L149
+  eleventyConfig.addFilter("sitemapDateTimeString", (dateObj) => {
+    const dt = DateTime.fromJSDate(dateObj, { zone: "utc" });
+    if (!dt.isValid) {
+      return "";
+    }
+    return dt.toISO();
   });
 
   // Returns a collection of blog posts in reverse date order

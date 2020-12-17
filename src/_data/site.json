@@ -1,8 +1,22 @@
 {
   "name": "Wikilear",
-  "url": "https://www.wikilear.it",
-  "authorName": "Andrea Leardini",
-  "authorEmail": "andrea@wikilear.it",
+  "url": "http://test.wikilear.it",
+  "title": "Wikilear, codelab e tutorial",
+  "author": {
+    "name": "Andrea Leardini",
+    "email": "andrea@wikilear.it",
+    "twitter": "andrealeard"
+  },
+  "feed": {
+    "subtitle": "Gli ultimi articoli, tutorial e codelab da Wikilear",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://www.wikilear.it"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://www.wikilear.it/feed/feed.json"
+  },
   "topics": [
     {
       "text": "Documenti Google",
