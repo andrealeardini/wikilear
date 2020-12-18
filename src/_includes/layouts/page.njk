@@ -1,7 +1,7 @@
 {% extends "layouts/base.njk" %}
 {% block content %}
    <article class="{{ style }} mx-auto">
-    <h1>{{title}}</h1>
+    {%if not hide_title %}<h1>{{title}}</h1>{%endif %}
     {{ content | safe }}
   </article>
 {% endblock %}
