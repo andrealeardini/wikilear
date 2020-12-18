@@ -27,10 +27,10 @@ Anche se sono stati fatti passi da gigante da questo punto di vista, ci sono anc
 
 Per aprire un file da Drive con un'applicazione compatibile installata sul computer devi avere il nuovo Google Drive e la versione più recente della cartella Google Drive sul tuo Mac o PC.
 
-1 Apri Drive alla pagina [drive.google.com](drive.google.com){rel="noopener noreferrer" target="_blank"}
-2 Fai clic con il pulsante destro del mouse sul file che vuoi aprire nell'applicazione desktop
-3 Passa con il mouse su **Apri con**
-4 Scegli un'applicazione tra quelle elencate per aprire il file
+1. Apri Drive alla pagina [drive.google.com](drive.google.com){rel="noopener noreferrer" target="_blank"}
+2. Fai clic con il pulsante destro del mouse sul file che vuoi aprire nell'applicazione desktop
+3. Passa con il mouse su **Apri con**
+4. Scegli un'applicazione tra quelle elencate per aprire il file
 
 > Questa estensione è in fase di rollout e sarà disponibile per tutti gli utenti nei prossimi giorni. Se hai la versione beta di Chrome potresti averla ricevuta già da qualche giorno.
 

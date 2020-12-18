@@ -90,6 +90,10 @@
     @apply list-disc m-4 mb-8;
   }
 
+  .markdown ol {
+    @apply list-decimal m-4 mb-8;
+  }
+
   .markdown li {
     @apply m-3;
   }
