@@ -17,7 +17,7 @@ image-title:
 image-descrition: Logo Gmail contro Logo Inbox, al centro robottino Android
 old-url: /2014/11/gmail-per-android-vs-inbox-android.html
 ---
-Con l'ultimo aggiornamento **Gmail per Android** ha fatto davvero un salto di qualità, merito del Material Design che ha snellito la UI ([user interface](http://it.wikipedia.org/wiki/Interfaccia_utente){rel="nopener noreferrer"}) rendendola più moderna e facile da usare. Inoltre sono state introdotte alcune interessanti novità tra cui la possibilità di aggiungere account non Gmail. Considerato che di recente Google ha presentato anche [Inbox by Gmail](http://www.wikilear.it/2014/10/google-inbox-by-gmail.html){rel="nopener noreferrer"}, il confronto tra le due applicazioni di posta viene quasi spontaneo.
+Con l'ultimo aggiornamento **Gmail per Android** ha fatto davvero un salto di qualità, merito del Material Design che ha snellito la UI ([user interface](https://it.wikipedia.org/wiki/Interfaccia_utente){rel="nopener noreferrer"}) rendendola più moderna e facile da usare. Inoltre sono state introdotte alcune interessanti novità tra cui la possibilità di aggiungere account non Gmail. Considerato che di recente Google ha presentato anche [Inbox by Gmail](https://www.wikilear.it/2014/10/google-inbox-by-gmail.html){rel="nopener noreferrer"}, il confronto tra le due applicazioni di posta viene quasi spontaneo.
 
 Per prima cosa, se non lo hai già fatto ti consiglio di guardare i due video di presentazioni di Gmail per Android e di Inbox by Gmail.
 
@@ -164,7 +164,7 @@ Le azioni possibili solo in Gmail per Android sono:
 - accedere ad account su **Exchange server** (disponibile per dispositivi con Android 5.0 o versioni successive)
 - cambiare l'etichetta a un messaggio assegnando **etichette multiple**
 - contrassegnare un messaggio come **importante** (o declassarlo come non importante)
-- contrassegnare un messaggio come [phishing](http://it.wikipedia.org/wiki/Phishing){rel="noopener noreferrer" target="_blank"}
+- contrassegnare un messaggio come [phishing](https://it.wikipedia.org/wiki/Phishing){rel="noopener noreferrer" target="_blank"}
 - gestire account multipli di **qualsiasi provider (Outlook, Yahoo, ecc.)**
 - inserire file da **Google Drive**
 - inviare messaggi con allegati di dimensione superiore a **25 MB**

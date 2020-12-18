@@ -40,6 +40,6 @@ Un aspetto da tenere in considerazione è che il token di sicurezza funziona sol
 ## Dove posso comprare il token di sicurezza?
 ![Logo FIDO U2F](/images/marchio-FIDO-U2F-token-di-sicurezza.webp)
 
-Come token di sicurezza puoi utilizzare qualsiasi dispositivo che sia conforme allo standard aperto (open standard) "FIDO Universal 2nd Factor (U2F)". Se non lo trovi nel tuo negozio di fiducia puoi [cercarlo su Amazon](http://www.amazon.it/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=FIDO%20U2F%20Security%20Key){rel='noopener noreferrer' target="_blank"} o altri vendor online.
+Come token di sicurezza puoi utilizzare qualsiasi dispositivo che sia conforme allo standard aperto (open standard) "FIDO Universal 2nd Factor (U2F)". Se non lo trovi nel tuo negozio di fiducia puoi [cercarlo su Amazon](https://www.amazon.it/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=FIDO%20U2F%20Security%20Key){rel='noopener noreferrer' target="_blank"} o altri vendor online.
 
-_Fonti:_ [Google Online Security Blog,](http://googleonlinesecurity.blogspot.it/2014/10/strengthening-2-step-verification-with.html){rel="noopener noreferrer" target="_blank"} [Guida di Google Account](https://support.google.com/accounts/answer/6103523){rel="noopener noreferrer" target="_blank"}
+_Fonti:_ [Google Online Security Blog,](https://googleonlinesecurity.blogspot.it/2014/10/strengthening-2-step-verification-with.html){rel="noopener noreferrer" target="_blank"} [Guida di Google Account](https://support.google.com/accounts/answer/6103523){rel="noopener noreferrer" target="_blank"}

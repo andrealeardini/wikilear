@@ -23,4 +23,4 @@ Se hai installato [l'app di Uber](https://play.google.com/store/apps/details?id=
 
 Ti piace il nuovo Google Maps per Android e iPhone? Appena avrai modo di provarlo di persona condividi le tue impressioni con i tuoi amici.
 
-_Fonti:_ [Google Maps Blog](http://google-latlong.blogspot.ie/2014/11/google-maps-your-best-accessory-this.html){rel="nopener norefferer"}, [Blog di Google Italia](http://googleitalia.blogspot.it/2014/11/nuovo-look-per-le-app-di-gmail-calendar.html){rel="nopener norefferer"}
+_Fonti:_ [Google Maps Blog](https://google-latlong.blogspot.ie/2014/11/google-maps-your-best-accessory-this.html){rel="nopener norefferer"}, [Blog di Google Italia](https://googleitalia.blogspot.it/2014/11/nuovo-look-per-le-app-di-gmail-calendar.html){rel="nopener norefferer"}

@@ -34,4 +34,4 @@ Per aprire un file da Drive con un'applicazione compatibile installata sul compu
 
 > Questa estensione è in fase di rollout e sarà disponibile per tutti gli utenti nei prossimi giorni. Se hai la versione beta di Chrome potresti averla ricevuta già da qualche giorno.
 
-_Fonti:_ [Google Drive Blog,](http://googledrive.blogspot.it/2014/11/launch-desktop-applications-from-google.html){rel="noopener noreferrer" target="_blank"} [Guida di Drive](https://support.google.com/drive/answer/2423485?hl=it#webapps){rel="noopener noreferrer" target="_blank"}.
+_Fonti:_ [Google Drive Blog,](https://googledrive.blogspot.it/2014/11/launch-desktop-applications-from-google.html){rel="noopener noreferrer" target="_blank"} [Guida di Drive](https://support.google.com/drive/answer/2423485?hl=it#webapps){rel="noopener noreferrer" target="_blank"}.

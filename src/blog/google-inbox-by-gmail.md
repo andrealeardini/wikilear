@@ -12,7 +12,7 @@ image-title:
 image-descrition: Google Inbox by Gmail aperta su dispositivi IPhone, Android e computer
 old-url: /2014/10/google-inbox-by-gmail.html
 ---
-Google ha presentato **Inbox by Gmail.** Nell'[annuncio ufficiale](http://googleitalia.blogspot.it/2014/10/linbox-che-lavora-per-te.html){rel='noopener noreferrer} Google ha dato enfasi che non si tratta di una nuova versione di Gmail ma di un prodotto completamente nuovo. Diamo uno sguardo alle caratteristiche principali di Inbox.
+Google ha presentato **Inbox by Gmail.** Nell'[annuncio ufficiale](https://googleitalia.blogspot.it/2014/10/linbox-che-lavora-per-te.html){rel='noopener noreferrer} Google ha dato enfasi che non si tratta di una nuova versione di Gmail ma di un prodotto completamente nuovo. Diamo uno sguardo alle caratteristiche principali di Inbox.
 
 ## Raggruppa: organizza i tuoi messaggi con le etichette
 
@@ -70,5 +70,5 @@ Inbox by Gmail è un prodotto giovane. Mancano alcune funzionalità di Gmail ma 
 
 Bene ora non ti rimane che richiedere un invito. Cosa ti piace di più di Inbox by Gmail? Non dimenticare di condividere questo post con le persone a cui ritieni che possa interessare.
 
-_Fonti:_ [Official Gmail Blog,](http://googleitalia.blogspot.it/2014/10/linbox-che-lavora-per-te.html){rel="noopener noreferrer" target="_blank"} Guida di Inbox by Gmail, [sito di Inbox by Gmail](https://www.google.com/intl/it/inbox/){rel="noopener noreferrer" target="_blank"}
+_Fonti:_ [Official Gmail Blog,](https://googleitalia.blogspot.it/2014/10/linbox-che-lavora-per-te.html){rel="noopener noreferrer" target="_blank"} Guida di Inbox by Gmail, [sito di Inbox by Gmail](https://www.google.com/intl/it/inbox/){rel="noopener noreferrer" target="_blank"}
 <br />_Foto credit:_ Google
