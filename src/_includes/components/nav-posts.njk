@@ -1,6 +1,7 @@
 <!-- https://www.11ty.dev/docs/filters/collection-items/ -->
-{% set previousPost = collections.blog | getPreviousCollectionItem(page) %}
-{% set nextPost = collections.blog | getNextCollectionItem(page) %}
+{%if not collection %}{% set collection = collections.blog %}
+{% set previousPost = collection | getPreviousCollectionItem(page) %}
+{% set nextPost = collection | getNextCollectionItem(page) %}
   <footer>
     <nav class="my-10 bg-gray-100 dark:bg-gray-600 py-1 px-2 md:px-3 rounded-lg" aria-label="Link agli articoli">
       <ol class="w-full mt-2 flex justify-between font-bold text-5xl ">
