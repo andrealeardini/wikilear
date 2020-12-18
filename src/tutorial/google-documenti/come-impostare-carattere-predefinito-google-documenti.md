@@ -6,8 +6,8 @@ topics: Documenti Google
 description:
 subtitle:
 image:
-image-title:
-image-descrition:
+image_title:
+image_descrition:
 date: 2011-06-18
 update: 2020-06-20
 main: Documenti Google

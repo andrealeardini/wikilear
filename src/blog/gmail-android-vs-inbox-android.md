@@ -13,9 +13,9 @@ title: Gmail Vs Inbox, quale dovresti usare sul tuo dispositivo Android?
 description: Un confronto dettagliato tra Gmail per Android e Inbox by Gmail per individuare quale è l'app più indicata per le tue necessità.
 subtitle: Gmail per Android o Inbox by Gmail? Due prodotti apparentemente simili ma concepiti per usi diversi. Scopriamo insieme pregi e difetti di entrambi confrontando le caratteristiche principali delle due applicazioni per Android.
 image: /images/gmail-vs-inbox.webp
-image-title:
-image-descrition: Logo Gmail contro Logo Inbox, al centro robottino Android
-old-url: /2014/11/gmail-per-android-vs-inbox-android.html
+image_title:
+image_descrition: Logo Gmail contro Logo Inbox, al centro robottino Android
+old_url: /2014/11/gmail-per-android-vs-inbox-android.html
 ---
 Con l'ultimo aggiornamento **Gmail per Android** ha fatto davvero un salto di qualità, merito del Material Design che ha snellito la UI ([user interface](https://it.wikipedia.org/wiki/Interfaccia_utente){rel="nopener noreferrer"}) rendendola più moderna e facile da usare. Inoltre sono state introdotte alcune interessanti novità tra cui la possibilità di aggiungere account non Gmail. Considerato che di recente Google ha presentato anche [Inbox by Gmail](https://www.wikilear.it/2014/10/google-inbox-by-gmail.html){rel="nopener noreferrer"}, il confronto tra le due applicazioni di posta viene quasi spontaneo.
 

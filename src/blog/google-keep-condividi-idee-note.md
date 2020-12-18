@@ -8,10 +8,12 @@ topics: Google Keep
 title: Google Keep, condividi idee e note con amici e familiari
 description: Con gli ultimi aggiornamenti Google Keep veste il Material Design e si arricchisce di importanti funzioni tra cui la condivisione delle note, la modifica real-time e la ricerca tramite colore.
 subtitle: Con gli ultimi aggiornamenti Google Keep veste il Material Design e si arricchisce di importanti funzioni tra cui la condivisione delle note, la modifica real-time e la ricerca tramite colore.
+snippet_image: /images/google-keep-web.webp
+snippet_description: Google Keep versione web
 image:
-image-title:
-image-descrition:
-old-url: /2014/11/google-keep-condividi-idee-e-note.html
+image_title:
+image_descrition:
+old_url: /2014/11/google-keep-condividi-idee-e-note.html
 ---
 Google Keep riceve due aggiornamenti nel giro di pochi giorni. Oltre al nuovo stile **Material Design,** Keep si arricchisce di importanti funzioni come la **condivisione delle note,**   la **modifica in real-time** con alti utenti e la **ricerca delle note tramite colore.**
 

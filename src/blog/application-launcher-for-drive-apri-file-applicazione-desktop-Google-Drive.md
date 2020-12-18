@@ -9,9 +9,9 @@ title: Application Launcher for Drive, apri un file in un'applicazione desktop d
 description: Come aprire un file da Google Drive in un'applicazione desktop.
 subtitle: Grazie ad Application Launcher for Drive ora puoi aprire i file archiviati in Drive direttamente dal browser in un'applicazione compatibile installata sul tuo computer.
 image: /images/chrome-application-launcher-for-drive.webp
-image-title:
-image-descrition: Application Launcher for Drive
-old-url: /2014/11/google-ricerca-guida-alluso-della.html
+image_title:
+image_descrition: Application Launcher for Drive
+old_url: /2014/11/google-ricerca-guida-alluso-della.html
 ---
 
 I moderni browser sono diventati potenti strumenti di lavoro. Ad esempio grazie a **Google Drive** puoi visualizzare l'anteprima di un allegato in **Gmail,** puoi creare e condividere documenti, fogli di lavoro e presentazioni non solo di Google ma anche nel formato nativo di **Microsoft Office** (Word, Excel, PowerPoint). E la cosa bella è che non devi installare niente sul tuo computer. L'unico strumento che devi usare è il tuo browser preferito (lo so sono di parte ma ovviamente sto parlando di Google Chrome).

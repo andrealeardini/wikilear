@@ -8,9 +8,9 @@ title: Google Maps ti suggerisce quale corsia devi prendere
 description: Disponibile anche in Italia la funzione del navigatore di Google Maps che indica in quale corsia autostradale procedere per non mancare l’uscita o lo svincolo corretto.
 subtitle: Disponibile anche in Italia la funzione che indica in quale corsia autostradale procedere per non mancare l’uscita o lo svincolo corretto.
 image: /images/google-maps-navigatore-indica-corsia-giusta-autostrada.webp
-image-title:
-image-descrition: Navigatore di Google Maps, cambio di corsia
-old-url: /2014/12/google-maps-ti-suggerisce-quale-corsia.html
+image_title:
+image_descrition: Navigatore di Google Maps, cambio di corsia
+old_url: /2014/12/google-maps-ti-suggerisce-quale-corsia.html
 ---
 Ti è mai capitato di dover fare una manovra azzardata per cambiare corsia così da poter prendere lo svincolo o l'uscita giusta? Un rischio che è meglio evitare... e ora te lo ricorda anche il navigatore di Google Maps. Quando ti avvicini a un incrocio o a un'uscita con più corsie la **guida vocale** e le **indicazioni stradali passo-passo** del **Navigatore di Google Maps** ti suggeriscono le corsie migliori per il tuo percorso.
 

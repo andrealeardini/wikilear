@@ -12,9 +12,9 @@ title: Token di sicurezza per accedere all'account Google
 description: Quando e come usare il token di sicurezza per accedere al tuo account Google
 subtitle: Google aggiunge la possibilità di utilizzare un token di sicurezza per accedere all'account
 image: /images/google-chrome-token-di-sicurezza-verifica-a-due-passaggi.webp
-image-title:
-image-descrition: Token di sicurezza - verifica in due passaggi con Google Chrome
-old-url: /2014/10/token-di-sicurezza-accedere-account-google.html
+image_title:
+image_descrition: Token di sicurezza - verifica in due passaggi con Google Chrome
+old_url: /2014/10/token-di-sicurezza-accedere-account-google.html
 ---
 
 Usi la [verifica in due passaggi?](https://www.google.com/landing/2step/){rel="noopener noreferrer" target="_blank"} Bene, è un passo concreto per rendere più sicuro il tuo account. Esiste comunque la possibilità che alcuni malintenzionati possano sottrarti le informazioni di accesso, codice di verifica incluso, utilizzando un sito dall'aspetto identico a quello di Google ma gestito da "terzi". Si tratta di un classico caso di [phishing.](http://it.wikipedia.org/wiki/Phishing){rel="noopener noreferrer" target="_blank"}
