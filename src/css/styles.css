@@ -76,7 +76,7 @@
 
   blockquote,
   .note {
-    @apply w-11/12 mt-7 mb-7 mx-auto p-6 border-l-8 border-yellow-600 bg-gray-200 dark:bg-gray-700;
+    @apply w-11/12 mt-7 mb-7 mx-auto p-6 border-l-8 border-yellow-600 dark:border-blue-600 bg-gray-200 dark:bg-gray-700;
   }
 
   blockquote p:last-of-type,
