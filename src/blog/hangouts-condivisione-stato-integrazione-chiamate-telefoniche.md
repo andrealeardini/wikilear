@@ -11,7 +11,7 @@ description: 'Scopriamo le novità della settimana per Hangouts: condivisione de
 subtitle: 'Scopriamo le novità della settimana per Hangouts: condivisione dello stato da web e maggiore integrazione per le chiamate telefoniche da dispositivo mobile.'
 image:
 image_title:
-image_descrition:
+image_description:
 old_url: /2014/12/hangouts-condivisione-dello-stato-e.html
 ---
 Dopo le novità introdotte la settimana scorsa, Hangouts ha ricevuto altri due aggiornamenti.

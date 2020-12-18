@@ -13,7 +13,7 @@ description: Quando e come usare il token di sicurezza per accedere al tuo accou
 subtitle: Google aggiunge la possibilità di utilizzare un token di sicurezza per accedere all'account
 image: /images/google-chrome-token-di-sicurezza-verifica-a-due-passaggi.png
 image_title:
-image_descrition: Token di sicurezza - verifica in due passaggi con Google Chrome
+image_description: Token di sicurezza - verifica in due passaggi con Google Chrome
 old_url: /2014/10/token-di-sicurezza-accedere-account-google.html
 ---
 
@@ -30,7 +30,7 @@ Usa la crittografia al posto dei codici di verifica e funziona automaticamente s
 - Non richiede connessione al tuo operatore telefonico e quindi puoi usarlo in zone dove la ricezione del segnale è scarsa o assente
 - È facilmente trasportabile, puoi agganciarlo ad un mazzo di chiavi o metterlo nel taschino del portafoglio
 
-![Token di sicurezza agganciato ad un portachiavi](/images/token-di-sicurezza-portachiavi.png){.md:w-3/4 .mx-auto} **Il token di sicurezza può essere agganciato a qualsiasi portachiavi**
+![Token di sicurezza agganciato ad un portachiavi](/images/token-di-sicurezza-portachiavi.jpg){.md:w-3/4 .mx-auto} **Il token di sicurezza può essere agganciato a qualsiasi portachiavi**
 ## Requisiti per utilizzare il token di sicurezza
 
 Un aspetto da tenere in considerazione è che il token di sicurezza funziona solo con Google Chrome (versione 38 o successiva in ambiente Windows, Mac OS, ChromeOS o Linux) e naturalmente richiede l'accesso alla porta USB del dispositivo. In alcuni contesti aziendali la scelta del browser potrebbe essere obbligata e se il browser scelto dall'azienda non è Chrome non sarà possibile usare il token. Lo stesso discorso vale se l'azienda ha bloccato l'accesso alle porte USB.

@@ -7,7 +7,7 @@ description:
 subtitle:
 image:
 image_title:
-image_descrition:
+image_description:
 date: 2011-06-19
 main: Documenti Google
 ---

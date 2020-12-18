@@ -8,7 +8,7 @@ description: Google Maps sposa il material design. Scopri in anteprima il nuovo 
 subtitle: Google Maps sposa il Material design e rende ancora più semplice e intuitivo navigare nelle mappe e ottenere indicazioni sui luoghi da visitare
 image: /images/google-maps-ottenere-informazioni-stradali-e-piu-semplice.png
 image_title:
-image_descrition: Google Maps su smartphone e tablet con il nuovo Material design
+image_description: Google Maps su smartphone e tablet con il nuovo Material design
 old_url: /2014/11/google-maps-si-aggiorna-e-veste-il-Material-design.html
 ---
 Nei prossimi giorni quando aprirai **Google Maps** sul tuo dispositivo **Android** o **iPhone** troverai ad aspettarti nuovi colori e un nuovo design. Infatti anche Google Maps si rifà il look e veste il **Material design** di Google.

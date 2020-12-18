@@ -14,7 +14,7 @@ description: Il traduttore universale da dispositivo immaginario add app disponi
 subtitle: Il traduttore universale è una tecnologia essenziale nell'universo immaginario di Star Trek popolato di numerose specie aliene. Ma si tratta davvero di sola fantascienza?
 image: /images/google-traduttore-traduzione-simultanea-testo.png
 image_title:
-image_descrition: Inquadra un testo per tradurlo
+image_description: Inquadra un testo per tradurlo
 old_url: /2015/01/Google-Traduttore-trasforma-dispositivo-Android-iOS-traduttore-universale.html
 ---
 Forse è arrivato il momento di aggiornare questa voce di Wikipedia, il [traduttore universale](https://it.wikipedia.org/wiki/Traduttore_universale){rel="noopener noreferrer" target="_blank"} non è più un dispositivo immaginario, tutto quello che ti serve è un dispositivo [Android](https://play.google.com/store/apps/details?id=com.google.android.apps.translate&hl=it){rel="noopener noreferrer" target="_blank"} o [iOS](https://itunes.apple.com/it/app/google-translate/id414706506?mt=8){rel="noopener noreferrer" target="_blank"} e un'app come Google Traduttore. Traduzione simultanea di testi, anche offline, grazie alla tecnologia Word Lens e la possibilità di sostenere semplici conversazioni sono il punto di forza dell'aggiornamento che sarà disponibile per tutti gli utenti a partire dai prossimi giorni.

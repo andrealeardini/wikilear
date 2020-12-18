@@ -10,7 +10,7 @@ description: Come utilizzare le coordinate di latitudine e longitudine con il nu
 subtitle: Ci sono situazioni in cui conoscere la latitudine e la longitudine di un luogo può fare la differenza. Vediamo alcune applicazioni pratiche.
 image: /images/google-maps-coordinate-latitudine-longitudine.png
 image_title:
-image_descrition: Mappa di Google Maps con le coordinate per il Colosseo
+image_description: Mappa di Google Maps con le coordinate per il Colosseo
 old_url: /2014/03/coordinate-di-latitudine-e-longitudine-nuovo-google-maps.html
 ---
 Se usi Google Maps sai quanto sia facile trovare una località o un'attività commerciale. Scrivi l'indirizzo, il nome o la categoria dell'attività e Google Maps trova quello che stai cercando. Non a caso, la maggior parte delle ricerche in Google Maps viene fatta utilizzando un indirizzo preciso o cercando per un'attività commerciale nelle vicinanze, per esempio una pizzeria o un ristorante. Ma lo sapevi che puoi cercare un luogo utilizzando le coordinate di [latitudine](https://it.wikipedia.org/wiki/Latitudine){rel="noopener noreferrer" target="_blank"} e [longitudine](https://it.wikipedia.org/wiki/Longitudine){rel="noopener noreferrer" target="_blank"}? Ti sembra complicato? Ti stai chiedendo perché mai dovresti usarle? Se hai la pazienza e la buona volontà di proseguire nella lettura ti spiegherò quando e come utilizzarle.

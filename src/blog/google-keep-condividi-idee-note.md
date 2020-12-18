@@ -12,7 +12,7 @@ snippet_image: /images/google-keep-web.png
 snippet_description: Google Keep versione web
 image:
 image_title:
-image_descrition:
+image_description:
 old_url: /2014/11/google-keep-condividi-idee-e-note.html
 ---
 Google Keep riceve due aggiornamenti nel giro di pochi giorni. Oltre al nuovo stile **Material Design,** Keep si arricchisce di importanti funzioni come la **condivisione delle note,**   la **modifica in real-time** con alti utenti e la **ricerca delle note tramite colore.**
