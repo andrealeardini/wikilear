@@ -11,24 +11,39 @@
       <li class="mt-4 p-4 shadow-lg border border-gray-300 rounded-lg">
         <a href="{{ item.url | url }}" class="font-semibold">{{ item.data.title }}</a>
         <p class="text-sm xl:text-base font-semibold" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
-        <p class="mt-0">{{ item.data.subtitle }}</p>
-        {% if item.data.image %}
+        {% if item.data.snippet_image %}
         <img
-          src="{{ item.data.image }}"
-          {% if image-description %}
-          alt="{{ item.data.image-description }}"
+          src="{{ item.data.snippet_image }}"
+          {% if image-snippet-description %}
+          alt="{{ item.data.snippet-image-description }}"
           {% else %}
           alt=""
           {% endif %}
-          {% if image-title %}
-          title="{{ item.data.image-title }}"
+          {% if image_snippet_title %}
+          title="{{ item.data.snippet_image_title }}"
           {% endif %}
           class="mt-4"
         />
+        {% else %}
+          {% if item.data.image %}
+          <img
+            src="{{ item.data.image }}"
+            {% if image-description %}
+            alt="{{ item.data.image_description }}"
+            {% else %}
+            alt=""
+            {% endif %}
+            {% if image_title %}
+            title="{{ item.data.image_title }}"
+            {% endif %}
+            class="mt-4"
+          />
+          {% endif %}
         {% endif %}
+        <p class="mt-4">{{ item.data.subtitle }}</p>
+        <p class="mt-4"><a href="{{item.url | url}}">Leggi l'intero articolo...</a></p>
         {% set tags = item.data.tags %}
         {% include 'components/tags-post.njk' %}
-        <p class="mt-4"><a href="{{item.url | url}}">Leggi l'intero articolo...</a></p>
       </li>
       {%- endfor -%}
     </ul>
