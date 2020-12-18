@@ -7,7 +7,7 @@ topics: Inbox by Gmail
 title: Google Inbox by Gmail
 description: Scopri in anteprima tutte le principali novità di Inbox by Gmail
 subtitle: Inbox è un nuovo prodotto dove Google ha messo a frutto tutta l'esperienza acquisita con Gmail, per andare ʻoltre la semplice emailʼ e ʻnon perdere di vista le cose importantiʼ
-image: /images/google-inbox-by-gmail.webp
+image: /images/google-inbox-by-gmail.png
 image_title:
 image_descrition: Google Inbox by Gmail aperta su dispositivi IPhone, Android e computer
 old_url: /2014/10/google-inbox-by-gmail.html
