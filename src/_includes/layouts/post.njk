@@ -4,7 +4,15 @@
 {% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
 {# Render post date#}
 {% set pageHeaderSummary %}
+  <p class="text-sm md:text-base">
+    <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+  </p>
+  {% if subtitle %}
+    <p class="italic mb-4">{{ subtitle }}</p>
+  {% endif %}
+{% endset %}
 
+{% block content %}
   {% if image %}
     <img
       src="{{ image }}"
@@ -19,18 +27,7 @@
       class="mb-4 rounded-lg"
     />
   {% endif %}
-  <p class="text-sm md:text-base">
-    <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
-  </p>
-  {% if subtitle %}
-    <p class="italic mb-4">{{ subtitle }}</p>
-  {% endif %}
-{% endset %}
-
-{% block content %}
   {% include "partials/page-header.njk" %}
-
-
   <article class="{{ style }}">
     {{ content | safe }}
   </article>

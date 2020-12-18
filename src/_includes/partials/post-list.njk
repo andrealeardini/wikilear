@@ -5,11 +5,9 @@
       {{ postListHeadline }}
     </h2>
     {% endif %}
-    <div>
-      <ul>
+    <ul>
       {% for item in postListItems %}
-      <li class="mt-4 p-4 shadow-lg border border-gray-300 rounded-lg">
-        <a href="{{ item.url | url }}" class="font-semibold">{{ item.data.title }}</a>
+      <li class="mt-4 shadow-lg border border-gray-300 rounded-lg">
         {% if item.data.snippet_image %}
           {% set image = item.data.snippet_image %}
           {% set image_description = item.data.snippet-image-description %}
@@ -21,28 +19,32 @@
         {% endif %}
 
         {% if image %}
-        <img
-          src="{{ image }}"
-          {% if image-description %}
-          alt="{{ image-description }}"
-          {% else %}
-          alt=""
-          {% endif %}
-          {% if image_title %}
-          title="{{ image_title }}"
-          {% endif %}
-          class="mt-4"
-        />
+        <div>
+          <img
+            src="{{ image }}"
+            {% if image-description %}
+            alt="{{ image-description }}"
+            {% else %}
+            alt=""
+            {% endif %}
+            {% if image_title %}
+            title="{{ image_title }}"
+            {% endif %}
+            class="w-full rounded-t-lg m-0 shadow"
+          />
+        </div>
         {% endif %}
+        <div class="p-4">
+          <h2 class="mt-2"><a href="{{ item.url | url }}" class="font-semibold">{{ item.data.title }}</a></h2>
 
-        <p class="mt-4 text-sm xl:text-base font-semibold" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
-        <p class="mt-4">{{ item.data.subtitle }}</p>
-        <p class="mt-4"><a href="{{item.url | url}}">Leggi l'intero articolo...</a></p>
-        {% set tags = item.data.tags %}
-        {% include 'components/tags-post.njk' %}
+          <p class="mt-4 text-sm xl:text-base font-semibold" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
+          <p class="mt-4">{{ item.data.subtitle }}</p>
+          <p class="mt-4"><a href="{{item.url | url}}">Leggi l'intero articolo...</a></p>
+          {% set tags = item.data.tags %}
+          {% include 'components/tags-post.njk' %}
+        </div>
       </li>
       {%- endfor -%}
     </ul>
-    </div>
   </div>
 </div>

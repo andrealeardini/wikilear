@@ -9,7 +9,7 @@
   }
 
   h1 {
-    @apply text-xl md:text-2xl lg:text-3xl font-bold mt-6 mb-6 dark:text-gray-300;
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold mt-6 mb-6 dark:text-gray-300;
   }
 
   h2 {
@@ -178,7 +178,7 @@
 
 @layer utilities {
   :root {
-    --image-filter: grayscale(50%);
+    --image-filter: grayscale(30%);
   }
 
   .dark img:not([src*=".svg"]) {

@@ -4,6 +4,7 @@ eleventyNavigation:
   parent: Home
   showLast: true
 title: 'Blog'
+description: Tutti le ultime notizie e storie pubblicate sul sito
 layout: 'layouts/feed.njk'
 pagination:
   data: collections.blog
