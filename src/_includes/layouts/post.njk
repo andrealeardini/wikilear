@@ -42,6 +42,8 @@
     </div>
   {% endif %}
 
+  {% include "components/nav-posts.njk" %}
+
   {% if recommendedPosts %}
   <footer class="recommended-posts">
     {% set postListItems = recommendedPosts %}
