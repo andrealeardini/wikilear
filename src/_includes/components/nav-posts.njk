@@ -1,24 +1,24 @@
 <!-- https://www.11ty.dev/docs/filters/collection-items/ -->
-{%if not collection %}{% set collection = collections.blog %}
+{%if not collection %}{% set collection = collections.blog %}{% endif %}
 {% set previousPost = collection | getPreviousCollectionItem(page) %}
 {% set nextPost = collection | getNextCollectionItem(page) %}
   <footer>
     <nav class="my-10 bg-gray-100 dark:bg-gray-600 py-1 px-2 md:px-3 rounded-lg" aria-label="Link agli articoli">
       <ol class="w-full mt-2 flex justify-between font-bold text-5xl ">
-        <li>
-          {% if previousPost %}
+        {% if previousPost %}
+        <li {% if nextPost %}class="flex-shrink-0 w-1/2"{% endif %}>
           <a href="{{ previousPost.url }}" class=""><
-          <p class="mt-4 pr-4 text-base">{{ previousPost.data.title | truncate(50) }}</p></a>
-          {% endif %}
+          <p class="mt-4 pr-4 text-base">{{ previousPost.data.title}}</p></a>
         </li>
-        <li class="text-right">
+        {% endif %}
+        {% if nextPost %}
+        <li {% if previousPost %}class="text-right flex-shrink-0 w-1/2"{% else %}class="text-right flex-grow"{% endif %}>
           <div class="pl-4">
-            {% if nextPost %}
             <a href="{{ nextPost.url }}" >>
-            <p class="mt-4 text-base">{{ nextPost.data.title | truncate(50) }}</p></a>
-          {% endif %}
+            <p class="mt-4 text-base">{{ nextPost.data.title}}</p></a>
           </div>
         </li>
+        {% endif %}
       </ol>
     </nav>
   </footer>
