@@ -3,8 +3,8 @@ eleventyNavigation:
   key: Documenti Google
   parent: Tutorial
 tags: tutorial
+image:
 topics: Documenti Google
-layout: 'layouts/base.njk'
 title: Documenti Google
 date: 2011-06-20
 ---
