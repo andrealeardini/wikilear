@@ -7,7 +7,7 @@
     {% endif %}
     <ul>
       {% for item in postListItems %}
-      <li class="mt-4 shadow-lg border border-gray-300 rounded-lg">
+      <li class="mt-6 md:mt-8 lg:mt-10 shadow-lg border border-gray-300 rounded-lg">
         {% if item.data.snippet_image %}
           {% set image = item.data.snippet_image %}
           {% set image_description = item.data.snippet-image-description %}
