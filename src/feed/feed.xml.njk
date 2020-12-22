@@ -9,13 +9,13 @@ eleventyExcludeFromCollections: true
 	{% set absoluteUrl %}{{ site.feed.path | url | absoluteUrl(site.url) }}{% endset %}
 	<link href="{{ absoluteUrl }}" rel="self"/>
 	<link href="{{ site.url }}"/>
-	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+	<updated>{{ collections.feed | rssLastUpdatedDate }}</updated>
 	<id>{{ site.feed.id }}</id>
 	<author>
 		<name>{{ site.author.name }}</name>
 		<email>{{ site.author.email }}</email>
 	</author>
-	{%- for post in collections.posts %}
+	{%- for post in collections.feed %}
 	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
 	<entry>
 		<title>{{ post.data.title }}</title>
@@ -24,11 +24,6 @@ eleventyExcludeFromCollections: true
 		<id>{{ absolutePostUrl }}</id>
 		<content type="html">
 		  {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
-			{% if googleanalytics %}
-				{% set titleUrlEncoded = post.data.title|encodeURIComponent %}
-				{% set urlUrlEncoded = post.url | encodeURIComponent %}
-				{{'<img src="' + site.url +  '/.netlify/functions/ga?v=1&_v=j83&t=pageview&dr=https%3A%2F%2Frss-feed-reader.com&_s=1&dh=' + site.domain + '&dp=' + urlUrlEncoded + '&ul=en-us&de=UTF-8&dt=' + titleUrlEncoded + '&tid=' + googleanalytics + '" width="1" height="1" style="display:none" alt="">'}}
-			{% endif %}
 		</content>
 	</entry>
 	{%- endfor %}
