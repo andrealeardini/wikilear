@@ -18,4 +18,4 @@ Si tratta di una funzione comoda ma come tutte le novità può risentire di qual
 
 > Google raccomanda di non provare a inviare la segnalazione mentre sei alla guida. Guarda la strada e rispetta il codice stradale. Saggio consiglio!
 
-_Fonte:_ [Guida di Google Maps per cellulari](https://support.google.com/gmm/answer/6009959){rel="nopener norefferer"}
+_Fonte:_ [Guida di Google Maps per cellulari](https://support.google.com/gmm/answer/6009959){rel="nopener noreferrer"}
