@@ -4,13 +4,13 @@
   <footer>
     <nav class="mt-8" aria-label="Link alle pagine">
       <ol class="w-full mt-2 flex justify-center">
-        <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}" class="p-2 sm:p-3 hover:bg-gray-300">|«</a>{% else %}<span class="font-light p-2 sm:p-3">|«</span>{% endif %}</li>
-        <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" class="p-2 sm:p-3 hover:bg-gray-300"><</a>{% else %}<span class="font-light p-2 sm:p-3"><</span>{% endif %}</li>
+        <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}{{ paginationAnchor }}" class="p-2 sm:p-3 hover:bg-gray-300">|«</a>{% else %}<span class="font-light p-2 sm:p-3">|«</span>{% endif %}</li>
+        <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}{{ paginationAnchor }}" class="p-2 sm:p-3 hover:bg-gray-300"><</a>{% else %}<span class="font-light p-2 sm:p-3"><</span>{% endif %}</li>
         {%- for pageEntry in pagination.pages %}
-          <li>{% if page.url != pagination.hrefs[loop.index0] %} <a href="{{ pagination.hrefs[loop.index0] }}" class="p-2 sm:p-3 hover:bg-gray-300">{{ loop.index }}</a>{% else %}<span aria-current="page" class="underline font-semibold p-2 sm:p-3">{{ loop.index }}</span>{% endif %}</li>
+          <li>{% if page.url != pagination.hrefs[loop.index0] %} <a href="{{ pagination.hrefs[loop.index0] }}{{ paginationAnchor }}" class="p-2 sm:p-3 hover:bg-gray-300">{{ loop.index }}</a>{% else %}<span aria-current="page" class="underline font-semibold p-2 sm:p-3">{{ loop.index }}</span>{% endif %}</li>
         {%- endfor %}
-        <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}" class="p-2 sm:p-3 hover:bg-gray-300">></a>{% else %}<span class="font-light p-2 sm:p-3">></span>{% endif %}</li>
-        <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}" class="p-2 sm:p-3 hover:bg-gray-300">»|</a>{% else %}<span class="font-light p-2 sm:p-3">»|</span>{% endif %}</li>
+        <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}{{ paginationAnchor }}" class="p-2 sm:p-3 hover:bg-gray-300">></a>{% else %}<span class="font-light p-2 sm:p-3">></span>{% endif %}</li>
+        <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}{{ paginationAnchor }}" class="p-2 sm:p-3 hover:bg-gray-300">»|</a>{% else %}<span class="font-light p-2 sm:p-3">»|</span>{% endif %}</li>
       </ol>
     </nav>
   </footer>

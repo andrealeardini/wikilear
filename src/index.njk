@@ -4,29 +4,83 @@ eleventyNavigation:
 layout: layouts/page.njk
 title: Wikilear, tutorial e codelab
 hide_title: true
-description: Wikilear si rinnova e diventa un sito. Un nuovo formato, nuovi contenuti e
+description:
+  Wikilear si rinnova e diventa un sito. Un nuovo formato, nuovi contenuti e
   tutorial ma la stessa semplicità e praticità che ha contraddistinto il blog
   fin dalla sua nascita.
 image: /images/home.jpg
+pagination:
+  data: collections.feed
+  size: 4
+permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/"
+paginationPrevText: "Articoli più recenti"
+paginationNextText: "Articoli più vecchi"
+paginationAnchor: "#all-articles"
+feed: ""
 ---
 
+{% block content %}
 <div>
-  <img src="/images/home.jpg" alt="Concetto di apprendimento online" class="rounded-lg shadow-lg">
+  <img
+    src="/images/home.jpg"
+    alt="Concetto di apprendimento online"
+    class="rounded-lg shadow-lg"
+  />
 </div>
+<article class="mx-1 sm:mx-2 md:mx-4">
+  <h1>{{ title }}</h1>
 
-<h1>{{title}}</h1>
+  <p>{{ description }}</p>
+  <p class="mb-0">
+    Leggi uno degli ultimi articoli pubblicati sul sito o consulta una delle
+    <a href="#sections">sezioni tematiche</a>
+  </p>
+  <div id="all-articles" class="my-2">
+    {% set postListItems = pagination.items %} {% include
+    "partials/post-list.njk" %} {% include "partials/pagination.njk" %}
+  </div>
+</article>
+<article class="my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-bold">
+  <h2 id="sections" class="mt-4 font-bold">Sezioni tematiche</h2>
+  {% include 'components/card.njk' %}
+</article>
 
-<p>{{description}}</p>
-<p>Leggi uno degli ultimi articoli pubblicati sul sito o consulta una delle <a href="#sections">sezioni tematiche</a> </p>
+{% set cards = [
+  {
+    url: "/blog/",
+    image: "/images/blog-post.svg",
+    title: "Blog"
+  },
+  {
+    url: "/tutorial/",
+    image: "/images/tutorial.svg",
+    title: "Tutorial"
+  }
+]%}
 
-{% set postListItems = collections.feed.slice(0,3) %}
-<div class="px-1 py-2 md:p-4">
-  {% include "partials/post-list.njk" %}
+<div class="flex flex-wrap justify-between mx-1 sm:mx-2 md:mx-4 my-4 gap-y-4">
+  {% for card in cards %}
+    <a class="w-full h-full sm:w-5/11" href="{{ card.url }}">
+      <div class="h-full mb-6 flex flex-col border-gray-600 dark:bg-gray-300 border rounded-lg shadow-lg">
+        <div class="flex flex-col rounded-t-lg bg-gray-800 text-white">
+          <p class="m-1 md:m-2">{{ card.title }}</p>
+        </div>
+        <div class="relative pb-2/3">
+          <img class="p-6 sm:p-4 absolute h-full object-cover" src="{{ card.image }}" alt="{{ card.title }}">
+        </div>
+      </div>
+    </a>
+  {% endfor %}
 </div>
-<p id="sections"></p>
-{% include 'components/card.njk' %}
 
 <p>
-  Wikilear è stato creato con Eleventy e TailwindCSS, ed è ospitato su Netflix. Trovi il codice sorgente su GitHub.
+  Wikilear è stato creato con Eleventy e TailwindCSS, ed è ospitato su Netflix.
+  Trovi il codice sorgente su GitHub.
 </p>
-<p class="text-sm">Credito illustrazione: <a href="https://www.freepik.com" rel="nopener norefferer">Designed by pikisuperstar / Freepik</a></p>
+<p class="text-sm">
+  Credito illustrazione:
+  <a href="https://www.freepik.com" rel="nopener norefferer"
+    >Designed by pikisuperstar / Freepik</a
+  >
+</p>
+{% endblock %}
