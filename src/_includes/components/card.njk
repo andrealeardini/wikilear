@@ -1,20 +1,14 @@
-<div class="flex flex-wrap justify-around mt-6 gap-4">
-  {% for card in cards %}
-  <div
-    class="border-gray-600 dark:bg-gray-300 border rounded-lg shadow-lg flex flex-wrap flex-row w-5/12 mb-6 h-auto"
-  >
-    <div
-      class="h-8 md:h-12 mt-0 pl-2 rounded-t-lg bg-gray-800 text-white w-full flex items-center"
-    >
-      <a href="{{ card.url | url }}" class="text-gray-100 dark:text-gray-100">{{
-        card.title | safe
-      }}</a>
-    </div>
-    <div class="px-2 py-4 sm:p-4">
-      <a href="{{ card.url | url }}">
-        <img src="{{ card.imageUrl | url }}" alt="{{ card.imageAlt | safe }}" />
-      </a>
-    </div>
-  </div>
+<ul class="flex flex-wrap justify-around gap-y-4 gap-x-12 sm:gap-x-20 my-8 p-4">
+  {% for card in cards | sort(attribute="title") %}
+  <li class="w-20 font-semibold text-gray-700 dark:text-gray-100 text-sm md:text-base">
+    <a href="{{ card.url | url }}">
+      <div class="h-full flex flex-col">
+        <img class="h-20 {% if card.title =="Eleventy" %}w-16 bg-gray-900{% endif %}" src="{{ card.imageUrl | url }}" alt="{{ card.imageAlt | safe }}" />
+        <p>{{ card.title | safe }}</p>
+      </div>
+    </a>
+  </li>
   {% endfor %}
-</div>
+</ul>
+
+
