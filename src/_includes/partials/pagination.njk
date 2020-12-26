@@ -1,17 +1,96 @@
-{# Only renders this section if there are links to render #}
-{# TODO: group pages link with 5 or more pages for small screen devices#}
-{% if pagination.href.next or pagination.href.previous %}
-  <footer>
-    <nav class="mt-8" aria-label="Link alle pagine">
-      <ol class="w-full mt-2 flex justify-center">
-        <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}{{ paginationAnchor }}" class="p-2 sm:p-3 hover:bg-gray-300">|«</a>{% else %}<span class="font-light p-2 sm:p-3">|«</span>{% endif %}</li>
-        <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}{{ paginationAnchor }}" class="p-2 sm:p-3 hover:bg-gray-300"><</a>{% else %}<span class="font-light p-2 sm:p-3"><</span>{% endif %}</li>
-        {%- for pageEntry in pagination.pages %}
-          <li>{% if page.url != pagination.hrefs[loop.index0] %} <a href="{{ pagination.hrefs[loop.index0] }}{{ paginationAnchor }}" class="p-2 sm:p-3 hover:bg-gray-300">{{ loop.index }}</a>{% else %}<span aria-current="page" class="underline font-semibold p-2 sm:p-3">{{ loop.index }}</span>{% endif %}</li>
-        {%- endfor %}
-        <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}{{ paginationAnchor }}" class="p-2 sm:p-3 hover:bg-gray-300">></a>{% else %}<span class="font-light p-2 sm:p-3">></span>{% endif %}</li>
-        <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}{{ paginationAnchor }}" class="p-2 sm:p-3 hover:bg-gray-300">»|</a>{% else %}<span class="font-light p-2 sm:p-3">»|</span>{% endif %}</li>
-      </ol>
-    </nav>
-  </footer>
+{# Only renders this section if there are links to render #} {% if
+pagination.href.next or pagination.href.previous %}
+<footer>
+  <nav class="mt-8" aria-label="Link alle pagine">
+    <ol class="mt-2 flex justify-center items-center text-center">
+      {% if pagination.href.previous %}
+      <li class="w-8 h-8 md:w-10 md:h-10 text-3xl hover:bg-gray-300">
+          <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" title="Pagina precedente">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </a>
+        </li>
+        {% endif %}
+
+      <li class="w-8 h-8 md:w-10 md:h-10">
+        <a
+          href="{{ pagination.href.first }}{{ paginationAnchor }}" title="Prima pagina"
+          class="h-full flex justify-center items-center {% if (pagination.pageNumber==0) %} underline font-bold {% endif %} hover:bg-gray-300"
+          >1</a
+        >
+      </li>
+
+      <li class="w-8 h-8 md:w-10 md:h-10">
+        <a
+          href="{{ pagination.hrefs[1] }}{{ paginationAnchor }}"
+          class="h-full flex justify-center items-center {% if (pagination.pageNumber==1) %} underline font-bold {% endif %} hover:bg-gray-300"
+          >2</a
+        >
+      </li>
+      {% if pagination.pageNumber > 2%}
+      <li class="w-8 h-8 md:w-10 md:h-10">. . .</li>
+      {% endif %} {% if (pagination.pageNumber > 1) and (pagination.pageNumber <
+      pagination.pages.length-2) %}
+      <li class="">
+        <a
+          href="{{ page.url }}{{ paginationAnchor }}"
+          class="w-8 h-8 md:w-10 md:h-10 flex justify-center items-center underline font-bold hover:bg-gray-300"
+          >{{ pagination.pageNumber + 1 }}</a
+        >
+      </li>
+      {% endif %} {% if pagination.pageNumber < pagination.pages.length-3 %}
+      <li class="w-8 h-8 md:w-10 md:h-10 flex justify-center items-center">
+        . . .
+      </li>
+      {% endif %}
+      <li>
+        <a
+          href="{{ pagination.hrefs[pagination.pages.length - 2] }}{{
+            paginationAnchor
+          }}"
+          class="w-8 h-8 md:w-10 md:h-10 flex justify-center items-center {% if (pagination.pageNumber==pagination.pages.length -2) %} underline font-bold {% endif %} hover:bg-gray-300"
+          >{{ pagination.pages.length - 1 }}</a
+        >
+      </li>
+      <li>
+        <a
+          href="{{ pagination.href.last }}{{ paginationAnchor }}" title="Ultima pagina"
+          class="w-8 h-8 md:w-10 md:h-10 flex justify-center items-center {% if (pagination.pageNumber==pagination.pages.length -1) %} underline font-bold {% endif %} hover:bg-gray-300"
+          >{{ pagination.pages.length }}</a
+        >
+      </li>
+
+      {% if pagination.href.next %}
+      <li class="w-8 h-8 md:w-10 md:h-10 text-3xl leading-4 hover:bg-gray-300">
+        <a href="{{ pagination.href.next }}{{ paginationAnchor }}" title="Pagina successiva">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+      </li>
+      {% endif %}
+    </ol>
+  </nav>
+</footer>
 {% endif %}

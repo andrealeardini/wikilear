@@ -12,7 +12,7 @@ image: /images/home.jpg
 pagination:
   data: collections.feed
   size: 4
-permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/"
+permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber + 1 }}{% endif %}/"
 paginationPrevText: "Articoli più recenti"
 paginationNextText: "Articoli più vecchi"
 paginationAnchor: "#all-articles"
