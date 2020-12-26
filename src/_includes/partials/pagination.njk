@@ -35,12 +35,14 @@ pagination.href.next or pagination.href.previous %}
         <a
           href="{{ pagination.hrefs[1] }}{{ paginationAnchor }}"
           class="h-full flex justify-center items-center {% if (pagination.pageNumber==1) %} underline font-bold {% endif %} hover:bg-gray-300"
+          {% if pagination.pages.length < 3 %} title="Ultima pagina"{% endif %}
           >2</a
         >
       </li>
       {% if pagination.pageNumber > 2%}
-      <li class="w-8 h-8 md:w-10 md:h-10">. . .</li>
-      {% endif %} {% if (pagination.pageNumber > 1) and (pagination.pageNumber <
+      <li class="w-8 h-8 md:w-10 md:h-10 flex justify-center items-center">. . .</li>
+      {% endif %}
+      {% if (pagination.pageNumber > 1) and (pagination.pageNumber <
       pagination.pages.length-2) %}
       <li class="">
         <a
@@ -54,6 +56,7 @@ pagination.href.next or pagination.href.previous %}
         . . .
       </li>
       {% endif %}
+      {% if pagination.pages.length > 3 %}
       <li>
         <a
           href="{{ pagination.hrefs[pagination.pages.length - 2] }}{{
@@ -63,6 +66,8 @@ pagination.href.next or pagination.href.previous %}
           >{{ pagination.pages.length - 1 }}</a
         >
       </li>
+      {% endif %}
+      {% if pagination.pages.length > 3 %}
       <li>
         <a
           href="{{ pagination.href.last }}{{ paginationAnchor }}" title="Ultima pagina"
@@ -70,6 +75,7 @@ pagination.href.next or pagination.href.previous %}
           >{{ pagination.pages.length }}</a
         >
       </li>
+      {% endif %}
 
       {% if pagination.href.next %}
       <li class="w-8 h-8 md:w-10 md:h-10 text-3xl leading-4 hover:bg-gray-300">
