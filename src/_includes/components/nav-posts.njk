@@ -3,19 +3,49 @@
 {% set previousPost = collection | getPreviousCollectionItem(page) %}
 {% set nextPost = collection | getNextCollectionItem(page) %}
   <footer>
-    <nav class="my-10 bg-gray-100 dark:bg-gray-600 py-1 px-2 md:px-3 rounded-lg" aria-label="Link agli articoli">
-      <ol class="w-full mt-2 flex justify-between font-bold text-5xl ">
+    <nav class="my-10 bg-gray-100 dark:bg-gray-600 py-2 px-2 md:px-3 rounded-lg" aria-label="Link agli articoli">
+      <ol class="w-full mt-2 flex justify-between font-bold">
         {% if previousPost %}
-        <li {% if nextPost %}class="flex-shrink-0 w-1/2"{% endif %}>
-          <a href="{{ previousPost.url }}" class=""><
-          <p class="mt-4 pr-4 text-base">{{ previousPost.data.title}}</p></a>
+        <li {% if nextPost %} class="flex-shrink-0 h-full w-1/2"{% endif %}>
+          <a href="{{ previousPost.url }}" title="Articolo precedente">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+            <p class="mt-4 pr-4 text-sm">{{ previousPost.data.title}}</p>
+          </a>
         </li>
         {% endif %}
         {% if nextPost %}
-        <li {% if previousPost %}class="text-right flex-shrink-0 w-1/2"{% else %}class="text-right flex-grow"{% endif %}>
+        <li class="text-right h-full w-1/2 {% if previousPost %}flex-shrink-0{% else %}flex-grow{% endif %}">
           <div class="pl-4">
-            <a href="{{ nextPost.url }}" >>
-            <p class="mt-4 text-base">{{ nextPost.data.title}}</p></a>
+            <a href="{{ nextPost.url }}" title="Articolo successivo" class="flex flex-col items-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+              <p class="mt-4 text-sm">{{ nextPost.data.title}}</p>
+            </a>
           </div>
         </li>
         {% endif %}
