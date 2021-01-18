@@ -5,6 +5,6 @@ pagination:
   data: collections
   size: 1
   alias: tag
-  filter: ['all', 'nav', 'blog', 'work', 'featuredWork', 'people', 'rss', 'tagList']
+  filter: ['all', 'nav', 'blog', 'post', 'posts', 'tagList', 'tutorial']
 permalink: '/tag/{{ tag | slug }}/'
 ---

@@ -88,6 +88,18 @@ module.exports = function (eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });
 
+  eleventyConfig.addFilter("tagIsValid", function (value) {
+      let reject = [
+        "all",
+        "blog",
+        "codelabs",
+        "feed",
+        "tagList",
+        "tutorial",
+      ];
+      return !reject.includes(value);
+    });
+
   // https://github.com/google/eleventy-high-performance-blog/blob/624aaa9ede9df609e2d4656f23d819621f5cb464/.eleventy.js#L94
 
   async function lastModifiedDate(filename) {
