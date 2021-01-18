@@ -32,17 +32,19 @@ feed: ""
 
   <p>{{ description }}</p>
   <p class="mb-0">
-    Leggi uno degli ultimi articoli pubblicati sul sito, consulta una delle
-    <a href="#sections">sezioni tematiche</a> o guarda tutti gli articoli
-    <a href="#tags"> suddivisi per etichetta.</a>
+    Leggi uno degli ultimi articoli pubblicati sul sito, consulta uno degli
+    <a href="#sections">argomenti principali</a> o vedi gli articoli
+    <a href="#tags">suddivisi per etichetta.</a>
   </p>
   <div id="all-articles" class="my-2">
     {% set postListItems = pagination.items %} {% include
     "partials/post-list.njk" %} {% include "partials/pagination.njk" %}
   </div>
 </article>
-<article class="my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-bold">
-  <h2 id="sections" class="mt-4 font-bold">Sezioni tematiche</h2>
+<article id="sections"
+  class="my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-bold"
+>
+  <h2 class="mt-4 font-bold">Sezioni tematiche</h2>
   {% include 'components/card.njk' %}
 </article>
 
@@ -61,22 +63,34 @@ feed: ""
 
 <div class="flex flex-wrap justify-between mx-1 sm:mx-2 md:mx-4 my-4 gap-y-4">
   {% for card in cards %}
-    <a class="w-full h-full sm:w-5/11" href="{{ card.url }}">
-      <div class="h-full mb-6 flex flex-col border-gray-600 dark:bg-gray-300 border rounded-lg shadow-lg">
-        <div class="flex flex-col rounded-t-lg bg-gray-800 text-white">
-          <p class="m-1 md:m-2">{{ card.title }}</p>
-        </div>
-        <div class="relative pb-2/3">
-          <img class="p-6 sm:p-4 absolute h-full object-cover" src="{{ card.image }}" alt="{{ card.title }}">
-        </div>
+  <a class="w-full h-full sm:w-5/11" href="{{ card.url }}">
+    <div
+      class="h-full mb-6 flex flex-col border-gray-600 dark:bg-gray-300 border rounded-lg shadow-lg"
+    >
+      <div class="flex flex-col rounded-t-lg bg-gray-800 text-white">
+        <p class="m-1 md:m-2">{{ card.title }}</p>
       </div>
-    </a>
+      <div class="relative pb-2/3">
+        <img
+          class="p-6 sm:p-4 absolute h-full object-cover"
+          src="{{ card.image }}"
+          alt="{{ card.title }}"
+        />
+      </div>
+    </div>
+  </a>
   {% endfor %}
 </div>
 
-<article class="my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-semibold">
-  <h2 id="tags" class="mt-4 font-bold">Tutte le etichette</h2>
-  {% include 'components/tags-list.njk' %}
+<article
+  class="my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-semibold"
+>
+  <details class="cursor-pointer">
+    <summary id="tags" class="m-4 font-bold">
+      Tutte le etichette
+    </summary>
+    {% include 'components/tags-list.njk' %}
+  </details>
 </article>
 
 <p>
