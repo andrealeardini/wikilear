@@ -44,7 +44,7 @@ feed: ""
 <article id="sections"
   class="my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-bold"
 >
-  <h2 class="mt-4 font-bold">Sezioni tematiche</h2>
+  <h2 class="mt-4 font-bold">Argomenti principali</h2>
   {% include 'components/card.njk' %}
 </article>
 
@@ -61,16 +61,16 @@ feed: ""
   }
 ]%}
 
-<div class="flex flex-wrap justify-between mx-1 sm:mx-2 md:mx-4 my-4 gap-y-4">
+<div class="flex flex-wrap justify-between mx-1 sm:mx-2 md:mx-4 my-4 gap-y-8">
   {% for card in cards %}
-  <a class="w-full h-full sm:w-5/11" href="{{ card.url }}">
+  <a class="w-full sm:w-5/11" href="{{ card.url }}">
     <div
       class="h-full mb-6 flex flex-col border-gray-600 dark:bg-gray-300 border rounded-lg shadow-lg"
     >
       <div class="flex flex-col rounded-t-lg bg-gray-800 text-white">
         <p class="m-1 md:m-2">{{ card.title }}</p>
       </div>
-      <div class="relative pb-2/3">
+      <div class="h-full relative pb-2/3">
         <img
           class="p-6 sm:p-4 absolute h-full object-cover"
           src="{{ card.image }}"
