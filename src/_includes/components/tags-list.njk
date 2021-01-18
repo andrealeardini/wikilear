@@ -1,0 +1,7 @@
+<ul class="flex flex-wrap">
+  {%- for tag, posts in collections | dictsort %} {% if tag | tagIsValid %}
+  <li class="m-4 py-2 px-4 border rounded-lg shadow-lg hover:bg-gray-200 dark:hover:bg-gray-600">
+    <a href="/tag/{{ tag | slug }}">{{ tag }} ({{ posts | length }})</a>
+  </li>
+  {% endif %} {%- endfor -%}
+</ul>

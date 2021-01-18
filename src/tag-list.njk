@@ -4,11 +4,5 @@ layout: layouts/page.njk
 ---
 <h1>Etichette</h1>
 
-<p class="gadget-title">Tutti gli articoli raggruppati per etichetta (tag)</p>
-  <ul class="flex flex-wrap">
-    {%- for tag, posts in collections | dictsort %} {% if tag | tagIsValid %}
-    <li class="m-4 py-2 px-4 border rounded-lg shadow-lg hover:bg-gray-200 dark:hover:bg-gray-600">
-      <a href="/tag/{{ tag | slug }}">{{ tag }} ({{ posts | length }})</a>
-    </li>
-    {% endif %} {%- endfor -%}
-  </ul>
+<p>Tutti gli articoli raggruppati per etichetta (tag)</p>
+{% include "components/tags-list.njk" %}

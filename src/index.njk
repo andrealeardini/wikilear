@@ -32,8 +32,9 @@ feed: ""
 
   <p>{{ description }}</p>
   <p class="mb-0">
-    Leggi uno degli ultimi articoli pubblicati sul sito o consulta una delle
-    <a href="#sections">sezioni tematiche</a>
+    Leggi uno degli ultimi articoli pubblicati sul sito, consulta una delle
+    <a href="#sections">sezioni tematiche</a> o guarda tutti gli articoli
+    <a href="#tags"> suddivisi per etichetta.</a>
   </p>
   <div id="all-articles" class="my-2">
     {% set postListItems = pagination.items %} {% include
@@ -72,6 +73,11 @@ feed: ""
     </a>
   {% endfor %}
 </div>
+
+<article class="my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-semibold">
+  <h2 id="tags" class="mt-4 font-bold">Tutte le etichette</h2>
+  {% include 'components/tags-list.njk' %}
+</article>
 
 <p>
   Wikilear è stato creato con Eleventy e TailwindCSS, ed è ospitato su Netflix.
