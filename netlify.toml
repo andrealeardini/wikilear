@@ -27,7 +27,7 @@
     max-age=300'''
 
 [[headers]]
-  for ="/img/*"
+  for ="/images/*"
   [headers.values]
     cache-control = '''
     public
