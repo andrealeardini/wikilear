@@ -11,7 +11,7 @@ module.exports = [
     imageUrl: "/images/sheets_48dp.png",
     imageAlt: "Fogli Google",
     more: "Articoli e tutorial...",
-    url: "/google-sheet/",
+    url: "/google-sheets/",
   },
   {
     title: "Documenti Google",
