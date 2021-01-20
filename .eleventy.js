@@ -64,7 +64,7 @@ module.exports = function (eleventyConfig) {
   const options = {
     html: true,
     breaks: true,
-    linkify: true,
+    linkify: false,
   };
   let markdownLib = markdownIt(options)
     .use(markdownItAttrs)
