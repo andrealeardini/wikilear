@@ -4,7 +4,7 @@ pagination.href.next or pagination.href.previous %}
   <nav class="mt-8" aria-label="Link alle pagine">
     <ol class="mt-2 flex justify-center items-center text-center gap-x-1">
       {% if pagination.href.previous %}
-      <li class="w-8 h-8 md:w-10 md:h-10 hover:bg-gray-300 dark:hover:bg-gray-700 border rounded-lg shadow-lg">
+      <li class="w-10 h-10 md:w-12 md:h-12 hover:bg-gray-300 dark:hover:bg-gray-700 border rounded-lg shadow-lg">
           <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" title="Pagina precedente">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -24,12 +24,12 @@ pagination.href.next or pagination.href.previous %}
         </li>
         {% endif %}
 
-      <li class="flex justify-center items-center border rounded-lg shadow-lg w-8 h-8 md:w-10 md:h-10 hover:bg-gray-300 dark:hover:bg-gray-700
+      <li class="flex justify-center items-center border rounded-lg shadow-lg w-10 h-10 md:w-12 md:h-12 hover:bg-gray-300 dark:hover:bg-gray-700
         {% if (pagination.pageNumber==0) %} bg-gray-200 dark:bg-gray-600 {% endif %}">
         <a href="{{ pagination.href.first }}{{ paginationAnchor }}" title="Prima pagina">1</a>
       </li>
 
-      <li class="flex justify-center items-center border rounded-lg shadow-lg w-8 h-8 md:w-10 md:h-10 hover:bg-gray-300 dark:hover:bg-gray-700
+      <li class="flex justify-center items-center border rounded-lg shadow-lg w-10 h-10 md:w-12 md:h-12 hover:bg-gray-300 dark:hover:bg-gray-700
         {% if (pagination.pageNumber==1) %} bg-gray-200 dark:bg-gray-600 {% endif %}">
         <a
           href="{{ pagination.hrefs[1] }}{{ paginationAnchor }}"
@@ -38,22 +38,22 @@ pagination.href.next or pagination.href.previous %}
         >
       </li>
       {% if (pagination.pageNumber > 2) and (pagination.pages.length > 4) %}
-      <li class="border rounded-lg shadow-lg w-8 h-8 md:w-10 md:h-10 flex justify-center items-center">. . .</li>
+      <li class="border rounded-lg shadow-lg w-10 h-10 md:w-12 md:h-12 flex justify-center items-center">. . .</li>
       {% endif %}
       {% if (pagination.pageNumber > 1) and (pagination.pageNumber <
       pagination.pages.length-2) %}
-      <li class="border rounded-lg shadow-lg w-8 h-8 md:w-10 md:h-10 flex justify-center items-center hover:bg-gray-300
+      <li class="border rounded-lg shadow-lg w-10 h-10 md:w-12 md:h-12 flex justify-center items-center hover:bg-gray-300
          bg-gray-200 dark:bg-gray-600">
         <a href="{{ page.url }}{{ paginationAnchor }}">{{ pagination.pageNumber + 1 }}</a>
       </li>
       {% endif %}
       {% if (pagination.pageNumber < pagination.pages.length-3) and (pagination.pages.length > 4) %}
-      <li class="border rounded-lg shadow-lg w-8 h-8 md:w-10 md:h-10 flex justify-center items-center">
+      <li class="border rounded-lg shadow-lg w-10 h-10 md:w-12 md:h-12 flex justify-center items-center">
         . . .
       </li>
       {% endif %}
       {% if pagination.pages.length > 3 %}
-      <li class="border rounded-lg shadow-lg w-8 h-8 md:w-10 md:h-10 flex justify-center items-center hover:bg-gray-300 dark:hover:bg-gray-700
+      <li class="border rounded-lg shadow-lg w-10 h-10 md:w-12 md:h-12 flex justify-center items-center hover:bg-gray-300 dark:hover:bg-gray-700
         {% if (pagination.pageNumber==pagination.pages.length -2) %} bg-gray-200 dark:bg-gray-600 {% endif %}">
         <a
           href="{{ pagination.hrefs[pagination.pages.length - 2] }}{{
@@ -63,14 +63,14 @@ pagination.href.next or pagination.href.previous %}
       </li>
       {% endif %}
       {% if pagination.pages.length > 3 %}
-      <li class="border rounded-lg shadow-lg w-8 h-8 md:w-10 md:h-10 flex justify-center items-center hover:bg-gray-300 dark:hover:bg-gray-700
+      <li class="border rounded-lg shadow-lg w-10 h-10 md:w-12 md:h-12 flex justify-center items-center hover:bg-gray-300 dark:hover:bg-gray-700
         {% if (pagination.pageNumber==pagination.pages.length -1) %} bg-gray-200 dark:bg-gray-600 {% endif %}">
         <a href="{{ pagination.href.last }}{{ paginationAnchor }}" title="Ultima pagina">{{ pagination.pages.length }}</a>
       </li>
       {% endif %}
 
       {% if pagination.href.next %}
-      <li class="w-8 h-8 md:w-10 md:h-10 hover:bg-gray-300 dark:hover:bg-gray-700 border rounded-lg shadow-lg">
+      <li class="w-10 h-10 md:w-12 md:h-12 hover:bg-gray-300 dark:hover:bg-gray-700 border rounded-lg shadow-lg">
         <a href="{{ pagination.href.next }}{{ paginationAnchor }}" title="Pagina successiva">
           <svg
             xmlns="http://www.w3.org/2000/svg"
