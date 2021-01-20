@@ -1,4 +1,8 @@
 ---
+eleventyNavigation:
+  key: Come impostare il carattere predefinito in Documenti Google
+  parent: Tutorial
+  showLast: true
 tags:
   - Documenti Google
 title: Come impostare il carattere predefinito in Documenti Google

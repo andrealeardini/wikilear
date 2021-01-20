@@ -1,4 +1,8 @@
 ---
+eleventyNavigation:
+  key: Come selezionare più paragrafi
+  parent: Tutorial
+  showLast: true
 tags:
   - Documenti Google
 title: Come selezionare più paragrafi
