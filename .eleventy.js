@@ -89,16 +89,9 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("tagIsValid", function (value) {
-      let reject = [
-        "all",
-        "blog",
-        "codelabs",
-        "feed",
-        "tagList",
-        "tutorial",
-      ];
-      return !reject.includes(value);
-    });
+    let reject = ["all", "blog", "codelabs", "feed", "tagList", "tutorial"];
+    return !reject.includes(value);
+  });
 
   // https://github.com/google/eleventy-high-performance-blog/blob/624aaa9ede9df609e2d4656f23d819621f5cb464/.eleventy.js#L94
 
@@ -150,6 +143,11 @@ module.exports = function (eleventyConfig) {
   // Returns a collection of blog posts in reverse date order
   eleventyConfig.addCollection("blog", (collection) => {
     return [...collection.getFilteredByGlob("./src/blog/**/*.md")].reverse();
+  });
+
+  // Returns a collection of tutorials in reverse date order
+  eleventyConfig.addCollection("tutorial", (collection) => {
+    return [...collection.getFilteredByGlob("./src/tutorial/**/*.md")].reverse();
   });
 
   // Returns a collection of articles in reverse date order filtered by feed
