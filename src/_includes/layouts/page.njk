@@ -1,7 +1,27 @@
 {% extends "layouts/base.njk" %}
 {% block content %}
    <article class="{{ style }} mx-auto">
-    {%if not hide_title %}<h1>{{title}}</h1>{%endif %}
+    {%if not hide_title %}
+    {% if image %}
+      <div class="h-18 mb-8 flex justify-start items-center">
+        <img
+          src="{{ image }}"
+          {% if image-description %}
+          alt="{{ image-description }}"
+          {% else %}
+          alt=""
+          {% endif %}
+          {% if image_title %}
+          title="{{ image_title }}"
+          {% endif %}
+          class="flex-none w-14 m-0 mr-4 rounded-lg {% if image =="/images/11ty.svg" %}w-16 bg-gray-900{% endif %}""
+        />
+        <h1>{{title}}</h1>
+      </div>
+      {% else %}
+        <h1>{{title}}</h1>
+      {% endif %}
+    {%endif %}
     {{ content | safe }}
   </article>
 {% endblock %}
