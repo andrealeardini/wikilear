@@ -44,12 +44,13 @@ Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata.
 
 ## Tutorial
 
-- Prepara il tuo primo budget con Fogli Google (in preparazione)
+- In preparazione
 
 ## Risorse utili (siti esterni)
 
 - [Guida di Fogli Google](https://support.google.com/docs/topic/9054603){target="_blank" rel="noopener noreferrer"}
 - [Community di assistenza (in inglese)](https://support.google.com/docs/community){target="_blank" rel="noopener noreferrer"}
-
+- [BenCollins (in inglese)](https://www.benlcollins.com/){target="_blank" rel="noopener noreferrer"} sito curato da [Ben Collins](https://twitter.com/benlcollins){target="_blank" rel="noopener noreferrer"}, un Google Developer Expert per Fogli Google a Apps Script. Una miniera di informazioni e utili consigli per approfondire la propria conoscenza di Fogli Google.
+- [Google Workspace Developers](https://workspacedevs.com/){target="_blank" rel="noopener noreferrer"} un elenco di sviluppatori con competenze specifiche su Google Apps Script e/o i vari prodotti di Google Workspace.
 _Credit:_ alcune informazioni sono state tradotte e adattate dal corso online di Google [**Applied Digital Skills**](https://applieddigitalskills.withgoogle.com/c/college-and-continuing-education/en/g-suite-certification-sheets-part-1/g-suite-certification-sheets-part-1/introduction-to-g-suite-certification-sheets-part-1.html){target="_blank" rel="noopener noreferrer"}
 {class="text-sm mt-8 mb-0"}
