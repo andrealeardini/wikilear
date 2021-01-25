@@ -25,7 +25,7 @@ Indice
 
 ## Panoramica
 
-Tailwind CSS è un Framework CSS che si distingue dai competitor (Bootstrap in primis) per la sua filosofia [Utility-First](https://tailwindcss.com/docs/utility-first){target="_blank" rel="noopener noreferrer"}.
+Tailwind CSS è un Framework CSS che si distingue dai competitor (Bootstrap in primis) per la sua filosofia [Utility-First](https://tailwindcss.com/docs/utility-first){rel="noopener noreferrer"}.
 
 ## Per iniziare
 
@@ -65,8 +65,8 @@ Aggiungi le utility di Tailwind direttamente nel tuo markup HTML
 
 ## Risorse utili (siti esterni)
 
-- [Tailwind CSS (in inglese)](https://tailwindcss.com/docs){target="_blank" rel="noopener noreferrer"} documentazione ufficiale di Tailwind
-- [Tailwind Labs (in inglese)](https://www.youtube.com/tailwindlabs){target="_blank" rel="noopener noreferrer"} canale YouTube ufficiale di Tailwind
+- [Tailwind CSS (in inglese)](https://tailwindcss.com/docs){rel="noopener noreferrer"} documentazione ufficiale di Tailwind
+- [Tailwind Labs (in inglese)](https://www.youtube.com/tailwindlabs){rel="noopener noreferrer"} canale YouTube ufficiale di Tailwind
 
-_Credit:_ alcune informazioni sono state tradotte e adattate dal sito ufficiale di Tailwind CSS (https://tailwindcss.com/){target="_blank" rel="noopener noreferrer"}
+_Credit:_ alcune informazioni sono state tradotte e adattate dal sito ufficiale di Tailwind CSS (https://tailwindcss.com/){rel="noopener noreferrer"}
 {class="text-sm mt-8 mb-0"}

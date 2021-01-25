@@ -9,18 +9,18 @@ Di seguito mi riferisco a me stesso (Andrea Leardini) come autore e proprietario
 
 Eventuali cookie salvati sul dispositivo sono da considerarsi di tipo tecnico, necessario quindi all'utilizzo stesso del sito. La disabilitazione dei cookie non comprommette l'utilizzo del sito anche se alcune funzionalità avanzate potrebbero non essere disponibili o funzionare solo in parte (salvataggio delle preferenze di visualizzazione, impostazioni del sito, ecc.).
 
-Saltuariamente potrebbero essere usati alcuni servizi di Google come Google Drive per l'hosting dei file, Google Maps per visualizzare mappe interattive o YouTube per i video (per quest'ultimo con impostazione di [privacy avanzata](https://support.google.com/youtube/answer/171780?expand=PrivacyEnhancedMode#privacy){rel="noopener noreferrer" target="_blank"}, i cookie vengono installati solo se guardi il video). Tutti questi servizi sono gestiti da Google e nessun dato viene condiviso con Wikilear. L'utilizzo dei cookie da parte di Google potrebbe includere alcune informazioni relative al tuo account Google se utilizzi Wikilear quando sei loggato nell'account. Per la gestione dei cookie da parte di Google puoi trovare maggiori informazioni leggendo queste pagine:
+Saltuariamente potrebbero essere usati alcuni servizi di Google come Google Drive per l'hosting dei file, Google Maps per visualizzare mappe interattive o YouTube per i video (per quest'ultimo con impostazione di [privacy avanzata](https://support.google.com/youtube/answer/171780?expand=PrivacyEnhancedMode#privacy){rel="noopener noreferrer"}, i cookie vengono installati solo se guardi il video). Tutti questi servizi sono gestiti da Google e nessun dato viene condiviso con Wikilear. L'utilizzo dei cookie da parte di Google potrebbe includere alcune informazioni relative al tuo account Google se utilizzi Wikilear quando sei loggato nell'account. Per la gestione dei cookie da parte di Google puoi trovare maggiori informazioni leggendo queste pagine:
 
-- [In che modo Google utilizza i cookie](https://www.google.com/policies/technologies/cookies/){rel="noopener noreferrer" target="_blank"}
-- [Modalità di utilizzo dei dati da parte di Google quando si utilizzano siti o app dei nostri partner](https://www.google.com/policies/privacy/partners/){rel="noopener noreferrer" target="_blank"}
+- [In che modo Google utilizza i cookie](https://www.google.com/policies/technologies/cookies/){rel="noopener noreferrer"}
+- [Modalità di utilizzo dei dati da parte di Google quando si utilizzano siti o app dei nostri partner](https://www.google.com/policies/privacy/partners/){rel="noopener noreferrer"}
 
 Per maggiori informazioni su come disabilitare i cookies puoi consultare la documentazione relativa al tuo browser:
 
-- [Google Chrome](https://support.google.com/chrome){rel="noopener noreferrer" target="_blank"}
-- [Microsoft Edge](https://support.microsoft.com/it-it/microsoft-edge){rel="noopener noreferrer" target="_blank"}
-- [Mozilla Firefox](https://support.mozilla.org/it/){rel="noopener noreferrer" target="_blank"}
-- [Apple Safari](https://support.apple.com/it-it/safari){rel="noopener noreferrer" target="_blank"}
-- [Opera](https://www.opera.com/it/help){rel="noopener noreferrer" target="_blank"}
+- [Google Chrome](https://support.google.com/chrome){rel="noopener noreferrer"}
+- [Microsoft Edge](https://support.microsoft.com/it-it/microsoft-edge){rel="noopener noreferrer"}
+- [Mozilla Firefox](https://support.mozilla.org/it/){rel="noopener noreferrer"}
+- [Apple Safari](https://support.apple.com/it-it/safari){rel="noopener noreferrer"}
+- [Opera](https://www.opera.com/it/help){rel="noopener noreferrer"}
 
 ## Disclaimer
 

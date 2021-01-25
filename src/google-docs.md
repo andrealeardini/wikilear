@@ -32,8 +32,8 @@ Documenti Google è un elaboratore di testi online che offre collaborazione e co
 Per utilizzare Documenti accedi al tuo account Google e visita la pagina docs.google.com
 
 Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata.
-- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs){target="_blank" rel="noopener noreferrer"}
-- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/app/apple-store/id842842640){target="_blank" rel="noopener noreferrer"}
+- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs){rel="noopener noreferrer"}
+- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/app/apple-store/id842842640){rel="noopener noreferrer"}
 
 ## Tutorial
 
@@ -41,5 +41,5 @@ Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata.
 
 ## Risorse utili (siti esterni)
 
-- [Guida di Documenti Google](https://support.google.com/docs/topic/9046002){target="_blank" rel="noopener noreferrer"}
-- [Community di assistenza (in inglese)](https://support.google.com/docs/community){target="_blank" rel="noopener noreferrer"}
+- [Guida di Documenti Google](https://support.google.com/docs/topic/9046002){rel="noopener noreferrer"}
+- [Community di assistenza (in inglese)](https://support.google.com/docs/community){rel="noopener noreferrer"}

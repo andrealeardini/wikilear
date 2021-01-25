@@ -70,5 +70,5 @@ Inbox by Gmail è un prodotto giovane. Mancano alcune funzionalità di Gmail ma 
 
 Bene ora non ti rimane che richiedere un invito. Cosa ti piace di più di Inbox by Gmail? Non dimenticare di condividere questo post con le persone a cui ritieni che possa interessare.
 
-_Fonti:_ [Official Gmail Blog,](https://googleitalia.blogspot.it/2014/10/linbox-che-lavora-per-te.html){rel="noopener noreferrer" target="_blank"} Guida di Inbox by Gmail, [sito di Inbox by Gmail](https://www.google.com/intl/it/inbox/){rel="noopener noreferrer" target="_blank"}
+_Fonti:_ [Official Gmail Blog,](https://googleitalia.blogspot.it/2014/10/linbox-che-lavora-per-te.html){rel="noopener noreferrer"} Guida di Inbox by Gmail, [sito di Inbox by Gmail](https://www.google.com/intl/it/inbox/){rel="noopener noreferrer"}
 <br />_Foto credit:_ Google

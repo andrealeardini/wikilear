@@ -17,7 +17,7 @@ Grazie al Material design ottenere indicazioni è ancora più immediato: con un 
 
 ![Schermata di Google Maps con indicazioni per i luoghi](/images/google-maps-transizioni-fluide.png "Google Maps è ancora più fluido con il Material Design") **Grazie al Material design l'uso di Google Maps è ancora più immediato e intuitivo**
 
-Se hai installato [l'app di Uber](https://play.google.com/store/apps/details?id=com.ubercab&hl=it){rel="noopener noreferrer" target="_blank"}, quando usi Google Maps per ottenere delle indicazioni stradali a piedi o tramite il trasporto pubblico puoi visualizzare il tempo di attesa e il costo previsto per un'auto Uber. Potrai così valutare se aspettare l'autobus, andare a piedi o utilizzare il servizio offerto da Uber (nelle città per cui è disponibile).
+Se hai installato [l'app di Uber](https://play.google.com/store/apps/details?id=com.ubercab&hl=it){rel="noopener noreferrer"}, quando usi Google Maps per ottenere delle indicazioni stradali a piedi o tramite il trasporto pubblico puoi visualizzare il tempo di attesa e il costo previsto per un'auto Uber. Potrai così valutare se aspettare l'autobus, andare a piedi o utilizzare il servizio offerto da Uber (nelle città per cui è disponibile).
 
 ![Indicazioni del tempo di attesa e del costo di un'auto Uber in Google Maps](/images/google-maps-integrazione-con-uber.png "Google Maps è ancora più integrato con Uber") **La scheda Uber di Google Maps ora indica il tempo di attesa e il prezzo stimato**
 

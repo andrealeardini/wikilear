@@ -13,11 +13,11 @@ image_title:
 image_description: Mappa di Google Maps con le coordinate per il Colosseo
 old_url: /2014/03/coordinate-di-latitudine-e-longitudine-nuovo-google-maps.html
 ---
-Se usi Google Maps sai quanto sia facile trovare una località o un'attività commerciale. Scrivi l'indirizzo, il nome o la categoria dell'attività e Google Maps trova quello che stai cercando. Non a caso, la maggior parte delle ricerche in Google Maps viene fatta utilizzando un indirizzo preciso o cercando per un'attività commerciale nelle vicinanze, per esempio una pizzeria o un ristorante. Ma lo sapevi che puoi cercare un luogo utilizzando le coordinate di [latitudine](https://it.wikipedia.org/wiki/Latitudine){rel="noopener noreferrer" target="_blank"} e [longitudine](https://it.wikipedia.org/wiki/Longitudine){rel="noopener noreferrer" target="_blank"}? Ti sembra complicato? Ti stai chiedendo perché mai dovresti usarle? Se hai la pazienza e la buona volontà di proseguire nella lettura ti spiegherò quando e come utilizzarle.
+Se usi Google Maps sai quanto sia facile trovare una località o un'attività commerciale. Scrivi l'indirizzo, il nome o la categoria dell'attività e Google Maps trova quello che stai cercando. Non a caso, la maggior parte delle ricerche in Google Maps viene fatta utilizzando un indirizzo preciso o cercando per un'attività commerciale nelle vicinanze, per esempio una pizzeria o un ristorante. Ma lo sapevi che puoi cercare un luogo utilizzando le coordinate di [latitudine](https://it.wikipedia.org/wiki/Latitudine){rel="noopener noreferrer"} e [longitudine](https://it.wikipedia.org/wiki/Longitudine){rel="noopener noreferrer"}? Ti sembra complicato? Ti stai chiedendo perché mai dovresti usarle? Se hai la pazienza e la buona volontà di proseguire nella lettura ti spiegherò quando e come utilizzarle.
 
 ## Quando usare le coordinate geografiche in Google Maps
 
-[Le coordinate geografiche](https://it.wikipedia.org/wiki/Coordinate_geografiche){rel="noopener noreferrer" target="_blank"} sono indispensabili quando vuoi individuare un punto sulla mappa con estrema precisione. Ma non basta avere l'indirizzo? In linea di massima sì. Comunque a volte l'indirizzo potrebbe essere incompleto (forse senza numero civico), oppure la via che stai cercando non è stata ancora mappata su Google Maps. In questi casi la posizione fornita è approssimativa, impossibile da trovare o nella peggiore delle ipotesi completamente sbagliata. Ma se hai a disposizione latitudine e longitudine di un luogo puoi visualizzarlo con precisione sulla mappa.
+[Le coordinate geografiche](https://it.wikipedia.org/wiki/Coordinate_geografiche){rel="noopener noreferrer"} sono indispensabili quando vuoi individuare un punto sulla mappa con estrema precisione. Ma non basta avere l'indirizzo? In linea di massima sì. Comunque a volte l'indirizzo potrebbe essere incompleto (forse senza numero civico), oppure la via che stai cercando non è stata ancora mappata su Google Maps. In questi casi la posizione fornita è approssimativa, impossibile da trovare o nella peggiore delle ipotesi completamente sbagliata. Ma se hai a disposizione latitudine e longitudine di un luogo puoi visualizzarlo con precisione sulla mappa.
 
 ## Come inserire le coordinate di latitudine e longitudine in Google Maps
 
@@ -49,4 +49,4 @@ Ora che sai come utilizzare le coordinate di latitudine e longitudine potrai usa
 
 **Per approfondire:**
 
-- [Coordinate di latitudine e longitudine (Guida di Google Maps)](https://support.google.com/maps/answer/18539?hl=it){rel="noopener noreferrer" target="_blank"}
+- [Coordinate di latitudine e longitudine (Guida di Google Maps)](https://support.google.com/maps/answer/18539?hl=it){rel="noopener noreferrer"}

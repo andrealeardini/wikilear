@@ -32,7 +32,7 @@
     <a
       class="font-semibold"
       href="https://creativecommons.org/licenses/by/4.0/"
-      target="_blank"
+
       rel="noopener noreferrer"
       >licenza Creative Commons Attribuzione 4.0 Internazionale.</a
     >
@@ -40,7 +40,7 @@
     <a
       class="font-semibold"
       href="https://opensource.org/licenses/MIT"
-      target="_blank"
+
       rel="noopener noreferrer"
       >licenza MIT.</a
     >
@@ -48,7 +48,7 @@
   <ul class="mt-4 text-gray-700 dark:text-gray-300 flex justify-center gap-8 items-center">
     {% for social in socials %}
     <li class="hover:bg-gray-100 hover:border rounded-lg py-2 pr-1 pl-1 dark:hover:bg-gray-500">
-      <a href="{{ social.url }}" rel="noopener noreferrer" target="_blank" class="text-gray-700 dark:text-gray-300" title="{{ social.title }}" aria-label="{{ social.title }}">
+      <a href="{{ social.url }}" rel="noopener noreferrer" class="text-gray-700 dark:text-gray-300" title="{{ social.title }}" aria-label="{{ social.title }}">
         <div>{{ social.svg | safe }}</div>
       </a>
     </li>

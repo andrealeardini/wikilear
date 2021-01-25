@@ -164,7 +164,7 @@ Le azioni possibili solo in Gmail per Android sono:
 - accedere ad account su **Exchange server** (disponibile per dispositivi con Android 5.0 o versioni successive)
 - cambiare l'etichetta a un messaggio assegnando **etichette multiple**
 - contrassegnare un messaggio come **importante** (o declassarlo come non importante)
-- contrassegnare un messaggio come [phishing](https://it.wikipedia.org/wiki/Phishing){rel="noopener noreferrer" target="_blank"}
+- contrassegnare un messaggio come [phishing](https://it.wikipedia.org/wiki/Phishing){rel="noopener noreferrer"}
 - gestire account multipli di **qualsiasi provider (Outlook, Yahoo, ecc.)**
 - inserire file da **Google Drive**
 - inviare messaggi con allegati di dimensione superiore a **25 MB**

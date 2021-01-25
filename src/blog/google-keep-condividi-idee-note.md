@@ -41,7 +41,7 @@ Prendere un appunto al volo è utile, ma a cosa servirebbe avere tante note se p
 
  **Puoi cercare una nota in base al suo colore**{.caption}
 
-Le nuove funzioni di Google Keep sono già utilizzabili nella versione desktop (tramite [web](https://keep.google.com/){rel="noopener noreferrer" target="_blank"} o con l'apposita [app per Chrome](https://chrome.google.com/webstore/detail/google-keep/hmjkmjkepdijhoojdojkdfohbdgmmhki?hl=it){rel="noopener noreferrer" target="_blank"}).
+Le nuove funzioni di Google Keep sono già utilizzabili nella versione desktop (tramite [web](https://keep.google.com/){rel="noopener noreferrer"} o con l'apposita [app per Chrome](https://chrome.google.com/webstore/detail/google-keep/hmjkmjkepdijhoojdojkdfohbdgmmhki?hl=it){rel="noopener noreferrer"}).
 
 ![Google Keep aperto dalla pagina web](/images/google-keep-web.png 'Vai alla pagina keep.google.com per accedere dal web')
 
