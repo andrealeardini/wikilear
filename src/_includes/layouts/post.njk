@@ -8,7 +8,7 @@
     <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
   </p>
   {% if subtitle %}
-    <p class="italic mb-4">{{ subtitle }}</p>
+    <p class="italic mb-4">{{ subtitle | safe }}</p>
   {% endif %}
 {% endset %}
 

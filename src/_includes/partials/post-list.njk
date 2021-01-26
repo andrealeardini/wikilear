@@ -38,7 +38,7 @@
           <h2 class="mt-2"><a href="{{ item.url | url }}" class="font-semibold">{{ item.data.title }}</a></h2>
 
           <p class="mt-4 text-sm xl:text-base font-semibold" {% if item.data.date %}<time datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}</p>
-          <p class="mt-4">{{ item.data.subtitle }}</p>
+          <p class="mt-4">{{ item.data.subtitle | safe }}</p>
           <p class="mt-4"><a href="{{item.url | url}}">Leggi l'intero articolo...</a></p>
           {% set tags = item.data.tags %}
           {% include 'components/tags-post.njk' %}
