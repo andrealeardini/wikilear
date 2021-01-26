@@ -30,7 +30,7 @@ Questo sito non rappresenta una testata giornalistica, in quanto viene aggiornat
 
 ## Licenza e copyright
 
-Eccetto dove diversamente specificato, i contenuti di questo sito sono coperti da [licenza Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/){rel="license noopener noreferrer"}. Il codice è distribuito con [licenza Mit.](https://opensource.org/licenses/MIT){rel="license noopener noreferrer"}
+Eccetto dove diversamente specificato, i contenuti di questo sito sono coperti da [licenza Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale (CC BY 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.it){rel="license noopener noreferrer"}. Il codice è distribuito con [licenza Mit.](https://opensource.org/licenses/MIT){rel="license noopener noreferrer"}
 
 Tutti i marchi registrati citati all'interno di questo sito sono proprietà degli aventi diritto. La maggior parte delle immagini contenute negli articoli e nei vari tutorial sono autoprodotte, altre immagini provengono da raccolte pubbliche disponibili su Internet (Unsplash, Freepik, ecc.). Queste immagini, fermo restando i diritti degli autori e dei contenuti raffigurati, sono utilizzate rispettando la licenza d'uso e l'eventuale attribuzione richiesta dagli autori delle stesse. Gli interessati o gli aventi diritto possono comunicare le loro osservazioni in merito alla pubblicazione delle immagini o del testo scrivendo direttamente all'autore. Qualsiasi materiale pubblicato che risulti in violazione alla normativa vigente sarà prontamente rimosso.
 
