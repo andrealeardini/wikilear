@@ -5,7 +5,7 @@
 
 {# If this is a tag, grab those items instead as one large collection #}
 {% if tag %}
-  {% set postListItems = collections[tag] %}
+  {% set postListItems = collections[tag] | reverse %}
   {% set pageHeaderTitle = tag %}
   {% set title = 'Archivio | '+tag %}
 {% endif %}
