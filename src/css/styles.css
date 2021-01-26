@@ -51,12 +51,12 @@
   }
 
   th {
-    @apply bg-gray-200 dark:bg-gray-600;
+    @apply bg-gray-200 dark:bg-gray-600 p-2;
   }
 
   td {
     @apply self-center;
-    @apply p-1;
+    @apply p-2;
   }
 
   td.table-cell-icon16h {
@@ -189,6 +189,7 @@
     filter: invert();
   }
 
+  /* TODO: use new Tailwind plugin */
   /* aspect ratio */
   /* https://css-tricks.com/aspect-ratio-boxes/#using-custom-properties */
 
