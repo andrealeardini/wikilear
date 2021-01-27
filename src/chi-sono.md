@@ -3,9 +3,7 @@ layout: "layouts/page.njk"
 title: Chi sono
 ---
 
-Ciao sono **Andrea Leardini** e questo che stai visitando è il mio sito personale.
-
-Da diversi anni sono attivo nelle community di assistenza di Google, prima come Top Contributor e ora come **Product Expert** per diversi prodotti di Google.
+Ciao sono **Andrea Leardini** e questo che stai visitando è il mio sito personale. Da diversi anni sono attivo nelle community di assistenza di Google, prima come Top Contributor e ora come **Product Expert** per diversi prodotti di Google.
 
 ![Logo Google Product Experts](/images/google-product-experts-logo.png){.w-3/4 .mx-auto}
 
