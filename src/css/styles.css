@@ -181,6 +181,12 @@
     --image-filter: grayscale(30%);
   }
 
+  /* https://twitter.com/JoshWComeau/status/1332015868725891076?s=20 */
+  .heading {
+    scroll-margin-top: 72px;
+    scroll-snap-margin-top: 72px;
+  }
+
   .dark img:not([src*=".svg"]) {
     filter: var(--image-filter);
   }

@@ -36,30 +36,21 @@ feed: ""
     <a href="#topics">argomenti principali</a> o vedi gli articoli
     <a href="#tags">suddivisi per etichetta.</a>
   </p>
-  <div id="all-articles" class="my-2">
+  <div id="all-articles" class="heading my-2">
     {% set postListItems = pagination.items %} {% include
     "partials/post-list.njk" %} {% include "partials/pagination.njk" %}
   </div>
 </article>
-<article id="topics"
-  class="my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-bold"
+<article
+  id="topics"
+  class="heading my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-bold"
 >
   <h2 class="mt-4 font-bold">Argomenti principali</h2>
   {% include 'components/card.njk' %}
 </article>
 
-{% set cards = [
-  {
-    url: "/blog/",
-    image: "/images/blog-post.svg",
-    title: "Blog"
-  },
-  {
-    url: "/tutorial/",
-    image: "/images/tutorial.svg",
-    title: "Tutorial"
-  }
-]%}
+{% set cards = [ { url: "/blog/", image: "/images/blog-post.svg", title: "Blog"
+}, { url: "/tutorial/", image: "/images/tutorial.svg", title: "Tutorial" } ]%}
 
 <div class="flex flex-wrap justify-between mx-1 sm:mx-2 md:mx-4 my-4 gap-y-8">
   {% for card in cards %}
@@ -86,22 +77,23 @@ feed: ""
   class="my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-semibold"
 >
   <details class="cursor-pointer">
-    <summary id="tags" class="m-4 font-bold">
-      Tutte le etichette
-    </summary>
+    <summary id="tags" class="heading m-4 font-bold">Tutte le etichette</summary>
     {% include 'components/tags-list.njk' %}
   </details>
 </article>
 
 <p>
-  Wikilear è un progetto opensource creato con Eleventy e Tailwind CSS, è ospitato su Netflix,
-  trovi il codice sorgente su GitHub. Il è stato testato sui più moderni browser:
-  Chrome, Edge e Firefox. Su Safari potresti riscontrare qualche problema a livello grafico.
+  Wikilear è un progetto opensource creato con
+  <a href="https://www.11ty.dev/" rel="noopener noreferrer">Eleventy</a> e
+  <a href="https://tailwindcss.com/" rel="noopener noreferrer">Tailwind CSS,</a>
+  è ospitato su <a href="https://www.netlify.com/" rel="noopener noreferrer">Netlify,</a> trovi il codice sorgente su GitHub. Il è stato testato
+  sui più moderni browser: Chrome, Edge e Firefox. Su Safari potresti
+  riscontrare qualche problema a livello grafico.
 </p>
-<p class="text-sm">
+<small>
   Credito illustrazione:
   <a href="https://www.freepik.com" rel="nopener noreferrer"
     >Designed by pikisuperstar / Freepik</a
   >
-</p>
+</small>
 {% endblock %}
