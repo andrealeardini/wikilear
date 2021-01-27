@@ -8,6 +8,7 @@
         {% if previousPost %}
         <li {% if nextPost %} class="flex-shrink-0 h-full w-1/2"{% endif %}>
           <a href="{{ previousPost.url }}" title="Articolo precedente">
+            <div class="flex flex-row items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -22,7 +23,10 @@
                 d="M15 19l-7-7 7-7"
               />
             </svg>
-            <p class="mt-4 pr-4 text-sm">{{ previousPost.data.title}}</p>
+            <p class="m-0 uppercase">Successivo</p>
+            </div>
+
+            <p class="mt-4 pr-4 text-sm" title="{{ previousPost.data.title }}">{{ previousPost.data.title | truncate(70) }}</p>
           </a>
         </li>
         {% endif %}
@@ -30,6 +34,8 @@
         <li class="text-right h-full w-1/2 {% if previousPost %}flex-shrink-0{% else %}flex-grow{% endif %}">
           <div class="pl-4">
             <a href="{{ nextPost.url }}" title="Articolo successivo" class="flex flex-col items-end">
+              <div class="flex flex-row items-center">
+                <p class="m-0 uppercase">Precedente</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -44,7 +50,8 @@
                   d="M9 5l7 7-7 7"
                 />
               </svg>
-              <p class="mt-4 text-sm">{{ nextPost.data.title}}</p>
+              </div>
+              <p class="mt-4 text-sm" title="{{ nextPost.data.title }}">{{ nextPost.data.title | truncate(70)}}</p>
             </a>
           </div>
         </li>
