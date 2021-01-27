@@ -19,7 +19,7 @@ Osserva attentamente l’URL di Google Maps mostrato nella barra degli indirizzi
 
 ## Latitudine, longitudine e zoom (URL di Google Maps)
 
-Prendiamo come punto di riferimento il Colosseo; apri Google Maps e cerca per [[Colosseo]](https://www.google.com/maps/@41.89021,12.492231,17z){rel="noopener noreferrer"}. L’URL di Google Maps dovrebbe corrispondere a questo: [https://www.google.com/maps/@41.89021,12.492231,17z](https://www.google.com/maps/@41.89021,12.492231,17z){rel="noopener noreferrer"}
+Prendiamo come punto di riferimento il Colosseo; apri Google Maps e cerca per [[Colosseo]](https://www.google.com/maps/@41.89021,12.492231,17z){rel="noopener noreferrer"}. L’URL di Google Maps dovrebbe corrispondere a questo: [https://www.google.com/maps/@41.89021,12.492231,17z](https://www.google.com/maps/@41.89021,12.492231,17z){ .break-words rel="noopener noreferrer"}
 
 Consideriamo nel dettaglio i due parametri dopo l’URL standard (https://www.google.com/maps/).
 
@@ -32,7 +32,7 @@ Consideriamo nel dettaglio i due parametri dopo l’URL standard (https://www.go
 
 Ora passiamo alla visualizzazione Earth, fai clic sulla miniatura Earth in basso a sinistra. L’URL di Google Maps a questo punto dovrebbe essere simile a questo:
 
-[https://www.google.it/maps/@41.8901872,12.492231,502m/data=!3m1!1e3](https://www.google.it/maps/@41.8901872,12.492231,502m/data=!3m1!1e3){rel="noopener noreferrer"}
+[https://www.google.it/maps/@41.8901872,12.492231,502m/data=!3m1!1e3](https://www.google.it/maps/@41.8901872,12.492231,502m/data=!3m1!1e3){.break-words rel="noopener noreferrer"}
 
 Esaminiamo i parametri che si sono aggiunti ai precedenti.
 
