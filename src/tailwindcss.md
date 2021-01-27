@@ -68,5 +68,5 @@ Aggiungi le utility di Tailwind direttamente nel tuo markup HTML
 - [Tailwind CSS (in inglese)](https://tailwindcss.com/docs){rel="noopener noreferrer"} documentazione ufficiale di Tailwind
 - [Tailwind Labs (in inglese)](https://www.youtube.com/tailwindlabs){rel="noopener noreferrer"} canale YouTube ufficiale di Tailwind
 
-_Credit:_ alcune informazioni sono state tradotte e adattate dal sito ufficiale di Tailwind CSS (https://tailwindcss.com/){rel="noopener noreferrer"}
+_Credit:_ alcune informazioni sono state tradotte e adattate dal sito ufficiale di [Tailwind CSS](https://tailwindcss.com/){rel="noopener noreferrer"}
 {class="text-sm mt-8 mb-0"}
