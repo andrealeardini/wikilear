@@ -1,8 +1,23 @@
 ---
+eleventyNavigation:
+  key: Etichette
+  parent: Home
+  showLast: true
 permalink: /tag/
 layout: layouts/page.njk
+image: /images/undraw_Creation_process_ukbh.png
+hide_title: true
 ---
-<h1>Etichette</h1>
+<div>
+  <img
+    src="/images/undraw_Creation_process_ukbh.png"
+    alt="Uomo che appone etichette"
+    class="rounded-lg shadow-lg"
+  />
+</div>
+<h1 class="mt-10">Etichette</h1>
 
-<p>Tutti gli articoli raggruppati per etichetta (tag)</p>
-{% include "components/tags-list.njk" %}
+<p>Tutti gli articoli raggruppati per etichetta (tag). Tra parentesi è indicato il numero di articoli per ogni etichetta.</p>
+<div class="rounded-lg shadow-lg p-4 md:p-8">
+  {% include "components/tags-list.njk" %}
+</div>
