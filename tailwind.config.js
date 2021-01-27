@@ -29,7 +29,7 @@ module.exports = {
         "3/4v": "75vh",
       },
       screens: {
-        sm: "400px",
+        sm: "550px",
       },
       spacing: {
         "1/4": "25%",
