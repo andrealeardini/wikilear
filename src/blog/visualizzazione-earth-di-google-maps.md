@@ -86,13 +86,13 @@ In alternativa puoi navigare nella visualizzazione 3D  usando i **controlli di n
 
 Nella visualizzazione Earth, il carosello delle immagini include anche i [tour 3D di Google Earth](https://www.google.com/earth/explore/showcase/){rel="noopener noreferrer"} disponibili per la zona che stai esplorando. Scorri le miniature finchè trovi quelle contrassegnate dall’icona del tour di Earth.
 
-![Google Maps - Carosello delle immagini - Icona Tour 3D](/images/google-maps-carosello-immagini-tour-3D-google-earth.png 'Fai clic sulla miniatura Mappa per tornare alla visualizzazione classica della mappa')**Cerca l'icona dei tour 3D scorrendo le immagini disponibili**
+![Carosello delle immagini di Google Maps con evidenziata l'Icona Tour 3D](/images/google-maps-carosello-immagini-tour-3D-google-earth.png 'Carosello delle immagini')**Cerca l'icona dei tour 3D scorrendo le immagini disponibili**
 
 Fai clic su una delle miniature con l’icona del tour 3D per far partire il tour. A seconda della velocità della connessione a Internet e della durata del tour potrebbero volerci alcuni secondi per caricarlo.
 
-![Google Maps - Carosello delle immagini - Comandi del tour 3D](/images/google-maps-carosello-immagini-comandi-tour-3D-google-earth.png 'Comandi del tour 3D')**Usa i comandi del tour per fermare/far ripartire il tour (‖/►) e per passare al tour successivo (>) o a quello precedente (<)**
+![Carosello delle immagini di Google Maps con il dettaglio dei comandi del tour 3D](/images/google-maps-carosello-immagini-comandi-tour-3D-google-earth.png 'Comandi del tour 3D')**Usa i comandi del tour per fermare/far ripartire il tour (‖/►) e per passare al tour successivo (>) o a quello precedente (<)**
 
-![Google Maps - Carosello delle immagini - Miniatura Earth](/images/google-maps-carosello-immagini-comandi-tour-3D-google-earth-miniatura-earth.png 'La miniatura Earth si trova dopo la mappa nel carosello delle immagini')**Fai clic sulla miniatura Earth per uscire dal tour 3D e tornare alla visualizzazione Earth.**
+![Carosello delle immagini di Google Maps con il dettaglo della Miniatura Earth](/images/google-maps-carosello-immagini-comandi-tour-3D-google-earth-miniatura-earth.png 'La miniatura Earth si trova dopo la mappa nel carosello delle immagini')**Fai clic sulla miniatura Earth per uscire dal tour 3D e tornare alla visualizzazione Earth.**
 
 ## La Terra vista dallo spazio
 
