@@ -5,7 +5,7 @@ layout: 'layouts/feed.njk'
 pagination:
   data: collections.blog
   size: 5
-permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/'
+permalink: 'blog{% if pagination.pageNumber > 0 %}/page-{{ pagination.pageNumber + 1 }}{% endif %}/'
 paginationPrevText: 'Post più recenti'
 paginationNextText: 'Post più vecchi'
 paginationAnchor: '#post-list'
