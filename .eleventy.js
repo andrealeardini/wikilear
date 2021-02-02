@@ -147,7 +147,30 @@ module.exports = function (eleventyConfig) {
 
   // Returns a collection of tutorials in reverse date order
   eleventyConfig.addCollection("tutorial", (collection) => {
-    return [...collection.getFilteredByGlob("./src/tutorial/**/*.md")].reverse();
+    return [
+      ...collection.getFilteredByGlob("./src/tutorial/**/*.md"),
+    ].reverse();
+  });
+
+  // Returns a collection of Google Maps Tutorials in reverse date order
+  eleventyConfig.addCollection("google-maps-tutorial", (collection) => {
+    return [
+      ...collection.getFilteredByGlob("./src/tutorial/google-maps/**/*.md"),
+    ].reverse();
+  });
+
+  // Returns a collection of Google Docs Tutorials in reverse date order
+  eleventyConfig.addCollection("google-docs-tutorial", (collection) => {
+    return [
+      ...collection.getFilteredByGlob("./src/tutorial/google-docs/**/*.md"),
+    ].reverse();
+  });
+
+  // Returns a collection of Google Drive Tutorials in reverse date order
+  eleventyConfig.addCollection("google-drive-tutorial", (collection) => {
+    return [
+      ...collection.getFilteredByGlob("./src/tutorial/google-drive/**/*.md"),
+    ].reverse();
   });
 
   // Returns a collection of articles in reverse date order filtered by feed
