@@ -1,5 +1,5 @@
 
-  <div>
+  <div {% if style %}class="{{ style }}"{% endif %}>
     <h1>{{ pageHeaderTitle or title | safe }}</h1>
     {% if pageHeaderSummary %}
     <div>
