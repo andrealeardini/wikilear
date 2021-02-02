@@ -1,9 +1,5 @@
 ---
-eleventyNavigation:
-  key: Blog
-  parent: Home
-  showLast: true
-title: 'Blog'
+title: Blog
 description: Tutti le ultime notizie e storie pubblicate sul sito
 layout: 'layouts/feed.njk'
 pagination:
@@ -14,6 +10,7 @@ paginationPrevText: 'Post più recenti'
 paginationNextText: 'Post più vecchi'
 paginationAnchor: '#post-list'
 feed: ''
+parent: Home
 ---
 Tutti gli articoli e notizie pubblicati su Wikilear.
 

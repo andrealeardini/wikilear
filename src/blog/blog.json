@@ -1,9 +1,0 @@
-{
-  "eleventyNavigation": {
-    "key": "-",
-    "parent": "Blog"
-  },
-  "layout": "layouts/post.njk",
-  "feed": "true",
-  "style": "markdown"
-}
