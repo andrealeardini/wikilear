@@ -62,7 +62,7 @@ pagination.href.next or pagination.href.previous %}
         >
       </li>
       {% endif %}
-      {% if pagination.pages.length > 3 %}
+      {% if pagination.pages.length > 2 %}
       <li class="border rounded-lg shadow-lg w-10 h-10 md:w-12 md:h-12 flex justify-center items-center hover:bg-gray-300 dark:hover:bg-gray-700
         {% if (pagination.pageNumber==pagination.pages.length -1) %} bg-gray-200 dark:bg-gray-600 {% endif %}">
         <a href="{{ pagination.href.last }}{{ paginationAnchor }}" title="Ultima pagina">{{ pagination.pages.length }}</a>
