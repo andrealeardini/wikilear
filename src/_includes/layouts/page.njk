@@ -2,26 +2,34 @@
 {% block content %}
    <article class="{{ style }} mx-auto">
     {%if not hide_title %}
-    {% if image %}
-      <div class="h-18 mb-8 flex justify-start items-center">
-        <img
-          src="{{ image }}"
-          {% if image-description %}
-          alt="{{ image-description }}"
-          {% else %}
-          alt=""
-          {% endif %}
-          {% if image_title %}
-          title="{{ image_title }}"
-          {% endif %}
-          class="flex-none w-14 m-0 mr-4 rounded-lg {% if image =="/images/11ty.svg" %}w-16 bg-gray-900{% endif %}""
-        />
-        <h1>{{title}}</h1>
-      </div>
+      {% if eleventyNavigation.key == 'search' %}
+        <div class="h-18 mb-8 flex justify-start items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-24 w-24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <h1>{{title}}</h1>
+        </div>
       {% else %}
-        <h1>{{title}}</h1>
+        {% if image %}
+          <div class="h-18 mb-8 flex justify-start items-center">
+            <img
+              src="{{ image }}"
+              {% if image-description %}
+              alt="{{ image-description }}"
+              {% else %}
+              alt=""
+              {% endif %}
+              {% if image_title %}
+              title="{{ image_title }}"
+              {% endif %}
+              class="flex-none w-14 m-0 mr-4 rounded-lg
+                {% if image =="/images/11ty.svg" %}w-16 bg-gray-900{% endif %}""
+            />
+            <h1>{{title}}</h1>
+          </div>
+        {% else %}
+          <h1>{{title}}</h1>
+        {% endif %}
       {% endif %}
-    {%endif %}
+    {% endif %}
     {{ content | safe }}
   </article>
 {% endblock %}

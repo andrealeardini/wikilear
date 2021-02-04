@@ -76,5 +76,10 @@
       {% include "partials/footer.njk" %}
     </div>
     <script type="module" src="/js/main.js"></script>
+    {% if eleventyNavigation.key == 'search' %}
+    <script>
+      {% include 'components/search/search.js' %}
+    </script>
+    {% endif %}
   </body>
 </html>
