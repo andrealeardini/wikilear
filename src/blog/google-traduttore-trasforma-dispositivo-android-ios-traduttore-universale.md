@@ -9,7 +9,7 @@ topics: Google Traduttore
 title: Trasforma il tuo dispositivo Android o iOS in un traduttore universale grazie a Google Traduttore
 description: Il traduttore universale da dispositivo immaginario add app disponibile per Android e iOS grazie a Google Traduttore.
 subtitle: Il traduttore universale è una tecnologia essenziale nell'universo immaginario di Star Trek popolato di numerose specie aliene. Ma si tratta davvero di sola fantascienza?
-image: /images/google-traduttore-traduzione-simultanea-testo.png
+image: ./src/images/google-traduttore-traduzione-simultanea-testo.png
 image_title:
 image_description: Inquadra un testo per tradurlo
 old_url: /2015/01/Google-Traduttore-trasforma-dispositivo-Android-iOS-traduttore-universale.html

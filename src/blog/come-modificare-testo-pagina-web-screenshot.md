@@ -7,7 +7,7 @@ tags:
 title: Screenshot con il trucco
 description: Come modificare il testo di una pagina web direttamente nel browser usando del semplice codice JavaScript
 subtitle: Come modificare il testo di una pagina web con un semplice clic
-image: /images/undraw_Bookmarks_re_mq1u.png
+image: ./src/images/undraw_Bookmarks_re_mq1u.png
 image_title:
 image_description:
 old_url: /2014/02/screenshot-con-il-trucco.html

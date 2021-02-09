@@ -5,7 +5,7 @@ eleventyNavigation:
   showLast: true
 layout: layouts/page.njk
 title: Documenti Google
-image: /images/docs_48dp.png
+image: ./src/images/docs_48dp.png
 style: markdown
 ---
 <details>

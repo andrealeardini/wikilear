@@ -8,7 +8,7 @@ topics: Google Keep
 title: Google Keep, condividi idee e note con amici e familiari
 description: Con gli ultimi aggiornamenti Google Keep veste il Material Design e si arricchisce di importanti funzioni tra cui la condivisione delle note, la modifica real-time e la ricerca tramite colore.
 subtitle: Con gli ultimi aggiornamenti Google Keep veste il Material Design e si arricchisce di importanti funzioni tra cui la condivisione delle note, la modifica real-time e la ricerca tramite colore.
-snippet_image: /images/google-keep-web.png
+snippet_image: ./src/images/google-keep-web.png
 snippet_description: Google Keep versione web
 image:
 image_title:
@@ -21,9 +21,9 @@ Grazie alla nuova funzione per condividere le note puoi creare una lista della s
 
 <div class="flex justify-between h-2/5 w-auto">
 
-![Elenchi e note condivisi su Google Keep](/images/google-keep-condivisione-note.png "Condividi note ed elenchi con amici e parenti")
+![Elenchi e note condivisi su Google Keep](./src/images/google-keep-condivisione-note.png "Condividi note ed elenchi con amici e parenti")
 
-![Elenco della spesa condiviso con Google Keep](/images/google-keep-condivisione-elenco-spesa.png "Elenco della spesa condiviso con altri utenti")
+![Elenco della spesa condiviso con Google Keep](./src/images/google-keep-condivisione-elenco-spesa.png "Elenco della spesa condiviso con altri utenti")
 
 </div>
 
@@ -34,7 +34,7 @@ Prendere un appunto al volo è utile, ma a cosa servirebbe avere tante note se p
 <div class="flex justify-center h-2/5 w-auto">
 <div class="basis">
 
-![Ricerca di una nota in base al colore in Google Keep](/images/google-keep-ricerca-note-per-colore.png "Assegna colori diversi alle note per suddividerle in categorie")
+![Ricerca di una nota in base al colore in Google Keep](./src/images/google-keep-ricerca-note-per-colore.png "Assegna colori diversi alle note per suddividerle in categorie")
 
 </div>
 </div>
@@ -43,8 +43,8 @@ Prendere un appunto al volo è utile, ma a cosa servirebbe avere tante note se p
 
 Le nuove funzioni di Google Keep sono già utilizzabili nella versione desktop (tramite [web](https://keep.google.com/){rel="noopener noreferrer"} o con l'apposita [app per Chrome](https://chrome.google.com/webstore/detail/google-keep/hmjkmjkepdijhoojdojkdfohbdgmmhki?hl=it){rel="noopener noreferrer"}).
 
-![Google Keep aperto dalla pagina web](/images/google-keep-web.png 'Vai alla pagina keep.google.com per accedere dal web')
+![Google Keep aperto dalla pagina web](./src/images/google-keep-web.png 'Vai alla pagina keep.google.com per accedere dal web')
 
-!["Google Keep aperto con l'app per Chrome"](/images/google-keep-app-chrome.png "Installa l'app per Chrome per accedere facilmente a Google Keep") **Accedi a Google Keep dal web o tramite l'apposita app per Chrome**
+!["Google Keep aperto con l'app per Chrome"](./src/images/google-keep-app-chrome.png "Installa l'app per Chrome per accedere facilmente a Google Keep") **Accedi a Google Keep dal web o tramite l'apposita app per Chrome**
 
 L'app per Android (versione 4.0, Ice Cream Sandwich o successive) si può scaricare gratuitamente dal [Play Store](https://play.google.com/store/apps/details?id=com.google.android.keep){rel="nopener noreferrer"} mentre per chi ha già installato l'app l'aggiornamento è in fase di rollout graduale.

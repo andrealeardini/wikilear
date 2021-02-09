@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2020 Andrea Leardini
+ * Copyright (c) 2021 Andrea Leardini
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -50,13 +50,13 @@ const execFile = promisify(require("child_process").execFile);
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
-  eleventyConfig.addPassthroughCopy("src/images");
+
+  // copy and optimize Images
+  eleventyConfig.addTransform("optimizeImages", require("./src/_transforms/images"));
 
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
   eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
-
-  eleventyConfig.addPlugin(require("./src/_11ty/img-dim.js"));
 
   const markdownIt = require("markdown-it");
   const markdownItAttrs = require("markdown-it-attrs");

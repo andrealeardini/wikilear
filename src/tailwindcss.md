@@ -5,7 +5,7 @@ eleventyNavigation:
   showLast: true
 layout: layouts/page.njk
 title: Tailwind CSS
-image: /images/tailwindcss-mark.svg
+image: ./src/images/tailwindcss-mark.svg
 style: markdown
 ---
 <details>
