@@ -50,9 +50,15 @@ const execFile = promisify(require("child_process").execFile);
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/video/");
 
   // copy and optimize Images
   eleventyConfig.addTransform("optimizeImages", require("./src/_transforms/images"));
+  // remove source from path
+  eleventyConfig.addTransform(
+    "removeSource",
+    require("./src/_transforms/source")
+  );
 
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
