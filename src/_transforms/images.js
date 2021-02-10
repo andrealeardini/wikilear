@@ -64,7 +64,7 @@ async function imageHTML(image) {
     alt: image.alt,
     sizes: image.sizes
       ? image.sizes
-      : "(max-width: 320px) 300px, (max-width: 640px) 600px, (max-width: 960px) 900px, (max-width: 1280px) 1200px, 1600px",
+      : "(max-width: 550px) 100vw, 70ch",
     class: image.classList,
     loading: "lazy",
     decoding: "async",
