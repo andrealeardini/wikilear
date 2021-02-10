@@ -21,17 +21,17 @@
     {
       "text": "Documenti Google",
       "url": "/tag/documenti-google/",
-      "image": "./src/images/docs_48dp.png"
+      "image": "/images/docs_48dp.png"
     },
     {
       "text": "Fogli Google",
       "url": "/tag/fogli-google/",
-      "image": "./src/images/sheets_48dp.png"
+      "image": "/images/sheets_48dp.png"
     },
     {
       "text": "Google Apps Script",
       "url": "/tag/google-apps-script/",
-      "image": "./src/images/apps_script_48dp.png"
+      "image": "/images/apps_script_48dp.png"
     }
   ]
 }

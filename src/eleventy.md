@@ -7,7 +7,7 @@ layout: layouts/page.njk
 permalink: "11ty/index.html"
 title: Eleventy
 style: markdown
-image:  ./src/images/11ty.svg
+image:  /images/11ty.svg
 ---
 
 <details>

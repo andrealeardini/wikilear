@@ -8,7 +8,7 @@ topics:
 title: Le coordinate di latitudine e longitudine nel nuovo Google Maps
 description: Come utilizzare le coordinate di latitudine e longitudine con il nuovo Google Maps
 subtitle: Ci sono situazioni in cui conoscere la latitudine e la longitudine di un luogo può fare la differenza. Vediamo alcune applicazioni pratiche.
-image: ./src/images/google-maps-coordinate-latitudine-longitudine.png
+image: /images/google-maps-coordinate-latitudine-longitudine.png
 image_title:
 image_description: Mappa di Google Maps con le coordinate per il Colosseo
 old_url: /2014/03/coordinate-di-latitudine-e-longitudine-nuovo-google-maps.html
@@ -34,14 +34,14 @@ Puoi utilizzare uno dei seguenti formati:
 Per trovare le coordinate di un qualsiasi punto sulla mappa che **non sia un segnaposto o un indicatore** (attività commerciale, punto di interesse, ecc.) devi fare clic nella posizione desiderata. Sotto la casella di ricerca, apparirà una scheda informativa con le coordinate.
 
 <video autoplay loop>
-  <source src="./src/video/google-maps-trovare-latitudine-con-un-clic.mp4">
+  <source src="/video/google-maps-trovare-latitudine-con-un-clic.mp4">
 </video>
 <strong>Posiziona il mouse sulle coordinate che hai ricavato per avere la conferma che si riferiscono al punto desiderato</strong>
 
 Se invece vuoi conoscere latitudine e longitudine di un **punto di interesse** visualizzato sulla mappa devi fare clic sull'indicatore del luogo con il **pulsante destro** del mouse e scegliere **Cosa c'è qui** per mostrare la scheda informativa con le coordinate.
 
 <video autoplay loop>
-  <source src="./src/video/google-maps-trovare-latitudine-con-cosa-ce-qui.mp4">
+  <source src="/video/google-maps-trovare-latitudine-con-cosa-ce-qui.mp4">
 </video>
 <strong>Puoi usare questo metodo con qualsiasi luogo visualizzato sulla mappa</strong>
 

@@ -12,7 +12,7 @@ topics:
 title: Gmail Vs Inbox, quale dovresti usare sul tuo dispositivo Android?
 description: Un confronto dettagliato tra Gmail per Android e Inbox by Gmail per individuare quale è l'app più indicata per le tue necessità.
 subtitle: Gmail per Android o Inbox by Gmail? Due prodotti apparentemente simili ma concepiti per usi diversi. Scopriamo insieme pregi e difetti di entrambi confrontando le caratteristiche principali delle due applicazioni per Android.
-image: ./src/images/gmail-vs-inbox.png
+image: /images/gmail-vs-inbox.png
 image_title:
 image_description: Logo Gmail contro Logo Inbox, al centro robottino Android
 old_url: /2014/11/gmail-per-android-vs-inbox-android.html
@@ -46,34 +46,34 @@ Alcune azioni funzionano allo stesso modo sia in Gmail che in Inbox anche se cam
   <tbody>
     <tr>
       <td class="responsive-table-header column-header">Gmail</td>
-      <td class="table-cell-icon16h first-column"><img class="invert" alt="Gmail per Android - icona archivia" src="./src/images/gmail-android-icona-archivia.png" title="Archivia" /></td>
+      <td class="table-cell-icon16h first-column"><img class="invert" alt="Gmail per Android - icona archivia" src="/images/gmail-android-icona-archivia.png" title="Archivia" /></td>
       <td class="second-column">Archivia</td>
       <td class="responsive-table-header column-header">Inbox</td>
-      <td class="table-cell-icon16h first-column"><img class="invert" alt="Google Inbox - icona segna come completato" src="./src/images/google-inbox-icona-segna-completato.png" title="Completato" /></td>
+      <td class="table-cell-icon16h first-column"><img class="invert" alt="Google Inbox - icona segna come completato" src="/images/google-inbox-icona-segna-completato.png" title="Completato" /></td>
       <td class="second-column">Completato</td>
     </tr>
     <tr>
       <td class="responsive-table-header column-header">Gmail</td>
-      <td class="table-cell-icon16h first-column"><img class="invert" alt="Gmail per Android - icona Elimina" src="./src/images/gmail-android-icona-elimina.png" title="Elimina" /></td>
+      <td class="table-cell-icon16h first-column"><img class="invert" alt="Gmail per Android - icona Elimina" src="/images/gmail-android-icona-elimina.png" title="Elimina" /></td>
       <td class="second-column">Elimina</td>
       <td class="responsive-table-header column-header">Inbox</td>
-      <td class="table-cell-icon16h first-column"><img class="invert" alt="Inbox - icona Sposta in" border="0" src="./src/images/google-inbox-icona-menu.png" title="Sposta in..." /></td>
+      <td class="table-cell-icon16h first-column"><img class="invert" alt="Inbox - icona Sposta in" border="0" src="/images/google-inbox-icona-menu.png" title="Sposta in..." /></td>
       <td class="second-column">Sposta in Cestino</td>
     </tr>
     <tr>
       <td class="responsive-table-header">Gmail</td>
-      <td class="table-cell-icon16h first-column"><img class="invert" alt="Inbox - icona Altre azioni" border="0" src="./src/images/gmail-icona-menu.png" title="Altre azioni" /></td>
+      <td class="table-cell-icon16h first-column"><img class="invert" alt="Inbox - icona Altre azioni" border="0" src="/images/gmail-icona-menu.png" title="Altre azioni" /></td>
       <td class="second-column">Segnala come spam</td>
       <td class="responsive-table-header">Inbox</td>
-      <td class="table-cell-icon16h first-column"><img class="invert" alt="Inbox - icona Sposta in" border="0" src="./src/images/google-inbox-icona-menu.png" title="Sposta in..." /></td>
+      <td class="table-cell-icon16h first-column"><img class="invert" alt="Inbox - icona Sposta in" border="0" src="/images/google-inbox-icona-menu.png" title="Sposta in..." /></td>
       <td class="second-column">Sposta in Spam</td>
     </tr>
     <tr>
       <td class="responsive-table-header">Gmail</td>
-      <td class="table-cell-icon16h first-column"><img alt="Gmail - icona Scrivi" border="0" src="./src/images/gmail-icona-scrivi.png" title="Scrivi" /></td>
+      <td class="table-cell-icon16h first-column"><img alt="Gmail - icona Scrivi" border="0" src="/images/gmail-icona-scrivi.png" title="Scrivi" /></td>
       <td class="second-column">Scrivi</td>
       <td class="responsive-table-header">Inbox</td>
-      <td class="table-cell-icon16h first-column"><img alt="Gmail - icona Scrivi" border="0" src="./src/images/google-inbox-icona-scrivi.png" title="Scrivi" /></td>
+      <td class="table-cell-icon16h first-column"><img alt="Gmail - icona Scrivi" border="0" src="/images/google-inbox-icona-scrivi.png" title="Scrivi" /></td>
       <td class="second-column">Scrivi</td>
     </tr>
   </tbody>
@@ -93,26 +93,26 @@ Per altre azioni di Gmail sono disponibili delle funzionalità in Inbox che perm
   <tbody>
     <tr>
       <td class="responsive-table-header">Gmail</td>
-      <td class="table-cell-icon16h first-column"><img class="invert" alt="Gmail per Android - icona messaggi speciali" src="./src/images/gmail-android-icona-messaggi-speciali.png" title="Speciali" /></td>
+      <td class="table-cell-icon16h first-column"><img class="invert" alt="Gmail per Android - icona messaggi speciali" src="/images/gmail-android-icona-messaggi-speciali.png" title="Speciali" /></td>
       <td class="second-column">Aggiungi a Speciali</td>
       <td class="responsive-table-header">Inbox</td>
-      <td class="table-cell-icon16h first-column"><img class="invert" alt="Google Inbox - icona appunta" border="0" src="./src/images/google-inbox-icona-appunta.png" title="Appunta" /></td>
+      <td class="table-cell-icon16h first-column"><img class="invert" alt="Google Inbox - icona appunta" border="0" src="/images/google-inbox-icona-appunta.png" title="Appunta" /></td>
       <td class="second-column">Appunta</td>
     </tr>
     <tr>
       <td class="responsive-table-header">Gmail</td>
-      <td class="table-cell-icon16h first-column"> <img class="invert" alt="Gmail - icona segna da leggere" src="./src/images/gmail-android-segna-come-da-leggere.png" title="Segna come da leggere" /></td>
+      <td class="table-cell-icon16h first-column"> <img class="invert" alt="Gmail - icona segna da leggere" src="/images/gmail-android-segna-come-da-leggere.png" title="Segna come da leggere" /></td>
       <td class="second-column">Leggi più tardi (segna come Da leggere)</td>
       <td class="responsive-table-header">Inbox</td>
-      <td class="table-cell-icon16h first-column"><img class="invert" alt="Google Inbox - icona posticipa" src="./src/images/google-inbox-icona-posticipa.png" title="Posticipa" /></td>
+      <td class="table-cell-icon16h first-column"><img class="invert" alt="Google Inbox - icona posticipa" src="/images/google-inbox-icona-posticipa.png" title="Posticipa" /></td>
       <td class="second-column">Posticipa</td>
     </tr>
     <tr>
       <td class="responsive-table-header">Gmail</td>
-      <td class="table-cell-icon16h first-column"><img class="invert" alt="Gmail - icona invia messaggio" src="./src/images/gmail-android-invia-messaggio.png" title="Invia" /></td>
+      <td class="table-cell-icon16h first-column"><img class="invert" alt="Gmail - icona invia messaggio" src="/images/gmail-android-invia-messaggio.png" title="Invia" /></td>
       <td class="second-column">Invia un messaggio a te stesso</td>
       <td class="responsive-table-header">Inbox</td>
-      <td class="table-cell-icon16h first-column"><img alt="Google Inbox - icona imposta promemoria" src="./src/images/google-inbox-icona-crea-promemoria.png" title="Promemoria" /></td>
+      <td class="table-cell-icon16h first-column"><img alt="Google Inbox - icona imposta promemoria" src="/images/google-inbox-icona-crea-promemoria.png" title="Promemoria" /></td>
       <td class="second-column">Promemoria</td>
     </tr>
     <tr>

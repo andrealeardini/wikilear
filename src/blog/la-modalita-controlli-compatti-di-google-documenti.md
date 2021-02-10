@@ -6,7 +6,7 @@ tags:
 title: La modalità Controlli compatti di Google Documenti
 description: Come usare la modalità Controlli compatti in Google Documenti (GDocs) per avere più spazio a disposizione mentre si lavora su un documento
 subtitle: Scopri come usare la modalità Controlli compatti in Google Documenti per avere più spazio a disposizione mentre si lavora su un documento
-image: ./src/images/undraw_Documents_re_isxv.png
+image: /images/undraw_Documents_re_isxv.png
 image_title:
 image_description:
 old_url: /2012/11/la-modalita-controlli-compatti-di-Google-Documenti.html
@@ -19,15 +19,15 @@ C’è però il rovescio della medaglia: lavorare su un documento senza i menù 
 Per nascondere i menu potete usare uno dei seguenti metodi:
 
 - Fate clic sul pulsante **Nascondi menu** sulla destra della barra degli strumenti
-![Pulsante Nascondi Menu (Controlli compatti)](./src/images/google-documenti-nascondi-menu-controlli-compatti.png 'Il pulsante Nascondi Menu si trova in alto a destra sulla barra degli strumenti')
+![Pulsante Nascondi Menu (Controlli compatti)](/images/google-documenti-nascondi-menu-controlli-compatti.png 'Il pulsante Nascondi Menu si trova in alto a destra sulla barra degli strumenti')
 - Fate clic su **Controlli compatti** nel menu **Visualizza**
 - Premete **Ctrl+Maiusc+F**
-![Tasti di scelta rapida CTRL+MAIUSC+F](./src/images/CTRL+MAIUSC+F.png 'I tasti di scelta rapida CTRL+MAIUSC+F permettono di nascondere o mostrare i menu')
+![Tasti di scelta rapida CTRL+MAIUSC+F](/images/CTRL+MAIUSC+F.png 'I tasti di scelta rapida CTRL+MAIUSC+F permettono di nascondere o mostrare i menu')
 
 ## Come tornare alla visualizzazione normale
 Quando vi trovate nella visualizzazione a **Controlli compatti,** per mostrare i menu:
 
 - Fate clic sul pulsante **Mostra menu** sulla destra della barra degli strumenti
-![Pulsante Mostra (Controlli compatti)](./src/images/google-documenti-nascondi-menu-controlli-compatti.png 'Il pulsante Mostra Menu si trova in alto a destra sulla barra degli strumenti')
+![Pulsante Mostra (Controlli compatti)](/images/google-documenti-nascondi-menu-controlli-compatti.png 'Il pulsante Mostra Menu si trova in alto a destra sulla barra degli strumenti')
 - Premete **Ctrl+Maiusc+F**
-![Tasti di scelta rapida CTRL+MAIUSC+F](./src/images/CTRL+MAIUSC+F.png 'I tasti di scelta rapida CTRL+MAIUSC+F permettono di nascondere o mostrare i menu')
+![Tasti di scelta rapida CTRL+MAIUSC+F](/images/CTRL+MAIUSC+F.png 'I tasti di scelta rapida CTRL+MAIUSC+F permettono di nascondere o mostrare i menu')

@@ -5,7 +5,7 @@ eleventyNavigation:
   showLast: true
 layout: layouts/page.njk
 title: Google Drive
-image: ./src/images/drive_48dp.png
+image: /images/drive_48dp.png
 style: markdown
 ---
 <details>

@@ -11,7 +11,7 @@ topics:
 title: Token di sicurezza per accedere all'account Google
 description: Quando e come usare il token di sicurezza per accedere al tuo account Google
 subtitle: Google aggiunge la possibilità di utilizzare un token di sicurezza per accedere all'account
-image: ./src/images/google-chrome-token-di-sicurezza-verifica-a-due-passaggi.png
+image: /images/google-chrome-token-di-sicurezza-verifica-a-due-passaggi.png
 image_title:
 image_description: Token di sicurezza - verifica in due passaggi con Google Chrome
 old_url: /2014/10/token-di-sicurezza-accedere-account-google.html
@@ -30,7 +30,7 @@ Usa la crittografia al posto dei codici di verifica e funziona automaticamente s
 - Non richiede connessione al tuo operatore telefonico e quindi puoi usarlo in zone dove la ricezione del segnale è scarsa o assente
 - È facilmente trasportabile, puoi agganciarlo ad un mazzo di chiavi o metterlo nel taschino del portafoglio
 
-![Token di sicurezza agganciato ad un portachiavi](./src/images/token-di-sicurezza-portachiavi.jpg){.md:w-3/4 .mx-auto} **Il token di sicurezza può essere agganciato a qualsiasi portachiavi**
+![Token di sicurezza agganciato ad un portachiavi](/images/token-di-sicurezza-portachiavi.jpg){.md:w-3/4 .mx-auto} **Il token di sicurezza può essere agganciato a qualsiasi portachiavi**
 ## Requisiti per utilizzare il token di sicurezza
 
 Un aspetto da tenere in considerazione è che il token di sicurezza funziona solo con Google Chrome (versione 38 o successiva in ambiente Windows, Mac OS, ChromeOS o Linux) e naturalmente richiede l'accesso alla porta USB del dispositivo. In alcuni contesti aziendali la scelta del browser potrebbe essere obbligata e se il browser scelto dall'azienda non è Chrome non sarà possibile usare il token. Lo stesso discorso vale se l'azienda ha bloccato l'accesso alle porte USB.
@@ -38,7 +38,7 @@ Un aspetto da tenere in considerazione è che il token di sicurezza funziona sol
 > Se accedi da un dispositivo mobile o da un dispositivo che non supporta il token, puoi sempre richiedere l'invio di un codice di verifica in alternativa al token.
 
 ## Dove posso comprare il token di sicurezza?
-![Logo FIDO U2F](./src/images/marchio-FIDO-U2F-token-di-sicurezza.png)
+![Logo FIDO U2F](/images/marchio-FIDO-U2F-token-di-sicurezza.png)
 
 Come token di sicurezza puoi utilizzare qualsiasi dispositivo che sia conforme allo standard aperto (open standard) "FIDO Universal 2nd Factor (U2F)". Se non lo trovi nel tuo negozio di fiducia puoi [cercarlo su Amazon](https://www.amazon.it/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=FIDO%20U2F%20Security%20Key){rel='noopener noreferrer'} o altri vendor online.
 

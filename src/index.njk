@@ -8,7 +8,7 @@ description:
   Wikilear si rinnova e diventa un sito. Un nuovo formato, nuovi contenuti e
   tutorial ma la stessa semplicità e praticità che ha contraddistinto il blog
   fin dalla sua nascita.
-image: ./src/images/home.jpg
+image: /images/home.jpg
 pagination:
   data: collections.feed
   size: 3
@@ -22,9 +22,9 @@ feed: ""
 {% block content %}
 <div>
   <img
-    src="./src/images/home.jpg"
+    src="/images/home.jpg"
     alt="Concetto di apprendimento online"
-    class="rounded-lg shadow-lg"
+    class="w-full rounded-lg shadow-lg"
   />
 </div>
 <article class="mx-1 sm:mx-2 md:mx-4">
@@ -49,8 +49,8 @@ feed: ""
   {% include 'components/card.njk' %}
 </article>
 
-{% set cards = [ { url: "/blog/", image: "./src/images/blog-post.svg", title: "Blog"
-}, { url: "/tutorial/", image: "./src/images/tutorial.svg", title: "Tutorial" } ]%}
+{% set cards = [ { url: "/blog/", image: "/images/blog-post.svg", title: "Blog"
+}, { url: "/tutorial/", image: "/images/tutorial.svg", title: "Tutorial" } ]%}
 
 <div class="flex flex-wrap justify-between mx-1 sm:mx-2 md:mx-4 my-4 gap-y-8">
   {% for card in cards %}
@@ -66,6 +66,7 @@ feed: ""
           class="p-6 sm:p-4 absolute h-full object-cover"
           src="{{ card.image }}"
           alt="{{ card.title }}"
+          sizes="(max-width:640px) 300px, 600px"
         />
       </div>
     </div>

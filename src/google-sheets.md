@@ -5,7 +5,7 @@ eleventyNavigation:
   showLast: true
 layout: layouts/page.njk
 title: Fogli Google
-image: ./src/images/sheets_48dp.png
+image: /images/sheets_48dp.png
 style: markdown
 ---
 <details>

@@ -5,7 +5,7 @@ eleventyNavigation:
   showLast: true
 layout: layouts/page.njk
 title: Google Apps Script
-image: ./src/images/apps_script_48dp.png
+image: /images/apps_script_48dp.png
 style: markdown
 ---
 <details>
