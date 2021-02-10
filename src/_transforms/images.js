@@ -35,9 +35,22 @@ const optimizeImages = async (content, outputPath = ".html") => {
 };
 
 async function imageHTML(image) {
-  let metadata = await Image(image.src, {
+  // set standard format and element
+  let formats = ["webp", "jpeg"];
+  let type = "picture";
+
+  // with svg the element is a img instead of a picture
+  if (path.extname(image.src) === ".svg") {
+    formats = ["svg"];
+    type = "img";
+  }
+
+  // the images source is relative, add the full path
+  let src = "./src"+image.src;
+
+  let metadata = await Image(src, {
     widths: [300, 600, 900, 1200, 1600],
-    formats: ["webp", "jpg"],
+    formats: formats,
     urlPath: "/images/",
     outputDir: "./dist/images/",
     filenameFormat: function (id, src, width, format, options) {
@@ -49,7 +62,9 @@ async function imageHTML(image) {
 
   let imageAttributes = {
     alt: image.alt,
-    sizes: image.size,
+    sizes: image.sizes
+      ? image.sizes
+      : "(max-width: 320px) 300px, (max-width: 640px) 600px, (max-width: 960px) 900px, (max-width: 1280px) 1200px, 1600px",
     class: image.classList,
     loading: "lazy",
     decoding: "async",
@@ -59,8 +74,8 @@ async function imageHTML(image) {
     whitespaceMode: "inline",
   });
   const html = new JSDOM(text);
-  const picture = [...html.window.document.querySelectorAll("picture")];
-  image.parentElement.replaceChild(picture[0], image);
+  const element = [...html.window.document.querySelectorAll(type)];
+  image.parentElement.replaceChild(element[0], image);
 }
 
 module.exports = optimizeImages;
