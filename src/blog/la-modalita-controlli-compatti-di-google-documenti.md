@@ -19,7 +19,7 @@ C’è però il rovescio della medaglia: lavorare su un documento senza i menù 
 Per nascondere i menu potete usare uno dei seguenti metodi:
 
 - Fate clic sul pulsante **Nascondi menu** sulla destra della barra degli strumenti
-![Pulsante Nascondi Menu (Controlli compatti)](/images/google-documenti-nascondi-menu-controlli-compatti.png 'Il pulsante Nascondi Menu si trova in alto a destra sulla barra degli strumenti')
+![Pulsante Nascondi Menu (Controlli compatti)](/images/google-documenti-nascondi-menu-controlli-compatti.png 'Il pulsante Nascondi Menu si trova in alto a destra sulla barra degli strumenti'){.w-full}
 - Fate clic su **Controlli compatti** nel menu **Visualizza**
 - Premete **Ctrl+Maiusc+F**
 ![Tasti di scelta rapida CTRL+MAIUSC+F](/images/CTRL+MAIUSC+F.png 'I tasti di scelta rapida CTRL+MAIUSC+F permettono di nascondere o mostrare i menu')
@@ -28,6 +28,6 @@ Per nascondere i menu potete usare uno dei seguenti metodi:
 Quando vi trovate nella visualizzazione a **Controlli compatti,** per mostrare i menu:
 
 - Fate clic sul pulsante **Mostra menu** sulla destra della barra degli strumenti
-![Pulsante Mostra (Controlli compatti)](/images/google-documenti-nascondi-menu-controlli-compatti.png 'Il pulsante Mostra Menu si trova in alto a destra sulla barra degli strumenti')
+![Pulsante Mostra (Controlli compatti)](/images/google-documenti-nascondi-menu-controlli-compatti.png 'Il pulsante Mostra Menu si trova in alto a destra sulla barra degli strumenti'){.w-full}
 - Premete **Ctrl+Maiusc+F**
 ![Tasti di scelta rapida CTRL+MAIUSC+F](/images/CTRL+MAIUSC+F.png 'I tasti di scelta rapida CTRL+MAIUSC+F permettono di nascondere o mostrare i menu')
