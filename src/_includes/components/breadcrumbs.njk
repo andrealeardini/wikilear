@@ -12,7 +12,7 @@ eleventyNavigation.parent %}
     {%- endfor -%}
     {% if eleventyNavigation.showLast %}
     <li class="inline font-light text-gray-700 dark:text-yellow-200">
-      {{ eleventyNavigation.title or eleventyNavigation.key }}
+      <a href="{{ entry.url | url }}">{{ eleventyNavigation.title or eleventyNavigation.key }}</a>
     </li>
     {% endif %}
   </ul>

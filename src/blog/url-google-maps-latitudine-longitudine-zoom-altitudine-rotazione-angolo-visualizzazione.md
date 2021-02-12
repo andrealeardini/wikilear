@@ -38,15 +38,22 @@ Esaminiamo i parametri che si sono aggiunti ai precedenti.
 
 | Parametro  | Descrizione  |
 |---|---|
+| 502m  | Altitudine espressa in metri. Nella visualizzazione Earth, si passa dal livello dello zoom che esprime un valore in 2D all’altitudine che esprime una misura in 3D.  |
 | data=!3m1!1e3  | Indica che è attiva la visualizzazione Earth. Inserirlo manualmente nell’URL equivale a premere la **miniatura Earth** in Google Maps  |
-| 496m  | Altitudine espressa in metri. Nella visualizzazione Earth, si passa dal livello dello zoom che esprime un valore in 2D all’altitudine che esprime una misura in 3D.  |
 
-Ora inclina la vista, l’URL di Google Maps diventa:
+Ora **inclina** la vista (3D), l’URL di Google Maps diventa:
 [https://www.google.com/maps/@41.8852843,12.492231,772a,35y,39.29t/data=!3m1!1e3](https://www.google.com/maps/@41.8852843,12.492231,772a,35y,39.29t/data=!3m1!1e3){.break-words rel="noopener noreferrer"}
 
 | Parametro |	Descrizione |
 |---|---|
+| 772a |	Altitudine |
 | 39.29t |	Angolo di inclinazione (t=tilt). Se non viene specificato la mappa sarà visualizzata con vista perpendicolare. Si possono impostare due valori: 39.29 (inclinazione leggera) o 78.6 (inclinazione panoramica) |
+
+Ora **ruota** la vista, l’URL di Google Maps cambia e visualizza anche il grado di rotazione che hai apportato alla mappa, nel mio caso 180°:
+[https://www.google.com/maps/@41.8852843,12.492231,772a,35y,180h,39.29t/data=!3m1!1e3](https://www.google.com/maps/@41.8852843,12.492231,772a,35y,180h,39.29t/data=!3m1!1e3){.break-words rel="noopener noreferrer"}
+
+| Parametro |	Descrizione |
+|---|---|
 | 180h |	Angolo di rotazione della mappa (h=heading). I valori standard sono  90, 180 e 270. Manualmente si può inserire un qualsiasi valore compreso tra 0 e 360 |
 
 Non essendoci una documentazione ufficiale che elenca tutti i parametri, l’elenco che ti ho proposto si basa più che altro sull’osservazione e la sperimentazione delle singole impostazioni. Se conosci il significato di altri parametri puoi segnalarmelo usando Twitter o tramite email. Il tuo contributo sarà prezioso per rendere ancora più completo e utile questo elenco!
