@@ -53,8 +53,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/video/");
 
   // copy and optimize Images
-  eleventyConfig.addTransform("optimizeImages", require("./src/_transforms/images"));
-
+  eleventyConfig.addTransform(
+    "optimizeImages",
+    require("./src/_transforms/images")
+  );
 
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
@@ -155,23 +157,30 @@ module.exports = function (eleventyConfig) {
   });
 
   // Returns a collection of Google Maps Tutorials in reverse date order
-  eleventyConfig.addCollection("google-maps-tutorial", (collection) => {
+  eleventyConfig.addCollection("googlemapstutorial", (collection) => {
     return [
       ...collection.getFilteredByGlob("./src/tutorial/google-maps/**/*.md"),
     ].reverse();
   });
 
   // Returns a collection of Google Docs Tutorials in reverse date order
-  eleventyConfig.addCollection("google-docs-tutorial", (collection) => {
+  eleventyConfig.addCollection("googledocstutorial", (collection) => {
     return [
       ...collection.getFilteredByGlob("./src/tutorial/google-docs/**/*.md"),
     ].reverse();
   });
 
   // Returns a collection of Google Drive Tutorials in reverse date order
-  eleventyConfig.addCollection("google-drive-tutorial", (collection) => {
+  eleventyConfig.addCollection("googledrivetutorial", (collection) => {
     return [
       ...collection.getFilteredByGlob("./src/tutorial/google-drive/**/*.md"),
+    ].reverse();
+  });
+
+  // Returns a collection of Gmail Tutorials in reverse date order
+  eleventyConfig.addCollection("gmailtutorial", (collection) => {
+    return [
+      ...collection.getFilteredByGlob("./src/tutorial/gmail/**/*.md"),
     ].reverse();
   });
 
