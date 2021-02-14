@@ -1,11 +1,11 @@
 ---
   parent: Tutorial
-  key: Docs-Tutorial
-  title: Google Documenti
-  description: Tutti i tutorial per Google Documenti pubblicati sul sito
+  key: Google-Docs-Tutorial
+  title: Documenti Google
+  description: Tutti i tutorial per Documenti Google pubblicati sul sito
   layout: layouts/feed.njk
   pagination:
-    data: collections.google-docs-tutorial
+    data: collections.googledocstutorial
     size: 3
   permalink: tutorial/google-docs{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/
   paginationPrevText: Tutorial più recenti

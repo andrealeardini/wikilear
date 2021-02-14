@@ -2,7 +2,7 @@
 date: 2014-06-14
 tags:
   - Google Maps
-topics:
+topic:
   - Google Maps
 title: "L’URL di Google Maps: latitudine, longitudine, zoom, altitudine, angolo di rotazione e inclinazione"
 description: L'URL di Google Maps spiegato nei dettagli, parametro per parametro
