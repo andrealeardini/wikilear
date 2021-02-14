@@ -1,10 +1,12 @@
-<!-- https://www.11ty.dev/docs/filters/collection-items/ -->
-{%if not collection %}{% set collection = collections.blog %}{% endif %}
+{# https://www.11ty.dev/docs/filters/collection-items/ #}
+{# https://github.com/11ty/eleventy/issues/434#issuecomment-469028924 #}
+{% macro posts(collection) %}
+{% if collection.length > 1 %}
 {% set previousPost = collection | getPreviousCollectionItem(page) %}
 {% set nextPost = collection | getNextCollectionItem(page) %}
   <footer>
     <nav class="my-10 bg-gray-100 dark:bg-gray-600 py-2 px-2 md:px-3 rounded-lg" aria-label="Link agli articoli">
-      <ol class="w-full mt-2 flex justify-between font-bold">
+      <ol class="w-full mt-4 flex justify-between font-bold">
         {% if previousPost %}
         <li {% if nextPost %} class="flex-shrink-0 h-full w-1/2"{% endif %}>
           <a href="{{ previousPost.url }}" title="Articolo precedente">
@@ -59,3 +61,5 @@
       </ol>
     </nav>
   </footer>
+  {% endif %}
+  {% endmacro %}

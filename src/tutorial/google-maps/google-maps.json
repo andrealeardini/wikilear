@@ -1,3 +1,5 @@
 {
-  "parent": "Google-Maps-Tutorial"
+  "parent": "Google-Maps-Tutorial",
+  "layout": "layouts/tutorial-maps.njk",
+  "topic": "Google Maps"
 }

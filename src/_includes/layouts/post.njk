@@ -41,7 +41,11 @@
     </div>
   {% endif %}
 
-  {% include "components/nav-posts.njk" %}
+  {% block posts %}
+    {# https://github.com/11ty/eleventy/issues/434#issuecomment-469028924 #}
+    {% import "components/nav-posts.njk" as nav with context %}
+    {{ nav.posts(collections.blog) }}
+  {% endblock %}
 
   {% if recommendedPosts %}
   <footer class="recommended-posts">
@@ -52,3 +56,4 @@
   {% endif %}
 
 {% endblock %}
+

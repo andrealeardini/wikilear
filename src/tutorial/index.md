@@ -25,8 +25,9 @@
 
 <div class="mt-4">
 
-[Documenti Google](/tutorial/google-docs)
-[Google Maps](/tutorial/google-maps)
+- [Documenti Google](/tutorial/google-docs)
+- [Gmail](/tutorial/gmail)
+- [Google Maps](/tutorial/google-maps)
 
 </div>
 

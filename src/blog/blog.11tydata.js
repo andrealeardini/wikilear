@@ -3,12 +3,12 @@ module.exports = {
     eleventyNavigation: {
       key: (data) => data.title,
       parent: (data) => data.parent,
-      showLast: true
-    }
+      showLast: true,
+    },
   },
   layout: "layouts/post.njk",
   main: "blog",
   feed: "true",
   style: "markdown",
-  parent: "Blog"
+  parent: "Blog",
 };
