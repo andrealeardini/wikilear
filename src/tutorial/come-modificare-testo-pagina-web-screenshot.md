@@ -17,7 +17,7 @@ Lo sapevi che utilizzando JavaScript puoi abilitare la modifica di qualsiasi pag
 Trascina nella barra dei preferiti questo link: <a href="javascript:document.body.contentEditable='true'; document.designMode='on'; void 0;">Modifica pagina.</a>
 Quando vuoi modificare una pagina web fai clic su questo preferito e apporta le modifiche desiderate.
 
-> Se vuoi creare manualmente il preferito questo è il codice da utilizzare al posto del link: `javascript:document.body.contentEditable='true'; document.designMode='on'; void 0;`
+> Se vuoi creare manualmente il preferito questo è il codice da utilizzare al posto del link: `javascript:document.body.contentEditable='true'; document.designMode='on'; void 0;`{.break-words}
 
 _Fonte:_ John Mueller (post su Google+)
 
