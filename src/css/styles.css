@@ -192,7 +192,7 @@
   }
 
   .dark img.invert {
-    filter: invert();
+    filter: invert(0);
   }
 
   /* TODO: use new Tailwind plugin */
