@@ -1,49 +1,47 @@
-<div id="post-list">
-  <div>
-    {% if postListHeadline %}
-    <h2 class="mt-8 font-semibold">
-      {{ postListHeadline }}
-    </h2>
-    {% endif %}
-    <ul>
-      {% for item in postListItems %}
-      <li class="mt-6 md:mt-8 lg:mt-10 shadow-lg border border-gray-300 rounded-lg">
-        {% if item.data.snippet_image %}
-          {% set image = item.data.snippet_image %}
-          {% set image_description = item.data.snippet-image-description %}
-          {% set image_title = item.data.snippet-image-title %}
-        {% else %}
-          {% set image = item.data.image %}
-          {% set image_description = item.data.image-description %}
-          {% set image_title = item.data.image-title %}
-        {% endif %}
 
-        {% if image %}
-        <div>
-          <img
-            src="{{ image }}"
-            {% if image-description %}
-            alt="{{ image-description }}"
-            {% else %}
-            alt=""
-            {% endif %}
-            {% if image_title %}
-            title="{{ image_title }}"
-            {% endif %}
-            class="w-full rounded-t-lg m-0 shadow"
-          />
-        </div>
+{% if postListHeadline %}
+<h2 class="mt-8 font-semibold">
+  {{ postListHeadline }}
+</h2>
+{% endif %}
+<ul>
+  {% for item in postListItems %}
+  <li class="mt-6 md:mt-8 lg:mt-10 shadow-lg border border-gray-300 rounded-lg">
+    {% if item.data.snippet_image %}
+      {% set image = item.data.snippet_image %}
+      {% set image_description = item.data.snippet-image-description %}
+      {% set image_title = item.data.snippet-image-title %}
+    {% else %}
+      {% set image = item.data.image %}
+      {% set image_description = item.data.image-description %}
+      {% set image_title = item.data.image-title %}
+    {% endif %}
+
+    {% if image %}
+    <div>
+      <img
+        src="{{ image }}"
+        {% if image-description %}
+        alt="{{ image-description }}"
+        {% else %}
+        alt=""
         {% endif %}
-        <div class="p-4">
-          <h2 class="mt-2"><a href="{{ item.url | url }}" class="font-semibold">{{ item.data.title }}</a></h2>
-          {% if item.data.date %}<time class="mt-4 text-sm xl:text-base font-semibold" datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}
-          <p class="mt-4">{{ item.data.subtitle | safe }}</p>
-          <p class="mt-4"><a href="{{item.url | url}}">Leggi l'intero articolo...</a></p>
-          {% set tags = item.data.tags %}
-          {% include 'components/tags-post.njk' %}
-        </div>
-      </li>
-      {%- endfor -%}
-    </ul>
-  </div>
-</div>
+        {% if image_title %}
+        title="{{ image_title }}"
+        {% endif %}
+        class="w-full rounded-t-lg m-0 shadow"
+      />
+    </div>
+    {% endif %}
+    <div class="p-4">
+      <h2 class="mt-2"><a href="{{ item.url | url }}" class="font-semibold">{{ item.data.title }}</a></h2>
+      {% if item.data.date %}<time class="mt-4 text-sm xl:text-base font-semibold" datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}
+      <p class="mt-4">{{ item.data.subtitle | safe }}</p>
+      <p class="mt-4"><a href="{{item.url | url}}">Leggi l'intero articolo...</a></p>
+      {% set tags = item.data.tags %}
+      {% include 'components/tags-post.njk' %}
+    </div>
+  </li>
+  {%- endfor -%}
+</ul>
+
