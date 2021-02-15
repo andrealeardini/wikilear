@@ -75,7 +75,18 @@
       {% include "components/tos/tos.njk" %}
       {% include "partials/footer.njk" %}
     </div>
+    {% if environment.NODE_ENV=="production" %}
+    <!-- capture the JS content as a Nunjucks variable -->
+    {% set js %}
+      {% include "../../../dist/js/main.js" %}
+    {% endset %}
+    <!-- feed it through our jsmin filter to minify -->
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+    {% else %}
     <script type="module" src="/js/main.js"></script>
+    {% endif %}
     {% if eleventyNavigation.key == 'search' %}
     <script>
       {% include 'components/search/search.js' %}

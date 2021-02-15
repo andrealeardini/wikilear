@@ -46,6 +46,7 @@ const fs = require("fs");
 const { promisify } = require("util");
 const stat = promisify(fs.stat);
 const execFile = promisify(require("child_process").execFile);
+const { minify } = require("terser");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
@@ -88,9 +89,26 @@ module.exports = function (eleventyConfig) {
     "w3DateFilter",
     require("./src/_filters/w3-date-filter.js")
   );
+
+  // https://www.11ty.dev/docs/quicktips/inline-css/
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
+
+  // https://www.11ty.dev/docs/quicktips/inline-js/
+  eleventyConfig.addNunjucksAsyncFilter(
+    "jsmin",
+    async function (code, callback) {
+      try {
+        const minified = await minify(code);
+        callback(null, minified.code);
+      } catch (err) {
+        console.error("Terser error: ", err);
+        // Fail gracefully.
+        callback(null, code);
+      }
+    }
+  );
 
   eleventyConfig.addFilter("tagIsValid", function (value) {
     let reject = [
