@@ -93,7 +93,18 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("tagIsValid", function (value) {
-    let reject = ["all", "blog", "codelabs", "feed", "tagList", "tutorial"];
+    let reject = [
+      "all",
+      "blog",
+      "codelabs",
+      "gmailtutorial",
+      "googledocstutorial",
+      "googledrivetutorial",
+      "googlemapstutorial",
+      "feed",
+      "tagList",
+      "tutorial",
+    ];
     return !reject.includes(value);
   });
 
