@@ -2,7 +2,7 @@
   <div {% if style %}class="{{ style }}"{% endif %}>
     <h1>{{ pageHeaderTitle or title | safe }}</h1>
     {% if pageHeaderSummary %}
-    <div>
+    <div class="my-4">
       {{ pageHeaderSummary | safe }}
     </div>
     {% endif %}
