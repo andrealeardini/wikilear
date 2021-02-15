@@ -1,4 +1,7 @@
 ---
+eleventyNavigation:
+  parent: Tag
+  showLast: true
 title: 'Tag Archive'
 layout: 'layouts/feed.njk'
 pagination:

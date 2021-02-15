@@ -2,24 +2,17 @@ module.exports = {
   eleventyComputed: {
     eleventyNavigation: {
       key: function (data) {
-        if (data.key) {
-          return data.key;
-        } else {
-          return data.title;
-        }
+          return 123;
       },
       parent: (data) => data.parent,
       title: function (data) {
-        if (data.key) {
-          return data.title;
-        }
+          return data.tag;
       },
       showLast: true,
     },
   },
-  layout: "layouts/post.njk",
-  parent: "Tutorial",
-  main: "tutorial",
+  layout: "layouts/page.njk",
+  parent: "Etichette",
   feed: "true",
   style: "markdown",
 };
