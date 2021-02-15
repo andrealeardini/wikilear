@@ -3,7 +3,7 @@
   <li class="w-20 font-semibold text-gray-700 dark:text-gray-100 text-sm md:text-base">
     <a href="{{ card.url | url }}">
       <div class="h-full flex flex-col">
-        <img class="h-20 {% if card.title =="Eleventy" %}w-16 bg-gray-900{% endif %}" src="{{ card.imageUrl | url }}" alt="{{ card.imageAlt | safe }}" />
+        <img class="h-20 {% if card.title =="Eleventy" %}w-auto h-8 p-1 my-0 rounded-lg  bg-gray-900{% endif %}" src="{{ card.imageUrl | url }}" alt="{{ card.imageAlt | safe }}" />
         <p>{{ card.title | safe }}</p>
       </div>
     </a>
