@@ -28,6 +28,20 @@ module.exports = [
     url: "/google-drive/",
   },
   {
+    title: "Google Maps",
+    imageUrl: "/images/maps_48dp.png",
+    imageAlt: "Google Maps",
+    more: "Articoli e tutorial...",
+    url: "/google-maps/",
+  },
+  {
+    title: "Gmail",
+    imageUrl: "/images/gmail_48dp.png",
+    imageAlt: "Gmail",
+    more: "Articoli e tutorial...",
+    url: "/gmail/",
+  },
+  {
     title: "Eleventy",
     imageUrl: "/images/11ty.svg",
     imageAlt: "Eleventy",
