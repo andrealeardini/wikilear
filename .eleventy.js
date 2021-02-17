@@ -59,6 +59,12 @@ module.exports = function (eleventyConfig) {
     require("./src/_transforms/images")
   );
 
+  // minify HTML
+   eleventyConfig.on("afterBuild", () => {
+     const minifyHTML = require("./src/_transforms/html");
+     minifyHTML.minify;
+   });
+
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
   eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
