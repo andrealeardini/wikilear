@@ -6,7 +6,7 @@ eleventyNavigation.parent %}
   eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
   <ul class="my-4">
     {%- for entry in navPages %}
-    <li class="inline">
+    <li class="inline mx-1">
       <a href="{{ entry.url | url }}">{{ entry.title }}</a>{% if not loop.last or eleventyNavigation.showLast %} >{% endif %}
     </li>
     {%- endfor -%}
