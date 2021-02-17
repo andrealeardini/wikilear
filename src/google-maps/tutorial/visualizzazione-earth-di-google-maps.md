@@ -1,9 +1,5 @@
 ---
 date: 2014-05-22
-tags:
-  - Google Maps
-topics:
-  - Google Maps
 title: "La visualizzazione Earth di Google Maps"
 description: Una guida completa all'uso della visualizzazione Earth in Google Maps.
 subtitle: Hai sentito parlare della visualizzazione Earth di Google Maps? In questo guida ti spiego come usarla per esplorare in 3D una città e per guardare la Terra come non l’avevi mai vista prima.

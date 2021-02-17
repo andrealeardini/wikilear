@@ -1,10 +1,5 @@
 ---
 date: 2014-03-24T17:56:00.001+01:00
-updated: 2020-06-30
-tags:
-  - Google Maps
-topics:
-  - Google Maps
 title: Le coordinate di latitudine e longitudine nel nuovo Google Maps
 description: Come utilizzare le coordinate di latitudine e longitudine con il nuovo Google Maps
 subtitle: Ci sono situazioni in cui conoscere la latitudine e la longitudine di un luogo può fare la differenza. Vediamo alcune applicazioni pratiche.

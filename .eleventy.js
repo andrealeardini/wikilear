@@ -184,38 +184,31 @@ module.exports = function (eleventyConfig) {
     return [...collection.getFilteredByGlob("./src/blog/**/*.md")].reverse();
   });
 
-  // Returns a collection of tutorials in reverse date order
-  eleventyConfig.addCollection("tutorial", (collection) => {
-    return [
-      ...collection.getFilteredByGlob("./src/tutorial/**/*.md"),
-    ].reverse();
-  });
-
   // Returns a collection of Google Maps Tutorials in reverse date order
   eleventyConfig.addCollection("googlemapstutorial", (collection) => {
     return [
-      ...collection.getFilteredByGlob("./src/tutorial/google-maps/**/*.md"),
+      ...collection.getFilteredByGlob("./src/google-maps/tutorial/**/*.md"),
     ].reverse();
   });
 
   // Returns a collection of Google Docs Tutorials in reverse date order
   eleventyConfig.addCollection("googledocstutorial", (collection) => {
     return [
-      ...collection.getFilteredByGlob("./src/tutorial/google-docs/**/*.md"),
+      ...collection.getFilteredByGlob("./src/google-docs/tutorial/**/*.md"),
     ].reverse();
   });
 
   // Returns a collection of Google Drive Tutorials in reverse date order
   eleventyConfig.addCollection("googledrivetutorial", (collection) => {
     return [
-      ...collection.getFilteredByGlob("./src/tutorial/google-drive/**/*.md"),
+      ...collection.getFilteredByGlob("./src/google-drive/tutorial/**/*.md"),
     ].reverse();
   });
 
   // Returns a collection of Gmail Tutorials in reverse date order
   eleventyConfig.addCollection("gmailtutorial", (collection) => {
     return [
-      ...collection.getFilteredByGlob("./src/tutorial/gmail/**/*.md"),
+      ...collection.getFilteredByGlob("./src/gmail/tutorial/**/*.md"),
     ].reverse();
   });
 

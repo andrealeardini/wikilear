@@ -3,10 +3,12 @@ eleventyNavigation:
   key: Fogli Google
   parent: Home
   showLast: true
+tags: Fogli Google
 layout: layouts/page.njk
 title: Fogli Google
 image: /images/sheets_48dp.png
 style: markdown
+feed: ""
 ---
 <details>
 <summary>

@@ -18,8 +18,8 @@ module.exports = {
     },
   },
   layout: "layouts/post.njk",
-  parent: "Tutorial",
-  main: "tutorial",
   feed: "true",
   style: "markdown",
+  parent: "Gmail",
+  tags: "Gmail"
 };

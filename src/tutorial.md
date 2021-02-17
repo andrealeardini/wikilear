@@ -7,7 +7,7 @@
   pagination:
     data: collections.tutorial
     size: 5
-  permalink: tutorial{% if pagination.pageNumber > 0 %}/page-{{ pagination.pageNumber + 1 }}{% endif %}/
+  permalink: /tutorial{% if pagination.pageNumber > 0 %}/page-{{ pagination.pageNumber + 1 }}{% endif %}/
   paginationPrevText: Tutorial più recenti
   paginationNextText: Tutorial più vecchi
   paginationAnchor: #post-list
@@ -23,9 +23,9 @@ I tutorial sono ordinati per data, dal più recente al più vecchio. Oltre ai cl
 
 <div class="mt-4">
 
-- [Documenti Google](/tutorial/google-docs)
-- [Gmail](/tutorial/gmail)
-- [Google Maps](/tutorial/google-maps)
+- [Documenti Google](/google-docs/tutorial/)
+- [Gmail](/gmail/tutorial/)
+- [Google Maps](/google-maps/tutorial/)
 
 </div>
 

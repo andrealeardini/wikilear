@@ -48,9 +48,9 @@
         {{ js | jsmin | safe }}
       </script>
     {% else %}
-        <script>
-         {{ js | safe }}
-        </script>
+      <script>
+        {{ js | safe }}
+      </script>
     {% endif %}
     {% if environment.NODE_ENV=="production" %}
     <!-- capture the CSS content as a Nunjucks variable -->

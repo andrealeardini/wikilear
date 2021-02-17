@@ -36,7 +36,6 @@ const minify = execFile(
     if (error) {
       throw error;
     }
-    console.log("ERRORE: ", stdout);
   }
 );
 

@@ -3,10 +3,12 @@ eleventyNavigation:
   key: Google Apps Script
   parent: Home
   showLast: true
+tags: Google Apps Script
 layout: layouts/page.njk
 title: Google Apps Script
 image: /images/apps_script_48dp.png
 style: markdown
+feed: ""
 ---
 <details>
 <summary>

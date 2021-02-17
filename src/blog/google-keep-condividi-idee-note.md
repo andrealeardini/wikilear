@@ -43,8 +43,8 @@ Prendere un appunto al volo è utile, ma a cosa servirebbe avere tante note se p
 
 Le nuove funzioni di Google Keep sono già utilizzabili nella versione desktop (tramite [web](https://keep.google.com/){rel="noopener noreferrer"} o con l'apposita [app per Chrome](https://chrome.google.com/webstore/detail/google-keep/hmjkmjkepdijhoojdojkdfohbdgmmhki?hl=it){rel="noopener noreferrer"}).
 
-![Google Keep aperto dalla pagina web](/images/google-keep-web.png 'Vai alla pagina keep.google.com per accedere dal web')
+![Google Keep aperto dalla pagina web](/images/google-keep-web.png 'Vai alla pagina keep.google.com per accedere dal web'){.w-full}
 
-!["Google Keep aperto con l'app per Chrome"](/images/google-keep-app-chrome.png "Installa l'app per Chrome per accedere facilmente a Google Keep") **Accedi a Google Keep dal web o tramite l'apposita app per Chrome**
+![Google Keep aperto con lapp per Chrome](/images/google-keep-app-chrome.png 'Installa lapp per Chrome per accedere facilmente a Google Keep'){.w-full}**Accedi a Google Keep dal web o tramite l'apposita app per Chrome**
 
 L'app per Android (versione 4.0, Ice Cream Sandwich o successive) si può scaricare gratuitamente dal [Play Store](https://play.google.com/store/apps/details?id=com.google.android.keep){rel="nopener noreferrer"} mentre per chi ha già installato l'app l'aggiornamento è in fase di rollout graduale.

@@ -3,10 +3,12 @@ eleventyNavigation:
   key: Google Drive
   parent: Home
   showLast: true
+tags: Google Drive
 layout: layouts/page.njk
 title: Google Drive
 image: /images/drive_48dp.png
 style: markdown
+feed: ""
 ---
 <details>
 <summary>

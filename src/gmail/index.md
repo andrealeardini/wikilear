@@ -1,12 +1,11 @@
 ---
-eleventyNavigation:
-  key: Documenti Google
-  parent: Home
-  showLast: true
+key: Gmail
+parent: Home
 layout: layouts/page.njk
-title: Documenti Google
-image: /images/docs_48dp.png
+title: Gmail
+image: /images/gmail_48dp.png
 style: markdown
+feed: ""
 ---
 <details>
 <summary>
@@ -25,11 +24,11 @@ Indice
 
 ## Panoramica
 
-Documenti Google è un elaboratore di testi online che offre collaborazione e condivisione in tempo reale. Puoi aprire, creare e condividere documenti da qualsiasi dispositivo, incluso uno smartphone. E dato che Documenti Google è basato sul Cloud, il tuo lavoro viene salvato automaticamente e non dovrai più ricordarti di premere il pulsante Salva.
+Gmail...
 
 ## Per iniziare
 
-Per utilizzare Documenti accedi al tuo account Google e visita la pagina docs.google.com
+Per utilizzare Gmail accedi al tuo account Google e visita la pagina mail.google.com
 
 Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata.
 - [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs){rel="noopener noreferrer"}
@@ -37,7 +36,7 @@ Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata.
 
 ## Tutorial
 
-- Come impostare il carattere predefinito in Documenti Google (in preparazione)
+- In preparazione
 
 ## Risorse utili (siti esterni)
 
