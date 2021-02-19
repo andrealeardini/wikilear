@@ -98,22 +98,5 @@
     {% else %}
       <script type="module" src="/js/main.js"></script>
     {% endif %}
-
-    {% if eleventyNavigation.key == 'search' %}
-      {% if environment.NODE_ENV=="production" %}
-        <!-- capture the JS content as a Nunjucks variable -->
-        {% set js %}
-          {% include "components/search/search.js" %}
-        {% endset %}
-        <!-- feed it through our jsmin filter to minify -->
-        <script>
-          {{ js | jsmin | safe }}
-        </script>
-      {% else %}
-        <script>
-          {% include 'components/search/search.js' %}
-        </script>
-      {% endif %}
-    {% endif %}
   </body>
 </html>
