@@ -2,19 +2,14 @@
 eleventyNavigation.parent %}
 <nav class="text-sm font-semibold text-blue-700 dark:text-yellow-300" aria-labelledby="breadcrumb">
   <h2 class="sr-only" id="breadcrumb">Breadcrumbs:</h2>
-  {% set navPages = collections.all |
-  eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+  {% set navPages = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
   <ul class="my-4">
-    {%- for entry in navPages %}
-    <li class="inline mx-1">
-      <a href="{{ entry.url | url }}">{{ entry.title }}</a>{% if not loop.last or eleventyNavigation.showLast %} >{% endif %}
-    </li>
+    {%- for entry in navPages -%}
+    <li class="inline"><a href="{{ entry.url | url }}">{{entry.title | trim }}</a>{%- if not loop.last or eleventyNavigation.showLast -%}<span class="mx-2">></span>{%- endif -%}</li>
     {%- endfor -%}
-    {% if eleventyNavigation.showLast %}
-    <li class="inline font-light text-gray-700 dark:text-yellow-200">
-      <a href="{{ entry.url | url }}">{{ eleventyNavigation.title or eleventyNavigation.key }}</a>
-    </li>
-    {% endif %}
+    {%- if eleventyNavigation.showLast -%}
+    <li class="inline font-light text-gray-700 dark:text-yellow-200"><a href="{{ entry.url | url }}">{{ eleventyNavigation.title or eleventyNavigation.key | trim }}</a></li>
+    {%- endif -%}
   </ul>
 </nav>
 {% endif %}
