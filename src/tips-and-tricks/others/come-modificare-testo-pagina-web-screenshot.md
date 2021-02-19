@@ -2,7 +2,7 @@
 date: 2014-02-18
 tags:
   - Tips and Tricks
-  - Javascript
+  - JavaScript
   - Screenshot
 title: Screenshot con il trucco
 description: Come modificare il testo di una pagina web direttamente nel browser usando del semplice codice JavaScript

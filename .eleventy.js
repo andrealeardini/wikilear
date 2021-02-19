@@ -47,6 +47,7 @@ const { promisify } = require("util");
 const stat = promisify(fs.stat);
 const execFile = promisify(require("child_process").execFile);
 const { minify } = require("terser");
+const environment = require("./src/_data/environment");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
@@ -131,8 +132,12 @@ module.exports = function (eleventyConfig) {
       "googledrivetutorial",
       "googlemapstutorial",
       "feed",
+      "othertips",
       "tagList",
+      "Tips and Tricks",
+      "tips",
       "tutorial",
+      "Tutorial"
     ];
     return !reject.includes(value);
   });
@@ -182,6 +187,17 @@ module.exports = function (eleventyConfig) {
       return "";
     }
     return dt.toISO();
+  });
+
+  // Returns a collection of tips and trick posts in reverse date order
+  // use as alias for pagination to avoid bugs
+  eleventyConfig.addCollection("tips", (collection) => {
+    return [...collection.getFilteredByTag("Tips and Tricks")].reverse();
+  });
+
+  // Returns a collection of others tips and tricks in reverse date order
+  eleventyConfig.addCollection("othertips", (collection) => {
+    return [...collection.getFilteredByGlob("./src/tips-and-tricks/others/**/*.md")].reverse();
   });
 
   // Returns a collection of blog posts in reverse date order

@@ -24,15 +24,16 @@ Indice
 
 ## Panoramica
 
-Google Maps...
+Google Maps non ha bisogno di presentazioni, è il navigatore per dispositivi mobile più utilizzato al mondo. Uno strumento utile non solo per pianificare itinerari e muoversi in località sconosciute ma anche per trovare luoghi di interesse e attività commerciali. Il tutto grazie al contributo di migliaia di utenti che condividono le loro esperienze e recensioni.
 
 ## Per iniziare
 
-Per utilizzare Documenti visita la pagina maps.google.com
+Per utilizzare Google Maps sul tuo computer visita la pagina [maps.google.com](https://maps.google.com){rel="noreferrer noopener"}
 
-Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata.
-- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs){rel="noopener noreferrer"}
-- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/app/apple-store/id842842640){rel="noopener noreferrer"}
+Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca sul tuo dispositivo questa icona ![icona di Google Maps]({{image}}){.inline .w-7 .ml-1}. Se non la trovi puoi installare l'app dallo store per il tuo dispositivo usando uno di questi link.
+
+- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.maps&hl=it&gl=US){rel="noopener noreferrer"}
+- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://apps.apple.com/it/app/google-maps-gps-e-ristoranti/id585027354){rel="noopener noreferrer"}
 
 ## Tutorial
 
@@ -46,5 +47,5 @@ Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata.
 
 ## Risorse utili (siti esterni)
 
-- [Guida di Documenti Google](https://support.google.com/docs/topic/9046002){rel="noopener noreferrer"}
-- [Community di assistenza (in inglese)](https://support.google.com/docs/community){rel="noopener noreferrer"}
+- [Guida di Google Maps](https://support.google.com/maps){rel="noopener noreferrer"}
+- [Community di assistenza](https://support.google.com/maps/community){rel="noopener noreferrer"}

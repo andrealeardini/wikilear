@@ -1,9 +1,6 @@
 ---
-eleventyNavigation:
-  key: Documenti Google
-  parent: Home
-  showLast: true
-tags: Documenti Google
+key: Documenti Google
+parent: Home
 layout: layouts/page.njk
 title: Documenti Google
 image: /images/docs_48dp.png
@@ -31,15 +28,20 @@ Documenti Google è un elaboratore di testi online che offre collaborazione e co
 
 ## Per iniziare
 
-Per utilizzare Documenti accedi al tuo account Google e visita la pagina docs.google.com
+Per utilizzare Documenti sul tuo computer accedi al tuo account Google e visita la pagina [docs.google.com](https://docs.google.com){rel="noopener noreferrer"}
 
-Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata.
+Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca sul tuo dispositivo questa icona ![icona di Documenti Google]({{image}}){.inline .w-6 .ml-1}. Se non la trovi puoi installare l'app dallo store per il tuo dispositivo usando uno di questi link.
+
 - [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs){rel="noopener noreferrer"}
 - [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/app/apple-store/id842842640){rel="noopener noreferrer"}
 
 ## Tutorial
 
-- Come impostare il carattere predefinito in Documenti Google (in preparazione)
+{% for post in collections.googledocstutorial.slice(0, 3) %}
+  - [{{ post.data.title }}]({{ post.url }})
+{% endfor %}
+
+[Tutti i tutorial...](tutorial/)
 
 ## Risorse utili (siti esterni)
 

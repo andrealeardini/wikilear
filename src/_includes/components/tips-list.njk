@@ -1,0 +1,16 @@
+{# just an execize #}
+
+{% set tags = '' %}
+{%- for post in collections.tips -%}
+{%- for item, posts in post.data | dictsort %}
+{% if item == "tags" %}
+{% set tags = tags + posts %}
+{%- for tag in posts %}
+  - {{ tag }}
+{%- endfor -%}
+{% endif %}
+{%- endfor -%}
+{% if not loop.last %} {% set tags = tags +',' %}{% endif %}
+{%- endfor -%}
+
+TAGS: {{ tags }}

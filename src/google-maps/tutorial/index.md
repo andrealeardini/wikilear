@@ -2,7 +2,7 @@
   parent: Google Maps
   key: Google-Maps-Tutorial
   title: Tutorial
-  description: Tutti i tutorial per Google Maps pubblicati sul sito
+  description: Tutti i tutorial per Google Maps pubblicati su Wikilear
   layout: layouts/feed.njk
   pagination:
     data: collections.googlemapstutorial
@@ -14,7 +14,7 @@
   feed: ''
   style: markdown
 ---
-Tutti i tutorial per Google Maps pubblicati sul sito{.mt-4}
+{{ description }}{.mt-4}
 
 <div id="post-list" class="heading">
 </div>
