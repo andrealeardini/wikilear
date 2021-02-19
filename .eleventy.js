@@ -59,11 +59,16 @@ module.exports = function (eleventyConfig) {
     require("./src/_transforms/images")
   );
 
-  // minify HTML
-   eleventyConfig.on("afterBuild", () => {
-     const minifyHTML = require("./src/_transforms/html");
-     minifyHTML.minify;
-   });
+  const param = environment.NODE_ENV;
+
+  // minify HTML only in production
+  // optional chaining require NODE 14 >
+  if (environment?.NODE_ENV?.toUpperCase() == "PRODUCTION") {
+    eleventyConfig.addTransform(
+      "minifyHTML",
+      require("./src/_transforms/html")
+    );
+  }
 
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
