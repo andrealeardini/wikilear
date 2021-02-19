@@ -19,24 +19,19 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { execFile } = require("child_process");
+const htmlmin = require("html-minifier");
 
-const minify = execFile(
-  "html-minifier",
-  [
-    "--input-dir",
-    "./dist",
-    "--output-dir",
-    "./dist",
-    "--collapse-whitespace",
-    "--file-ext",
-    "html",
-  ],
-  (error, stdout, stderr) => {
-    if (error) {
-      throw error;
-    }
+const htmlMinify = (content, outputPath) => {
+  if (outputPath.endsWith(".html")) {
+    let minified = htmlmin.minify(content, {
+      useShortDoctype: true,
+      removeComments: true,
+      collapseWhitespace: true,
+    });
+    return minified;
   }
-);
 
-module.exports = minify;
+  return content;
+};
+
+module.exports = htmlMinify;
