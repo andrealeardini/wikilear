@@ -122,25 +122,17 @@ module.exports = function (eleventyConfig) {
     }
   );
 
-  eleventyConfig.addFilter("tagIsValid", function (value) {
-    let reject = [
-      "all",
-      "blog",
-      "codelabs",
-      "gmailtutorial",
-      "googledocstutorial",
-      "googledrivetutorial",
-      "googlemapstutorial",
-      "feed",
-      "othertips",
-      "tagList",
-      "Tips and Tricks",
-      "tips",
-      "tutorial",
-      "Tutorial"
-    ];
-    return !reject.includes(value);
-  });
+  // filter tags to shows
+  eleventyConfig.addFilter(
+    "tagIsValid",
+    require("./src/_includes/components/tagsList/filter")
+  );
+
+  // return true if an array includes the searched value
+  eleventyConfig.addFilter(
+    "includes",
+    require("./src/_filters/includes")
+  );
 
   // https://github.com/google/eleventy-high-performance-blog/blob/624aaa9ede9df609e2d4656f23d819621f5cb464/.eleventy.js#L94
 
@@ -189,48 +181,10 @@ module.exports = function (eleventyConfig) {
     return dt.toISO();
   });
 
-  // Returns a collection of tips and trick posts in reverse date order
-  // use as alias for pagination to avoid bugs
-  eleventyConfig.addCollection("tips", (collection) => {
-    return [...collection.getFilteredByTag("Tips and Tricks")].reverse();
-  });
-
-  // Returns a collection of others tips and tricks in reverse date order
-  eleventyConfig.addCollection("othertips", (collection) => {
-    return [...collection.getFilteredByGlob("./src/tips-and-tricks/others/**/*.md")].reverse();
-  });
 
   // Returns a collection of blog posts in reverse date order
   eleventyConfig.addCollection("blog", (collection) => {
     return [...collection.getFilteredByGlob("./src/blog/**/*.md")].reverse();
-  });
-
-  // Returns a collection of Google Maps Tutorials in reverse date order
-  eleventyConfig.addCollection("googlemapstutorial", (collection) => {
-    return [
-      ...collection.getFilteredByGlob("./src/google-maps/tutorial/**/*.md"),
-    ].reverse();
-  });
-
-  // Returns a collection of Google Docs Tutorials in reverse date order
-  eleventyConfig.addCollection("googledocstutorial", (collection) => {
-    return [
-      ...collection.getFilteredByGlob("./src/google-docs/tutorial/**/*.md"),
-    ].reverse();
-  });
-
-  // Returns a collection of Google Drive Tutorials in reverse date order
-  eleventyConfig.addCollection("googledrivetutorial", (collection) => {
-    return [
-      ...collection.getFilteredByGlob("./src/google-drive/tutorial/**/*.md"),
-    ].reverse();
-  });
-
-  // Returns a collection of Gmail Tutorials in reverse date order
-  eleventyConfig.addCollection("gmailtutorial", (collection) => {
-    return [
-      ...collection.getFilteredByGlob("./src/gmail/tutorial/**/*.md"),
-    ].reverse();
   });
 
   // Returns a collection of articles in reverse date order filtered by feed

@@ -2,12 +2,39 @@
 eleventyNavigation:
   parent: Tag
   showLast: true
-title: 'Tag Archive'
-layout: 'layouts/feed.njk'
+title: "Tag Archive"
+layout: "layouts/feed.njk"
 pagination:
   data: collections
   size: 1
   alias: tag
-  filter: ['all', 'nav', 'blog', 'post', 'posts', 'tagList', 'tutorial']
-permalink: '/tag/{{ tag | slug }}/'
+  filter:
+    [
+      "all",
+      "nav",
+      "blog",
+      "eleventytips",
+      "eleventytutorial",
+      "gmailtutorial",
+      "gmailtips",
+      "googledocstips",
+      "googledocstutorial",
+      "googledrivetips",
+      "googledrivetutorial",
+      "googlemapstips",
+      "googlemapstutorial",
+      "googlesheetstips",
+      "googlesheetstutorial",
+      "otherstips",
+      "post",
+      "posts",
+      "tagList",
+      "tailwindtips",
+      "tailwindtutorial",
+      "tips",
+      "Tips and Tricks",
+      "tutorial",
+      "Tutorial",
+    ]
+permalink: "/tag/{{ tag | slug }}/"
 ---
