@@ -3,7 +3,7 @@ date: 2012-11-12
 title: La visualizzazione Schermo intero in Documenti Google
 description: Come passare alla visualizzazione a schermo intero in Documenti Google (GDocs)
 subtitle: Scopri come usare la visualizzazione a schermo intero in Documenti Google per avere più spazio a disposizione mentre si lavora su un documento
-image: /images/undraw_Documents_re_isxv.png
+image: /images/undraw_Online_information_re_erks.png
 image_title:
 image_description:
 old_url: /2012/11/la-visualizzazione-schermo-intero-in-Google-Documenti.html

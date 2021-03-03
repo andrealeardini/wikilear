@@ -3,7 +3,7 @@ date: 2012-11-15
 title: La modalità Controlli compatti di Documenti Google
 description: Come usare la modalità Controlli compatti in Documenti Google (GDocs) per avere più spazio a disposizione mentre si lavora su un documento
 subtitle: Scopri come usare la modalità Controlli compatti in Documenti Google per avere più spazio a disposizione mentre si lavora su un documento
-image: /images/undraw_Documents_re_isxv.png
+image: /images/undraw_browsing_online_sr8c.png
 image_title:
 image_description:
 old_url: /2012/11/la-modalita-controlli-compatti-di-Google-Documenti.html
