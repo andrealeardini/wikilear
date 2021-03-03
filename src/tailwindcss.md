@@ -17,7 +17,6 @@ Indice
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)
-- [Tutorial](#tutorial)
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
 </nav>
@@ -58,10 +57,6 @@ Aggiungi le utility di Tailwind direttamente nel tuo markup HTML
   </div>
 </div>
 ```
-
-## Tutorial
-
-- In preparazione
 
 ## Risorse utili (siti esterni)
 

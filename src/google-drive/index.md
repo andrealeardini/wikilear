@@ -1,14 +1,10 @@
 ---
-eleventyNavigation:
-  key: Google Drive
-  parent: Home
-  showLast: true
-tags: Google Drive
+key: Google Drive
+parent: Home
 layout: layouts/page.njk
 title: Google Drive
 image: /images/drive_48dp.png
-style: markdown
-feed: ""
+feed:
 ---
 <details>
 <summary>
@@ -19,7 +15,12 @@ Indice
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)
+{% if collections.googledrivestutorial.length %}
 - [Tutorial](#tutorial)
+{% endif %}
+{% if collections.googledrivestips.length %}
+- [Tips and tricks](#tips-and-tricks)
+{% endif %}
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
 </nav>
@@ -33,14 +34,16 @@ Google Drive è un servizio di archiviazione file basato su cloud che ti consent
 
 Per utilizzare Drive accedi al tuo account Google e visita la pagina [drive.google.com](https://drive.google.com){rel="noopener noreferrer"}
 
-Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata.
+Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca sul tuo dispositivo questa icona ![icona di Google Drive]({{image}}){.inline .w-6 .ml-1}. Se non la trovi puoi installare l'app dallo store per il tuo dispositivo usando uno di questi link.
+
 - [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs){rel="noopener noreferrer"}
-- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/app/google-drive-free-online-storage/id507874739){rel="noopener noreferrer"}
+- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/us/app/google-drive-free-online-storage/id507874739){rel="noopener noreferrer"}
 
-## Tutorial
+{% set tutorials = collections.googledrivetutorial %}
+{% include 'partials/tutorial.njk' %}
 
-- Organizza i tuoi file con Drive (in preparazione)
-
+{% set tips = collections.googledrivestips %}
+{% include 'partials/tips-and-tricks.njk' %}
 ## Risorse utili (siti esterni)
 
 - [Guida di Google Drive](https://support.google.com/drive){rel="noopener noreferrer"}

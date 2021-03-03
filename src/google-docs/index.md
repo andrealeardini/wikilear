@@ -4,8 +4,7 @@ parent: Home
 layout: layouts/page.njk
 title: Documenti Google
 image: /images/docs_48dp.png
-style: markdown
-feed: ""
+feed:
 ---
 <details>
 <summary>
@@ -16,7 +15,12 @@ Indice
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)
+{% if collections.googledocstutorial.length %}
 - [Tutorial](#tutorial)
+{% endif %}
+{% if collections.googledocstips.length %}
+- [Tips and tricks](#tips-and-tricks)
+{% endif %}
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
 </nav>
@@ -35,13 +39,11 @@ Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca s
 - [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs){rel="noopener noreferrer"}
 - [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/app/apple-store/id842842640){rel="noopener noreferrer"}
 
-## Tutorial
+{% set tutorials = collections.googledocstutorial %}
+{% include 'partials/tutorial.njk' %}
 
-{% for post in collections.googledocstutorial.slice(0, 3) %}
-  - [{{ post.data.title }}]({{ post.url }})
-{% endfor %}
-
-[Tutti i tutorial...](tutorial/)
+{% set tips = collections.googledocstips %}
+{% include 'partials/tips-and-tricks.njk' %}
 
 ## Risorse utili (siti esterni)
 

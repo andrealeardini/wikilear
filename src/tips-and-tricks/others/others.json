@@ -1,5 +1,6 @@
 {
   "parent": "Others",
-  "tags": ["Tips and Tricks"],
+  "tags:": ["otherstips", "tips"],
+  "collection": "otherstips",
   "topic": "Tips and Tricks"
 }

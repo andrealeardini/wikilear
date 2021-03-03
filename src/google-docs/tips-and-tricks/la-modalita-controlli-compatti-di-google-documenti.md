@@ -1,8 +1,5 @@
 ---
 date: 2012-11-15
-tags:
-  - Tips and Tricks
-  - Documenti Google
 title: La modalità Controlli compatti di Documenti Google
 description: Come usare la modalità Controlli compatti in Documenti Google (GDocs) per avere più spazio a disposizione mentre si lavora su un documento
 subtitle: Scopri come usare la modalità Controlli compatti in Documenti Google per avere più spazio a disposizione mentre si lavora su un documento
@@ -11,7 +8,7 @@ image_title:
 image_description:
 old_url: /2012/11/la-modalita-controlli-compatti-di-Google-Documenti.html
 ---
-Come ti ho indicato in un [recente articolo,](/google-docs/tutorial/la-visualizzazione-schermo-intero-in-google-documenti/) quando si ha la necessità di visualizzare più testo rispetto alla modalità standard di Documenti Google si può passare alla modalità a schermo intero.
+Come ti ho indicato in un [recente articolo,](/google-docs/tips-and-tricks/la-visualizzazione-schermo-intero-in-documenti-google/) quando si ha la necessità di visualizzare più testo rispetto alla modalità standard di Documenti Google si può passare alla modalità a schermo intero.
 
 C’è però il rovescio della medaglia: lavorare su un documento senza i menù e la barra degli strumenti rende più difficoltosa la modifica e soprattutto la formattazione del testo. Per ovviare a questo problema, in fase di stesura del documento si può usare la modalità **Controlli compatti** che nasconde solo i menu mantenendo visibile la barra degli strumenti.
 

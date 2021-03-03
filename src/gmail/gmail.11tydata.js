@@ -20,6 +20,5 @@ module.exports = {
   layout: "layouts/post.njk",
   feed: "true",
   style: "markdown",
-  parent: "Gmail",
   tags: "Gmail"
 };

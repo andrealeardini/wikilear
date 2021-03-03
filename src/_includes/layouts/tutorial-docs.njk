@@ -2,5 +2,7 @@
   {% block posts %}
     {# https://github.com/11ty/eleventy/issues/434#issuecomment-469028924 #}
     {% import "components/nav-posts.njk" as nav with context %}
-    {{ nav.posts(collections.googledocstutorial) }}
+    {% if tags | includes("googledocstutorial") %} PLIT {% endif %}
+    {% set mycollection = collections[collezione] %}
+    {{ nav.posts(collections[collezione]) }}
   {% endblock %}

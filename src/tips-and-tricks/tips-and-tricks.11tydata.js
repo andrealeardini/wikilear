@@ -21,5 +21,4 @@ module.exports = {
   feed: "true",
   style: "markdown",
   parent: "Tips and Tricks",
-  tags: "Tips and Tricks",
 };

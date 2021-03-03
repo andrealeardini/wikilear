@@ -1,4 +1,5 @@
 {
+  "collection": "gmailtutorial",
   "parent": "Gmail-Tutorial",
-  "tags": ["Gmail", "tutorial"]
+  "tags": ["Gmail", "tutorial", "gmailtutorial"]
 }

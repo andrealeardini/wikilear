@@ -1,8 +1,9 @@
 ---
 date: 2013-05-28
 tags:
-  - Tips and Tricks
+  - tips
   - Hangouts
+  - otherstips
 title: Come formattare il testo dei messaggi in Hangouts
 description: Come applicare un formato (grassetto, corsivo e sottolineato) al testo degli Hangouts.
 subtitle: Lo sapevate che è possibile formattare il testo dei messaggi con il nuovo Hangouts di Google?

@@ -1,13 +1,12 @@
 ---
-eleventyNavigation:
-  key: 11ty
-  parent: Home
-  showLast: true
+key: 11ty
+parent: Home
 layout: layouts/page.njk
-permalink: "11ty/index.html"
+description: Tutorial, Tips and Tricks su Eleventy
+permalink: "/11ty/"
 title: Eleventy
-style: markdown
 image:  /images/11ty.svg
+feed:
 ---
 
 <details>
@@ -19,7 +18,12 @@ Indice
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)
+{% if collections.eleventytutorial.length %}
 - [Tutorial](#tutorial)
+{% endif %}
+{% if collections.eleventytips.length %}
+- [Tips and tricks](#tips-and-tricks)
+{% endif %}
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
 </nav>
@@ -104,9 +108,12 @@ eleventy --serve
 
 Per vedere il risultato di Eleventy apri la pagina [http://localhost:8080/README/](http://localhost:8080/README/) nel tuo browser.
 
-## Tutorial
+{% set tutorials = collections.eleventytutorial %}
+{% include 'partials/tutorial.njk' %}
 
-- Crea il tuo primo sito con Eleventy
+{% set tips = collections.eleventytips %}
+{% include 'partials/tips-and-tricks.njk' %}
+
 
 ## Risorse utili (siti esterni)
 

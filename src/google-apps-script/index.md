@@ -20,7 +20,6 @@ Indice
 - [Panoramica](#panoramica)
 - [Cosa posso fare con Apps Script?](#cosa-posso-fare-con-apps-script%3F)
 - [Per iniziare](#per-iniziare)
-- [Tutorial](#tutorial)
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
 </nav>
@@ -38,9 +37,6 @@ Grazie ad Apps Script puoi rendere automatiche attività lunghe e noiose e crear
 
 Per utilizzare Apps Script accedi al tuo account Google, visita la pagina [script.google.com](https://script.google.com){rel="noopener noreferrer"} e fai clic su **Per iniziare**
 
-## Tutorial
-
-- Il tuo primo script con Apps Script (in preparazione)
 
 ## Risorse utili (siti esterni)
 

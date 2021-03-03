@@ -1,13 +1,9 @@
 ---
-eleventyNavigation:
-  key: Fogli Google
-  parent: Home
-  showLast: true
-tags: Fogli Google
+key: Fogli Google
+parent: Home
 layout: layouts/page.njk
 title: Fogli Google
 image: /images/sheets_48dp.png
-style: markdown
 feed: ""
 ---
 <details>
@@ -20,7 +16,12 @@ Indice
 - [Panoramica](#panoramica)
 - [Cos'è un foglio di calcolo?](#cos'%C3%A8-un-foglio-di-calcolo%3F)
 - [Per iniziare](#per-iniziare)
+{% if collections.googlesheetstutorial.length %}
 - [Tutorial](#tutorial)
+{% endif %}
+{% if collections.googlesheetstips.length %}
+- [Tips and tricks](#tips-and-tricks)
+{% endif %}
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
 </nav>
@@ -38,15 +39,18 @@ Un foglio di calcolo è uno strumento utile e versatile che ti permette di prese
 
 ## Per iniziare
 
-Per utilizzare Fogli accedi al tuo account Google e visita la pagina [sheets.google.com](https://sheets.google.com){rel="noopener noreferrer"}
+Per utilizzare Fogli Google sul tuo computer accedi al tuo account Google e visita la pagina [sheets.google.com](https://sheets.google.com){rel="noopener noreferrer"}
 
-Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata.
-- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs){rel="noopener noreferrer"}
-- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/app/apple-store/id842842640){rel="noopener noreferrer"}
+Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca sul tuo dispositivo questa icona ![icona di Fogli Google]({{image}}){.inline .w-7 .ml-1}. Se non la trovi puoi installare l'app dallo store per il tuo dispositivo usando uno di questi link.
 
-## Tutorial
+- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.sheets){rel="noopener noreferrer"}
+- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/us/app/google-sheets/id842849113){rel="noopener noreferrer"}
 
-- In preparazione
+{% set tutorials = collections.googlesheetstutorial %}
+{% include 'partials/tutorial.njk' %}
+
+{% set tips = collections.googlesheetstips %}
+{% include 'partials/tips-and-tricks.njk' %}
 
 ## Risorse utili (siti esterni)
 
@@ -54,5 +58,6 @@ Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata.
 - [Community di assistenza (in inglese)](https://support.google.com/docs/community){rel="noopener noreferrer"}
 - [BenCollins (in inglese)](https://www.benlcollins.com/){rel="noopener noreferrer"} sito curato da [Ben Collins](https://twitter.com/benlcollins){rel="noopener noreferrer"}, un Google Developer Expert per Fogli Google a Apps Script. Una miniera di informazioni e utili consigli per approfondire la propria conoscenza di Fogli Google.
 - [Google Workspace Developers](https://workspacedevs.com/){rel="noopener noreferrer"} un elenco di sviluppatori con competenze specifiche su Google Apps Script e/o i vari prodotti di Google Workspace.
+
 _Credit:_ alcune informazioni sono state tradotte e adattate dal corso online di Google [**Applied Digital Skills**](https://applieddigitalskills.withgoogle.com/c/college-and-continuing-education/en/g-suite-certification-sheets-part-1/g-suite-certification-sheets-part-1/introduction-to-g-suite-certification-sheets-part-1.html){rel="noopener noreferrer"}
-{class="text-sm mt-8 mb-0"}
+{.text-sm .mt-8 .mb-0}
