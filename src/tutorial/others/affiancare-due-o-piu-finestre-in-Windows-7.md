@@ -30,7 +30,7 @@ Snap è uno strumento introdotto con Windows 7 che permette di ridimensionare e 
 
 1. Fate clic con il pulsante sinistro del mouse sulla barra del titolo della finestra che volete posizionare a sinistra. Trascinate la finestra (senza rilasciare il pulsante) verso il lato sinistro dello schermo fino a quando vedrete il contorno della finestra espansa.
 
-![Contorno della finestra espansa a sinistra](/images/windows-mostra-finestre-affiancate.png 'Trascinando la finestra verso sinistra compare la sagoma del contorno della finestra espansa'){.w-auto}
+![Contorno della finestra espansa a sinistra](/images/windows-affiancare-finestra-a-sinistra-con-Snap.png 'Trascinando la finestra verso sinistra compare la sagoma del contorno della finestra espansa'){.w-auto}
 
 2. Rilasciate il pulsante del mouse. La finestra verrà espansa fino a metà schermo partendo dal lato sinistro.
 
