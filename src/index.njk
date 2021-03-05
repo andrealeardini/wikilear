@@ -49,8 +49,12 @@ feed: ""
   {% include 'components/card.njk' %}
 </article>
 
-{% set cards = [ { url: "/blog/", image: "/images/blog-post.svg", title: "Blog"
-}, { url: "/tutorial/", image: "/images/tutorial.svg", title: "Tutorial" } ]%}
+{% set cards = [
+  { url: "/blog/", image: "/images/blog-post.svg", title: "Blog"},
+  { url: "/tips-and-tricks/", image: "/images/undraw_team_up_ip2x.png", title: "Tips and tricks"},
+  { url: "/termini-uso-privacy/", image: "/images/undraw_privacy_protection_nlwy.png", title: "Termini d'uso e privacy"},
+  { url: "/tutorial/", image: "/images/tutorial.svg", title: "Tutorial"}
+] %}
 
 <div class="flex flex-wrap justify-between mx-1 sm:mx-2 md:mx-4 my-4 gap-y-8">
   {% for card in cards %}
