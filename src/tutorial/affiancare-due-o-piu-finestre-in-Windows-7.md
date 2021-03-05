@@ -19,7 +19,7 @@ Quando si confrontano due documenti o si devono copiare dei file da una cartella
 1. Fate clic con il pulsante destro del mouse su un'area vuota della barra delle applicazioni
 2. Scegliete **Mostra le finestre affiancate**
 
-![Menu Mostra le finestre affiancate](/images/windows-mostra-finestre-affiancate.png 'Tramite il menu della barra delle applicazioni è possibile affiancare le finestre aperte sul desktop'){.mt-4 .mb-6}
+![Menu Mostra le finestre affiancate](/images/windows-mostra-finestre-affiancate.png 'Tramite il menu della barra delle applicazioni è possibile affiancare le finestre aperte sul desktop'){.w-auto .max-w-ch-60}
 
 Il comando Mostra le finestra affiancate agisce solo sulle finestra aperte, eventuali finestre ridotte ad icona rimarranno nascoste sulla barra delle applicazioni. Alcuni programmi non permettono di affiancare automaticamente le finestre. Ad esempio se utilizzate Chrome noterete che la finestra del browser rimane nella sua posizione originale.
 
@@ -29,19 +29,19 @@ Snap è uno strumento introdotto con Windows 7 che permette di ridimensionare e 
 
 1. Fate clic con il pulsante sinistro del mouse sulla barra del titolo della finestra che volete posizionare a sinistra. Trascinate la finestra (senza rilasciare il pulsante) verso il lato sinistro dello schermo fino a quando vedrete il contorno della finestra espansa.
 
-![Contorno della finestra espansa a sinistra](/images/windows-mostra-finestre-affiancate.png 'Trascinando la finestra verso sinistra compare la sagoma del contorno della finestra espansa'){.mt-4 .mb-6}
+![Contorno della finestra espansa a sinistra](/images/windows-mostra-finestre-affiancate.png 'Trascinando la finestra verso sinistra compare la sagoma del contorno della finestra espansa'){.w-auto}
 
 2. Rilasciate il pulsante del mouse. La finestra verrà espansa fino a metà schermo partendo dal lato sinistro.
 
-![Finestra affiancata a sinistra](/images/windows-finestra-affiancata-a-sinistra-con-Snap.png 'Rilasciando il pulsante del mouse la finestra sarà ridimensionata e affiancata a sinistra'){.w-4/5 .mt-4 .mb-6}
+![Finestra affiancata a sinistra](/images/windows-finestra-affiancata-a-sinistra-con-Snap.png 'Rilasciando il pulsante del mouse la finestra sarà ridimensionata e affiancata a sinistra'){.w-auto}
 
 3. Fate clic con il pulsante sinistro del mouse sulla barra del titolo della finestra che volete posizionare a destra. Trascinate la finestra (senza rilasciare il pulsante) verso il lato destro dello schermo fino a quando vedrete il contorno della finestra espansa.
 
-![Contorno della finestra espansa a destra](/images/windows-affiancare-finestra-a-destra-con-Snap.png 'Trascinando la finestra verso destra compare la sagoma del contorno della finestra espansa'){.w-4/5 .mt-4 .mb-6}
+![Contorno della finestra espansa a destra](/images/windows-affiancare-finestra-a-destra-con-Snap.png 'Trascinando la finestra verso destra compare la sagoma del contorno della finestra espansa'){.w-auto}
 
 4. Rilasciate il pulsante del mouse. La finestra verrà espansa fino a metà schermo partendo dal lato destro.
 
-![Finestra affiancata a destra](/images/windows-finestra-affiancata-a-destra-con-Snap.png 'Rilasciando il pulsante del mouse la finestra sarà ridimensionata e affiancata a destra'){.w-4/5 .mt-4 .mb-6}
+![Finestra affiancata a destra](/images/windows-finestra-affiancata-a-destra-con-Snap.png 'Rilasciando il pulsante del mouse la finestra sarà ridimensionata e affiancata a destra'){.w-auto}
 
 In qualsiasi momento potete ripristinare le dimensioni originali della finestra trascinandola dalla la barra del titolo e allontanandola dalla parte superiore del desktop.
 
