@@ -49,7 +49,7 @@ async function imageHTML(image) {
   let src = "./src"+image.src;
 
   let metadata = await Image(src, {
-    widths: [300, 600, 900, 1200, 1600],
+    widths: [400, 500, 700, 900, 1100, 1300],
     formats: formats,
     urlPath: "/images/",
     outputDir: "./dist/images/",
@@ -64,7 +64,7 @@ async function imageHTML(image) {
     alt: image.alt,
     sizes: image.sizes
       ? image.sizes
-      : "(max-width: 550px) 100vw, 70ch",
+      : "(max-width: 550px) 100vw, 60ch",
     class: image.classList,
     loading: "lazy",
     decoding: "async",
