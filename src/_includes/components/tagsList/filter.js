@@ -32,6 +32,7 @@ const tagIsValid =  (value) => {
       "googlemapstips",
       "feed",
       "otherstips",
+      "otherstutorial",
       "tagList",
       "Tips and Tricks",
       "tips",

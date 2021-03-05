@@ -3,6 +3,7 @@ date: 2012-03-12
 title: Impostare il carattere predefinito in Word
 tags:
   - tutorial
+  - otherstutorial
   - Microsoft Word
 description: Come impostare il carattere predefinito in Microsoft Word
 subtitle: Come impostare il carattere predefinito in Microsoft Word

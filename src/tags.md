@@ -26,6 +26,7 @@ pagination:
       "googlesheetstips",
       "googlesheetstutorial",
       "otherstips",
+      "otherstutorial",
       "post",
       "posts",
       "tagList",

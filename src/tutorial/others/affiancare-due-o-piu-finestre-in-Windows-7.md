@@ -3,6 +3,7 @@ date: 2012-07-25
 title: Affiancare due o più finestre in Windows 7
 tags:
   - tutorial
+  - otherstutorial
   - Windows
   - Tasti di scelta rapida
 description: Questo articolo spiega come affiancare le finestre in Windows 7. Vengono descritti l'affiancamento automatico tramite il menu della barra della applicazioni, la funzionalità Snap per affiancare due finestre e l'uso dei tasti di scelta rapida
