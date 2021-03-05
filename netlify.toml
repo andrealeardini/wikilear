@@ -62,3 +62,15 @@
   to = "https://test.wikilear.it/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/2012/07/affiancare-due-o-piu-finestre-in-Windows-7.html"
+  to = "/tutorial/others/affiancare-due-o-piu-finestre-in-Windows-7/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2012/09/impostare-il-carattere-predefinito-in-Word.html"
+  to = "/tutorial/others/impostare-il-carattere-predefinito-in-Word/"
+  status = 301
+  force = true
