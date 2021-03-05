@@ -2,7 +2,7 @@
 date: 2014-06-14
 title: "L’URL di Google Maps: latitudine, longitudine, zoom, altitudine, angolo di rotazione e inclinazione"
 description: L'URL di Google Maps spiegato nei dettagli, parametro per parametro
-subtitle: Dopo aver visto come utilizzare la <a href="/blog/visualizzazione-earth-di-google-maps/">visualizzazione Earth in Google Maps</a> e <a href="/blog/coordinate-di-latitudine-e-longitudine-nuovo-google-maps/">come impostare latitudine e longitudine</a> ora è venuto il momento di dare uno sguardo più approfondito all’URL di Google Maps per scoprirne insieme i segreti.
+subtitle: Dopo aver visto come utilizzare la <a href="/google-maps/tutorial/visualizzazione-earth-di-google-maps/">visualizzazione Earth in Google Maps</a> e <a href="/google-maps/tutorial/coordinate-di-latitudine-e-longitudine-nuovo-google-maps/">come impostare latitudine e longitudine</a> ora è venuto il momento di dare uno sguardo più approfondito all’URL di Google Maps per scoprirne insieme i segreti.
 image: /images/google-maps-URL-visualizzazione-earth-inclinata.png
 image_title:
 image_description:

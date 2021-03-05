@@ -29,7 +29,7 @@ Per accedere alla visualizzazione Earth fai clic sulla **miniatura Earth** nell'
 
 ![Miniatura mappa in Google Maps](/images/google-maps-visualizzazione-earth-miniatura-mappa.png 'Fai clic sulla miniatura Mappa per tornare alla visualizzazione classica della mappa'){.w-full}**Miniatura mappa**
 
-> Se nella miniatura compare **Satellite** al posto di **Earth,** stai utilizzando la [modalità Lite,](http://www.wikilear.it/2013/05/il-nuovo-google-maps-modalita-lite.html){rel="noopener noreferrer"} una versione semplificata di Google Maps dove la visualizzazione 3D di Earth non è disponibile.
+> Se nella miniatura compare **Satellite** al posto di **Earth,** stai utilizzando la [modalità Lite,](/google-maps/tips-and-tricks/google-maps-modalita-lite/) una versione semplificata di Google Maps dove la visualizzazione 3D di Earth non è disponibile.
 
 ## Navigare nella mappa in 3D
 
