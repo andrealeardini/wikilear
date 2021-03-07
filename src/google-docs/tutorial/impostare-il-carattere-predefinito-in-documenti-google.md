@@ -27,7 +27,7 @@ Quando si crea un nuovo documento, lo stile in uso è "Testo normale". Per rende
 3. Fate clic sulla freccia a destra di Testo normale.
 4. Fate clic su **Aggiorna "Testo normale" per farlo coincidere.**
 
-![Aggiorna "Testo normale" per farlo coincidere](/images/documenti-google-aggiorna-testo-normale-per-farlo-coincidere.png 'Per applicare le modifiche allo stile "Testo normale" dobbiamo aprire il menu Stili e scegliere Aggiorna "Testo normale" per farlo coincidere'){.w-auto}
+!['Aggiorna "Testo normale" per farlo coincidere'](/images/documenti-google-aggiorna-testo-normale-per-farlo-coincidere.png 'Per applicare le modifiche allo stile "Testo normale" dobbiamo aprire il menu Stili e scegliere Aggiorna "Testo normale" per farlo coincidere'){.w-auto}
 
 A questo punto non ci rimane che rendere definitive le modifiche apportate agli stili predefiniti.
 
