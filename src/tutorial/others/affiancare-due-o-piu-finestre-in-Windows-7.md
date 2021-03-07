@@ -20,7 +20,7 @@ Quando si confrontano due documenti o si devono copiare dei file da una cartella
 1. Fate clic con il pulsante destro del mouse su un'area vuota della barra delle applicazioni
 2. Scegliete **Mostra le finestre affiancate**
 
-![Menu Mostra le finestre affiancate](/images/windows-mostra-finestre-affiancate.png 'Tramite il menu della barra delle applicazioni è possibile affiancare le finestre aperte sul desktop'){.w-auto .max-w-ch-60}
+![Menu Mostra le finestre affiancate](/images/windows-mostra-finestre-affiancate.png 'Tramite il menu della barra delle applicazioni è possibile affiancare le finestre aperte sul desktop'){.w-auto}
 
 Il comando Mostra le finestra affiancate agisce solo sulle finestra aperte, eventuali finestre ridotte ad icona rimarranno nascoste sulla barra delle applicazioni. Alcuni programmi non permettono di affiancare automaticamente le finestre. Ad esempio se utilizzate Chrome noterete che la finestra del browser rimane nella sua posizione originale.
 
