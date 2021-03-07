@@ -11,7 +11,7 @@ subtitle: Grazie ad Application Launcher for Drive ora puoi aprire i file archiv
 image: /images/chrome-application-launcher-for-drive.png
 image_title:
 image_description: Application Launcher for Drive
-old_url: /2014/11/google-ricerca-guida-alluso-della.html
+old_url: /2014/11/application-launcher-for-drive-apri-file-applicazione-desktop-Google-Drive.html
 ---
 
 I moderni browser sono diventati potenti strumenti di lavoro. Ad esempio grazie a **Google Drive** puoi visualizzare l'anteprima di un allegato in **Gmail,** puoi creare e condividere documenti, fogli di lavoro e presentazioni non solo di Google ma anche nel formato nativo di **Microsoft Office** (Word, Excel, PowerPoint). E la cosa bella è che non devi installare niente sul tuo computer. L'unico strumento che devi usare è il tuo browser preferito (lo so sono di parte ma ovviamente sto parlando di Google Chrome).
