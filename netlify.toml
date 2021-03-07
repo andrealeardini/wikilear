@@ -74,3 +74,186 @@
   to = "/tutorial/others/impostare-il-carattere-predefinito-in-Word/"
   status = 301
   force = true
+
+# Google Documenti
+
+[[redirects]]
+  from = "/2012/09/impostare-il-carattere-predefinito-in-Google-Documenti.html"
+  to = "/google-docs/tutorial/impostare-il-carattere-predefinito-in-documenti-google/"
+  status = 301
+  force = true
+
+# Blog
+
+[[redirects]]
+  from = "/2014/11/application-launcher-for-drive-apri-file-applicazione-desktop-Google-Drive.html"
+  to = "/blog/application-launcher-for-drive-apri-file-applicazione-desktop-Google-Drive/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/11/gmail-per-android-vs-inbox-android.html"
+  to = "/blog/gmail-android-vs-inbox-android/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/10/google-inbox-by-gmail.html"
+  to = "/blog/google-inbox-by-gmail/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/11/google-keep-condividi-idee-e-note.html"
+  to = "/blog/google-keep-condividi-idee-note/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/11/google-maps-si-aggiorna-e-veste-il-Material-design.html"
+  to = "/blog/google-maps-si-aggiorna-e-veste-il-material-design/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/12/google-maps-ti-suggerisce-quale-corsia.html"
+  to = "/blog/google-maps-suggerisce-corsia-autostrada/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2013/05/google-moduli-nuovo-strumento-inserisci-immagini.html"
+  to = "/blog/google-moduli-nuovo-strumento-inserisci-immagini/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2015/01/Google-Traduttore-trasforma-dispositivo-Android-iOS-traduttore-universale.html"
+  to = "/blog/google-traduttore-trasforma-dispositivo-android-ios-traduttore-universale/"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/2014/12/hangouts-condivisione-dello-stato-e.html"
+  to = "/blog/hangouts-condivisione-stato-integrazione-chiamate-telefoniche/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/10/token-di-sicurezza-accedere-account-google.html"
+  to = "/blog/token-di-sicurezza-accedere-account-google/"
+  status = 301
+  force = true
+
+# Gmail / tutorial
+
+[[redirects]]
+  from = "/2013/10/come-verificare-impostazioni-inoltro-messaggi-Gmail.html"
+  to = "/blog/come-verificare-impostazioni-inoltro-messaggi-gmail/"
+  status = 301
+  force = true
+
+# Google Docs / Tips and Tricks
+
+[[redirects]]
+  from = "/2012/11/come-nascondere-o-mostrare-il-righello-in-Google-Documenti.html"
+  to = "/google-docs/tips-and-tricks/come-nascondere-o-mostrare-il-righello-in-documenti-google/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2012/11/la-modalita-controlli-compatti-di-Google-Documenti.html"
+  to = "/google-docs/tips-and-tricks/la-modalita-controlli-compatti-di-google-documenti/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2012/11/la-visualizzazione-schermo-intero-in-Google-Documenti.html"
+  to = "/google-docs/tips-and-tricks/la-visualizzazione-schermo-intero-in-documenti-google/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2012/11/mostrare-il-conteggio-delle-parole-in-Google-Documenti.html"
+  to = "/google-docs/tips-and-tricks/mostrare-il-conteggio-delle-parole-in-documenti-google/"
+  status = 301
+  force = true
+
+# Google Docs / Tutorial
+
+[[redirects]]
+  from = "/2012/09/impostare-il-carattere-predefinito-in-Google-Documenti.html"
+  to = "/google-docs/tutorial/impostare-il-carattere-predefinito-in-documenti-google/"
+  status = 301
+  force = true
+
+# Google Maps / Tips and Tricks
+
+[[redirects]]
+  from = "/2013/05/il-nuovo-google-maps-modalita-lite.html"
+  to = "/google-maps/tips-and-tricks/google-maps-modalita-lite/"
+  status = 301
+  force = true
+
+# Google Maps / Tutorial
+
+[[redirects]]
+  from = "/2014/03/coordinate-di-latitudine-e-longitudine-nuovo-google-maps.html"
+  to = "/google-maps/tutorial/coordinate-di-latitudine-e-longitudine-nuovo-google-maps/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/06/lurl-di-google-maps-latitudine.html"
+  to = "/google-maps/tutorial/url-google-maps-latitudine-longitudine-zoom-altitudine-rotazione-angolo-visualizzazione/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/05/la-visualizzazione-earth-di-google-maps.html"
+  to = "/google-maps/tutorial/visualizzazione-earth-di-google-maps/"
+  status = 301
+  force = true
+
+# Tips and Tricks
+
+[[redirects]]
+  from = "/2013/05/formattare--testo-messaggio-Google-Hangouts.html"
+  to = "/tips-and-tricks/come-formattare-testo-messaggio-google-hangouts/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/02/screenshot-con-il-trucco.html"
+  to = "/tips-and-tricks/come-modificare-testo-pagina-web-screenshot/"
+  status = 301
+  force = true
+
+# Tutorial
+
+[[redirects]]
+  from = "/2012/07/affiancare-due-o-piu-finestre-in-Windows-7.html"
+  to = "/tutorial/affiancare-due-o-piu-finestre-in-Windows-7/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2012/09/impostare-il-carattere-predefinito-in-Word.html"
+  to = "/tutorial/impostare-il-carattere-predefinito-in-Word/"
+  status = 301
+  force = true
+
+# Termini d'uso
+
+[[redirects]]
+  from = "/p/due-parole-su-wikilear.html"
+  to = "/termini-uso-privacy/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/p/due-parole-su-wikilear.html#Info_Copyright"
+  to = "/termini-uso-privacy/#licenza-e-copyright"
+  status = 301
+  force = true
