@@ -7,6 +7,7 @@
 <ul>
   {% for item in postListItems %}
   <li class="mt-6 md:mt-8 lg:mt-10 shadow-lg border border-gray-300 rounded-lg">
+    <article>
     {% if item.data.snippet_image %}
       {% set image = item.data.snippet_image %}
       {% set image_description = item.data.snippet-image-description %}
@@ -41,6 +42,7 @@
       {% set tags = item.data.tags %}
       {% include 'components/tags-post.njk' %}
     </div>
+    </article>
   </li>
   {%- endfor -%}
 </ul>

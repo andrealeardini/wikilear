@@ -28,9 +28,9 @@
     />
   {% endif %}
   {% include "partials/page-header.njk" %}
-  <article class="{{ style }}">
+  <div class="{{ style }}">
     {{ content | safe }}
-  </article>
+  </div>
 
   {% if tags %}
     <p class="mt-8 font-semibold" id="tags-desc">

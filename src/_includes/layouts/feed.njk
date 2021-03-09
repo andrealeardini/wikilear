@@ -12,7 +12,7 @@
 
 {% block content %}
   {% include "partials/page-header.njk" %}
-  <article>
+  <div>
     {% include "partials/post-list.njk" %}
 
     {# If we leave pagination in for tags, the next and prev links will
@@ -22,5 +22,5 @@
        {% include "partials/pagination.njk" %}
       {% endif %}
     {% endif %}
-  </article>
+  </div>
 {% endblock %}
