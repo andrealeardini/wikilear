@@ -2,6 +2,7 @@
 key: Google Drive
 parent: Home
 layout: layouts/page.njk
+tags:
 title: Google Drive
 image: /images/drive_48dp.png
 feed:

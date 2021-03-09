@@ -2,6 +2,7 @@
 key: Google Maps
 parent: Home
 layout: layouts/page.njk
+tags:
 title: Google Maps
 image: /images/maps_48dp.png
 feed:

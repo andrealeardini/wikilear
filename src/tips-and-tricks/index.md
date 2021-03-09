@@ -2,7 +2,7 @@
   key: Tips and Tricks
   parent: Home
   title: Tips and Tricks
-  tags: Tips and Tricks
+  tags:
   description: Tutti i tips and tricks pubblicati sul sito
   layout: layouts/feed.njk
   pagination:

@@ -2,7 +2,7 @@
   parent: Documenti Google
   key: Google-Docs-Tutorial
   title: Tutorial
-  tags: Documenti Google
+  tags:
   description: Tutti i tutorial per Documenti Google pubblicati sul sito
   layout: layouts/feed.njk
   pagination:

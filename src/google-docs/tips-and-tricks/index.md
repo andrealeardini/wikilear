@@ -1,7 +1,7 @@
 ---
   parent: Documenti Google
   key: Google-Docs-Tips
-  tags: Documenti Google
+  tags:
   title: Tips and Tricks
   description: Tutti i tips and tricks per Documenti Google pubblicati sul sito.
   layout: layouts/feed.njk

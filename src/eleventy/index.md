@@ -2,6 +2,7 @@
 key: 11ty
 parent: Home
 layout: layouts/page.njk
+tags:
 description: Tutorial, Tips and Tricks su Eleventy
 permalink: "/11ty/"
 title: Eleventy
