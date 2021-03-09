@@ -75,14 +75,14 @@
           id="inert"
           class="h-full w-full fixed bg-white opacity-50 cursor-default hidden"
         ></button>
-        <div
+        <main
           id="content"
           class="mt-12 h-full mx-auto pt-6 px-4 md:px-8 max-w-ch-70 text-base bg-white dark:bg-gray-900 lg:text-md xl:text-lg"
         >
           {% include "components/breadcrumbs.njk" %}
           {% block content %}
           {% endblock %}
-        </div>
+        </main>
       </div>
       {% include "components/tos/tos.njk" %}
       {% include "partials/footer.njk" %}

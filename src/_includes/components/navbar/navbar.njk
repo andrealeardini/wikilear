@@ -2,6 +2,10 @@
   class="bg-gray-800 flex justify-between items-center p-2"
 >
   <div class="text-white">
+    {# https://tailwindcss.com/docs/screen-readers #}
+     <a href="#content" class="text-yellow-400 sr-only focus:absolute focus:not-sr-only">
+      Skip to content
+    </a>
       <a href="/" class="ml-4 text-xl text-white hover:text-gray-200 dark:text-white dark:hover:text-gray-200">Wikilear</a>
   </div>
   <div class="flex gap-3 justify-end items-center">
