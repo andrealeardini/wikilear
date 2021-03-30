@@ -15,4 +15,4 @@ Grazie a una borsa di studio offerta da Google ho conseguito un Nanodegree con U
 
 ![Certificato Mobile Web Specialist di Udacity rilasciato ad Andrea Leardini](/images/andrea-leardini-certificate-nanodegree-mobile-web-specialist-udacity.png){.w-full}
 
-Su Wikilear condivido alcuni notizie e tutorial su **Documenti Google, Fogli Google, Drive** e altri prodotti di Google. Ho pensato anche di dedicare alcune sezioni ai linguaggi di programmazione **(Google Apps Script, HTML, Javascript, CSS)** e gli strumenti o framework **(Eleventy, Tailwinds CSS)** che utilizzo a livello amatoriale.
+Su Wikilear condivido notizie e tutorial su **Documenti Google, Fogli Google, Drive** e altri prodotti di Google. Ho pensato anche di dedicare alcune sezioni ai linguaggi di programmazione **(Google Apps Script, HTML, Javascript, CSS)** e gli strumenti o framework **(Eleventy, Tailwinds CSS)** che utilizzo a livello amatoriale.
