@@ -20,5 +20,6 @@ module.exports = {
   layout: "layouts/post.njk",
   feed: "true",
   style: "markdown",
-  tags: "Documenti Google"
+  tags: "Documenti Google",
+  collection: "Documenti Google",
 };

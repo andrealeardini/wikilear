@@ -20,5 +20,6 @@ module.exports = {
   layout: "layouts/post.njk",
   feed: "true",
   style: "markdown",
-  tags: "Google Maps"
+  tags: "Google Maps",
+  collection: "Google Maps"
 };

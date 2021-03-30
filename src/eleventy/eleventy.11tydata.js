@@ -20,5 +20,6 @@ module.exports = {
   layout: "layouts/post.njk",
   feed: "true",
   style: "markdown",
-  tags: "11ty"
+  tags: "11ty",
+  collection: "11ty"
 };

@@ -1,6 +1,6 @@
 {
   "parent": "Google-Maps-Tutorial",
-  "layout": "layouts/tutorial-maps.njk",
+  "collection": "googlemapstutorial",
   "tags": ["Google Maps", "tutorial", "googlemapstutorial"],
   "topic": "Google Maps"
 }

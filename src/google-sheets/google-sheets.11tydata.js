@@ -21,5 +21,6 @@ module.exports = {
   feed: "true",
   style: "markdown",
   parent: "Fogli Google",
-  tags: "Fogli Google"
+  tags: "Fogli Google",
+  collection: "Fogli Google",
 };
