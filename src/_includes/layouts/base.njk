@@ -19,6 +19,7 @@
     <meta name="twitter:creator" content="@{{ site.author.twitter }}">
     {% if image %}
     <meta property="og:image" content="{{ image | absoluteUrl(site.url) }}">
+    <meta property="twitter:image" content="{{ image | absoluteUrl(site.url) }}">
     {% endif %}
     <title>{{ renderData.title or title or site.title | escape }}</title>
     <link rel="canonical" href="{{ site.url }}{{ canonicalUrl or page.url }}">
