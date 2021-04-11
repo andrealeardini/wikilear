@@ -36,7 +36,7 @@ const optimizeImages = async (content, outputPath = ".html") => {
 
 async function imageHTML(image) {
   // set standard format and element
-  let formats = ["webp", "jpeg"];
+  let formats = ["avif", "webp", "jpeg"];
   let type = "picture";
 
   // with svg the element is a img instead of a picture
