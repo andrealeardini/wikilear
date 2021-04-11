@@ -2,10 +2,14 @@
   "name": "Wikilear",
   "url": "https://www.wikilear.it",
   "title": "Wikilear, codelab e tutorial",
+  "genre": "CreativeWork",
   "author": {
     "name": "Andrea Leardini",
     "email": "andrea@wikilear.it",
     "twitter": "andrealeard"
+  },
+  "publisher": {
+    "name": "Wikilear"
   },
   "feed": {
     "subtitle": "Gli ultimi articoli, tutorial e codelab da Wikilear",

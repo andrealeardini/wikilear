@@ -92,6 +92,12 @@ module.exports = function (eleventyConfig) {
     });
   eleventyConfig.setLibrary("md", markdownLib);
 
+  // https://github.com/google/eleventy-high-performance-blog/blob/60902bfdaf764f5b16b2af62cf10f63e0e74efbc/.eleventy.js#L144
+  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
   // Add filters
   eleventyConfig.addFilter(
     "dateFilter",
@@ -129,10 +135,7 @@ module.exports = function (eleventyConfig) {
   );
 
   // return true if an array includes the searched value
-  eleventyConfig.addFilter(
-    "includes",
-    require("./src/_filters/includes")
-  );
+  eleventyConfig.addFilter("includes", require("./src/_filters/includes"));
 
   // https://github.com/google/eleventy-high-performance-blog/blob/624aaa9ede9df609e2d4656f23d819621f5cb464/.eleventy.js#L94
 
@@ -180,7 +183,6 @@ module.exports = function (eleventyConfig) {
     }
     return dt.toISO();
   });
-
 
   // Returns a collection of blog posts in reverse date order
   eleventyConfig.addCollection("blog", (collection) => {
