@@ -75,7 +75,7 @@ Installa Eleventy con il seguento comando (l'opzione `-g` indica che si tratta d
 npm install -g @11ty/eleventy
 ```
 
-> Eleventy v0.11.1 richiede **Node versione 8** o successive.
+> Eleventy v0.12.1 richiede **Node versione 8** o successive.
 > Puoi controllare la versione in uso sul tuo sistema usando `node --version` dalla riga di comando.
 
 Ora devi creare un template da utilizzare con Eleventy. Per questo semplice esempio ci accontentiamo di una pagina vuota con un titolo. Come formato puoi utilizzare un file in Markdown, uno dei tanti linguaggi supportati da Eleventy. Se vuoi puoi creare il file utilizzando un qualsiasi editor di testo. In questo caso ho utilizzato il comando `echo`.
@@ -94,7 +94,7 @@ Dovresti vedere un risultato simile a questo:
 
 ```shell
 Writing _site/README/index.html from ./README.md.
-Wrote 1 file in 0.11 seconds (v0.11.0)
+Wrote 1 file in 0.11 seconds (v0.12.1)
 ```
 
 Il funzionamento base di Eleventy è abbastanza semplice. Cerca nella cartella di input (il valore predefinito è la cartella corrente) e in tutte le sottocartelle tutti i template in uno dei formato gestiti e li compila restituendo per ciascuno un file HTML nella cartella di output (il valore predefinito è \_site).
