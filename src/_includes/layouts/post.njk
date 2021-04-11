@@ -4,12 +4,12 @@
 {% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
 {# Render post date#}
 {% set pageHeaderSummary %}
-  <div>
-    <time class="text-sm md:text-base" datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
-  </div>
-  {% if subtitle %}
+<div>
+  <time class="text-sm md:text-base" datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+</div>
+{% if subtitle %}
   <p class="italic my-4">{{ subtitle | safe }}</p>
-  {% endif %}
+{% endif %}
 {% endset %}
 
 {% block content %}
@@ -32,7 +32,7 @@
     {{ content | safe }}
   </div>
 
-  {% if tags %}
+   {% if tags %}
     <p class="mt-8 font-semibold" id="tags-desc">
       Etichette
     </p>
@@ -41,8 +41,11 @@
     </div>
   {% endif %}
 
-  <hr class="mt-10 mb-4">
-  <p class="text-sm">Hai trovato un errore o vuoi contribuire a questo articolo? <a href="https://github.com/andrealeardini/wikilear/edit/main/src{{ page.filePathStem }}.md" rel="noopener noreferrer">Modifica questa pagina su GitHub!</a></p>
+  {% include "components/share.njk" %}
+
+  <hr class="mt-4 mb-4">
+  <p class="text-sm">Hai trovato un errore o vuoi contribuire a questo articolo? <a href="https://github.com/andrealeardini/wikilear/edit/main/src{{ page.filePathStem }}.md" rel="noopener noreferrer">Modifica questa pagina su GitHub!</a>
+  </p>
 
   {% block posts %}
     {# https://github.com/11ty/eleventy/issues/434#issuecomment-469028924 #}
@@ -51,12 +54,11 @@
   {% endblock %}
 
   {% if recommendedPosts %}
-  <footer class="recommended-posts">
-    {% set postListItems = recommendedPosts %}
-    {% set postListHeadline = 'Altri articoli dal blog' %}
-    {% include "partials/post-list.njk" %}
-  </footer>
+    <footer class="recommended-posts">
+      {% set postListItems = recommendedPosts %}
+      {% set postListHeadline = 'Altri articoli dal blog' %}
+      {% include "partials/post-list.njk" %}
+    </footer>
   {% endif %}
 
 {% endblock %}
-
