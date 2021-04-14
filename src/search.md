@@ -8,6 +8,7 @@ layout: layouts/page.njk
 title: Cerca sul sito...
 image: /images/search.svg
 style: markdown
+description: Da questa pagina puoi cercare qualsiasi testo su Wikilear e ottenere informazioni sulla struttura del sito.
 ---
 Stai cercando informazioni generiche su un prodotto o un determinato servizio? Utilizza le [etichette](/tag/) per filtrare tutti gli articoli e i tutorial per argomento (corrisponde al nome dell'etichetta). Se invece vuoi limitare la ricerca ai soli tutorial utilizza i filtri che trovi nella sezione [Tutorial.](/tutorial/) Non dimenticare di consultare anche la sezione [Argomenti principali](/#topics) dove trovi ulteriori informazioni su alcuni programmi o tool.
 
