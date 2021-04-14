@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <meta name="theme-color" content="#e5e7eb">
+    {% block ogType %}
+    <meta property="og:type" content="website">
+    {% endblock %}
+    <meta property="og:site_name" content="wikilear">
     <meta property="og:title" content="{{ renderData.title or title or site.title | escape  }}">
     {% set desc = renderData.description or description %}
     {% if not desc %}
@@ -18,8 +22,9 @@
     <meta name="twitter:site" content="@{{ site.author.twitter }}">
     <meta name="twitter:creator" content="@{{ site.author.twitter }}">
     {% if image %}
-    <meta property="og:image" content="{{ image | absoluteUrl(site.url) }}">
-    <meta property="twitter:image:src" content="{{ image | absoluteUrl(site.url) }}">
+    <meta property="og:image" content="{{ image | absoluteUrl(site.url)-400w.webp }}">
+    <meta property="og:image:alt" content="{{ image_description | truncate(420) }}">
+    <meta property="twitter:image:alt" content="{{ image_description | truncate(420) }}">
     {% endif %}
     <title>{{ renderData.title or title or site.title | escape }}</title>
     <link rel="canonical" href="{{ site.url }}{{ canonicalUrl or page.url }}">
