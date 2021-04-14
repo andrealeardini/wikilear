@@ -1,7 +1,7 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": {{ schema.type or 'WebSite' }},
+  "@type": "{{ schema.type or WebSite }}",
   "headline": "{{ title }}",
   "image": {% if image %}"{{ site.url }}{{ image }}"{% else %}[]{% endif %},
   "author": {
