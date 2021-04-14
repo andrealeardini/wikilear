@@ -5,6 +5,9 @@ eleventyNavigation:
   showLast: true
 layout: "layouts/page.njk"
 title: Chi sono
+schema:
+  type: AboutPage
+description: Informazioni su Andrea Leardini, l'autore di Wikilear
 ---
 
 Ciao sono **Andrea Leardini** e questo che stai visitando è il mio sito personale. Da diversi anni sono attivo nelle community di assistenza di Google, prima come Top Contributor e ora come **Product Expert** per diversi prodotti di Google.

@@ -19,6 +19,6 @@ utilizzate da Malte nel suo ottimo template Eleventy High Perfomarmance.
 
 ## Licenza
 
-Il codice è distribuito con licenza MIT, il testo (articoli, tutorial, post, news, ecc.) è distribuito con licenza
-Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale. 
+Il codice è distribuito con licenza MIT, il testo (articoli, tutorial, post, news, ecc.) e le immagini sono distribuiti con licenza
+Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale.
 

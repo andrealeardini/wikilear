@@ -1,0 +1,22 @@
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ schema.type or WebSite }}",
+  "headline": "{{ title }}",
+  "image": {% if image %}"{{ site.url }}{{ image }}"{% else %}[]{% endif %},
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
+  },
+  "genre": "{{ site.genre }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.publisher.name }}"
+  },
+  "url": "{{ site.url }}{{ canonicalUrl or page.url }}",
+  "mainEntityOfPage": "{{ site.url }}{{ canonicalUrl or page.url }}",
+  "datePublished": "{{ page.date | htmlDateString }}",
+  "dateModified": "{{ page.inputPath | lastModifiedDate  | htmlDateString }}",
+  "description": "{{ subtitle | striptags }}"
+}
+</script>
