@@ -5,6 +5,8 @@ eleventyNavigation:
   showLast: true
 layout: "layouts/page.njk"
 title: Chi sono
+schema:
+  type: AboutPage
 description: Informazioni su Andrea Leardini, l'autore di Wikilear
 ---
 

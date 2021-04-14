@@ -1,3 +1,7 @@
+---
+schema:
+  type: WebSite
+---
 {% extends "layouts/base.njk" %}
 {% block ogType %}
 <meta property="og:type" content="article">
@@ -63,26 +67,5 @@
       {% include "partials/post-list.njk" %}
     </footer>
   {% endif %}
-
-  {# https://github.com/google/eleventy-high-performance-blog/blob/60902bfdaf764f5b16b2af62cf10f63e0e74efbc/_includes/layouts/post.njk#L34 #}
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ title }}",
-  "image": {% if image %}"{{ site.url }}{{ image }}"{% else %}[]{% endif %},
-  "author": "{{ site.author.name }}",
-  "genre": "{{ site.genre }}",
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ site.publisher.name }}"
-  },
-  "url": "{{ site.url }}{{ canonicalUrl or page.url }}",
-  "mainEntityOfPage": "{{ site.url }}{{ canonicalUrl or page.url }}",
-  "datePublished": "{{ page.date | htmlDateString }}",
-  "dateModified": "{{ page.inputPath | lastModifiedDate  | htmlDateString }}",
-  "description": "{{ subtitle | striptags }}"
-}
-</script>
 
 {% endblock %}
