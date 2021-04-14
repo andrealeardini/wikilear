@@ -20,7 +20,6 @@ module.exports = {
   layout: "layouts/post.njk",
   feed: "true",
   style: "markdown",
-  parent: "Fogli Google",
   tags: "Fogli Google",
   collection: "Fogli Google",
 };
