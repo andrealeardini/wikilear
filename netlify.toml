@@ -3,6 +3,13 @@
   publish = "dist/"
   command = "npm run build"
 
+# persist images
+# https://github.com/11ty/eleventy-img/issues/51#issuecomment-775186353
+[[plugins]]
+  package = "netlify-plugin-cache"
+    [plugins.inputs]
+      paths = ["dist/images/"]
+
 # If skip_processing = true, all other settings are ignored
 [build.processing]
   skip_processing = false
