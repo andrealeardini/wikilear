@@ -18,7 +18,9 @@
   },
   "author": "Andrea Leardini",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "eslint": "^7.24.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-img": "^0.7.8",
