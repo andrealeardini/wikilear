@@ -2,5 +2,18 @@
   "parent": "Others",
   "tags:": ["otherstips", "tips"],
   "collection": "otherstips",
-  "topic": "Tips and Tricks"
+  "topic": "Tips and Tricks",
+  "eleventyComputed": {
+    "breadcumb": {
+      "positions": 3,
+      "item2": {
+        "name": "Altri prodotti",
+        "item": "/tips-and-tricks/others/"
+      },
+      "item3": {
+        "name": "{{ title }}",
+        "item": "{{ page.url }}"
+      }
+    }
+  }
 }

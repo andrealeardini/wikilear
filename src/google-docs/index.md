@@ -2,7 +2,7 @@
 key: Documenti Google
 parent: Home
 layout: layouts/page.njk
-tags:
+override:tags: []
 title: Documenti Google
 image: /images/docs_48dp.png
 feed:

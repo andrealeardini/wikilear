@@ -1,10 +1,6 @@
 ---
 date: 2013-10-18
-tags:
-  - gmailtutorial
-  - Gmail
-  - Sicurezza
-  - tutorial
+tags: Sicurezza
 topics: Gmail
 title: Come verificare le impostazioni di inoltro dei messaggi in Gmail
 description: Come controllare le impostazioni di inoltro in Gmail per verificare se il proprio account è stato violato

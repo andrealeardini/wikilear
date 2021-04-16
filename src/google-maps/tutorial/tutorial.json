@@ -1,6 +1,19 @@
 {
   "parent": "Google-Maps-Tutorial",
   "collection": "googlemapstutorial",
-  "tags": ["Google Maps", "tutorial", "googlemapstutorial"],
-  "topic": "Google Maps"
+  "tags": ["tutorial", "googlemapstutorial"],
+  "topic": "Google Maps",
+  "eleventyComputed": {
+    "breadcumb": {
+      "positions": 3,
+      "item2": {
+        "name": "Tutorial",
+        "item": "/google-maps/tutorial/"
+      },
+      "item3": {
+        "name": "{{ title }}",
+        "item": "{{ page.url }}"
+      }
+    }
+  }
 }

@@ -20,12 +20,12 @@ module.exports = {
   layout: "layouts/post.njk",
   feed: "true",
   style: "markdown",
-  tags: "Documenti Google",
-  collection: "Documenti Google",
+  tags: "Google Apps Script",
+  collection: "Google Apps Script",
   breadcumb: {
     item1: {
-      name: "Documenti Google",
-      item: "/google-docs/",
+      name: "Google Apps Script",
+      item: "/google-apps-script/",
     },
   },
 };

@@ -23,4 +23,10 @@ module.exports = {
   parent: "Fogli Google",
   tags: "Fogli Google",
   collection: "Fogli Google",
+  breadcumb: {
+    item1: {
+      name: "Fogli Google",
+      item: "/google-sheets/",
+    },
+  },
 };

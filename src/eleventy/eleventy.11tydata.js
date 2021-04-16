@@ -21,5 +21,11 @@ module.exports = {
   feed: "true",
   style: "markdown",
   tags: "11ty",
-  collection: "11ty"
+  collection: "11ty",
+  breadcumb: {
+    item1: {
+      name: "Eleventy",
+      item: "/11ty/",
+    },
+  },
 };

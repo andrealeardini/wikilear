@@ -4,7 +4,7 @@
   title: Tutorial
   description: Tutti i tutorial per Google Maps pubblicati su Wikilear
   layout: layouts/feed.njk
-  tags:
+  override:tags: []
   pagination:
     data: collections.googlemapstutorial
     size: 3
