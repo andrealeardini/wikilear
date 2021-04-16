@@ -68,7 +68,12 @@
     {% else %}
     <link rel="stylesheet" href="/css/styles.css" />
     {% endif %}
-    {% include "components/schema.njk" %}
+    {% block schema %}
+      {% include "components/schema.org/schema.njk" %}
+      {% if breadcumb.item2.name %}
+      {% include "components/schema.org/breadcumb.njk" %}
+      {% endif %}
+    {% endblock %}
   </head>
   <body class="h-screen box-border bg-gray-200">
     <div

@@ -21,5 +21,11 @@ module.exports = {
   feed: "true",
   style: "markdown",
   tags: "Google Maps",
-  collection: "Google Maps"
+  collection: "Google Maps",
+  breadcumb: {
+    item1: {
+      name: "Google Maps",
+      item: "/google-maps/",
+    },
+  },
 };

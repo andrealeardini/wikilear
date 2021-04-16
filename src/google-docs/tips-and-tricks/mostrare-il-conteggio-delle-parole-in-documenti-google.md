@@ -2,11 +2,7 @@
 date: 2012-11-05
 title: Mostrare il conteggio delle parole in Documenti Google
 description: Come usare Conteggio parole per conoscere il numero di pagine, parole, caratteri senza e con spazi in un documento di Google Docs.
-tags:
-  - Tasti di scelta rapida
-  - tips
-  - Google Documenti
-  - googledocstips
+tags: Tasti di scelta rapida
 subtitle: Come usare Conteggio parole per conoscere il numero di pagine, parole, caratteri senza e con spazi in un documento di Google Docs.
 image: /images/undraw_Documents_re_isxv.png
 image_title:

@@ -22,4 +22,10 @@ module.exports = {
   style: "markdown",
   tags: "Gmail",
   collection: "Gmail",
+  breadcumb: {
+    item1: {
+      name: "Gmail",
+      item: "/gmail/",
+    },
+  },
 };

@@ -64,6 +64,9 @@ module.exports = function (eleventyConfig) {
 
   const param = environment.NODE_ENV;
 
+  // Data cascade merge instead of override
+  eleventyConfig.setDataDeepMerge(true);
+
   // minify HTML only in production
   // optional chaining require NODE 14 >
   if (environment?.NODE_ENV?.toUpperCase() == "PRODUCTION") {

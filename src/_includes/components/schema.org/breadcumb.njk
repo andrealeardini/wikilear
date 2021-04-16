@@ -1,0 +1,22 @@
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{{ breadcumb.item1.name }}",
+      "item": "{{ site.url}}{{ breadcumb.item1.item }}"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ breadcumb.item2.name }}",
+      "item": "{{ site.url}}{{ breadcumb.item2.item }}"
+    }{% if breadcumb.positions == 3 %},{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ breadcumb.item3.name }}",
+      "item": "{{ site.url}}{{ breadcumb.item3.item }}"
+    }{% endif %}]
+  }
+</script>

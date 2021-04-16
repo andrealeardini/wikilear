@@ -2,7 +2,7 @@
 key: Gmail
 parent: Home
 layout: layouts/page.njk
-tags: 
+override:tags: []
 title: Gmail
 image: /images/gmail_48dp.png
 feed: ""

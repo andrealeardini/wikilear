@@ -4,7 +4,7 @@
   title: Tutorial
   description: Tutti i tutorial pubblicati sul sito
   layout: layouts/feed.njk
-  tags:
+  override:tags: []
   pagination:
     data: collections.tutorial
     size: 5

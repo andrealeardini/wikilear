@@ -2,7 +2,7 @@
 key: Fogli Google
 parent: Home
 layout: layouts/page.njk
-tags:
+override:tags: []
 title: Fogli Google
 image: /images/sheets_48dp.png
 feed: ""

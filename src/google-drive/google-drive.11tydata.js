@@ -21,5 +21,11 @@ module.exports = {
   feed: "true",
   style: "markdown",
   tags: "Google Drive",
-  collection: "Google Drive"
+  collection: "Google Drive",
+  breadcumb: {
+    item1: {
+      name: "Google Drive",
+      item: "/google-drive/",
+    },
+  },
 };
