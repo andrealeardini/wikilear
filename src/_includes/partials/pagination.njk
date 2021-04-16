@@ -38,7 +38,17 @@ pagination.href.next or pagination.href.previous %}
         >
       </li>
       {% if (pagination.pageNumber > 2) and (pagination.pages.length > 4) %}
-      <li class="border rounded-lg shadow-lg w-10 h-10 md:w-12 md:h-12 flex justify-center items-center">. . .</li>
+      <li class="border rounded-lg shadow-lg w-10 h-10 md:w-12 md:h-12 flex justify-center items-center">
+        {% if pagination.pageNumber == 3 %}
+        <a
+          class="w-full h-full flex justify-center items-center" href="{{ pagination.hrefs[2] }}{{
+            paginationAnchor
+          }}">3</a
+        >
+        {% else %}
+        . . .
+        {% endif %}
+      </li>
       {% endif %}
       {% if (pagination.pageNumber > 1) and (pagination.pageNumber <
       pagination.pages.length-2) %}
@@ -49,7 +59,15 @@ pagination.href.next or pagination.href.previous %}
       {% endif %}
       {% if (pagination.pageNumber < pagination.pages.length-3) and (pagination.pages.length > 4) %}
       <li class="border rounded-lg shadow-lg w-10 h-10 md:w-12 md:h-12 flex justify-center items-center">
+        {% if pagination.pageNumber == 5 %}
+        <a
+          class="w-full h-full flex justify-center items-center" href="{{ pagination.hrefs[6] }}{{
+            paginationAnchor
+          }}">7</a
+        >
+        {% else %}
         . . .
+        {% endif %}
       </li>
       {% endif %}
       {% if pagination.pages.length > 3 %}
