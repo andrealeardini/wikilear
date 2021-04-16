@@ -22,6 +22,7 @@
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
 const { JSDOM } = require("jsdom");
+const environment = require("../_data/environment");
 
 const optimizeImages = async (content, outputPath = ".html") => {
   if (!String(outputPath).endsWith(".html")) return content;
@@ -36,7 +37,8 @@ const optimizeImages = async (content, outputPath = ".html") => {
 
 async function imageHTML(image) {
   // set standard format and element
-  let formats = ["avif", "webp", "jpeg"];
+  // create avif images only on Netlify
+  let formats = environment.NETLIFY ? ["avif", "webp", "jpeg"] : ["webp", "jpeg"];
   let type = "picture";
 
   // with svg the element is a img instead of a picture
