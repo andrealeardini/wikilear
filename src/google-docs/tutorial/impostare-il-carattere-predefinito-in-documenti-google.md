@@ -7,13 +7,6 @@ image: /images/undraw_font_kwpk.png
 image_title:
 image_description:
 old_url: /2012/09/impostare-il-carattere-predefinito-in-Google-Documenti.html
-breadcumb: {
-  positions: 3,
-  item3: {
-    name: "Impostare il carattere predefinito in Documenti Google",
-    item: "/google-docs/tutorial/impostare-il-carattere-predefinito-in-documenti-google/"
-  }
-}
 ---
 Quando si crea un nuovo documento in Drive, il carattere predefinito è l'Arial a 11 punti. Se siete costretti a cambiare spesso il carattere o impostare una dimensione diversa, vi farà piacere sapere che anche in Documenti Google è possibile modificare il carattere predefinito. La procedura richiede qualche passaggio in più di quella prevista per [cambiare il carattere predefinito in Word,](/tutorial/others/impostare-il-carattere-predefinito-in-Word/) ma tutto sommato non è particolarmente difficile da attuare.
 

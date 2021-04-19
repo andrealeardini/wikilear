@@ -12,7 +12,7 @@
       "position": 2,
       "name": "{{ breadcumb.item2.name }}",
       "item": "{{ site.url}}{{ breadcumb.item2.item }}"
-    }{% if breadcumb.positions == 3 %},{
+    }{% if (breadcumb.item2.name != breadcumb.item3.name) and (breadcumb.item2.item != breadcumb.item3.item)  %},{
       "@type": "ListItem",
       "position": 3,
       "name": "{{ breadcumb.item3.name }}",
