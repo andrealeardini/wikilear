@@ -22,4 +22,10 @@ module.exports = {
   style: "markdown",
   parent: "Tips and Tricks",
   collection: "Tips and Tricks",
+  breadcumb: {
+    item1: {
+      name: "Tips and Tricks",
+      item: "/tips-and-tricks/",
+    },
+  },
 };

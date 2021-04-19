@@ -5,7 +5,6 @@
   "topic": "Tips and Tricks",
   "eleventyComputed": {
     "breadcumb": {
-      "positions": 3,
       "item2": {
         "name": "Altri prodotti",
         "item": "/tips-and-tricks/others/"

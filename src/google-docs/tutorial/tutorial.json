@@ -5,7 +5,6 @@
   "topic": "Documenti Google",
   "eleventyComputed": {
     "breadcumb": {
-      "positions": 3,
       "item2": {
         "name": "Tutorial",
         "item": "/google-docs/tutorial/"

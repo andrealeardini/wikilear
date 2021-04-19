@@ -5,10 +5,9 @@
   "topic": "Tutorial",
   "eleventyComputed": {
     "breadcumb": {
-      "positions": 3,
       "item2": {
-        "name": "Tutorial",
-        "item": "/tutorial/"
+        "name": "Altri prodotti",
+        "item": "/tutorial/others/"
       },
       "item3": {
         "name": "{{ title }}",

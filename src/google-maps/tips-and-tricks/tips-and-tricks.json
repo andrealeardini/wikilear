@@ -5,7 +5,6 @@
   "topic": "Google Maps",
   "eleventyComputed": {
     "breadcumb": {
-      "positions": 3,
       "item2": {
         "name": "Tips and Tricks",
         "item": "/google-maps/tips-and-tricks/"

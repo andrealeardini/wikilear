@@ -22,4 +22,10 @@ module.exports = {
   style: "markdown",
   parent: "Tutorial",
   collection: "Tutorial",
+  breadcumb: {
+    item1: {
+      name: "Tutorial",
+      item: "/tutorial/",
+    },
+  },
 };
