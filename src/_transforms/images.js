@@ -45,10 +45,10 @@ async function imageHTML(image) {
   let formats = environment.NETLIFY ? ["avif", "webp", "jpeg"] : ["webp", "jpeg"];
   let type = "picture";
 
-  // with svg the element is a img instead of a picture
+  // with svg the element is a standard img, don't optimize
+  // this avoid a bug with statsSync
   if (path.extname(image.src) === ".svg") {
-    formats = ["svg"];
-    type = "img";
+    return
   }
 
   // the images source is relative, add the full path
