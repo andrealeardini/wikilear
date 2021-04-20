@@ -24,7 +24,7 @@ SOFTWARE.
 
 ______________________________________________________________________________
 
-## License for the content (ARTICLES, TUTORIALS, NEWS, CODELABS, ETC.)
+## License for the content (ARTICLES, TUTORIALS, NEWS, CODELABS, IMAGES, ETC.)
 [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
 
 Copyright (c) 2011-2021 Andrea Leardini
