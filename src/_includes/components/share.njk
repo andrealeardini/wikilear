@@ -1,4 +1,5 @@
-<hr class="mt-10 mb-4">
+  <hr class="mt-10 mb-4">
+  <div class="bg-gray-100 mt-4 p-4">
   <p class="text-sm">Questo articolo ti è piaciuto? Condividilo su:</p>
   <ul class="flex gap-2 items-center">
     <li>
@@ -14,23 +15,23 @@
     </li>
     <li>
       <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.wikilear.it{{ page.url | urlencode }}"
-         target="_blank"
-         rel="nopener noreferrer"
-         aria-label = "Condividi su Facebook"
-         title = "Facebook"
-         >
+        target="_blank"
+        rel="nopener noreferrer"
+        aria-label = "Condividi su Facebook"
+        title = "Facebook"
+        >
         <div class="w-10 h-10 bg-blue-900 rounded-full shadow-lg flex items-center justify-center content-center">
             <i class="ml-2 w-5 h-5 bg-transparent" style="background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22white%22%20d%3D%22M2.544%2013.912l-.02-6.324H0V5.059h2.524V3.478A3.2%203.2%200%20016.063%200a19.343%2019.343%200%20012.111.108v2.453H6.726c-1.136%200-1.356.541-1.356%201.335v1.163h3.306L7.414%207.588H5.369v6.324z%22%2F%3E%3C%2Fsvg%3E);"></i>
         </div>
       </a>
     </li>
     <li>
-      <a href="https://telegram.me/share/url?url=https://www.wikilear.it{{ page.url | urlencode }}&text={{ title | urlencode }}"
-         target="_blank"
-         rel="nopener noreferrer"
-         aria-label = "Condividi con Telegram"
-         title = "Telegram"
-         >
+      <a href="https://telegram.me/share/url?text={{ title | urlencode }}%0D%0A&url=https://www.wikilear.it{{ page.url | urlencode }}"
+        target="_blank"
+        rel="nopener noreferrer"
+        aria-label = "Condividi con Telegram"
+        title = "Telegram"
+        >
         <div class="w-10 h-10 rounded-full shadow-lg">
           <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -50,13 +51,13 @@
     </li>
     <li>
       <a href="whatsapp://send?text={{ title | urlencode }} %0A%0A https://www.wikilear.it{{ page.url | urlencode }}"
-         target="_blank"
-         rel="nopener noreferrer"
-         aria-label = "Condividi con WhatsApp"
-         title = "WhatsApp"
-         >
-         <div class="w-12 h-12 rounded-full shadow-xl flex items-center justify-center content-center">
-          <svg viewBox="0 0 38 38">
+        target="_blank"
+        rel="nopener noreferrer"
+        aria-label = "Condividi con WhatsApp"
+        title = "WhatsApp"
+        >
+        <div class="rounded-full shadow-xl flex items-center justify-center content-center">
+          <svg width="44" height="44" viewBox="0 0 38 38">
             <style type="text/css">
                 .st0{fill:#00E676;}
                 .icon_logo_white{fill:#FFFFFF;}
@@ -80,11 +81,11 @@
     </li>
     <li>
       <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.wikilear.it{{ page.url | urlencode }}&title={{ title | urlencode }}"
-         target="_blank"
-         rel="nopener noreferrer"
-         aria-label = "Condividi su Linkedin"
-         title = "Linkedin"
-         >
+        target="_blank"
+        rel="nopener noreferrer"
+        aria-label = "Condividi su Linkedin"
+        title = "Linkedin"
+        >
         <div style="background: #0077b5" class="w-10 h-10 rounded-full shadow-lg flex items-center justify-center content-center">
             <svg fill="white" width="38" height="38" viewBox="0 0 30 30"><path d="M10.576 7.985c.865 0 1.568.703 1.568 1.568 0 .866-.703 1.57-1.568 1.57-.867 0-1.568-.704-1.568-1.57 0-.865.7-1.568 1.568-1.568zm-1.353 4.327h2.706v8.704H9.222v-8.704zm4.403 0h2.595v1.19h.038c.36-.685 1.244-1.407 2.56-1.407 2.737 0 3.243 1.803 3.243 4.147v4.774h-2.7v-4.232c0-1.01-.02-2.308-1.407-2.308-1.408 0-1.623 1.1-1.623 2.235v4.306h-2.704v-8.704"></path></svg>
         </div>
@@ -92,14 +93,15 @@
     </li>
     <li>
       <a href="mailto:?subject={{ title | urlencode }}&body={{ description | urlencode }}%0D%0Ahttps://www.wikilear.it{{ page.url | urlencode }}"
-         target="_blank"
-         rel="nopener noreferrer"
-         aria-label = "Condividi via email"
-         title = "Email"
-         >
+        target="_blank"
+        rel="nopener noreferrer"
+        aria-label = "Condividi via email"
+        title = "Email"
+        >
         <div class="w-10 h-10 text-white bg-blue-900 rounded-full shadow-lg flex items-center justify-center content-center">
             <svg fill="white" width="40" height="40" viewBox="-2 -2 32 32"><path d="m 20.2,11.7 -0.4,-0.4 -5.7,2.7 -5.7,-2.7 -0.3,0.4 6,3.205085 z M 22.99322,7.1016949 4.940678,7.0338983 C 4.9510035,11.794283 5.1394766,15.8245 4.938983,20.101695 l 18.052542,0 c 0.01574,-4.468521 0.01203,-9.146972 0.0017,-13.0000001 z M 20.9,17.8 l -13.8,0 0,-8.6 13.8,0 z"></path></svg>
         </div>
       </a>
     </li>
   </ul>
+</div>
