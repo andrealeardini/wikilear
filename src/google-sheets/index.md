@@ -6,6 +6,7 @@ override:tags: []
 title: Fogli Google
 image: /images/sheets_48dp.png
 feed: ""
+share: true
 ---
 <details>
 <summary>

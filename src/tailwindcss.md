@@ -7,6 +7,7 @@ layout: layouts/page.njk
 title: Tailwind CSS
 image: /images/tailwindcss-mark.svg
 style: markdown
+share: true
 ---
 <details>
 <summary>

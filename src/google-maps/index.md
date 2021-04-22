@@ -6,6 +6,7 @@ override:tags: []
 title: Google Maps
 image: /images/maps_48dp.png
 feed:
+share: true
 ---
 <details>
 <summary>

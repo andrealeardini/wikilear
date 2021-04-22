@@ -6,6 +6,7 @@ override:tags: []
 title: Documenti Google
 image: /images/docs_48dp.png
 feed:
+share: true
 ---
 <details>
 <summary>

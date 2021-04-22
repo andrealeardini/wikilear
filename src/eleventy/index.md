@@ -8,6 +8,7 @@ permalink: "/11ty/"
 title: Eleventy
 image:  /images/11ty.svg
 feed:
+share: true
 ---
 
 <details>

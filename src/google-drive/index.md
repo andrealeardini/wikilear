@@ -6,6 +6,7 @@ override:tags: []
 title: Google Drive
 image: /images/drive_48dp.png
 feed:
+share: true
 ---
 <details>
 <summary>

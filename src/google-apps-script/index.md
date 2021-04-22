@@ -9,6 +9,7 @@ title: Google Apps Script
 image: /images/apps_script_48dp.png
 style: markdown
 feed: ""
+share: true
 ---
 <details>
 <summary>

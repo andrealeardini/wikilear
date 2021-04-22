@@ -39,5 +39,8 @@ schema:
 
   <hr class="mt-10 mb-6">
   {% include "components/editthispage.njk" %}
+  {% if share %}
+  {% include "components/share.njk" %}
+  {% endif %}
 
 {% endblock %}

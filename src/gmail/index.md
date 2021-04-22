@@ -6,6 +6,7 @@ override:tags: []
 title: Gmail
 image: /images/gmail_48dp.png
 feed: ""
+share: true
 ---
 <details>
 <summary>
