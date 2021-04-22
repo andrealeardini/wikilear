@@ -11,12 +11,12 @@ feed:
 share: true
 ---
 
+<nav>
 <details>
 <summary>
-Indice
+Contenuto
 </summary>
 
-<nav>
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)

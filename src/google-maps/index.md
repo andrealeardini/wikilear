@@ -8,21 +8,21 @@ image: /images/maps_48dp.png
 feed:
 share: true
 ---
-<details>
-<summary>
-Indice
-</summary>
 
 <nav>
+<details>
+<summary>
+Contenuto
+</summary>
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)
-{% if collections.googlemapstutorial.length %}
+  {% if collections.googlemapstutorial.length %}
 - [Tutorial](#tutorial)
-{% endif %}
-{% if collections.googlemapstips.length %}
+  {% endif %}
+  {% if collections.googlemapstips.length %}
 - [Tips and tricks](#tips-and-tricks)
-{% endif %}
+  {% endif %}
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
 </nav>

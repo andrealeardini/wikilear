@@ -17,6 +17,7 @@
 ---
 I tutorial sono ordinati per data, dal più recente al più vecchio. Se cerchi un tutorial per un prodotto specifico utilizza il filtro per prodotto o consulta la pagina dedicata negli [argomenti principali.](/#topics){.mt-4}
 
+<nav>
 <details>
   <summary>
   Filtra per prodotto
@@ -32,6 +33,7 @@ I tutorial sono ordinati per data, dal più recente al più vecchio. Se cerchi u
 </div>
 
 </details>
+</nav>
 
 <div id="post-list" class="heading">
 </div>

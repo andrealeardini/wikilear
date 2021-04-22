@@ -8,22 +8,22 @@ image: /images/sheets_48dp.png
 feed: ""
 share: true
 ---
-<details>
-<summary>
-Indice
-</summary>
 
 <nav>
+<details>
+<summary>
+Contenuto
+</summary>
 
 - [Panoramica](#panoramica)
 - [Cos'è un foglio di calcolo?](#cos'%C3%A8-un-foglio-di-calcolo%3F)
 - [Per iniziare](#per-iniziare)
-{% if collections.googlesheetstutorial.length %}
+  {% if collections.googlesheetstutorial.length %}
 - [Tutorial](#tutorial)
-{% endif %}
-{% if collections.googlesheetstips.length %}
+  {% endif %}
+  {% if collections.googlesheetstips.length %}
 - [Tips and tricks](#tips-and-tricks)
-{% endif %}
+  {% endif %}
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
 </nav>
