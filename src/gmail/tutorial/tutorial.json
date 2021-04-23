@@ -1,5 +1,17 @@
 {
   "collection": "gmailtutorial",
   "parent": "Gmail-Tutorial",
-  "tags": ["Gmail", "tutorial", "gmailtutorial"]
+  "tags": ["tutorial", "gmailtutorial"],
+  "eleventyComputed": {
+    "breadcumb": {
+      "item2": {
+        "name": "Tutorial",
+        "item": "/gmail/tutorial/"
+      },
+      "item3": {
+        "name": "{{ title }}",
+        "item": "{{ page.url }}"
+      }
+    }
+  }
 }

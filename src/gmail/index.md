@@ -2,17 +2,17 @@
 key: Gmail
 parent: Home
 layout: layouts/page.njk
-tags: 
+override:tags: []
 title: Gmail
 image: /images/gmail_48dp.png
 feed: ""
+share: true
 ---
+<nav>
 <details>
 <summary>
-Indice
+Contenuto
 </summary>
-
-<nav>
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)

@@ -1,6 +1,18 @@
 {
   "parent": "Google-Maps-Tips",
   "collection": "googlemapstips",
-  "tags": ["Google Maps", "tips", "googlemapstips"],
-  "topic": "Google Maps"
+  "tags": ["tips", "googlemapstips"],
+  "topic": "Google Maps",
+  "eleventyComputed": {
+    "breadcumb": {
+      "item2": {
+        "name": "Tips and Tricks",
+        "item": "/google-maps/tips-and-tricks/"
+      },
+      "item3": {
+        "name": "{{ title }}",
+        "item": "{{ page.url }}"
+      }
+    }
+  }
 }

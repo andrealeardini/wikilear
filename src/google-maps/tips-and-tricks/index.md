@@ -1,7 +1,7 @@
 ---
   parent: Google Maps
   key: Google-Maps-Tips
-  tags:
+  override:tags: []
   title: Tips and Tricks
   description: Tutti i tips and tricks per Google Maps pubblicati sul sito.
   layout: layouts/feed.njk

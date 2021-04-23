@@ -1,6 +1,18 @@
 {
   "parent": "Google-Docs-Tutorial",
   "collection": "googledocstutorial",
-  "tags": ["Documenti Google", "Tutorial", "googledocstutorial"],
-  "topic": "Documenti Google"
+  "tags": ["Tutorial", "googledocstutorial"],
+  "topic": "Documenti Google",
+  "eleventyComputed": {
+    "breadcumb": {
+      "item2": {
+        "name": "Tutorial",
+        "item": "/google-docs/tutorial/"
+      },
+      "item3": {
+        "name": "{{ title }}",
+        "item": "{{ page.url }}"
+      }
+    }
+  }
 }

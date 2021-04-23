@@ -1,6 +1,18 @@
 {
   "parent": "Google-Docs-Tips",
   "collection": "googledocstips",
-  "tags": ["Documenti Google", "tips", "googledocstips"],
-  "topic": "Documenti Google"
+  "tags": ["tips", "googledocstips"],
+  "topic": "Documenti Google",
+  "eleventyComputed": {
+    "breadcumb": {
+      "item2": {
+        "name": "Tips and Tricks",
+        "item": "/google-docs/tips-and-tricks/"
+      },
+      "item3": {
+        "name": "{{ title }}",
+        "item": "{{ page.url }}"
+      }
+    }
+  }
 }

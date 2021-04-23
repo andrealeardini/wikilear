@@ -22,4 +22,10 @@ module.exports = {
   style: "markdown",
   tags: "Documenti Google",
   collection: "Documenti Google",
+  breadcumb: {
+    item1: {
+      name: "Documenti Google",
+      item: "/google-docs/",
+    },
+  },
 };

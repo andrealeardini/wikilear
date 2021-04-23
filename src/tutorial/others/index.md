@@ -2,7 +2,7 @@
   key: Others-Tutorial
   parent: Tutorial
   title: Altri prodotti
-  tags: Tutorial
+  override:tags: [Tutorial]
   description: I tutorial pubblicati sul sito che non appartengono a uno degli argomenti principali.
   layout: layouts/feed.njk
   pagination:

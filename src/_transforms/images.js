@@ -19,9 +19,14 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
+
+//github.com/11ty/eleventy-img/issues/51#issuecomment-775186353
+
+const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
 const { JSDOM } = require("jsdom");
+const environment = require("../_data/environment");
 
 const optimizeImages = async (content, outputPath = ".html") => {
   if (!String(outputPath).endsWith(".html")) return content;
@@ -36,31 +41,62 @@ const optimizeImages = async (content, outputPath = ".html") => {
 
 async function imageHTML(image) {
   // set standard format and element
-  let formats = ["avif", "webp", "jpeg"];
+  // create avif images only on Netlify
+  let formats = environment.NETLIFY ? ["avif", "webp", "jpeg"] : ["webp", "jpeg"];
   let type = "picture";
 
-  // with svg the element is a img instead of a picture
+  // with svg the element is a standard img, don't optimize
+  // this avoid a bug with statsSync
   if (path.extname(image.src) === ".svg") {
-    formats = ["svg"];
-    type = "img";
+    return
   }
 
   // the images source is relative, add the full path
   let src = "./src"+image.src;
 
-  let metadata = await Image(src, {
+  const options = {
     widths: [400, 500, 700, 900, 1100, 1300],
     formats: formats,
     urlPath: "/images/",
     outputDir: "./dist/images/",
-    filenameFormat: function (id, src, width, format, options) {
+    filenameFormat: function (id, src, width, format) {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
       return `${name}-${width}w.${format}`;
     },
-  });
+  };
 
-  let imageAttributes = {
+
+  const stats = Image.statsSync(src, options);
+
+  /** Creating a flat array of all the output paths from the stats object. */
+  const outputPaths = Object.keys(stats).reduce((acc, key) => {
+    return [
+      ...acc,
+      ...stats[key].map((resource) => {
+        return resource.outputPath;
+      }),
+    ];
+  }, []);
+
+  /** Checking if all output files exists. */
+  let hasImageBeenOptimized = true;
+  for (const outputPath of outputPaths) {
+    /** Edit the output file path resolving, depending of this file */
+    const resolve = path.resolve(__dirname, "..", "..", outputPath);
+    // console.log({ __dirname });
+    // console.log({ outputPath });
+    // console.log("Resolve to:", resolve);
+    if (!fs.existsSync(resolve)) {
+      hasImageBeenOptimized = false;
+    }
+  }
+
+  if (!hasImageBeenOptimized) {
+    Image(src, options);
+  }
+
+  const imageAttributes = {
     alt: image.alt,
     sizes: image.sizes
       ? image.sizes
@@ -70,7 +106,7 @@ async function imageHTML(image) {
     decoding: "async",
   };
 
-  const text = Image.generateHTML(metadata, imageAttributes, {
+  const text = Image.generateHTML(stats, imageAttributes, {
     whitespaceMode: "inline",
   });
   const html = new JSDOM(text);

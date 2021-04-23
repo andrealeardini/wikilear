@@ -2,17 +2,17 @@
 key: Google Drive
 parent: Home
 layout: layouts/page.njk
-tags:
+override:tags: []
 title: Google Drive
 image: /images/drive_48dp.png
 feed:
+share: true
 ---
+<nav>
 <details>
 <summary>
-Indice
+Contenuto
 </summary>
-
-<nav>
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)

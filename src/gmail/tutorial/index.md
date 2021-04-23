@@ -1,7 +1,7 @@
 ---
   parent: Gmail
   key: Gmail-Tutorial
-  tags:
+  override:tags: []
   title: Tutorial
   description: Tutti i tutorial per Gmail pubblicati sul sito
   layout: layouts/feed.njk

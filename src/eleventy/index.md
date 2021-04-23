@@ -2,20 +2,21 @@
 key: 11ty
 parent: Home
 layout: layouts/page.njk
-tags:
+override:tags: []
 description: Tutorial, Tips and Tricks su Eleventy
 permalink: "/11ty/"
 title: Eleventy
 image:  /images/11ty.svg
 feed:
+share: true
 ---
 
+<nav>
 <details>
 <summary>
-Indice
+Contenuto
 </summary>
 
-<nav>
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)

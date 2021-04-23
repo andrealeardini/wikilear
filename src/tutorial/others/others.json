@@ -2,5 +2,17 @@
   "parent": "Others-Tutorial",
   "tags:": ["otherstutorial", "tutorial"],
   "collection": "otherstutorial",
-  "topic": "Tutorial"
+  "topic": "Tutorial",
+  "eleventyComputed": {
+    "breadcumb": {
+      "item2": {
+        "name": "Altri prodotti",
+        "item": "/tutorial/others/"
+      },
+      "item3": {
+        "name": "{{ title }}",
+        "item": "{{ page.url }}"
+      }
+    }
+  }
 }

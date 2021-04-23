@@ -7,13 +7,13 @@ layout: layouts/page.njk
 title: Tailwind CSS
 image: /images/tailwindcss-mark.svg
 style: markdown
+share: true
 ---
+<nav>
 <details>
 <summary>
-Indice
+Contenuto
 </summary>
-
-<nav>
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)
