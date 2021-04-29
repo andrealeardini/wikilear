@@ -1,0 +1,6 @@
+[%---- text-base text-center ----%][%--- border-gray-400 border  ---%][%-- border-gray-400 border-b border-r --%][%- font-bold -%][%-r 2 r-%][%-c 8 c-%]MEDIA (AVERAGE),[%-c 0 c-%],[%-c 0 c-%],[%-c 0 c-%],[%-c 0 c-%],[%-c 0 c-%],[%-c 0 c-%],[%-c 0 c-%]
+[%--- border-gray-400 border border-t-0 ---%][%-r 0 r-%],[%-c 0 c-%],[%-c 0 c-%],[%-c 0 c-%],[%-c 0 c-%],[%-c 0 c-%],[%-c 0 c-%],[%-c 0 c-%]
+[%--- font-bold  ---%][%-- border-gray-400 border-t border-r border-b border-l-0 --%]Studente,1° trimestre,2° trimestre,3° trimestre,Media,Somma,Divisione,Moltiplicazione
+[%--- text-right ---%][%-- border-gray-400 border-t-0 border-r border-b border-l-0 --%][%- text-left -%]Mario,70,-,60,65,[%-r 3 r-%]1000,100,10000
+[%--- text-right ---%][%-- border-gray-400 border-t-0 border-r border-b border-l-0 --%][%- text-left -%]Filippo,70,0,60,"43,333",[%-r 0 r-%],200,20000
+[%--- text-right ---%][%-- border-gray-400 border-t-0 border-r border-b border-l-0 --%][%- text-left -%]Andrea,80,90,100,90,[%-r 0 r-%],300,30000
