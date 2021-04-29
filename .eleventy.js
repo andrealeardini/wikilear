@@ -48,8 +48,19 @@ const stat = promisify(fs.stat);
 const execFile = promisify(require("child_process").execFile);
 const { minify } = require("terser");
 const environment = require("./src/_data/environment");
+const parse = require("csv-parse/lib/sync");
 
 module.exports = function (eleventyConfig) {
+  // use csv files as data
+  // https://maxkoehler.com/posts/eleventy-csv/
+  eleventyConfig.addDataExtension("csv", (contents) => {
+    const records = parse(contents, {
+      columns: false,
+      skip_empty_lines: true,
+    });
+    return records;
+  });
+
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/video/");
@@ -89,6 +100,7 @@ module.exports = function (eleventyConfig) {
     linkify: false,
   };
   let markdownLib = markdownIt(options)
+    .disable("code")
     .use(markdownItAttrs)
     .use(markdownItAnchor, {
       permalink: true,
@@ -112,6 +124,7 @@ module.exports = function (eleventyConfig) {
     "w3DateFilter",
     require("./src/_filters/w3-date-filter.js")
   );
+  eleventyConfig.addFilter("sheet", require("./src/_filters/sheet.js"));
   eleventyConfig.addFilter("trimHTML", require("./src/_filters/trimHTML.js"));
 
   // https://www.11ty.dev/docs/quicktips/inline-css/
