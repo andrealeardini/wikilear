@@ -1,40 +1,62 @@
 {%- macro render(data) -%} {% set columnsHeader = ["A", "B", "C", "D", "E", "F",
 "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R","S", "T", "U", "V",
 "W", "X", "Y", "Z"] %} {% set columnsNumber = data | sheet('length') %}
-<div class="w-full overflow-auto">
-  {% set tableClass = data | sheet('table') %}
-  <table class="table-auto {{ tableClass }}">
-    <thead>
-      <tr>
-        <th class="bg-gray-20 border-gray-400 border-t border-r border-b border-l"></th>
-        {% for column in range(0, columnsNumber) %}
-        <th class="resize-x bg-gray-100 border-gray-400 border-t border-r border-b border-l-0">
-          {{ columnsHeader[loop.index0] }}
-        </th>
-        {% endfor %}
-      </tr>
-    </thead>
-    <tbody>
-      {% for row in data %} {% set rowClass = row | sheet('row') %} {% set
-      cellsClass = row | sheet('cells') %}
-      <tr class="{{ rowClass }}">
-        <th class="bg-gray-100 border-gray-400 border-t-0 border-r border-b border-l">
-          <div>{{ loop.index }}</div>
-        </th>
-        {% for cell in row %} {% set cellClass = cell | sheet('cell') -%} {% set
-        rowspan = cell | sheet('rowspan') %} {% set colspan = cell |
-        sheet('colspan') %} {% if ((not colspan) and (not rowspan)) or (colspan
-        != 0) or (rowspan !=0) %}
-        <td {% if colspan %}colspan="{{ colspan }}" {% endif %}{% if rowspan %}rowspan="{{ rowspan }}" {% endif
-          %}class="{{ cellClass }} {{ cellsClass }}">
-          {% if cell %} {% set text = cell | sheet %}
-          {{- text | safe -}}
+{% set rowsNumber = data.length %}
+{% set cellMerged = [] %}
+<div class="relative pb-12">
+  <div class="w-full overflow-auto">
+    {% set tableClass = data | sheet('table') %}
+    <table class="table-auto mb-0 text-base  border-gray-400 border {{ tableClass }}">
+      <thead>
+        <tr class="h-3">
+          <th class="px-6 text-xs font-normal bg-gray-20 border-gray-400 border-t border-r border-b border-l"></th>
+          {% for column in range(0, columnsNumber) %}
+          <th
+            class="px-6 text-xs font-normal text-center text-gray-600 bg-gray-100 border-gray-400 border-t border-r border-b border-l-0">
+            {{ columnsHeader[loop.index0] }}
+          </th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data %} {% set rowClass = row | sheet('row') %}
+        {% set cellsClass = row | sheet('cells') %}
+        <tr class="{{ rowClass }}">
+          <th
+            class="p-1 text-xs text-center font-normal text-gray-600 bg-gray-100 border-gray-400 border-t-0 border-r border-b border-l">
+            <div>{{ loop.index }}</div>
+          </th>
+          {% set rowIndex = loop.index %}
+          {% for cell in row %}
+          {% set cellClass = cell | sheet('cell') -%}
+          {% set rowspan = cell | sheet('rowspan') %}
+          {% set colspan = cell | sheet('colspan') %}
+          {% if rowspan %}
+            {% for rowtospan in range(1, rowspan) %}
+                {% set cellMerged = (cellMerged.push(columnsNumber * (rowIndex + loop.index0) + 1), cellMerged) %}
+            {% endfor %}
           {% endif %}
-        </td>
-        {% endif %} {% endfor %}
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+          {% if colspan %} {% set colstospan = colspan %}
+            {% for coltospan in range(1, colspan) %}
+              {% set cellMerged = (cellMerged.push(columnsNumber * rowIndex + loop.index0), cellMerged) %}
+            {% endfor %}
+          {% endif %}
+          {% set cellNumber = (rowIndex - 1) * columnsNumber + loop.index %}
+          {% if not (cellNumber in cellMerged) %}
+          <td {% if colspan %}colspan="{{ colspan }}" {% endif %}{% if rowspan %}rowspan="{{ rowspan }}" {% endif %}
+            class="min-w-max h-8 px-2 py-1 border-gray-200 border-t-0 border-r border-b border-l-0 {{ cellClass }} {{ cellsClass }}">
+            {% if cell %}
+            {# use div to not render text as markdown #}
+            <div>{{- cell | sheet | safe -}}</div>
+            {% endif %}
+          </td>
+          {% endif %}
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <button class="absolute bottom-0 right-0 p-2 border rounded-lg">Formule</button>
 </div>
 {%- endmacro -%}

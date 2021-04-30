@@ -12,9 +12,9 @@ function decode(data, mode) {
   const patterns = {
     cell: /\[%-{1} (.*) -{1}%\]/i,
     cells: /\[%-{2} (.*) -{2}%\]/i,
-    colspan: /\[%-c (.*) c-%\]/i ,
+    colspan: /\[%-{1} .*\(c(\d*)\).* -{1}%\]/i, //[%- (c2) -%] > 2
     row: /\[%-{3} (.*) -{3}%\]/i,
-    rowspan: /\[%-r (.*) r-%\]/i,
+    rowspan: /\[%-{1} .*\(r(\d*)\).* -{1}%\]/i, //[%- (r2) -%] > 2
     table: /\[%-{4} (.*) -{4}%\]/i
   };
   const text = data.toString();
