@@ -28,14 +28,16 @@
           </th>
           {% set rowIndex = loop.index %}
           {% for cell in row %}
-          {% set cellClass = cell | sheet('cell') -%}
+          {% set cellClass = cell | sheet('cell') %}
           {% set rowspan = cell | sheet('rowspan') %}
           {% set colspan = cell | sheet('colspan') %}
+          {% set cellIndex = loop.index %}
           {% if rowspan %}
             {% for rowtospan in range(1, rowspan) %}
-                {% set cellMerged = (cellMerged.push(columnsNumber * (rowIndex + loop.index0) + 1), cellMerged) %}
+                {% set cellMerged = (cellMerged.push(columnsNumber * (rowIndex + loop.index0) + cellIndex), cellMerged) %}
             {% endfor %}
           {% endif %}
+          <!-- TODO: manage multiple spans (c2) (r2) -->
           {% if colspan %} {% set colstospan = colspan %}
             {% for coltospan in range(1, colspan) %}
               {% set cellMerged = (cellMerged.push(columnsNumber * rowIndex + loop.index0), cellMerged) %}
