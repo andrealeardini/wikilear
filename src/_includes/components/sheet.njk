@@ -6,13 +6,15 @@
 <div class="relative pb-16">
   <div class="w-full overflow-auto" tabindex="0">
     {% set tableClass = data | sheet('table') %}
+    {# use border-separate and border-spacing to keep header margins with scroll #}
     <table style="border-spacing: 0;" class="table-auto overflow-auto border-separate border-t border-r border-b mb-0 text-base  border-gray-400 {{ tableClass }}">
       <thead>
         <tr class="h-3">
-          <th class="sticky top-0 left-0 z-10 px-6 text-xs font-normal bg-gray-200 border-gray-400 border-l"></th>
+          <th class="sticky top-0 left-0 z-10 w-8 px-6 text-xs font-normal bg-gray-200 border-gray-400 border-r border-b border-l"></th>
           {% for column in range(0, columnsNumber) %}
+          {% set border_right = ("border-r-0" if loop.last else "border-r") %}
           <th
-            class="sticky top-0 px-6 text-xs font-normal text-center text-gray-600 bg-gray-100 border-gray-400 border-l">
+            class="sticky top-0 px-6 text-xs font-normal text-center text-gray-600 bg-gray-100 border-gray-400 border-b {{border_right}}">
             {{ columnsHeader[loop.index0] }}
           </th>
           {% endfor %}
@@ -22,11 +24,13 @@
         {% for row in data %} {% set rowClass = row | sheet('row') %}
         {% set cellsClass = row | sheet('cells') %}
         <tr class="{{ rowClass }}">
-          <th
-            class="sticky left-0 z-10 p-1 text-xs text-center font-normal text-gray-600 bg-gray-100 border-gray-400 border-b border-l border-r last:border-b-8 ">
-            {{ loop.index }}
-          </th>
+          {% set border_bottom = ("border-b-0" if loop.last else "border-b") %}
+            <th
+              class="sticky left-0 z-10 p-1 text-xs text-center font-normal text-gray-600 bg-gray-100 border-gray-400 {{ border_bottom }} border-l border-r">
+              {{ loop.index }}
+            </th>
           {% set rowIndex = loop.index %}
+          {% set rowLast = loop.last %}
           {% for cell in row %}
           {% set cellClass = cell | sheet('cell') %}
           {% set rowspan = cell | sheet('rowspan') %}
@@ -45,10 +49,13 @@
           {% endif %}
           {% set cellNumber = (rowIndex - 1) * columnsNumber + loop.index %}
           {% if not (cellNumber in cellMerged) %}
+          {% set border_right = ("border-r-0" if loop.last else "border-r") %}
+          {% set border_bottom = ("border-b-0" if rowLast else "border-b") %}
           <td {% if colspan %}colspan="{{ colspan }}" {% endif %}{% if rowspan %}rowspan="{{ rowspan }}" {% endif %}
-            class="min-w-max h-8 px-2 py-1 border-gray-200 border {{ cellsClass }} {{ cellClass }}">
+            class="min-w-max h-8 px-2 py-1 border-gray-200 {{border_right}} {{border_bottom}} {{ cellsClass }} {{ cellClass }}">
             {% if cell %}
             {# use div to not render text as markdown #}
+            {# and to apply left alignement to formula mode #}
             {% set formula = cell | sheet('formula')%}
             {% set value = cell | sheet | safe %}
             <div class="cells" data-mode='value' data-formula='{{- formula -}}' data-value='{{- value -}}'>{{- value -}}</div>
@@ -69,11 +76,21 @@
     let cells = element.parentElement.getElementsByClassName("cells");
     for (const cell of cells) {
       if (cell.dataset.mode == "value") {
-        cell.innerHTML = cell.dataset.formula || cell.dataset.value;
-        cell.dataset.mode = "formula"
+        // set left alignement for formulas
+        if (cell.dataset.formula) {
+          cell.classList.add("text-left");
+          cell.innerHTML = cell.dataset.formula
+
+        } else {
+          cell.innerHTML = cell.dataset.value;
+        }
+        cell.dataset.mode = "formula";
 
       } else {
         cell.innerHTML = cell.dataset.value;
+        // remove left alignement to div element
+        // make effective the cell alignement
+        cell.classList.remove("text-left");
         cell.dataset.mode = "value"
       }
     }
