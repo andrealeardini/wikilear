@@ -3,16 +3,16 @@
 "W", "X", "Y", "Z"] %} {% set columnsNumber = data | sheet('length') %}
 {% set rowsNumber = data.length %}
 {% set cellMerged = [] %}
-<div class="relative pb-12">
-  <div class="w-full overflow-auto">
+<div class="relative pb-16">
+  <div class="w-full overflow-auto" tabindex="0">
     {% set tableClass = data | sheet('table') %}
-    <table class="table-auto mb-0 text-base  border-gray-400 border {{ tableClass }}">
+    <table style="border-spacing: 0;" class="table-auto overflow-auto border-separate border-t border-r border-b mb-0 text-base  border-gray-400 {{ tableClass }}">
       <thead>
         <tr class="h-3">
-          <th class="px-6 text-xs font-normal bg-gray-20 border-gray-400 border-t border-r border-b border-l"></th>
+          <th class="sticky top-0 left-0 z-10 px-6 text-xs font-normal bg-gray-200 border-gray-400 border-l"></th>
           {% for column in range(0, columnsNumber) %}
           <th
-            class="px-6 text-xs font-normal text-center text-gray-600 bg-gray-100 border-gray-400 border-t border-r border-b border-l-0">
+            class="sticky top-0 px-6 text-xs font-normal text-center text-gray-600 bg-gray-100 border-gray-400 border-l">
             {{ columnsHeader[loop.index0] }}
           </th>
           {% endfor %}
@@ -23,8 +23,8 @@
         {% set cellsClass = row | sheet('cells') %}
         <tr class="{{ rowClass }}">
           <th
-            class="p-1 text-xs text-center font-normal text-gray-600 bg-gray-100 border-gray-400 border-t-0 border-r border-b border-l">
-            <div>{{ loop.index }}</div>
+            class="sticky left-0 z-10 p-1 text-xs text-center font-normal text-gray-600 bg-gray-100 border-gray-400 border-b border-l border-r last:border-b-8 ">
+            {{ loop.index }}
           </th>
           {% set rowIndex = loop.index %}
           {% for cell in row %}
@@ -46,10 +46,12 @@
           {% set cellNumber = (rowIndex - 1) * columnsNumber + loop.index %}
           {% if not (cellNumber in cellMerged) %}
           <td {% if colspan %}colspan="{{ colspan }}" {% endif %}{% if rowspan %}rowspan="{{ rowspan }}" {% endif %}
-            class="min-w-max h-8 px-2 py-1 border-gray-200 border-t-0 border-r border-b border-l-0 {{ cellClass }} {{ cellsClass }}">
+            class="min-w-max h-8 px-2 py-1 border-gray-200 border {{ cellsClass }} {{ cellClass }}">
             {% if cell %}
             {# use div to not render text as markdown #}
-            <div>{{- cell | sheet | safe -}}</div>
+            {% set formula = cell | sheet('formula')%}
+            {% set value = cell | sheet | safe %}
+            <div class="cells" data-mode='value' data-formula='{{- formula -}}' data-value='{{- value -}}'>{{- value -}}</div>
             {% endif %}
           </td>
           {% endif %}
@@ -59,6 +61,24 @@
       </tbody>
     </table>
   </div>
-  <button class="absolute bottom-0 right-0 p-2 border rounded-lg">Formule</button>
+  <button class="w-24 absolute bottom-0 right-0 mb-4 p-2 border rounded-lg" onclick=showFormule(this)>Formule</button>
 </div>
+
+<script>
+  function showFormule(element) {
+    let cells = element.parentElement.getElementsByClassName("cells");
+    for (const cell of cells) {
+      if (cell.dataset.mode == "value") {
+        cell.innerHTML = cell.dataset.formula || cell.dataset.value;
+        cell.dataset.mode = "formula"
+
+      } else {
+        cell.innerHTML = cell.dataset.value;
+        cell.dataset.mode = "value"
+      }
+    }
+    element.innerHTML == "Formule" ? element.innerHTML = "Valori" : element.innerHTML = "Formule"
+  }
+</script>
+
 {%- endmacro -%}
