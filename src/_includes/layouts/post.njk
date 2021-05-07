@@ -19,8 +19,9 @@ schema:
 {% endif %}
 {% endset %}
 
-{% block content %}
-  {% if image %}
+{%- block content -%}
+<article>
+  {%- if image -%}
     <img
       src="{{ image }}"
       {% if image-description %}
@@ -33,8 +34,8 @@ schema:
       {% endif %}
       class="my-4 rounded-lg w-full"
     />
-  {% endif %}
-  {% include "partials/page-header.njk" %}
+  {%- endif -%}
+  {%- include "partials/page-header.njk" -%}
   <div class="{{ style }}">
     {{ content | safe }}
   </div>
@@ -44,28 +45,28 @@ schema:
       Etichette
     </p>
     <div class="mb-6" aria-describedby="tags-desc">
-      {% include "components/tags-post.njk" %}
+      {%- include "components/tags-post.njk" -%}
     </div>
   {% endif %}
 
-  {% include "components/share.njk" %}
+  {%- include "components/share.njk" -%}
 
   <hr class="mt-8 mb-4">
-  {% include "components/editthispage.njk" %}
+  {%- include "components/editthispage.njk" -%}
   <hr class="mt-4 mb-4">
 
   {% block posts %}
     {# https://github.com/11ty/eleventy/issues/434#issuecomment-469028924 #}
     {% import "components/nav-posts.njk" as nav with context %}
-    {{ nav.posts(collections[collection]) }}
+    {{- nav.posts(collections[collection]) -}}
   {% endblock %}
 
   {% if recommendedPosts %}
     <footer class="recommended-posts">
       {% set postListItems = recommendedPosts %}
       {% set postListHeadline = 'Altri articoli dal blog' %}
-      {% include "partials/post-list.njk" %}
+      {%- include "partials/post-list.njk" -%}
     </footer>
   {% endif %}
-
-{% endblock %}
+</article>
+{%- endblock -%}
