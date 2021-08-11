@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   // gestisco il pulsante del menu
-  let body = document.getElementsByTagName("body")[0];
   let inert = document.getElementById("inert");
   let menuBtn = document.getElementById("menuBtn");
   let menu = document.getElementById("menu");
