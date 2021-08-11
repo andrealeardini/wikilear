@@ -21,20 +21,6 @@ schema:
 
 {%- block content -%}
 <article>
-  {%- if image -%}
-    <img
-      src="{{ image }}"
-      {% if image-description %}
-      alt="{{ image-description }}"
-      {% else %}
-      alt=""
-      {% endif %}
-      {% if image_title %}
-      title="{{ image_title }}"
-      {% endif %}
-      class="my-4 rounded-lg w-full"
-    />
-  {%- endif -%}
   {%- include "partials/page-header.njk" -%}
   <div class="{{ style }}">
     {{ content | safe }}
