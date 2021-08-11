@@ -3,7 +3,7 @@ eleventyNavigation:
   key: search
   parent: Home
   title: Cerca sul sito...
-  showLast: true
+  showLast: (data) => data.showLast | false,
 layout: layouts/page.njk
 title: Cerca sul sito...
 image: /images/search.svg

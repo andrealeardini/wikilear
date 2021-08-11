@@ -1,7 +1,7 @@
 module.exports = {
   eleventyComputed: {
     eleventyNavigation: {
-      key: (data) => data.title,
+      key: (data) => data.key | "Tutti gli articoli",
       parent: (data) => data.parent,
       showLast: true,
     },

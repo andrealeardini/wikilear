@@ -2,7 +2,7 @@
 eleventyNavigation:
   key: Tailwind CSS
   parent: Home
-  showLast: true
+  showLast: (data) => data.showLast | false,
 layout: layouts/page.njk
 title: Tailwind CSS
 image: /images/tailwindcss-mark.svg

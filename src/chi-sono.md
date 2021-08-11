@@ -2,7 +2,7 @@
 eleventyNavigation:
   key: Chi sono
   parent: Home
-  showLast: true
+  showLast: (data) => data.showLast | false,
 layout: "layouts/page.njk"
 title: Chi sono
 schema:

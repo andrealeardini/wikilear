@@ -1,6 +1,7 @@
 ---
   parent: Gmail
   key: Gmail-Tutorial
+  showLast: true
   override:tags: []
   title: Tutorial
   description: Tutti i tutorial per Gmail pubblicati sul sito

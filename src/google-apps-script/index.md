@@ -2,7 +2,7 @@
 eleventyNavigation:
   key: Google Apps Script
   parent: Home
-  showLast: true
+  showLast: (data) => data.showLast | false,
 override:tags: []
 layout: layouts/page.njk
 title: Google Apps Script

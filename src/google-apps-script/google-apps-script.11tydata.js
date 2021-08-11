@@ -14,7 +14,7 @@ module.exports = {
           return data.title;
         }
       },
-      showLast: true,
+      showLast: (data) => data.showLast | false,
     },
   },
   layout: "layouts/post.njk",

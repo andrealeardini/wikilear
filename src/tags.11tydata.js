@@ -8,7 +8,7 @@ module.exports = {
       title: function (data) {
           return data.tag;
       },
-      showLast: true,
+      showLast: (data) => data.showLast | false,
     },
   },
   layout: "layouts/page.njk",

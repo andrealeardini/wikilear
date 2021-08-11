@@ -1,6 +1,7 @@
 ---
   parent: Fogli Google
   key: Google-Sheet-Tutorial
+  showLast: true
   title: Tutorial
   override:tags: []
   description: Tutti i tutorial per Fogli Google pubblicati sul sito

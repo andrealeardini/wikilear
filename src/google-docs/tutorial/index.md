@@ -1,6 +1,7 @@
 ---
   parent: Documenti Google
   key: Google-Docs-Tutorial
+  showLast: true
   title: Tutorial
   override:tags: []
   description: Tutti i tutorial per Documenti Google pubblicati sul sito
@@ -17,7 +18,7 @@
   style: markdown
 ---
 
-Tutti i tutorial pubblicati sul sito{.mt-4}
+Tutti i tutorial per Documenti Google pubblicati sul sito{.mt-4}
 
 <div id="post-list" class="heading">
 </div>
