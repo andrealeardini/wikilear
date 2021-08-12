@@ -72,13 +72,13 @@
 
 [[redirects]]
   from = "/2012/07/affiancare-due-o-piu-finestre-in-Windows-7.html"
-  to = "/tutorial/others/affiancare-due-o-piu-finestre-in-Windows-7/"
+  to = "/tutorial/others/affiancare-due-o-piu-finestre-in-windows-7/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/2012/09/impostare-il-carattere-predefinito-in-Word.html"
-  to = "/tutorial/others/impostare-il-carattere-predefinito-in-Word/"
+  to = "/tutorial/others/impostare-il-carattere-predefinito-in-word/"
   status = 301
   force = true
 
@@ -94,7 +94,7 @@
 
 [[redirects]]
   from = "/2014/11/application-launcher-for-drive-apri-file-applicazione-desktop-Google-Drive.html"
-  to = "/blog/application-launcher-for-drive-apri-file-applicazione-desktop-Google-Drive/"
+  to = "/blog/application-launcher-for-drive-apri-file-applicazione-desktop-google-drive/"
   status = 301
   force = true
 
@@ -237,19 +237,6 @@
   status = 301
   force = true
 
-# Tutorial
-
-[[redirects]]
-  from = "/2012/07/affiancare-due-o-piu-finestre-in-Windows-7.html"
-  to = "/tutorial/affiancare-due-o-piu-finestre-in-Windows-7/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/2012/09/impostare-il-carattere-predefinito-in-Word.html"
-  to = "/tutorial/impostare-il-carattere-predefinito-in-Word/"
-  status = 301
-  force = true
 
 # Termini d'uso
 
