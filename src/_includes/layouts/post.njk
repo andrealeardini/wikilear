@@ -9,10 +9,13 @@ schema:
 {% set pageHeaderTitle = title %}
 {# Grab other posts that aren’t this one for the 'more from the blog' feed #}
 {% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
+{% set wc = content | striptags | wordcount %}
+{% set wPerMinute = (wc / 200) + 1 %}
 {# Render post date#}
 {% set pageHeaderSummary %}
-<div>
-  <time class="text-sm md:text-base" datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+<div class="text-sm md:text-base">
+  <time  datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time> di <a href="\chi-sono">Andrea Leardini</a>
+  <p>Tempo di lettura: {{ wPerMinute | round }} min. circa</p>
 </div>
 {% if subtitle %}
   <p class="italic my-4">{{ subtitle | safe }}</p>
