@@ -1,5 +1,5 @@
-[%---- text-right ----%][%- text-left h-16 -%][%-- whitespace-nowrap font-bold bg-gray-300 text-center --%]Studente,1° trim.,2° trim.,3° trim.,[%- font-bold -%]Media
-[%- text-left -%]Mario,70,0,60,"[%- (=MEDIA(B2:D2)) font-bold -%]43,3"
+[%---- text-right ----%][%-- font-bold bg-gray-300 dark:bg-gray-700 text-center --%][%- text-left h-16 -%]Studente,1° trim.,2° trim.,3° trim.,[%- font-bold -%]Media
+[%- text-left -%]Andrea,80,90,100,"[%- (=MEDIA(B2:D2)) font-bold -%]90,0"
 [%- text-left -%]Filippo,70,75,60,"[%- (=MEDIA(B3:D3)) font-bold -%]68,3"
-[%- text-left -%]Andrea,80,90,100,"[%- (=MEDIA(B4:D4)) font-bold -%]90,0"
+[%- text-left -%]Mario,70,0,60,"[%- (=MEDIA(B4:D4)) font-bold -%]43,3"
 [%-- font-bold --%][%- text-left -%]Media,"[%- (=MEDIA(B2:B4)) -%]73,3","[%- (=MEDIA(C2:C4)) -%]55,0","[%- (=MEDIA(D2:D4)) -%]73,3","[%- (=MEDIA(E2:E4)) font-bold -%]67,2"

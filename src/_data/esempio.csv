@@ -1,0 +1,6 @@
+,[%---- text-right ----%][%- font-bold w-28 -%]Valore,,
+,5,,
+,8,,
+,12,,
+,16,,
+[%-- font-bold --%]Media,"[%- (=MEDIA(B2:B5)) -%]10,25",,

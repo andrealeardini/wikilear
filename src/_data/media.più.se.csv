@@ -1,0 +1,19 @@
+[%-- font-bold --%]Rappresentante,Area,Settore,[%- text-right -%]Fatturato
+Andrea,Nord,Cancelleria,"[%- text-right -%]€ 906,00"
+Filippo,Nord,Libri,"[%- text-right -%]€ 1.000,00"
+Marco,Centro,Libri,"[%- text-right -%]€ 477,00"
+Antonio,Sud,Cancelleria,"[%- text-right -%]€ 997,00"
+Luca,Sud,Libri,"[%- text-right -%]€ 173,00"
+Andrea,Nord,Attrezzature,"[%- text-right -%]€ 742,00"
+Marco,Centro,Attrezzature,"[%- text-right -%]€ 530,00"
+Filippo,Nord,Cancelleria,"[%- text-right -%]€ 545,00"
+Marco,Centro,Libri,"[%- text-right -%]€ 914,00"
+Antonio,Sud,Attrezzature,"[%- text-right -%]€ 524,00"
+Marco,Centro,Cancelleria,"[%- text-right -%]€ 630,00"
+Luca,Sud,Cancelleria,"[%- text-right -%]€ 100,00"
+Andrea,Nord,Libri,"[%- text-right -%]€ 809,00"
+,,,
+[%-- font-bold --%]Settore,Nord,Centro,Sud
+Attrezzature,"[%- (=MEDIA.PIÙ.SE($D$2:$D$14; $C$2:$C$14; $A17; $B$2:$B$14; B$16)) text-right -%]€ 742,00","[%- (=MEDIA.PIÙ.SE($D$2:$D$14; $C$2:$C$14; $A17; $B$2:$B$14;C$16)) text-right -%]€ 530,00","[%- (=MEDIA.PIÙ.SE($D$2:$D$14; $C$2:$C$14; $A17; $B$2:$B$14;D$16)) text-right -%]€ 524,00"
+Cancelleria,"[%- (=MEDIA.PIÙ.SE($D$2:$D$14; $C$2:$C$14; $A18; $B$2:$B$14; B$16)) text-right -%]€ 725,50","[%- (=MEDIA.PIÙ.SE($D$2:$D$14; $C$2:$C$14; $A18; $B$2:$B$14;C$16)) text-right -%]€ 630,00","[%- (=MEDIA.PIÙ.SE($D$2:$D$14; $C$2:$C$14; $A18; $B$2:$B$14;D$16)) text-right -%]€ 548,50"
+Libri,"[%- (=MEDIA.PIÙ.SE($D$2:$D$14; $C$2:$C$14; $A19; $B$2:$B$14; B$16)) text-right -%]€ 904,50","[%- (=MEDIA.PIÙ.SE($D$2:$D$14; $C$2:$C$14; $A19; $B$2:$B$14;C$16)) text-right -%]€ 695,50","[%- (=MEDIA.PIÙ.SE($D$2:$D$14; $C$2:$C$14; $A19; $B$2:$B$14;D$16)) text-right -%]€ 173,00"
