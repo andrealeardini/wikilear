@@ -17,13 +17,10 @@
 ---
 I tips and triks in poche righe ti spiegano come usare al meglio i programmi o semplificare alcune operazioni. Sono ordinati per data, dal più recente al più vecchio. Se cerchi un suggerimento per un prodotto specifico utilizza il filtro per prodotto o consulta la pagina dedicata negli [argomenti principali.](/#topics){.mt-4}
 
-<nav>
-<details>
+<details class="markdown" role="navigation">
   <summary>
   Filtra per prodotto
   </summary>
-
-<div class="mt-4">
 
 {% if collections.googledocstips.length %}
 - [Documenti Google](/google-docs/tips-and-tricks/)
@@ -32,10 +29,8 @@ I tips and triks in poche righe ti spiegano come usare al meglio i programmi o s
 - [Google Maps](/google-maps/tips-and-tricks/)
 - [Altri prodotti](others)
 
-</div>
 
 </details>
-</nav>
 
 <div id="post-list" class="heading">
 </div>

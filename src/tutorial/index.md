@@ -17,23 +17,17 @@
 ---
 I tutorial sono ordinati per data, dal più recente al più vecchio. Se cerchi un tutorial per un prodotto specifico utilizza il filtro per prodotto o consulta la pagina dedicata negli [argomenti principali.](/#topics){.mt-4}
 
-<nav>
-<details>
-  <summary>
-  Filtra per prodotto
-  </summary>
-
-<div class="mt-4">
+<details class="markdown" role="navigation">
+<summary>
+Filtra per prodotto
+</summary>
 
 - [Documenti Google](/google-docs/tutorial/)
 - [Gmail](/gmail/tutorial/)
 - [Google Maps](/google-maps/tutorial/)
 - [Altri prodotti](others)
 
-</div>
-
 </details>
-</nav>
 
 <div id="post-list" class="heading">
 </div>

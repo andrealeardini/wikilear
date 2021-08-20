@@ -8,9 +8,7 @@ image: /images/sheets_48dp.png
 feed: ""
 share: true
 ---
-
-<nav>
-<details>
+<details role="navigation">
 <summary>
 Contenuto
 </summary>
@@ -26,7 +24,6 @@ Contenuto
   {% endif %}
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
-</nav>
 </details>
 
 ## Panoramica
