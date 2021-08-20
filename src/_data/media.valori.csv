@@ -1,0 +1,5 @@
+[%---- text-right ----%][%-- font-bold bg-gray-300 dark:bg-gray-700 text-center --%][%- text-left h-16 -%]Studente,1° trim.,2° trim.,3° trim.,[%- font-bold -%]Media
+[%- text-left -%]Andrea,80,90,100,"[%- (=MEDIA.VALORI(B2:D2)) font-bold -%]90,0"
+[%- text-left -%]Filippo,70,75,60,"[%- (=MEDIA.VALORI(B3:D3)) font-bold -%]68,3"
+[%- text-left -%]Mario,70,[%- border-gray-700 border -%]-,60,"[%- (=MEDIA.VALORI(B4:D4)) font-bold bg-green-300 -%]43,3"
+[%-- font-bold --%][%- text-left -%]Media,"[%- (=MEDIA.VALORI(B2:B4)) -%]73,3","[%- (=MEDIA.VALORI(C2:C4)) bg-green-300 -%]55,0","[%- (=MEDIA.VALORI(D2:D4)) -%]73,3","[%- (=MEDIA.VALORI(E2:E4)) font-bold bg-green-300 -%]67,2"

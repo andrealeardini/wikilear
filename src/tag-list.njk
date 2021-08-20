@@ -2,7 +2,7 @@
 eleventyNavigation:
   key: Etichette
   parent: Home
-  showLast: true
+  showLast: (data) => data.showLast | false,
 permalink: /tag/
 layout: layouts/page.njk
 image: /images/undraw_Creation_process_ukbh.png

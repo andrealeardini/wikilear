@@ -1,6 +1,7 @@
 ---
   key: Others
   parent: Tips and Tricks
+  showLast: true
   title: Altri prodotti
   tags: Tips and Tricks
   description: I tips and tricks pubblicati sul sito che non appartengono a uno degli argomenti principali.

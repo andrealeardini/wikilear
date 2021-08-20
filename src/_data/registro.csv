@@ -1,0 +1,5 @@
+[%---- text-right ----%][%-- font-bold bg-gray-300 dark:bg-gray-700 text-center --%][%- text-left h-16 -%]Studente,1° trim.,2° trim.,3° trim.,
+[%- text-left -%]Andrea,80,90,100,
+[%- text-left -%]Filippo,70,75,60,
+[%- text-left -%]Mario,70,0,60,
+,,,,

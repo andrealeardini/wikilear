@@ -10,6 +10,7 @@ paginationPrevText: 'Post più recenti'
 paginationNextText: 'Post più vecchi'
 paginationAnchor: '#post-list'
 feed: ''
+key: Blog
 parent: Home
 ---
 Tutti gli articoli e notizie pubblicati su Wikilear.

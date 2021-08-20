@@ -43,8 +43,11 @@ module.exports = {
     },
   },
   variants: {
-    display: ({ after }) => after(["last"]),
-    margin: ({ after }) => after(["last"]),
+    extend: {
+      borderWidth: ['last'],
+      display: ['last'],
+      margin: ['last'],
+    }
   },
   plugins: [],
 };

@@ -16,6 +16,14 @@
     @apply text-lg md:text-xl lg:text-2xl font-semibold mt-8 mb-4  dark:text-gray-300;
   }
 
+  h3 {
+    @apply text-base md:text-lg lg:text-xl font-semibold mt-6 mb-2  dark:text-gray-300;
+  }
+
+  h4 {
+    @apply text-base lg:text-lg font-semibold mt-6 mb-2  dark:text-gray-300;
+  }
+
   a {
     @apply text-blue-700 hover:text-blue-900 dark:text-yellow-400 dark:hover:text-yellow-600;
   }
@@ -174,7 +182,110 @@
   .markdown table.responsive-table tr {
     @apply lg:table-row;
   }
-}
+
+   /**
+  * wikilear prismjs theme for JavaScript, CSS and HTML
+  * @author Andrea Leardini
+  */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    @apply text-gray-900 text-base font-mono font-medium text-left whitespace-pre break-normal leading-6;
+    word-spacing: normal;
+    word-wrap: normal;
+    tab-size: 4;
+    hyphens: none;
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    @apply p-4 mt-2 mb-10 my-0 overflow-auto rounded-md;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    @apply bg-gray-100 shadow-md;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    @apply p-1 rounded-md whitespace-normal;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    @apply text-green-800;
+  }
+
+  .token.punctuation {
+    @apply text-red-800;
+  }
+
+  .token.namespace {
+    @apply opacity-70;
+  }
+
+  .token.property,
+  .token.tag,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+    @apply text-blue-800;
+  }
+
+  .token.boolean,
+  .token.number {
+    @apply text-red-500;
+  }
+
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+    @apply text-yellow-800;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string,
+  .token.variable {
+    @apply text-yellow-700;
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.function,
+  .token.class-name {
+    @apply text-gray-800 font-semibold;
+  }
+
+  .token.keyword {
+    @apply text-gray-700;
+  }
+
+  .token.regex,
+  .token.important {
+    @apply text-purple-600;
+  }
+
+  .token.important,
+  .token.bold {
+    @apply font-bold;
+  }
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.entity {
+    @apply cursor-help;
+  }
+ }
 
 @layer utilities {
   :root {
@@ -182,7 +293,7 @@
   }
 
   /* https://twitter.com/JoshWComeau/status/1332015868725891076?s=20 */
-  h2, .heading {
+  h2, h3, .heading {
     scroll-margin-top: 72px;
     scroll-snap-margin-top: 72px;
   }
@@ -194,6 +305,7 @@
   .dark img.invert {
     filter: invert(0);
   }
+
 
   /* TODO: use new Tailwind plugin */
   /* aspect ratio */
@@ -233,135 +345,6 @@
 }
 
 
-/**
- * TODO: Extract and add as critical CSS and use only in the pages that need it
- *
- */
 
 
-/**
- * okaidia theme for JavaScript, CSS and HTML
- * Loosely based on Monokai textmate theme by http://www.monokai.nl/
- * @author ocodia
- */
 
-code[class*="language-"],
-pre[class*="language-"] {
-	color: #f8f8f2;
-	background: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-  margin-top: .5em;
-  margin-bottom: 2.5em;
-  margin-right: 0;
-  margin-left: 0;
-	overflow: auto;
-	border-radius: 0.3em;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #272822;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: slategray;
-}
-
-.token.punctuation {
-	color: #f8f8f2;
-}
-
-.token.namespace {
-	opacity: .7;
-}
-
-.token.property,
-.token.tag,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #f92672;
-}
-
-.token.boolean,
-.token.number {
-	color: #ae81ff;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: #a6e22e;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable {
-	color: #f8f8f2;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.function,
-.token.class-name {
-	color: #e6db74;
-}
-
-.token.keyword {
-	color: #66d9ef;
-}
-
-.token.regex,
-.token.important {
-	color: #fd971f;
-}
-
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-.token.italic {
-	font-style: italic;
-}
-
-.token.entity {
-	cursor: help;
-}

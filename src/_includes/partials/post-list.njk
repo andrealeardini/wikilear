@@ -35,10 +35,11 @@
     </div>
     {% endif %}
     <div class="p-4">
-      <h2 class="mt-2"><a href="{{ item.url | url }}" class="font-semibold">{{ item.data.title }}</a></h2>
+      {# h2 inside a element to avoid axe warning https://dequeuniversity.com/rules/axe/4.3/color-contrast?application=AxeChrome #}
+      <a href="{{ item.url | url }}" class="font-semibold"><h2 class="mt-2">{{ item.data.title }}</h2></a>
       {% if item.data.date %}<time class="mt-4 text-sm xl:text-base font-semibold" datetime="{{ item.data.date | w3DateFilter }}">{{ item.data.date | dateFilter }}</time>{% endif %}
       <p class="mt-4">{{ item.data.subtitle | safe }}</p>
-      <p class="mt-4"><a href="{{item.url | url}}">Leggi l'intero articolo...</a></p>
+      <p class="mt-4"><a href="{{item.url | url}}" aria-label="Leggi l'intero articolo {{item.data.title}}">Leggi l'intero articolo...</a></p>
       {% set tags = item.data.tags %}
       {% include 'components/tags-post.njk' %}
     </div>

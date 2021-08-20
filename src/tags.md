@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   parent: Tag
-  showLast: true
+  showLast: (data) => data.showLast | false,
 title: "Tag Archive"
 layout: "layouts/feed.njk"
 pagination:

@@ -2,6 +2,7 @@
   parent: Google Maps
   key: Google-Maps-Tutorial
   title: Tutorial
+  showLast: true
   description: Tutti i tutorial per Google Maps pubblicati su Wikilear
   layout: layouts/feed.njk
   override:tags: []

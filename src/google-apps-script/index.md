@@ -2,7 +2,7 @@
 eleventyNavigation:
   key: Google Apps Script
   parent: Home
-  showLast: true
+  showLast: (data) => data.showLast | false,
 override:tags: []
 layout: layouts/page.njk
 title: Google Apps Script
@@ -11,19 +11,16 @@ style: markdown
 feed: ""
 share: true
 ---
-<details>
+<details role="navigation">
 <summary>
 Indice
 </summary>
-
-<nav>
 
 - [Panoramica](#panoramica)
 - [Cosa posso fare con Apps Script?](#cosa-posso-fare-con-apps-script%3F)
 - [Per iniziare](#per-iniziare)
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
-</nav>
 </details>
 
 ## Panoramica

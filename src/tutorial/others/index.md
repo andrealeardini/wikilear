@@ -1,6 +1,7 @@
 ---
   key: Others-Tutorial
   parent: Tutorial
+  showLast: true
   title: Altri prodotti
   override:tags: [Tutorial]
   description: I tutorial pubblicati sul sito che non appartengono a uno degli argomenti principali.

@@ -1,115 +1,108 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light" />
-    <meta name="theme-color" content="#e5e7eb">
-    {% block ogType %}
-    <meta property="og:type" content="website">
-    {% endblock %}
-    <meta property="og:site_name" content="wikilear">
-    <meta property="og:title" content="{{ renderData.title or title or site.title | escape  }}">
-    {% set desc = renderData.description or description %}
-    {% if not desc %}
-    {% set desc = content | striptags | truncate(140) %}
-    {% endif %}
-    {% if desc %}
-    <meta name="description" content="{{ desc | escape  }}">
-    <meta property="og:description" content="{{ desc | escape }}">
-    {% endif %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@{{ site.author.twitter }}">
-    <meta name="twitter:creator" content="@{{ site.author.twitter }}">
-    {% if image %}
-    <meta property="og:image" content="{{ image | absoluteUrl(site.url) }}">
-    <meta property="og:image:alt" content="{{ image_description | truncate(420) }}">
-    <meta property="twitter:image:alt" content="{{ image_description | truncate(420) }}">
-    {% endif %}
-    <title>{{ renderData.title or title or site.title | escape }}</title>
-    <link rel="canonical" href="{{ site.url }}{{ canonicalUrl or page.url }}">
-    <link rel="alternate" href="{{ site.feed.path | url }}" type="application/atom+xml" title="{{ site.title }}">
-    <link rel="preconnect" href="/" crossorigin>
-    <!-- capture the JS content as a Nunjucks variable -->
-    {% set js %}
-      // detect dark mode settings (dark, light, system preference)
-      const theme = localStorage.getItem('theme');
-      if (
-        theme === "dark"
-      ) {
-        document.querySelector("html").classList.add("dark");
-      } else if (theme === "light") {
-        document.querySelector("html").classList.remove("dark");
-      } else if (theme === "system" ||
-        !theme) {
-            localStorage.setItem('theme', 'system');
-            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-              document.querySelector("html").classList.add("dark");
-            }
-      }
-    {% endset %}
-    {% if environment.NODE_ENV=="production" %}
-      <!-- feed it through our jsmin filter to minify -->
-      <script>
-        {{ js | jsmin | safe }}
-      </script>
-    {% else %}
-      <script>
-        {{ js | safe }}
-      </script>
-    {% endif %}
-    {% if environment.NODE_ENV=="production" %}
-    <!-- capture the CSS content as a Nunjucks variable -->
-    {% set css %} {% include "../../../dist/css/styles.css" %} {% endset %}
-    <!-- feed it through our cssmin filter to minify -->
-    <style>
-      {{ css | cssmin | safe }}
-    </style>
-    {% else %}
-    <link rel="stylesheet" href="/css/styles.css" />
-    {% endif %}
-    {% block schema %}
-      {% include "components/schema.org/schema.njk" %}
-      {% if breadcumb.item2.name %}
-      {% include "components/schema.org/breadcumb.njk" %}
-      {% endif %}
-    {% endblock %}
-  </head>
-  <body class="h-screen box-border bg-gray-200">
-    <div
-      class="min-h-full grid grid-cols-12 grid-rows-layout dark:bg-gray-600"
-    >
-      <div class="col-start-1 col-end-13 row-start-1 row-end-5">
-        <div class="z-10 row-start-1 row-end-2 fixed h-12 w-full">
-          {% include "components/navbar/navbar.njk" %}
-        </div>
-        <button
-          id="inert"
-          class="h-full w-full fixed bg-white opacity-50 cursor-default hidden"
-        ></button>
-        <main
-          id="content"
-          class="mt-12 h-full mx-auto pt-6 px-4 md:px-8 max-w-ch-70 text-base bg-white dark:bg-gray-900 lg:text-md xl:text-lg"
-        >
-          {% include "components/breadcrumbs.njk" %}
-          {% block content %}
-          {% endblock %}
-        </main>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#e5e7eb">
+  {% block ogType %}
+  <meta property="og:type" content="website">
+  {% endblock %}
+  <meta property="og:site_name" content="wikilear">
+  <meta property="og:title" content="{{ renderData.title or title or site.title | escape  }}">
+  {% set desc = renderData.description or description %}
+  {% if not desc %}
+  {% set desc = content | striptags | truncate(140) %}
+  {% endif %}
+  {% if desc %}
+  <meta name="description" content="{{ desc | escape  }}">
+  <meta property="og:description" content="{{ desc | escape }}">
+  {% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@{{ site.author.twitter }}">
+  <meta name="twitter:creator" content="@{{ site.author.twitter }}">
+  {% if image %}
+  <meta property="og:image" content="{{ image | absoluteUrl(site.url) }}">
+  <meta property="og:image:alt" content="{{ image_description | truncate(420) }}">
+  <meta property="twitter:image:alt" content="{{ image_description | truncate(420) }}">
+  {% endif %}
+  <title>{{ renderData.title or title or site.title | escape }}</title>
+  <link rel="canonical" href="{{ site.url }}{{ canonicalUrl or page.url }}">
+  <link rel="alternate" href="{{ site.feed.path | url }}" type="application/atom+xml" title="{{ site.title }}">
+  <link rel="preconnect" href="/" crossorigin>
+  <!-- capture the JS content as a Nunjucks variable -->
+  {% set js %}
+  // detect dark mode settings (dark, light, system preference)
+  const theme = localStorage.getItem('theme');
+  if (theme === "dark") {
+    document.querySelector("html").classList.add("dark");
+  } else if (theme === "light") {
+    document.querySelector("html").classList.remove("dark");
+  } else if (theme === "system" || !theme) {
+    localStorage.setItem('theme', 'system');
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.querySelector("html").classList.add("dark");
+    }
+  }
+  {% endset %}
+  {% if environment.NODE_ENV=="production" %}
+  <!-- feed it through our jsmin filter to minify -->
+  <script>
+    {{ js | jsmin | safe }}
+  </script>
+  {% else %}
+  <script>
+    {{ js | safe }}
+  </script>
+  {% endif %}
+  {% if environment.NODE_ENV=="production" %}
+  <!-- capture the CSS content as a Nunjucks variable -->
+  {% set css %} {% include "../../../dist/css/styles.css" %} {% endset %}
+  <!-- feed it through our cssmin filter to minify -->
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
+  {% else %}
+  <link rel="stylesheet" href="/css/styles.css" />
+  {% endif %}
+  {% block schema %}
+  {% include "components/schema.org/schema.njk" %}
+  {% if breadcumb.item2.name %}
+  {% include "components/schema.org/breadcumb.njk" %}
+  {% endif %}
+  {% endblock %}
+</head>
+
+<body class="h-screen box-border bg-gray-200">
+  <div class="min-h-full grid grid-cols-12 grid-rows-layout dark:bg-gray-600">
+    <div class="col-start-1 col-end-13 row-start-1 row-end-5">
+      <div class="z-50 row-start-1 row-end-2 fixed h-12 w-full">
+        {% include "components/navbar/navbar.njk" %}
       </div>
-      {% include "components/tos/tos.njk" %}
-      {% include "partials/footer.njk" %}
+      <button id="inert" class="h-full w-full fixed bg-white opacity-50 cursor-default hidden"></button>
+      <main id="content"
+        class="mt-12 h-full mx-auto pt-6 px-4 md:px-8 max-w-ch-70 text-base bg-white dark:bg-gray-900 xl:text-lg">
+        {% include "components/breadcrumbs.njk" %}
+        {% block content %}
+        {% endblock %}
+      </main>
     </div>
-    {% if environment.NODE_ENV=="production" %}
-      <!-- capture the JS content as a Nunjucks variable -->
-      {% set js %}
-        {% include "../../../dist/js/main.js" %}
-      {% endset %}
-      <!-- feed it through our jsmin filter to minify -->
-      <script>
-        {{ js | jsmin | safe }}
-      </script>
-    {% else %}
-      <script type="module" src="/js/main.js"></script>
-    {% endif %}
-  </body>
+    {% include "components/tos/tos.njk" %}
+    {% include "partials/footer.njk" %}
+  </div>
+  {% if environment.NODE_ENV=="production" %}
+  <!-- capture the JS content as a Nunjucks variable -->
+  {% set js %}
+  {% include "../../../dist/js/main.js" %}
+  {% endset %}
+  <!-- feed it through our jsmin filter to minify -->
+  <script>
+    {{ js | jsmin | safe }}
+  </script>
+  {% else %}
+  <script type="module" src="/js/main.js"></script>
+  {% endif %}
+</body>
+
 </html>

@@ -14,13 +14,12 @@ module.exports = {
           return data.title;
         }
       },
-      showLast: true,
+      showLast: (data) => data.showLast | false,
     },
   },
   layout: "layouts/post.njk",
   feed: "true",
   style: "markdown",
-  parent: "Fogli Google",
   tags: "Fogli Google",
   collection: "Fogli Google",
   breadcumb: {

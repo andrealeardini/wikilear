@@ -1,0 +1,120 @@
+{%- macro render(data, grid, rowStart, rowEnd) -%}
+
+{% set columnsHeader = ["A", "B", "C", "D", "E", "F",
+"G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R","S", "T", "U", "V",
+"W", "X", "Y", "Z"] %}
+{% set columnsNumber = data | sheet('length') %}
+{% set rowsNumber = data.length %}
+
+{# the grid mode set in data has the priority on macro setting #}
+{% set gridData = data | sheet('grid') %}
+{% if gridData %}{% set grid = gridData %}{% endif %}
+
+{% set filterStart = rowStart or 0 %}
+{% set filterEnd =  rowEnd or rowsNumber %}
+
+{% set cellMerged = [] %}
+<div class="relative w-full pb-16">
+  <div class="w-full max-h-3/4v overflow-auto mb-2" tabindex="0">
+    {% set tableClass = data | sheet('table') %}
+    {# use border-separate and border-spacing to keep header margins with scroll #}
+    <table style="border-spacing: 0;"
+      class="table-auto w-full overflow-auto whitespace-nowrap border-separate border-r border-b my-0 text-base  border-gray-400 {{ tableClass }}">
+      <thead>
+        <tr class="h-3">
+          {# use td to avoid axe warning https://dequeuniversity.com/rules/axe/4.2/empty-table-header #}
+          <td
+            class="sticky top-0 left-0 z-20 w-8 px-6 text-xs font-normal bg-gray-200 border-gray-400 border">
+          </td>
+          {% for column in range(0, columnsNumber) %}
+          {% set border_right = ("border-r-0" if loop.last else "border-r") %}
+          <th
+            class="sticky top-0 px-6 text-xs font-normal text-center text-gray-600 dark:text-gray-200 bg-gray-100 border-gray-400 border-t border-b {{border_right}}">
+            {{ columnsHeader[loop.index0] }}
+          </th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data %} {% set rowClass = row | sheet('row') %}
+        {% set cellsClass = row | sheet('cells') %}
+        {% if (loop.index >= filterStart) and (loop.index <= filterEnd) %}
+        <tr class="{{ rowClass }}">
+          {% set border_bottom = ("border-b-0" if loop.last else "border-b") %}
+          <th
+            class="sticky left-0 z-10 p-1 text-xs text-center font-normal text-gray-600 dark:text-gray-200 bg-gray-100 border-gray-400 {{ border_bottom }} border-l border-r">
+            {{ loop.index }}
+          </th>
+          {% set rowIndex = loop.index %}
+          {% set rowLast = loop.last %}
+          {% for cell in row %}
+          {% set cellClass = cell | sheet('cell') %}
+          {% set rowspan = cell | sheet('rowspan') %}
+          {% set colspan = cell | sheet('colspan') %}
+          {% set cellIndex = loop.index %}
+          {% if rowspan %}
+          {% for rowtospan in range(1, rowspan) %}
+          {% set cellMerged = (cellMerged.push(columnsNumber * (rowIndex + loop.index0) + cellIndex), cellMerged) %}
+          {% endfor %}
+          {% endif %}
+          <!-- TODO: manage multiple spans (c2) (r2) -->
+          {% if colspan %} {% set colstospan = colspan %}
+          {% for coltospan in range(1, colspan) %}
+          {% set cellMerged = (cellMerged.push(columnsNumber * rowIndex + loop.index0), cellMerged) %}
+          {% endfor %}
+          {% endif %}
+          {% set cellNumber = (rowIndex - 1) * columnsNumber + loop.index %}
+          {% if not (cellNumber in cellMerged) %}
+          {% set border_right = ("border-r-0" if loop.last else "border-r") %}
+          {% set border_bottom = ("border-b-0" if rowLast else "border-b") %}
+          <td {% if colspan %}colspan="{{ colspan }}" {% endif %}{% if rowspan %}rowspan="{{ rowspan }}" {% endif %}
+            class="min-w-max h-8 px-2 py-1 border-gray-200 {% if grid != "off" %}{{border_right}} {{border_bottom}}{%
+            else %} border-0 {% endif %} {{ cellsClass }} {{ cellClass }}">
+            {% if cell %}
+            {# use div to not render text as markdown #}
+            {# and to apply left alignement to formula mode #}
+            {% set formula = cell | sheet('formula')%}
+            {% set value = cell | sheet | safe %}
+            <div class="cells" data-mode='value' data-formula='{{- formula -}}' data-value='{{- value -}}'>{{- value -}}
+            </div>
+            {% endif %}
+          </td>
+          {% endif %}
+          {% endfor %}
+        </tr>
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <button class="w-24 absolute bottom-0 right-0 mb-4 p-2 border rounded-lg bg-gray-300 dark:text-gray-900" onclick=showFormule(this)>Formule</button>
+</div>
+
+<script>
+  function showFormule(element) {
+    let cells = element.parentElement.getElementsByClassName("cells");
+    for (const cell of cells) {
+      if (cell.dataset.mode == "value") {
+        // set left alignement for formulas
+        if (cell.dataset.formula) {
+          cell.classList.add("text-left");
+          cell.innerHTML = cell.dataset.formula
+
+        } else {
+          cell.innerHTML = cell.dataset.value;
+        }
+        cell.dataset.mode = "formula";
+
+      } else {
+        cell.innerHTML = cell.dataset.value;
+        // remove left alignement to div element
+        // make effective the cell alignement
+        cell.classList.remove("text-left");
+        cell.dataset.mode = "value"
+      }
+    }
+    element.innerHTML == "Formule" ? element.innerHTML = "Valori" : element.innerHTML = "Formule"
+  }
+</script>
+
+{%- endmacro -%}

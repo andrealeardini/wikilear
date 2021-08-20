@@ -1,6 +1,7 @@
 ---
   parent: Documenti Google
   key: Google-Docs-Tips
+  showLast: true
   override:tags: []
   title: Tips and Tricks
   description: Tutti i tips and tricks per Documenti Google pubblicati sul sito.
