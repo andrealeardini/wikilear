@@ -1,10 +1,14 @@
 
-  <div {% if style %}class="{{ style }}"{% endif %}>
+  <div class="{% if style %} {{ style }}"{% endif %}>
+    {%- if image -%}
+      <img src="{{ image }}" {% if image-description %} alt="{{ image-description }}" {% else %} alt="" {% endif %} {% if
+        image_title %} title="{{ image_title }}" {% endif %} class="my-4 rounded-lg w-full " />
+    {%- endif -%}
     <h1>{{ pageHeaderTitle or title | safe }}</h1>
-    {% if pageHeaderSummary %}
-    <div class="my-4">
-      {{ pageHeaderSummary | safe }}
-    </div>
-    {% endif %}
   </div>
+  {% if pageHeaderSummary %}
+  <div class="my-4">
+    {{ pageHeaderSummary | safe }}
+  </div>
+  {% endif %}
 
