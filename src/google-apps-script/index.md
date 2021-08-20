@@ -35,7 +35,6 @@ Grazie ad Apps Script puoi rendere automatiche attività lunghe e noiose e crear
 
 Per utilizzare Apps Script accedi al tuo account Google, visita la pagina [script.google.com](https://script.google.com){rel="noopener noreferrer"} e fai clic su **Per iniziare**
 
-
 ## Risorse utili (siti esterni)
 
 - [Guida di Apps Script (in inglese)](https://developers.google.com/apps-script/overview){rel="noopener noreferrer"} la guida di riferimento dove puoi trovare anche diversi codelab e tutorial.

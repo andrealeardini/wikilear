@@ -113,7 +113,6 @@ Per vedere il risultato di Eleventy apri la pagina [http://localhost:8080/README
 {% set tips = collections.eleventytips %}
 {% include 'partials/tips-and-tricks.njk' %}
 
-
 ## Risorse utili (siti esterni)
 
 - [Documentazione ufficiale (in inglese)](https://www.11ty.dev/docs/){target="\_blank" rel="noopener noreferrer"} la guida di riferimento di Eleventy.

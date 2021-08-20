@@ -43,10 +43,12 @@ Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca s
 
 {% set tips = collections.googledrivestips %}
 {% include 'partials/tips-and-tricks.njk' %}
+
 ## Risorse utili (siti esterni)
 
 - [Guida di Google Drive](https://support.google.com/drive){rel="noopener noreferrer"}
 - [Community di assistenza (in inglese)](https://support.google.com/drive/community){rel="noopener noreferrer"}
+
 </details>
 
 _Credit:_ alcune informazioni sono state tradotte e adattate dal corso online di Google [**Applied Digital Skills**](https://applieddigitalskills.withgoogle.com/c/college-and-continuing-education/en/g-suite-certification-drive/g-suite-certification-drive/introduction-to-g-suite-certification-drive.html){rel="noopener noreferrer"}
