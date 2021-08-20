@@ -88,7 +88,11 @@ module.exports = function (eleventyConfig) {
   }
 
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
-  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
+  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"), {
+    preAttributes: {
+      tabindex: 0
+    },
+  });
   eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
 
   const markdownIt = require("markdown-it");
