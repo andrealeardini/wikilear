@@ -23,6 +23,7 @@ Filtra per prodotto
 </summary>
 
 - [Documenti Google](/google-docs/tutorial/)
+- [Google Fogli](/google-sheets/tutorial/)
 - [Gmail](/gmail/tutorial/)
 - [Google Maps](/google-maps/tutorial/)
 - [Altri prodotti](others)
