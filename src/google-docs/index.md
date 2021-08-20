@@ -8,7 +8,7 @@ image: /images/docs_48dp.png
 feed:
 share: true
 ---
-<details role="navigation">
+<details>
 <summary>
 Contenuto
 </summary>

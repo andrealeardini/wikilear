@@ -8,7 +8,7 @@ image: /images/drive_48dp.png
 feed:
 share: true
 ---
-<details role="navigation">
+<details>
 <summary>
 Contenuto
 </summary>

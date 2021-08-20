@@ -11,7 +11,7 @@ feed:
 share: true
 ---
 
-<details role="navigation">
+<details>
 <summary>
 Contenuto
 </summary>

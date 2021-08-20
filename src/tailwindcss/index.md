@@ -9,7 +9,7 @@ image: /images/tailwindcss-mark.svg
 style: markdown
 share: true
 ---
-<details role="navigation">
+<details>
 <summary>
 Contenuto
 </summary>

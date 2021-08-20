@@ -3,13 +3,13 @@ date: 2021-08-20
 title: "Fogli Google: calcolare il valore medio numerico in un insieme di dati"
 description: Una guida dettagliata sulle funzioni di Fogli Google per calcolare la media aritmetica dei dati
 subtitle: Fogli Google dispone di alcune funzioni che permettono di ottenere la media aritmetica di un insieme di dati. Vediamo quale utilizzare in base al set di dati da analizzare.
-image: /images/media-aritmetica.svg
+image: /images/media-aritmetica.png
 image_title:
 image_description:
 ---
 {% import 'components/sheet.njk' as sheet with context %}
 
-<details role="navigation" class="text-sm lg:text-base bg-gray-200 p-4" open>
+<details class="text-sm lg:text-base p-4" open>
 <summary>
 Contenuto
 </summary>
@@ -116,7 +116,7 @@ Vedi [l'esempio 2.](#calcolare-la-media-dei-valori-in-un-set-di-dati-con-testo)
 
 >`MEDIA.VALORI` considera le celle che contengono del testo come celle con valore 0, se vuoi ignorare le celle con testo usa la funzione `MEDIA`.
 
-<details role="navigation" open>
+<details open>
 <summary class="font-semibold text-lg heading" id="esempi-di-utilizzo">
 Esempi di utilizzo
 </summary>
