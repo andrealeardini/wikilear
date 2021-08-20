@@ -258,6 +258,8 @@ Anche in questo caso la formula può essere migliorata utilizzando i riferimenti
 
 Ora crea la formula per la cella B17. Sostituisci area e settore con il riferimento alle rispettive celle di intestazione (A17, B16). Blocca i riferimenti delle celle e degli intervalli (attenzione che sono misti assoluti e relativi) e con un solo copia e incolla (o trascinando) crea le altre formule.
 
+Se hai scritto bene la formula nella cella B17, dopo aver copiato e incollato la formula nelle altre celle, dovresti ottenere le medie riportate qui sotto. In caso contrario controlla bene i riferimenti. Se non riesci a trovare l'errore puoi sempre dare una sbirciatina alle formule della tabella.
+
 {{ sheet.render(media.più.se, on, 16, 19) | trimHTML | safe }}
 
 ## Riferimenti
