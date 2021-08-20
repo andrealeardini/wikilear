@@ -1,4 +1,4 @@
-{%- macro render(data, grid) -%}
+{%- macro render(data, grid, rowStart, rowEnd) -%}
 
 {% set columnsHeader = ["A", "B", "C", "D", "E", "F",
 "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R","S", "T", "U", "V",
@@ -10,9 +10,12 @@
 {% set gridData = data | sheet('grid') %}
 {% if gridData %}{% set grid = gridData %}{% endif %}
 
+{% set filterStart = rowStart or 0 %}
+{% set filterEnd =  rowEnd or rowsNumber %}
+
 {% set cellMerged = [] %}
 <div class="relative w-full pb-16">
-  <div class="w-full max-h-3/4v overflow-auto" tabindex="0">
+  <div class="w-full max-h-3/4v overflow-auto mb-2" tabindex="0">
     {% set tableClass = data | sheet('table') %}
     {# use border-separate and border-spacing to keep header margins with scroll #}
     <table style="border-spacing: 0;"
@@ -35,6 +38,7 @@
       <tbody>
         {% for row in data %} {% set rowClass = row | sheet('row') %}
         {% set cellsClass = row | sheet('cells') %}
+        {% if (loop.index >= filterStart) and (loop.index <= filterEnd) %}
         <tr class="{{ rowClass }}">
           {% set border_bottom = ("border-b-0" if loop.last else "border-b") %}
           <th
@@ -78,11 +82,12 @@
           {% endif %}
           {% endfor %}
         </tr>
+        {% endif %}
         {% endfor %}
       </tbody>
     </table>
   </div>
-  <button class="w-24 absolute bottom-0 right-0 mb-4 p-2 border rounded-lg" onclick=showFormule(this)>Formule</button>
+  <button class="w-24 absolute bottom-0 right-0 mb-4 p-2 border rounded-lg bg-gray-300 dark:text-gray-900" onclick=showFormule(this)>Formule</button>
 </div>
 
 <script>
