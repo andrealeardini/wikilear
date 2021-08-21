@@ -247,9 +247,9 @@ Vediamo insieme come calcolare la media del fatturato per il **settore Attrezzat
 Per calcolare la media di ciascun settore per il nord puoi usare queste formule.
 
 ```xls
-=MEDIA.PIÙ.SE(D2:D14; C2:B14; "attrezzature"; B2:B14; "nord")
-=MEDIA.PIÙ.SE(D2:D14; C2:B14; "cancelleria"; B2:B14; "nord")
-=MEDIA.PIÙ.SE(D2:D14; C2:B14; "libri"; B2:B14; "nord")
+=MEDIA.PIÙ.SE(D2:D14; C2:C14; "attrezzature"; B2:B14; "nord")
+=MEDIA.PIÙ.SE(D2:D14; C2:C14; "cancelleria"; B2:B14; "nord")
+=MEDIA.PIÙ.SE(D2:D14; C2:C14; "libri"; B2:B14; "nord")
 ```
 
 Anche in questo caso la formula può essere migliorata utilizzando i riferimenti assoluti. Vuoi metterti alla prova? Bene, allora prepara una tabella in cui le colonne rappresentano le aree geogragiche e le righe i settori.
