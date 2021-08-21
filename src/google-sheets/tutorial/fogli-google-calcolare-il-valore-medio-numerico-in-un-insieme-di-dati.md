@@ -236,20 +236,20 @@ Per questo esempio utilizziamo questi dati.
 
 {{ sheet.render(media.più.se, on, 0, 14) | trimHTML | safe }}
 
-Vediamo insieme come calcolare la media del fatturato per il settore Attrezzature per la sola area geografica del nord. I parametri da usare sono:
+Vediamo insieme come calcolare la media del fatturato per il **settore Attrezzature** per la sola area geografica del **nord.** I parametri da usare sono:
 
-- *intervallo_media* -> D2:D12 (il fatturato).
-- *intervallo_valori_da_filtrare* B2:B12 (l'area di competenza di ciascuna registrazione).
-- *criterio* -> uno tra [nord, centro, sud] (l'area geografica).
-- *intervallo_aggiuntivo_valori* C2:12 -> il settore a cui si riferisce la registrazione
-- *criterio_aggiuntivo* uno tra [attrezzature, cancelleria, libri] -> il settore da filtrare
+- *intervallo_media* -> indichiamo l'intervallo di celle in cui abbiamo registrato il fatturato (D2:D14).
+- *intervallo_valori_da_filtrare* -> l'intervallo di celle in cui è specificato il settore della registrazione (C2:C14).
+- *criterio* -> "attrezzature"
+- *intervallo_aggiuntivo_valori* -> l'intervallo di celle in cui è indicata l'area goegrafica delle registrazione (B2:B14)
+- *criterio_aggiuntivo* "nord"
 
 Per calcolare la media di ciascun settore per il nord puoi usare queste formule.
 
 ```xls
-=MEDIA.PIÙ.SE(D2:D12; B2:B12; "nord"; C2:C12; "attrezzature")
-=MEDIA.PIÙ.SE(D2:D12; B2:B12; "nord"; C2:C12; "cancelleria")
-=MEDIA.PIÙ.SE(D2:D12; B2:B12; "nord"; C2:C12; "libri")
+=MEDIA.PIÙ.SE(D2:D14; C2:B14; "attrezzature"; B2:B14; "nord")
+=MEDIA.PIÙ.SE(D2:D14; C2:B14; "cancelleria"; B2:B14; "nord")
+=MEDIA.PIÙ.SE(D2:D14; C2:B14; "libri"; B2:B14; "nord")
 ```
 
 Anche in questo caso la formula può essere migliorata utilizzando i riferimenti assoluti. Vuoi metterti alla prova? Bene, allora prepara una tabella in cui le colonne rappresentano le aree geogragiche e le righe i settori.
