@@ -148,7 +148,7 @@
 
   .token.boolean,
   .token.number {
-    @apply text-red-500;
+    @apply text-purple-800;
   }
 
   .token.selector,
@@ -182,7 +182,7 @@
 
   .token.regex,
   .token.important {
-    @apply text-purple-600;
+    @apply text-purple-900;
   }
 
   .token.important,
