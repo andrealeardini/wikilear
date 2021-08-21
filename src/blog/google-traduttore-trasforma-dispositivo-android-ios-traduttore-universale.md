@@ -1,6 +1,5 @@
 ---
-date: 2015-01-14T12:38:00.001+01:00
-updated: 2020-04-16T16:43:07.672+02:00
+date: 2015-01-14
 tags:
   - iOS
   - Google Traduttore

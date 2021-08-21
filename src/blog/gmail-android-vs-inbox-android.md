@@ -1,6 +1,5 @@
 ---
 date: 2014-11-21T11:15:00.009+01:00
-updated: 2014-11-21T11:15:00.009+01:00
 tags:
   - Gmail
   - Inbox by Gmail
