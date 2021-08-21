@@ -95,7 +95,7 @@
   {# capture the JS content as a Nunjucks variable #}
   {% set js %}
   {% include "../../../dist/js/main.js" %}
-  {% if sheet %}
+  {% if useSheetJS %}
   {% include "components/sheet/code.js" %}
   {% endif %}
   {% endset %}
