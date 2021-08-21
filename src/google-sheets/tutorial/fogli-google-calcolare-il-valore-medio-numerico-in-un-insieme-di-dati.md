@@ -242,7 +242,7 @@ Vediamo insieme come calcolare la media del fatturato per il **settore Attrezzat
 - *intervallo_valori_da_filtrare* -> l'intervallo di celle in cui è specificato il settore della registrazione (C2:C14).
 - *criterio* -> "attrezzature"
 - *intervallo_aggiuntivo_valori* -> l'intervallo di celle in cui è indicata l'area goegrafica delle registrazione (B2:B14)
-- *criterio_aggiuntivo* "nord"
+- *criterio_aggiuntivo* -> "nord"
 
 Per calcolare la media di ciascun settore per il nord puoi usare queste formule.
 
