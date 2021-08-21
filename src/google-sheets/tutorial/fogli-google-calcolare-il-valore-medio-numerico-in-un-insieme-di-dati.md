@@ -6,8 +6,9 @@ subtitle: Fogli Google dispone di alcune funzioni che permettono di ottenere la 
 image: /images/media-aritmetica.png
 image_title:
 image_description:
+useSheetJS: true
 ---
-{% import 'components/sheet.njk' as sheet with context %}
+{% import 'components/sheet/sheet.njk' as sheet with context %}
 
 <details class="bg-gray-100 text-sm lg:text-base p-4" open>
 <summary>
