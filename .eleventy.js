@@ -212,10 +212,27 @@ module.exports = function (eleventyConfig) {
     return [...collection.getFilteredByGlob("./src/blog/**/*.md")].reverse();
   });
 
+  function compareDate(a, b) {
+    let dateA = a.data.updated ? a.data.updated : a.date;
+    let dateB = b.data.updated ? b.data.updated : b.date;
+    dateA = new Date(dateA);
+    dateB = new Date(dateB);
+    if (dateA < dateB) {
+      return -1;
+    }
+    if (dateA > dateB) {
+      return 1;
+    }
+    // a must be equal to b
+    return 0;
+  }
+
   // Returns a collection of articles in reverse date order filtered by feed
+  // compareDate use updated if exist
   eleventyConfig.addCollection("feed", (collection) => {
     return [...collection.getFilteredByGlob("./src/**/*.md")]
       .filter((x) => x.data.feed)
+      .sort(compareDate)
       .reverse();
   });
 

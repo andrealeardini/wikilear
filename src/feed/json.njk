@@ -14,14 +14,16 @@ eleventyExcludeFromCollections: true
     "url": "{{ site.author.url }}"
   },
   "items": [
-    {%- for post in collections.feed | reverse %}
+    {%- for post in collections.feed %}
     {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset -%}
     {
       "id": "{{ absolutePostUrl }}",
       "url": "{{ absolutePostUrl }}",
       "title": "{{ post.data.title }}",
       "content_html": {% if post.templateContent %}{{ post.templateContent | dump | safe }}{% else %}""{% endif %},
-      "date_published": "{{ post.date | rssDate }}"
+      "date_published": "{{ post.date | dateToRfc3339 }}",
+      {%- set dateModified = post.data.updated or post.date %}
+      "date_modified": "{{ dateModified | dateToRfc3339 }}"
     }
     {%- if not loop.last -%}
     ,

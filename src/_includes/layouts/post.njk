@@ -13,8 +13,12 @@ schema:
 {% set wPerMinute = (wc / 200) + 1 %}
 {# Render post date#}
 {% set pageHeaderSummary %}
-<div class="text-sm md:text-base">
-  <time  datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time> di <a href="\chi-sono">Andrea Leardini</a>
+<div class="text-sm md:text-base mb-8">
+  <p>di <a href="\chi-sono">Andrea Leardini</a></p>
+  <time  datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+  {%- if updated %}
+  (aggiornato il <time datetime="{{ updated | w3DateFilter }}">{{ updated | dateFilter }}</time>)
+  {% endif %}
   <p>Tempo di lettura: {{ wPerMinute | round }} min. circa</p>
 </div>
 {% if subtitle %}
