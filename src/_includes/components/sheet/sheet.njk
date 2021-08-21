@@ -1,5 +1,4 @@
 {%- macro render(data, grid, rowStart, rowEnd) -%}
-
 {% set columnsHeader = ["A", "B", "C", "D", "E", "F",
 "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R","S", "T", "U", "V",
 "W", "X", "Y", "Z"] %}
@@ -57,7 +56,7 @@
           {% set cellMerged = (cellMerged.push(columnsNumber * (rowIndex + loop.index0) + cellIndex), cellMerged) %}
           {% endfor %}
           {% endif %}
-          <!-- TODO: manage multiple spans (c2) (r2) -->
+          {# TODO: manage multiple spans (c2) (r2) #}
           {% if colspan %} {% set colstospan = colspan %}
           {% for coltospan in range(1, colspan) %}
           {% set cellMerged = (cellMerged.push(columnsNumber * rowIndex + loop.index0), cellMerged) %}
@@ -89,32 +88,4 @@
   </div>
   <button class="w-24 absolute bottom-0 right-0 mb-4 p-2 border rounded-lg bg-gray-300 dark:text-gray-900" onclick=showFormule(this)>Formule</button>
 </div>
-
-<script>
-  function showFormule(element) {
-    let cells = element.parentElement.getElementsByClassName("cells");
-    for (const cell of cells) {
-      if (cell.dataset.mode == "value") {
-        // set left alignement for formulas
-        if (cell.dataset.formula) {
-          cell.classList.add("text-left");
-          cell.innerHTML = cell.dataset.formula
-
-        } else {
-          cell.innerHTML = cell.dataset.value;
-        }
-        cell.dataset.mode = "formula";
-
-      } else {
-        cell.innerHTML = cell.dataset.value;
-        // remove left alignement to div element
-        // make effective the cell alignement
-        cell.classList.remove("text-left");
-        cell.dataset.mode = "value"
-      }
-    }
-    element.innerHTML == "Formule" ? element.innerHTML = "Valori" : element.innerHTML = "Formule"
-  }
-</script>
-
 {%- endmacro -%}

@@ -128,7 +128,7 @@ module.exports = function (eleventyConfig) {
     "w3DateFilter",
     require("./src/_filters/w3-date-filter.js")
   );
-  eleventyConfig.addFilter("sheet", require("./src/_filters/sheet.js"));
+  eleventyConfig.addFilter("sheet", require("./src/_includes/components/sheet/filter.js"));
   eleventyConfig.addFilter("trimHTML", require("./src/_filters/trimHTML.js"));
 
   // https://www.11ty.dev/docs/quicktips/inline-css/

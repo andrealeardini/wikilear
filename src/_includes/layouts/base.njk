@@ -31,7 +31,7 @@
   <link rel="canonical" href="{{ site.url }}{{ canonicalUrl or page.url }}">
   <link rel="alternate" href="{{ site.feed.path | url }}" type="application/atom+xml" title="{{ site.title }}">
   <link rel="preconnect" href="/" crossorigin>
-  <!-- capture the JS content as a Nunjucks variable -->
+  {# capture the JS content as a Nunjucks variable #}
   {% set js %}
   // detect dark mode settings (dark, light, system preference)
   const theme = localStorage.getItem('theme');
@@ -47,7 +47,7 @@
   }
   {% endset %}
   {% if environment.NODE_ENV=="production" %}
-  <!-- feed it through our jsmin filter to minify -->
+  {# feed it through our jsmin filter to minify #}
   <script>
     {{ js | jsmin | safe }}
   </script>
@@ -57,9 +57,9 @@
   </script>
   {% endif %}
   {% if environment.NODE_ENV=="production" %}
-  <!-- capture the CSS content as a Nunjucks variable -->
+  {# capture the CSS content as a Nunjucks variable #}
   {% set css %} {% include "../../../dist/css/styles.css" %} {% endset %}
-  <!-- feed it through our cssmin filter to minify -->
+  {# feed it through our cssmin filter to minify #}
   <style>
     {{ css | cssmin | safe }}
   </style>
@@ -92,16 +92,24 @@
     {% include "partials/footer.njk" %}
   </div>
   {% if environment.NODE_ENV=="production" %}
-  <!-- capture the JS content as a Nunjucks variable -->
+  {# capture the JS content as a Nunjucks variable #}
   {% set js %}
   {% include "../../../dist/js/main.js" %}
+  {% if sheet %}
+  {% include "components/sheet/filter.js" %}
+  {% endif %}
   {% endset %}
-  <!-- feed it through our jsmin filter to minify -->
+  {# feed it through our jsmin filter to minify #}
   <script>
     {{ js | jsmin | safe }}
   </script>
   {% else %}
   <script type="module" src="/js/main.js"></script>
+  {% if useSheetJS %}
+  <script>
+  {% include "components/sheet/code.js" %}
+  </script>
+  {% endif %}
   {% endif %}
 </body>
 
