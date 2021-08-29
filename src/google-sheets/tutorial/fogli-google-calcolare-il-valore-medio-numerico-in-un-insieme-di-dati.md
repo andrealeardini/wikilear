@@ -10,7 +10,7 @@ useSheetJS: true
 ---
 {% import 'components/sheet/sheet.njk' as sheet with context %}
 
-<details class="bg-gray-100 text-sm lg:text-base p-4" open>
+<details class="bg-gray-100 dark:bg-gray-800 text-sm lg:text-base p-4" open>
 <summary>
 Contenuto
 </summary>
@@ -117,7 +117,7 @@ Vedi [l'esempio 2.](#calcolare-la-media-dei-valori-in-un-set-di-dati-con-testo)
 
 >`MEDIA.VALORI` considera le celle che contengono del testo come celle con valore 0, se vuoi ignorare le celle con testo usa la funzione `MEDIA`.
 
-<details class="bg-gray-100 text-sm lg:text-base p-4" open>
+<details class="bg-gray-100 dark:bg-gray-800 text-sm lg:text-base p-4" open>
 <summary class="font-semibold text-lg heading" id="esempi-di-utilizzo">
 Esempi di utilizzo
 </summary>
