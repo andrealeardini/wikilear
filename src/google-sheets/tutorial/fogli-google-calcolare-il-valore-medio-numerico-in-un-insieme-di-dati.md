@@ -1,8 +1,8 @@
 ---
 date: 2021-08-20
-title: "Fogli Google: calcolare il valore medio numerico in un insieme di dati"
+title: "Come calcolare la media aritmetica in Fogli Google"
 description: Una guida dettagliata sulle funzioni di Fogli Google per calcolare la media aritmetica dei dati
-subtitle: Fogli Google dispone di alcune funzioni che permettono di ottenere la media aritmetica di un insieme di dati. Vediamo quale utilizzare in base al set di dati da analizzare.
+subtitle: Fogli Google dispone di alcune funzioni che permettono di calcolare la media aritmetica di un insieme di dati. Vediamo quale utilizzare in base al set di dati da analizzare.
 image: /images/media-aritmetica.png
 image_title:
 image_description:
