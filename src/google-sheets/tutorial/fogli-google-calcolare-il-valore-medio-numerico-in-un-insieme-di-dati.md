@@ -2,7 +2,7 @@
 date: 2021-08-20
 title: "Come calcolare la media aritmetica in Fogli Google"
 description: Una guida dettagliata sulle funzioni di Fogli Google per calcolare la media aritmetica dei dati
-subtitle: Fogli Google dispone di alcune funzioni che permettono di calcolare la media aritmetica di un insieme di dati. Vediamo quale utilizzare in base al set di dati da analizzare.
+subtitle: Fogli Google dispone di alcune funzioni che permettono di calcolare la media aritmetica di un insieme di dati. Vediamo quale utilizzare in base all'insieme di dati da analizzare.
 image: /images/media-aritmetica.png
 image_title:
 image_description:
@@ -10,10 +10,9 @@ useSheetJS: true
 ---
 {% import 'components/sheet/sheet.njk' as sheet with context %}
 
+<nav>
 <details class="bg-gray-100 dark:bg-gray-800 text-sm lg:text-base p-4" open>
-<summary>
-Contenuto
-</summary>
+  <summary>Contenuto</summary>
 
 - [Definizione di media aritmetica](#definizione-di-media-aritmetica)
 - [Elenco delle funzioni per calcolare la media aritmetica dei dati](#elenco-delle-funzioni-per-calcolare-la-media-aritmetica-dei-dati)
@@ -24,12 +23,13 @@ Contenuto
 - [Esempi di utilizzo](#esempi-di-utilizzo)
 
 </details>
+</nav>
 
 ## Definizione di media aritmetica
 
-La <dfn>media aritmetica</dfn>, a volte indicata anche come media numerica ma più spesso chiamata semplicemente media, viene calcolata sommando tutti i valori nel set di dati e dividendo il risultato per il numero totale di valori. Quindi con un set di dati composto da quattro valori (es. 5, 8, 12, 16) la media sarà data dalla loro somma (5+8+12+16) divisa per 4 (5+8+12+16 = 41:4 = 10,25).
+La <dfn>media aritmetica</dfn>, a volte indicata anche come media numerica ma più spesso chiamata semplicemente media, viene calcolata sommando tutti i valori nell'insieme di dati e dividendo il risultato per il numero totale di valori. Quindi con un insieme di dati composto da quattro valori (es. 5, 8, 12, 16) la media sarà data dalla loro somma (5+8+12+16) divisa per 4 (5+8+12+16 = 41:4 = 10,25).
 
-Con Fogli Google la media aritmetica si ricava usando la funzione `MEDIA`. In questo caso la formula sarà `=MEDIA(5, 8, 12, 16)`. Naturalmente il set di dati può essere ricavato da un intervallo di celle usato direttamente nella formula come `=MEDIA(B2; B3; B4; B5)` o più semplicemente `=MEDIA(B2:B5)`.
+Con Fogli Google la media aritmetica si ricava usando la funzione `MEDIA`. In questo caso la formula sarà `=MEDIA(5, 8, 12, 16)`. Naturalmente l'insieme di dati può essere ricavato da un intervallo di celle usato direttamente nella formula come `=MEDIA(B2; B3; B4; B5)` o più semplicemente `=MEDIA(B2:B5)`.
 
 Premi il pulsante **Formule** sotto la tabella per visualizzare le formule al posto dei valori (e viceversa).
 
@@ -37,7 +37,7 @@ Premi il pulsante **Formule** sotto la tabella per visualizzare le formule al po
 
 ## Elenco delle funzioni per calcolare la media aritmetica dei dati
 
-Fogli Google dispone di diverse funzioni per il calcolo della media aritmetica. Consulta gli esempi per capire quale usare in base al set di dati che devi analizzare.
+Fogli Google dispone di diverse funzioni per calcolare la media aritmetica. Consulta [gli esempi](#esempi) per capire quale usare in base all'insieme di dati che devi analizzare.
 
 | Funzione         | Descrizione |
 |-- | -- | -- |
@@ -117,17 +117,20 @@ Vedi [l'esempio 2.](#calcolare-la-media-dei-valori-in-un-set-di-dati-con-testo)
 
 >`MEDIA.VALORI` considera le celle che contengono del testo come celle con valore 0, se vuoi ignorare le celle con testo usa la funzione `MEDIA`.
 
-<details class="bg-gray-100 dark:bg-gray-800 text-sm lg:text-base p-4" open>
+<nav>
+<details id="esempi" class="heading bg-gray-100 dark:bg-gray-800 text-sm lg:text-base p-4" open>
 <summary class="font-semibold text-lg heading" id="esempi-di-utilizzo">
 Esempi di utilizzo
 </summary>
 
 - [Esempio 1: calcolare la media dei voti degli studenti](#calcolare-la-media-dei-voti-degli-studenti)
-- [Esempio 2: calcolare la media dei valori in un set di dati con testo](#calcolare-la-media-dei-valori-in-un-set-di-dati-con-testo)
+- [Esempio 2: calcolare la media dei valori in un insieme di dati con testo](#calcolare-la-media-dei-valori-in-un-insieme-di-dati-con-testo)
 - [Esempio 3: calcolare la media del fatturato per rappresentante](#calcolare-la-media-del-fatturato-per-rappresentante-area-e-categoria)
 - [Esempio 4: calcolare la media del fatturato per rappresentante, area e categoria](#calcolare-la-media-del-fatturato-per-rappresentante-aerea-e-categoria)
 
 </details>
+</nav>
+
 
 ## Esempio 1: calcolare la media dei voti degli studenti{id="calcolare-la-media-dei-voti-degli-studenti"}
 
@@ -140,7 +143,7 @@ Vuoi calcolare la media aritmetica dei voti dei tuoi studenti per ogni trimestre
 - *valore1*
 - *valore2* [FACOLTATIVO]
 
-Entrambi i parametri possono essere un valore, una cella o un intervallo di celle. Ad esempio queste due formule restituiscono lo stesso risultato
+Entrambi i parametri possono essere un valore, una cella o un intervallo di celle. Ad esempio queste due formule restituiscono lo stesso risultato.
 
 ```xls
 =MEDIA(B2; C2; D2)
@@ -149,7 +152,7 @@ Entrambi i parametri possono essere un valore, una cella o un intervallo di cell
 
 La media dei voti di Andrea per i tre trimestri sarà data dalla formula `=MEDIA(B2:D2)`. Mentre la media dei voti di tutti gli studenti per il primo trimestre si ricava con la formula `=MEDIA(B2:B4)`.
 
-La media aritmetica di tutti gli studenti per i tre trimestri si può ricavare utilizzando le medie parziali oppure l'intero set di dati. Tutte queste formule danno lo stesso risultato (67,2).
+La media aritmetica di tutti gli studenti per i tre trimestri si può ricavare utilizzando le medie parziali oppure l'intero insieme di dati. Tutte queste formule danno lo stesso risultato (67,2).
 
 ```xls
 =MEDIA(E2:E4)
@@ -161,13 +164,13 @@ Ora che hai capito come funziona MEDIA prova a scrivere le formule che mancano e
 
 {{ sheet.render(media) | trimHTML | safe }}
 
-## Esempio 2: calcolare la media dei valori in un set di dati con testo{id="calcolare-la-media-dei-valori-in-un-set-di-dati-con-testo"}
+## Esempio 2: calcolare la media dei valori in un insieme di dati con testo{id="calcolare-la-media-dei-valori-in-un-set-di-dati-con-testo"}
 
-In questo esempio i dati e la situazione corrispondono a quelli dell'esempio 1. Nel set di dati avrai notato un valore molto basso, un bel 0 preso da Mario nel 2° trimestre. Decidi di sostituire lo 0 con un trattino (-). In fondo è solo una questione di stile. Non proprio, nota la differenza nella tabella qui sotto.
+In questo esempio i dati e la situazione corrispondono a quelli dell'esempio 1. Nei voti avrai notato un valore molto basso, un bel 0 preso da Mario nel 2° trimestre. Decidi di sostituire lo 0 con un trattino (-). In fondo è solo una questione di stile. Non proprio, nota la differenza nella tabella qui sotto.
 
 {{ sheet.render(trattino) | trimHTML | safe }}
 
-Se confronti le celle evidenziate con la tabella dell'esempio 1, puoi vedere che ora le medie non corrispondono più. Sostituire lo 0 con il trattino non è stata una bella idea. Questo è un aspetto importante da tenere presente. **Quando si usa la funzione `MEDIA` tutti i valori del set di dati devono essere numerici, altrimenti vengono ignorati.** Ci sono situazioni in cui fa comodo ignorare il testo, ma nell'esempio del nostro registro in realtà il trattino equivale a uno 0 e quindi va conteggiato come valore. Se vuoi mettere il trattino (o N/A o qualsiasi altra sigla) al posto dello 0 devi usare la funzione `MEDIA.VALORI` che conta anche le celle con testo assegnando 0 come valore della cella. La sintassi è uguale a quella di `MEDIA`.
+Se confronti le celle evidenziate con la tabella dell'esempio 1, puoi vedere che ora le medie non corrispondono più. Sostituire lo 0 con il trattino non è stata una bella idea. Questo è un aspetto importante da tenere presente. **Quando si usa la funzione `MEDIA` tutti i valori dell'insieme di dati devono essere numerici, altrimenti vengono ignorati.** Ci sono situazioni in cui fa comodo ignorare il testo, ma nell'esempio del nostro registro in realtà il trattino equivale a uno 0 e quindi va conteggiato come valore. Se vuoi mettere il trattino (o N/A o qualsiasi altra sigla) al posto dello 0 devi usare la funzione `MEDIA.VALORI` che conta anche le celle con testo assegnando 0 come valore della cella. La sintassi è uguale a quella di `MEDIA`.
 
 Riscrivi le formule della tabella precedente usando `MEDIA.VALORI` e confrontale con quelle della tabella qui sotto. Ora i conti tornano.
 
@@ -175,13 +178,13 @@ Riscrivi le formule della tabella precedente usando `MEDIA.VALORI` e confrontale
 
 ## Esempio 3: calcolare la media del fatturato per rappresentante{id="calcolare-la-media-del-fatturato-per-rappresentante-area-e-categoria"}
 
-Lavori come segretario/a in una ditta che opera a livello nazionale. La ditta ha alcuni rappresentanti (Andrea, Antonio, Filippo, Luca e Marco) sparsi per il territorio (Nord, Centro, Sud) che si occupano di tre settori o categorie merceologiche (Attrezzature, Cancelleria, Libri).
+Lavori come segretario/a in una ditta che opera a livello nazionale. La ditta ha alcuni rappresentanti (Andrea, Antonio, Filippo, Luca e Marco) sparsi per il territorio (Nord, Centro e Sud) che si occupano di tre settori o categorie merceologiche (Attrezzature, Cancelleria e Libri).
 
 In questa tabella hai registrato il fatturato per Rappresentante, Area e Settore.
 
 {{ sheet.render(media.se, on, 0, 12) | trimHTML | safe }}
 
-Il responsabile delle vendite ti chiede di calcolare
+Il responsabile delle vendite ti chiede di calcolare:
 
 - la media del fatturato per ogni settore.
 - la media del fatturato per ogni area.
@@ -242,7 +245,7 @@ Vediamo insieme come calcolare la media del fatturato per il **settore Attrezzat
 - *intervallo_media* -> indichiamo l'intervallo di celle in cui abbiamo registrato il fatturato (D2:D14).
 - *intervallo_valori_da_filtrare* -> l'intervallo di celle in cui è specificato il settore della registrazione (C2:C14).
 - *criterio* -> "attrezzature"
-- *intervallo_aggiuntivo_valori* -> l'intervallo di celle in cui è indicata l'area goegrafica delle registrazione (B2:B14)
+- *intervallo_aggiuntivo_valori* -> l'intervallo di celle in cui è indicata l'area geografica della registrazione (B2:B14)
 - *criterio_aggiuntivo* -> "nord"
 
 Per calcolare la media di ciascun settore per il nord puoi usare queste formule.
