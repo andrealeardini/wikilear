@@ -15,7 +15,10 @@
   },
   "url": "{{ site.url }}{{ canonicalUrl or page.url }}",
   "mainEntityOfPage": "{{ site.url }}{{ canonicalUrl or page.url }}",
-  "datePublished": "{{ page.date | htmlDateString }}",
+  {%- set datePublished = published or date %}
+  {%- if datePublished %}
+  "datePublished": "{{ datePublished | htmlDateString }}",
+  {% endif %}
   "dateModified": "{{ page.inputPath | lastModifiedDate  | htmlDateString }}",
   "description": "{{ subtitle | striptags }}"
 }

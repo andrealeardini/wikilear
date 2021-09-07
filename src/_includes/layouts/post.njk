@@ -20,11 +20,7 @@ schema:
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
         d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
     </svg>
-    {%- if updated %}
-    <time datetime="{{ updated | w3DateFilter }}">{{ updated | dateFilter }}</time>
-    {% else %}
     <time  datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
-    {% endif %}
   </div>
   <div class="flex gap-1 lg:gap-2 mt-1 align-baseline">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 lg:h-6 w-5 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

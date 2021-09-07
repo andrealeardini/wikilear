@@ -20,9 +20,9 @@ eleventyExcludeFromCollections: true
 	<entry>
 		<title>{{ post.data.title }}</title>
 		<link href="{{ absolutePostUrl }}" />
-		<published>{{ post.date | dateToRfc3339 }}</published>
-		{%- set dateModified = post.data.updated or post.date %}
-		<updated>{{ dateModified | dateToRfc3339 }}</updated>
+		{%- set published = post.data.published or post.date %}
+		<published>{{ published | dateToRfc3339 }}</published>
+		<updated>{{ post.date | dateToRfc3339 }}</updated>
 		<id>{{ absolutePostUrl }}</id>
 		<content type="html">
 		  {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}

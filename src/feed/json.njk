@@ -21,9 +21,9 @@ eleventyExcludeFromCollections: true
       "url": "{{ absolutePostUrl }}",
       "title": "{{ post.data.title }}",
       "content_html": {% if post.templateContent %}{{ post.templateContent | dump | safe }}{% else %}""{% endif %},
-      "date_published": "{{ post.date | dateToRfc3339 }}",
-      {%- set dateModified = post.data.updated or post.date %}
-      "date_modified": "{{ dateModified | dateToRfc3339 }}"
+      {%- set published = post.data.published or post.date %}
+      "date_published": "{{ published | dateToRfc3339 }}",
+      "date_modified": "{{ post.date | dateToRfc3339 }}"
     }
     {%- if not loop.last -%}
     ,

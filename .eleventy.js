@@ -228,11 +228,9 @@ module.exports = function (eleventyConfig) {
   }
 
   // Returns a collection of articles in reverse date order filtered by feed
-  // compareDate use updated if exist
   eleventyConfig.addCollection("feed", (collection) => {
     return [...collection.getFilteredByGlob("./src/**/*.md")]
       .filter((x) => x.data.feed)
-      .sort(compareDate)
       .reverse();
   });
 
