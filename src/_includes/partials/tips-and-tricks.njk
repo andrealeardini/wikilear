@@ -1,12 +1,12 @@
 {% if tips.length %}
 ## Tips and Tricks
 
-{% for post in tips.slice(0, 3) %}
+{% for post in tips.reverse().slice(0, 5) %}
   - [{{ post.data.title }}]({{ post.url}})
 {% endfor %}
 
 
-{% if tips.length > 3 %}
+{% if tips.length > 5 %}
 [Tutti i tips and tricks...](tips-and-tricks/)
 {% endif %}
 {% endif %}

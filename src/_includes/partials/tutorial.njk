@@ -1,11 +1,11 @@
 {% if tutorials.length %}
 ## Tutorial
 
-{% for post in tutorials.slice(0, 3) %}
+{% for post in tutorials.reverse().slice(0, 5) %}
   - [{{ post.data.title }}]({{ post.url }})
 {% endfor %}
 
-{% if tutorials.length > 3 %}
+{% if tutorials.length > 5 %}
 [Tutti i tutorial...](tutorial/)
 {% endif %}
 {% endif %}
