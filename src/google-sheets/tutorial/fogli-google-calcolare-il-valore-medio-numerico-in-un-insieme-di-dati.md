@@ -131,7 +131,6 @@ Esempi di utilizzo
 </details>
 </nav>
 
-
 ## Esempio 1: calcolare la media dei voti degli studenti{id="calcolare-la-media-dei-voti-degli-studenti"}
 
 Supponi di voler registrare i risultati ottenuti dai tuoi studenti durante l'anno scolastico. La tua classe è composta da tre studenti (Andrea, Filippo e Mario) e l'anno scolastico è suddiviso in tre trimestri. Ecco un esempio di come potrebbe essere il tuo registro.
