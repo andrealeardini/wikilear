@@ -5,9 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   {# in production use CSP in HEADER #}
-  {% if environment.NODE_ENV != "production" %}
   <meta http-equiv="Content-Security-Policy" content="{{ csp.regular | safe }}">
-  {% endif %}
   <meta name="color-scheme" content="dark light" />
   <meta name="theme-color" content="#e5e7eb">
   {% block ogType %}
