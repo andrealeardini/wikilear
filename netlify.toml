@@ -64,14 +64,14 @@
   [headers.values]
     cache-control = '''
     public
-    max-age=3600'''
+    max-age=31536000
 
 [[headers]]
   for = "/favicon.ico"
   [headers.values]
     cache-control = '''
     public
-    max-age=3600'''
+    max-age=31536000
 
 [[redirects]]
   from = "https://wikilear.netlify.app/*"
