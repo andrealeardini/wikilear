@@ -39,7 +39,7 @@ const CSP = {
     // If you need to add an external host for scripts you need to add an item like 'https://code.jquery.com/jquery-3.6.0.slim.min.js' to this list.
     ["script-src", SELF, /* Replaced by csp.js plugin */ "HASHES", quote("unsafe-inline")],
     ["style-src", SELF, quote("unsafe-inline")],
-    ["img-src", SELF, d33wubrfki0l68.cloudfront.net, "data:"],
+    ["img-src", SELF, "d33wubrfki0l68.cloudfront.net", "data:"],
 
     // To add new rules, add new array literals here or extend those above with
     // additional allowed elements.
