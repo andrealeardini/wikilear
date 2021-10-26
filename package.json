@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "npm run eleventy-watch",
-    "server": "web-dev-server --root-dir dist --node-resolve --open",
-    "build": "npm run clean && npm run eleventy",
+    "serve": "web-dev-server --root-dir dist --node-resolve --open",
+    "build": "npm run eleventy",
     "clean": "set -e && find ./dist -mindepth 1 ! -regex '^./dist/images\\(/.*\\)?' -delete || echo dist not found",
     "eleventy": "NODE_ICU_DATA='./node_modules/full-icu' NODE_ENV=production npx @11ty/eleventy",
     "eleventy-watch": "NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy --serve",
@@ -37,6 +37,7 @@
     "image-size": "^0.9.7",
     "jsdom": "^16.7.0",
     "luxon": "^1.28.0",
+    "markdown-it": "^12.2.0",
     "markdown-it-anchor": "^6.0.1",
     "markdown-it-attrs": "^3.0.3",
     "normalize.css": "^8.0.1",
