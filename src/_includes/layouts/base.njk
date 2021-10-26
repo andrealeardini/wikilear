@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="{{ csp.regular | safe }}">
   <meta name="color-scheme" content="dark light" />
   <meta name="theme-color" content="#e5e7eb">
   {% block ogType %}
@@ -48,11 +49,11 @@
   {% endset %}
   {% if environment.NODE_ENV=="production" %}
   {# feed it through our jsmin filter to minify #}
-  <script>
+  <script csp-hash>
     {{ js | jsmin | safe }}
   </script>
   {% else %}
-  <script>
+  <script csp-hash>
     {{ js | safe }}
   </script>
   {% endif %}
@@ -64,7 +65,7 @@
     {{ css | cssmin | safe }}
   </style>
   {% else %}
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="{{'/css/styles.css' | addHash }}" />
   {% endif %}
   {% block schema %}
   {% include "components/schema.org/schema.njk" %}
@@ -100,11 +101,11 @@
   {% endif %}
   {% endset %}
   {# feed it through our jsmin filter to minify #}
-  <script>
+  <script csp-hash>
     {{ js | jsmin | safe }}
   </script>
   {% else %}
-  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="{{'/js/main.js' | addHash}}"></script>
   {% if useSheetJS %}
   <script>
   {% include "components/sheet/code.js" %}

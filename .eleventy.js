@@ -44,6 +44,8 @@ const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
 const fs = require("fs");
 const { promisify } = require("util");
+const hasha = require("hasha");
+const readFile = promisify(fs.readFile);
 const stat = promisify(fs.stat);
 const execFile = promisify(require("child_process").execFile);
 const { minify } = require("terser");
@@ -94,6 +96,8 @@ module.exports = function (eleventyConfig) {
     },
   });
   eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
+
+  eleventyConfig.addPlugin(require("./src/_plugins/csp/apply-csp.js"));
 
   const markdownIt = require("markdown-it");
   const markdownItAttrs = require("markdown-it-attrs");
@@ -150,6 +154,23 @@ module.exports = function (eleventyConfig) {
       }
     }
   );
+
+  // https://github.com/google/eleventy-high-performance-blog/blob/90bd7820b010d9500830fa5bcb3f33578f700b24/.eleventy.js#L78
+  eleventyConfig.addNunjucksAsyncFilter("addHash", function (
+    absolutePath,
+    callback
+  ) {
+    readFile(`dist${absolutePath}`, {
+      encoding: "utf-8",
+    })
+      .then((content) => {
+        return hasha.async(content);
+      })
+      .then((hash) => {
+        callback(null, `${absolutePath}?hash=${hash.substr(0, 10)}`);
+      })
+      .catch((error) => callback(error));
+  });
 
   // filter tags to shows
   eleventyConfig.addFilter(
