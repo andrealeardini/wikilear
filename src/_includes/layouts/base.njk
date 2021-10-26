@@ -95,7 +95,7 @@
   {% if environment.NODE_ENV=="production" %}
   {# capture the JS content as a Nunjucks variable #}
   {% set js %}
-  {% include "../../../dist/js/main.js" %}
+  {% include "../../js/main.njk" %}
   {% if useSheetJS %}
   {% include "components/sheet/code.js" %}
   {% endif %}
