@@ -84,7 +84,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/video/");
   // copy original images to use with og, twitter metadata and json-ld
   eleventyConfig.addPassthroughCopy("src/images/");
-  eleventyConfig.addPassthroughCopy("src/js/");
 
   // copy and optimize Images
   eleventyConfig.addTransform(
