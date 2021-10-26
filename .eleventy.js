@@ -51,6 +51,9 @@ const execFile = promisify(require("child_process").execFile);
 const { minify } = require("terser");
 const environment = require("./src/_data/environment");
 const parse = require("csv-parse/lib/sync");
+const postcss = require("postcss");
+const tailwindcss = require("tailwindcss");
+const autoprefixer = require("autoprefixer");
 
 module.exports = function (eleventyConfig) {
   // use csv files as data
@@ -63,22 +66,31 @@ module.exports = function (eleventyConfig) {
     return records;
   });
 
+  // build CSS before build eleventy pages
+  eleventyConfig.on('beforeBuild', () => {
+    // Run me before the build starts
+    let css = fs.readFileSync("src/css/styles.css", { encoding: "utf-8"});
+    result = postcss([tailwindcss, autoprefixer ]).process(css.toString(), {
+      from: "src/css/styles.css"
+    }).then((result) => {
+      fs.mkdirSync("./dist/css", { recursive: true });
+      fs.writeFileSync("./dist/css/styles.css", result.css);
+      console.log("Fatto");
+    });
+  });
+
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/video/");
   // copy original images to use with og, twitter metadata and json-ld
   eleventyConfig.addPassthroughCopy("src/images/");
+  eleventyConfig.addPassthroughCopy("src/js/");
 
   // copy and optimize Images
   eleventyConfig.addTransform(
     "optimizeImages",
     require("./src/_transforms/images")
   );
-
-  const param = environment.NODE_ENV;
-
-  // Data cascade merge instead of override
-  eleventyConfig.setDataDeepMerge(true);
 
   // minify HTML only in production
   // optional chaining require NODE 14 >
