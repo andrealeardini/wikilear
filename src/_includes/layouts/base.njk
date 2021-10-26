@@ -107,7 +107,7 @@
   {% else %}
   <script type="module" src="{{'/js/main.js' | addHash}}"></script>
   {% if useSheetJS %}
-  <script>
+  <script csp-hash>
   {% include "components/sheet/code.js" %}
   </script>
   {% endif %}
