@@ -85,6 +85,7 @@ module.exports = function (eleventyConfig) {
     if (environment.NODE_ENV === "production") {
       const CSPPolicy = CSP.apply().regular.replace("HASHES", process.env.CSP_HASHES);
       process.env.CSP_POLICY = CSPPolicy;
+      fs.writeFileSync("./dist/csp.txt", CSPPolicy);
       console.log("CSP Policy: ", CSPPolicy);
     };
   });
