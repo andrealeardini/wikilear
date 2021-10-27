@@ -63,17 +63,18 @@ const addCspHash = async (rawContent, outputPath) => {
       hashes.push.apply(hashes, AUTO_RELOAD_SCRIPTS);
     }
 
+    // manage CSP as Meta tag
     const csp = dom.window.document.querySelector(
       "meta[http-equiv='Content-Security-Policy']"
     );
-    if (!csp) {
-      return content;
+    if (csp) {
+      csp.setAttribute(
+        "content",
+        csp.getAttribute("content").replace("HASHES", hashes.join(" "))
+      )
     }
-    csp.setAttribute(
-      "content",
-      csp.getAttribute("content").replace("HASHES", hashes.join(" "))
-    );
-
+    // write hashes also if meta tag is absent
+    // the user can use header instead of a meta tag
     content = dom.serialize();
   }
 

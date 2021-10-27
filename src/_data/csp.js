@@ -41,7 +41,7 @@ const CSP = {
     ["style-src", SELF, quote("unsafe-inline")],
     ["img-src", SELF, "https://d33wubrfki0l68.cloudfront.net", "data:"],
     ["media-src", SELF, "https://d33wubrfki0l68.cloudfront.net"],
-    ['frame-src', "https://www.youtube-nocookie.com/"]
+    ["frame-src", "https://www.youtube-nocookie.com/"]
   ]),
 };
 
