@@ -72,6 +72,8 @@ const addCspHash = async (rawContent, outputPath) => {
         "content",
         csp.getAttribute("content").replace("HASHES", hashes.join(" "))
       )
+    } else {
+      saveHashes(hashes);
     }
     // write hashes also if meta tag is absent
     // the user can use header instead of a meta tag
@@ -79,6 +81,14 @@ const addCspHash = async (rawContent, outputPath) => {
   }
 
   return content;
+
+  function saveHashes(hashes) {
+    const text = hashes.join(" ")
+    // console.log("Copy the CSP Policy to headers setting");
+    // console.log("CSP Policy: ", text);
+    process.env.CSP_HASHES = text;
+
+  }
 };
 
 module.exports = {

@@ -27,7 +27,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = ["default-src 'self';object-src 'none';script-src 'self' 'sha256-ku4+3QqRg/HIbOgMnob0LLBwRiZvHYuQV0q7+Jz2JF8=' 'sha256-NrAng/F8shrjkeo23RnT+vJEZlTcyV4Uyv/wVhH8Ljw=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net]
+    Content-Security-Policy = ["$CSP_POLICY"]
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"

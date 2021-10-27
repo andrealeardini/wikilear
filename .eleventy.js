@@ -54,6 +54,7 @@ const parse = require("csv-parse/lib/sync");
 const postcss = require("postcss");
 const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
+const CSP = require("./src/_data/csp");
 
 module.exports = function (eleventyConfig) {
   // use csv files as data
@@ -69,15 +70,25 @@ module.exports = function (eleventyConfig) {
   // build CSS before build eleventy pages
   eleventyConfig.on('beforeBuild', () => {
     // Run me before the build starts
+    console.log("Building CSS...")
     let css = fs.readFileSync("src/css/styles.css", { encoding: "utf-8"});
     result = postcss([tailwindcss, autoprefixer ]).process(css.toString(), {
       from: "src/css/styles.css"
     }).then((result) => {
       fs.mkdirSync("./dist/css", { recursive: true });
       fs.writeFileSync("./dist/css/styles.css", result.css);
-      console.log("Fatto");
+      console.log("Done");
     });
   });
+
+  eleventyConfig.on('afterBuild', () => {
+    if (environment.NODE_ENV === "production") {
+      const CSPPolicy = CSP.apply().regular.replace("HASHES", process.env.CSP_HASHES);
+      process.env.CSP_POLICY = CSPPolicy;
+      console.log("CSP Policy: ", CSPPolicy);
+    };
+  });
+
 
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
