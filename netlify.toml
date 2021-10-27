@@ -3,7 +3,7 @@
 [build]
   base = "/"
   publish = "dist/"
-  command = "npm run build && sed -i \"s|CSP_POLICY|${CSP_POLICY}|g\" netlify.toml"
+  command = "sed -i \"s|CSP_POLICY|${CSP_POLICY}|g\" netlify.toml && npm run build"
 
 # persist images
 # https://github.com/11ty/eleventy-img/issues/51#issuecomment-775186353
