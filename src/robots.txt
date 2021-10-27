@@ -1,6 +1,6 @@
 User-agent: *
 
 Allow: /
-Disallow: /csp.txt
 Disallow: /tag/
+Disallow: /page/
 Sitemap: https://www.wikilear.it/sitemap.xml
