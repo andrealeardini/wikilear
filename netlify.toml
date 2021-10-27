@@ -3,7 +3,10 @@
 [build]
   base = "/"
   publish = "dist/"
-  command = "npm run build && echo dist/csp.txt > ${CSP_POLICY} && sed -i \"s|CSP_POLICY_PLACEHOLDER|${CSP_POLICY}|g\" netlify.toml"
+  command = "npm run build && sed -i \"s|CSP_POLICY_PLACEHOLDER|${CSP_POLICY}|g\" netlify.toml"
+
+[build.environment]
+  CSP_POLICY = "default-src 'self';object-src 'none';script-src 'self' 'sha256-ku4+3QqRg/HIbOgMnob0LLBwRiZvHYuQV0q7+Jz2JF8=' 'sha256-NrAng/F8shrjkeo23RnT+vJEZlTcyV4Uyv/wVhH8Ljw=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net"
 
 # persist images
 # https://github.com/11ty/eleventy-img/issues/51#issuecomment-775186353
