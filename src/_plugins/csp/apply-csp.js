@@ -101,12 +101,13 @@ const addCspHash = async (rawContent, outputPath) => {
     }
 
     // write CSP Policy in headers file
-    let headers = fs.readFileSync("/home/andrea/wikilear/wikilear/_headers", { encoding: "utf-8" });
+    const headersPath = "./../../../_headers";
+    let headers = fs.readFileSync(headersPath, { encoding: "utf-8" });
     const regExp = /(# \[custom headers\]\n)([\s\S]*)(# \[end custom headers\])/;
     const oldCustomHeaders = headers.match(regExp)[2].toString();
     const CSPPolicy = `Content-Security-Policy: ${CSP.apply().regular.replace("HASHES", hashes.join(" "))}`;
     const newCustomHeaders = oldCustomHeaders.concat("\n/",outputPath,"\n  ",CSPPolicy);
-    fs.writeFileSync("/home/andrea/wikilear/wikilear/_headers", headers.replace(regExp, `$1${newCustomHeaders}\n$3`));
+    fs.writeFileSync(headersPath, headers.replace(regExp, `$1${newCustomHeaders}\n$3`));
 
     content = dom.serialize();
   }

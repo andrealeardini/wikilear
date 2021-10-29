@@ -16,53 +16,68 @@
 # [custom headers]
 # this text will be replaced by apply-csp.js plugin
 
-/dist/gmail/tutorial/come-verificare-impostazioni-inoltro-messaggi-gmail/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
 /dist/google-docs/tips-and-tricks/come-nascondere-o-mostrare-il-righello-in-documenti-google/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/google-docs/tips-and-tricks/mostrare-il-conteggio-delle-parole-in-documenti-google/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/google-maps/tips-and-tricks/google-maps-modalita-lite/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/google-docs/tutorial/impostare-il-carattere-predefinito-in-documenti-google/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tips-and-tricks/others/come-formattare-testo-messaggio-google-hangouts/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/google-docs/tips-and-tricks/la-visualizzazione-schermo-intero-in-documenti-google/index.html
+/dist/google-maps/tutorial/coordinate-di-latitudine-e-longitudine-nuovo-google-maps/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/google-maps/tutorial/visualizzazione-earth-di-google-maps/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/google-sheets/tutorial/fogli-google-calcolare-il-valore-medio-numerico-in-un-insieme-di-dati/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-htmwK6DQ/Z2pqEIkmUuye13wBH4DSl1r6fCDlYVFCsA=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/blog/google-maps-si-aggiorna-e-veste-il-material-design/index.html
+/dist/google-docs/tutorial/impostare-il-carattere-predefinito-in-documenti-google/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/google-maps/tutorial/url-google-maps-latitudine-longitudine-zoom-altitudine-rotazione-angolo-visualizzazione/index.html
+/dist/google-docs/tips-and-tricks/la-visualizzazione-schermo-intero-in-documenti-google/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/google-docs/tips-and-tricks/la-modalita-controlli-compatti-di-google-documenti/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/tips-and-tricks/others/come-modificare-testo-pagina-web-screenshot/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/tutorial/others/affiancare-due-o-piu-finestre-in-windows-7/index.html
+/dist/google-maps/tips-and-tricks/google-maps-modalita-lite/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/tutorial/others/impostare-il-carattere-predefinito-in-word/index.html
+/dist/tips-and-tricks/others/come-formattare-testo-messaggio-google-hangouts/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/google-maps/tutorial/url-google-maps-latitudine-longitudine-zoom-altitudine-rotazione-angolo-visualizzazione/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/gmail/tutorial/come-verificare-impostazioni-inoltro-messaggi-gmail/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/blog/gmail-android-vs-inbox-android/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/blog/google-maps-si-aggiorna-e-veste-il-material-design/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/blog/google-maps-suggerisce-corsia-autostrada/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/blog/token-di-sicurezza-accedere-account-google/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/blog/google-inbox-by-gmail/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/blog/google-keep-condividi-idee-note/index.html
+/dist/blog/application-launcher-for-drive-apri-file-applicazione-desktop-google-drive/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/blog/google-traduttore-trasforma-dispositivo-android-ios-traduttore-universale/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/blog/hangouts-condivisione-stato-integrazione-chiamate-telefoniche/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tutorial/others/affiancare-due-o-piu-finestre-in-windows-7/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/google-sheets/tutorial/fogli-google-calcolare-il-valore-medio-numerico-in-un-insieme-di-dati/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-htmwK6DQ/Z2pqEIkmUuye13wBH4DSl1r6fCDlYVFCsA=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/blog/google-moduli-nuovo-strumento-inserisci-immagini/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
@@ -70,88 +85,82 @@
 /dist/google-docs/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/google-maps/tutorial/coordinate-di-latitudine-e-longitudine-nuovo-google-maps/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/11ty/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/blog/google-traduttore-trasforma-dispositivo-android-ios-traduttore-universale/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/google-docs/tips-and-tricks/la-modalita-controlli-compatti-di-google-documenti/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/google-apps-script/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/gmail/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/blog/application-launcher-for-drive-apri-file-applicazione-desktop-google-drive/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/google-maps/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/blog/google-maps-suggerisce-corsia-autostrada/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/page/2/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/blog/hangouts-condivisione-stato-integrazione-chiamate-telefoniche/index.html
+/dist/blog/google-keep-condividi-idee-note/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/google-sheets/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/gmail/tutorial/index.html
+/dist/11ty/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/chi-sono/index.html
+/dist/page/3/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/blog/token-di-sicurezza-accedere-account-google/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/google-drive/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/page/5/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/termini-uso-privacy/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tailwindcss/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/page/4/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/page/6/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/page/8/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/index.html
+/dist/404.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/google-maps/tips-and-tricks/index.html
+/dist/google-docs/tips-and-tricks/mostrare-il-conteggio-delle-parole-in-documenti-google/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/google-sheets/tutorial/index.html
+/dist/page/2/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/google-apps-script/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/chi-sono/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/page/8/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/page/5/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/blog/wikilear-novita-apps-script-eleventy-tailwindcss/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/search/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/termini-uso-privacy/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tutorial/others/impostare-il-carattere-predefinito-in-word/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/gmail/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/page/9/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/gmail/tutorial/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/google-docs/tutorial/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/google-docs/tips-and-tricks/page/1/index.html
+/dist/tailwindcss/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/google-sheets/tutorial/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/page/4/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/tasti-di-scelta-rapida/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/page/7/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/tag/sicurezza/index.html
@@ -160,126 +169,117 @@
 /dist/tag/documenti-google/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/google-docs/tips-and-tricks/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/page/3/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/blog/wikilear-novita-apps-script-eleventy-tailwindcss/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tutorial/others/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/hangouts/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/microsoft-word/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/fogli-google/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/google-maps/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/javascript/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/blog/gmail-android-vs-inbox-android/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/windows/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/google-keep/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/tasti-di-scelta-rapida/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/mobile/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/android/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/google-chrome/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/inbox-by-gmail/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/applicazioni-web/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/wikilear/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/google-traduttore/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/account-google/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/ios/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/feed/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/verifica-in-due-passaggi/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/blog/page-2/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tag/screenshot/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tips-and-tricks/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
 /dist/tips-and-tricks/others/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
-
-/dist/tutorial/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/google-maps/tutorial/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/blog/page-3/index.html
+/dist/page/6/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/inbox-by-gmail/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tutorial/others/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/screenshot/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/hangouts/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/windows/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/moduli-google/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/tips-and-tricks/page-2/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/blog/index.html
+/dist/tag/google-chrome/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/android/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/google-traduttore/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/microsoft-word/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/feed/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/ios/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/javascript/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/google-keep/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/account-google/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/tag/google-drive/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
+/dist/blog/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/blog/page-2/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/verifica-in-due-passaggi/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tutorial/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/mobile/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/google-drive/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/wikilear/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
 /dist/tutorial/page-2/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/page/9/index.html
+/dist/tag/applicazioni-web/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/page/7/index.html
+/dist/google-docs/tips-and-tricks/page/1/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tips-and-tricks/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
 /dist/tag/gmail/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/search/index.html
+/dist/google-maps/tips-and-tricks/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/404.html
+/dist/blog/page-3/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 
-/dist/tag/moduli-google/index.html
+/dist/google-docs/tips-and-tricks/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/fogli-google/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/google-maps/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
+
+/dist/tag/google-maps/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' 'sha256-z5cdGpiVyxngzBkxx9aV302r5p8rYNrhTMlzEOmUHD8=' 'sha256-2daR3BDHUgNt2bWp/u+3CNDJtsIDrpz+22+QPnNNS5c=' 'unsafe-inline';style-src 'self' 'unsafe-inline';img-src 'self' https://d33wubrfki0l68.cloudfront.net data:;media-src 'self' https://d33wubrfki0l68.cloudfront.net
 # [end custom headers]
