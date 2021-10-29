@@ -1,4 +1,25 @@
 /**
+ * Copyright (c) 2021 Andrea Leardini
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of
+ * this software and associated documentation files (the "Software"), to deal in
+ * the Software without restriction, including without limitation the rights to
+ * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ * the Software, and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+/**
  * Copyright (c) 2020 Google Inc
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -22,6 +43,8 @@
 const { JSDOM } = require("jsdom");
 const cspHashGen = require("csp-hash-generator");
 const syncPackage = require("browser-sync/package.json");
+const fs = require("fs");
+const CSP = require("../../_data/csp");
 
 /**
  * Substitute the magic `HASHES` string in the CSP with the actual values of the
@@ -63,16 +86,27 @@ const addCspHash = async (rawContent, outputPath) => {
       hashes.push.apply(hashes, AUTO_RELOAD_SCRIPTS);
     }
 
-    const csp = dom.window.document.querySelector(
-      "meta[http-equiv='Content-Security-Policy']"
-    );
-    if (!csp) {
-      return content;
+    if (isDevelopmentMode()) {
+      const csp = dom.window.document.querySelector(
+        "meta[http-equiv='Content-Security-Policy']"
+      );
+      if (!csp) {
+        return content;
+      }
+
+      csp.setAttribute(
+        "content",
+        csp.getAttribute("content").replace("HASHES", hashes.join(" "))
+      );
     }
-    csp.setAttribute(
-      "content",
-      csp.getAttribute("content").replace("HASHES", hashes.join(" "))
-    );
+
+    // write CSP Policy in headers file
+    let headers = fs.readFileSync("/home/andrea/wikilear/wikilear/_headers", { encoding: "utf-8" });
+    const regExp = /(# \[custom headers\]\n)([\s\S]*)(# \[end custom headers\])/;
+    const oldCustomHeaders = headers.match(regExp)[2].toString();
+    const CSPPolicy = `Content-Security-Policy: ${CSP.apply().regular.replace("HASHES", hashes.join(" "))}`;
+    const newCustomHeaders = oldCustomHeaders.concat("\n/",outputPath,"\n  ",CSPPolicy);
+    fs.writeFileSync("/home/andrea/wikilear/wikilear/_headers", headers.replace(regExp, `$1${newCustomHeaders}\n$3`));
 
     content = dom.serialize();
   }

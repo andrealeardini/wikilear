@@ -54,7 +54,6 @@ const parse = require("csv-parse/lib/sync");
 const postcss = require("postcss");
 const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
-const CSP = require("./src/_data/csp");
 
 module.exports = function (eleventyConfig) {
   // use csv files as data
@@ -79,6 +78,12 @@ module.exports = function (eleventyConfig) {
       fs.writeFileSync("./dist/css/styles.css", result.css);
       console.log("Done");
     });
+
+    // delete custom headers
+    let headers = fs.readFileSync("./_headers", { encoding: "utf-8" });
+    const regExp = /(# \[custom headers\]\n)([\s\S]*)(# \[end custom headers\])/;
+    const text = "# this text will be replaced by apply-csp.js plugin";
+    fs.writeFileSync("./_headers", headers.replace(regExp, `$1${text}\n$3`));
   });
 
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
