@@ -101,7 +101,7 @@ const addCspHash = async (rawContent, outputPath) => {
     }
 
     // write CSP Policy in headers file
-    const headersPath = "./../../../_headers";
+    const headersPath = "/opt/build/repo/_headers";
     let headers = fs.readFileSync(headersPath, { encoding: "utf-8" });
     const regExp = /(# \[custom headers\]\n)([\s\S]*)(# \[end custom headers\])/;
     const oldCustomHeaders = headers.match(regExp)[2].toString();
