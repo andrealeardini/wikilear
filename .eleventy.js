@@ -78,12 +78,6 @@ module.exports = function (eleventyConfig) {
       fs.writeFileSync("./dist/css/styles.css", result.css);
       console.log("Done");
     });
-
-    // delete custom headers
-    let headers = fs.readFileSync("./_headers", { encoding: "utf-8" });
-    const regExp = /(# \[custom headers\]\n)([\s\S]*)(# \[end custom headers\])/;
-    const text = "# this text will be replaced by apply-csp.js plugin";
-    fs.writeFileSync("./_headers", headers.replace(regExp, `$1${text}\n$3`));
   });
 
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
@@ -91,6 +85,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/video/");
   // copy original images to use with og, twitter metadata and json-ld
   eleventyConfig.addPassthroughCopy("src/images/");
+  eleventyConfig.addPassthroughCopy("_headers");
 
   // copy and optimize Images
   eleventyConfig.addTransform(
