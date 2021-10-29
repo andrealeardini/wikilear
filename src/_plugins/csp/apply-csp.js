@@ -84,9 +84,7 @@ const addCspHash = async (rawContent, outputPath) => {
     });
     if (isDevelopmentMode()) {
       hashes.push.apply(hashes, AUTO_RELOAD_SCRIPTS);
-    }
 
-    if (isDevelopmentMode()) {
       const csp = dom.window.document.querySelector(
         "meta[http-equiv='Content-Security-Policy']"
       );
@@ -98,18 +96,19 @@ const addCspHash = async (rawContent, outputPath) => {
         "content",
         csp.getAttribute("content").replace("HASHES", hashes.join(" "))
       );
+
     }
 
+    content = dom.serialize();
+
     // write CSP Policy in headers file
-    const headersPath = "/opt/build/repo/_headers";
+    const headersPath = "./_headers";
     let headers = fs.readFileSync(headersPath, { encoding: "utf-8" });
     const regExp = /(# \[custom headers\]\n)([\s\S]*)(# \[end custom headers\])/;
     const oldCustomHeaders = headers.match(regExp)[2].toString();
     const CSPPolicy = `Content-Security-Policy: ${CSP.apply().regular.replace("HASHES", hashes.join(" "))}`;
-    const newCustomHeaders = oldCustomHeaders.concat("\n/",outputPath,"\n  ",CSPPolicy);
+    const newCustomHeaders = oldCustomHeaders.concat("\n/", outputPath, "\n  ", CSPPolicy);
     fs.writeFileSync(headersPath, headers.replace(regExp, `$1${newCustomHeaders}\n$3`));
-
-    content = dom.serialize();
   }
 
   return content;
