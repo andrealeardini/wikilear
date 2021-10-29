@@ -103,17 +103,28 @@ const addCspHash = async (rawContent, outputPath) => {
 
     // write CSP Policy in headers file
     const headersPath = "./dist/_headers";
-    const filePath = outputPath.replace("dist/", "/");
-    const filePathPrettyURL = filePath.slice(0,-10);
-    let headers = fs.readFileSync(headersPath, { encoding: "utf-8" });
-    const regExp = /(# \[custom headers\]\n)([\s\S]*)(# \[end custom headers\])/;
-    const oldCustomHeaders = headers.match(regExp)[2].toString();
-    const CSPPolicy = `Content-Security-Policy: ${CSP.apply().regular.replace("HASHES", hashes.join(" "))}`;
-    // write headers for path (/blog/index.html) and pretty url (/blog/)
-    const newCustomHeaders = oldCustomHeaders.concat(
-      "\n", filePath, "\n  ", CSPPolicy,
-      "\n", filePathPrettyURL, "\n  ", CSPPolicy,);
-    fs.writeFileSync(headersPath, headers.replace(regExp, `$1${newCustomHeaders}\n$3`));
+    const filePath = outputPath.replace("dist/", "/"); // ex.  /blog/index.html
+    const filePathPrettyURL = filePath.slice(0, -10); // ex.  /blog/
+    try {
+      let headers = fs.readFileSync(headersPath, { encoding: "utf-8" });
+      const regExp = /(# \[custom headers\]\n)([\s\S]*)(# \[end custom headers\])/;
+      const match = headers.match(regExp);
+      if (!match) {
+        throw `Check your _headers file. I couldn't find the text block for the custom headers:
+        # [custom headers]
+        # this text will be replaced by apply-csp.js plugin
+        # [end custom headers]`;
+      }
+      const oldCustomHeaders = headers.match(regExp)[2].toString();
+      const CSPPolicy = `Content-Security-Policy: ${CSP.apply().regular.replace("HASHES", hashes.join(" "))}`;
+      // write headers for full path (/blog/index.html) and pretty url (/blog/)
+      const newCustomHeaders = oldCustomHeaders.concat(
+        "\n", filePath, "\n  ", CSPPolicy,
+        "\n", filePathPrettyURL, "\n  ", CSPPolicy);
+      fs.writeFileSync(headersPath, headers.replace(regExp, `$1${newCustomHeaders}\n$3`));
+    } catch (error) {
+      console.log("[apply-csp] Something went wrong with the creation of the headers\n", error);
+    }
   }
 
   return content;
