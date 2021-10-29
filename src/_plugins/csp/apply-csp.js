@@ -103,11 +103,12 @@ const addCspHash = async (rawContent, outputPath) => {
 
     // write CSP Policy in headers file
     const headersPath = "./dist/_headers";
+    const filePath = outputPath.replace("dist/", "/")
     let headers = fs.readFileSync(headersPath, { encoding: "utf-8" });
     const regExp = /(# \[custom headers\]\n)([\s\S]*)(# \[end custom headers\])/;
     const oldCustomHeaders = headers.match(regExp)[2].toString();
     const CSPPolicy = `Content-Security-Policy: ${CSP.apply().regular.replace("HASHES", hashes.join(" "))}`;
-    const newCustomHeaders = oldCustomHeaders.concat("\n/", outputPath, "\n  ", CSPPolicy);
+    const newCustomHeaders = oldCustomHeaders.concat("\n", filePath, "\n  ", CSPPolicy);
     fs.writeFileSync(headersPath, headers.replace(regExp, `$1${newCustomHeaders}\n$3`));
   }
 
