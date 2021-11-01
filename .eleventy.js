@@ -70,8 +70,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.on('beforeBuild', () => {
     // Run me before the build starts
     console.log("Building CSS...")
-    let css = fs.readFileSync("src/css/styles.css", { encoding: "utf-8"});
-    result = postcss([tailwindcss, autoprefixer ]).process(css.toString(), {
+    let css = fs.readFileSync("src/css/styles.css", { encoding: "utf-8" });
+    result = postcss([tailwindcss, autoprefixer]).process(css.toString(), {
       from: "src/css/styles.css"
     }).then((result) => {
       fs.mkdirSync("./dist/css", { recursive: true });
