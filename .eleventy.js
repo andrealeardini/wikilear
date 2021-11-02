@@ -90,7 +90,6 @@ module.exports = function (eleventyConfig) {
       console.log("[beforeBuild] Something went wrong with the _headers file\n", error);
     }
   });
-  });
 
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
