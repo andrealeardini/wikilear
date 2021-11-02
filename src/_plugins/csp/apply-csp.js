@@ -105,9 +105,16 @@ const addCspHash = async (rawContent, outputPath) => {
         const oldCustomHeaders = headers.match(regExp)[2].toString();
         const CSPPolicy = `Content-Security-Policy: ${CSP.apply().regular.replace("HASHES", hashes.join(" "))}`;
         // write headers for full path (/blog/index.html) and pretty url (/blog/)
-        const newCustomHeaders = oldCustomHeaders.concat(
-          "\n", filePath, "\n  ", CSPPolicy,
-          "\n", filePathPrettyURL, "\n  ", CSPPolicy);
+        // 404.html require a different pattern.
+        // use CSP for 404.html as a generic CSP policy to create a CSP header for pages not found
+        // in the site
+        const newCustomHeaders = (outputPath != "_site/404.html")
+          ? oldCustomHeaders.concat(
+            "\n", filePath, "\n  ", CSPPolicy,
+            "\n", filePathPrettyURL, "\n  ", CSPPolicy)
+          : oldCustomHeaders.concat(
+            "\n", "/404.html", "\n  ", CSPPolicy,
+            "\n", "/*", "\n  ", CSPPolicy)
         fs.writeFileSync(headersPath, headers.replace(regExp, `$1${newCustomHeaders}\n$3`));
       } catch (error) {
         console.log("[apply-csp] Something went wrong with the creation of the csp headers\n", error);
