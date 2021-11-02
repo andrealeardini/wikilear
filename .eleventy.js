@@ -270,6 +270,25 @@ module.exports = function (eleventyConfig) {
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
+    middleware: function (req, res, next) {
+      const url = new URL(req.originalUrl, `http://${req.headers.host}/)`);
+      if (url.pathname.endsWith("/") || url.pathname.endsWith(".html")) {
+        const pathNameEscaped = url.pathname.replace(/[.*+?^${}()\/|[\]\\]/g, '\\$&');
+        // add CSP Policy
+        try {
+          let headers = fs.readFileSync("./dist/_headers", { encoding: "utf-8" });
+          // don't use literals string to avoid double escape
+          const pattern = "(" + pathNameEscaped + "\n  Content-Security-Policy: )(.*)";
+          const match = headers.match(new RegExp(pattern));
+          if (match) {
+            res.setHeader("Content-Security-Policy", match[2]);
+          }
+        } catch (error) {
+          console.log("[setBrowserSyncConfig] Something went wrong with the creation of the headers\n", error);
+        }
+      }
+      next();
+    },
     callbacks: {
       ready: function (err, browserSync) {
         const content_404 = fs.readFileSync("dist/404.html");

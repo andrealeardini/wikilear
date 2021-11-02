@@ -13,6 +13,6 @@
 /favicon.ico
   cache-control: public,max-age=31536000
 
-# [custom headers]
+# [csp headers]
 # this text will be replaced by apply-csp.js plugin
-# [end custom headers]
+# [end csp headers]
