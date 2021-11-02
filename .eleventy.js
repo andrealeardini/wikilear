@@ -83,8 +83,8 @@ module.exports = function (eleventyConfig) {
     // Don't use addPassthroughCopy to prevent apply-csp from running before the _header file has been copied
     try {
       const headers = fs.readFileSync("./_headers", { encoding: "utf-8" });
-      fs.mkdirSync("./_site", { recursive: true });
-      fs.writeFileSync("_site/_headers", headers);
+      fs.mkdirSync("./dist", { recursive: true });
+      fs.writeFileSync("dist/_headers", headers);
       console.log("_header copied");
     } catch (error) {
       console.log("[beforeBuild] Something went wrong with the _headers file\n", error);
