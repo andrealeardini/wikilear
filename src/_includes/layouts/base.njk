@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% if page.url=="/404.html" %}
+  <meta http-equiv="Content-Security-Policy" content="{{ csp.regular | safe }}">
+  {% endif %}
   <meta name="color-scheme" content="dark light" />
   <meta name="theme-color" content="#e5e7eb">
   {% block ogType %}
