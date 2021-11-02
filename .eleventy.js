@@ -78,6 +78,18 @@ module.exports = function (eleventyConfig) {
       fs.writeFileSync("./dist/css/styles.css", result.css);
       console.log("Done");
     });
+
+    // Copy _header to dist
+    // Don't use addPassthroughCopy to prevent apply-csp from running before the _header file has been copied
+    try {
+      const headers = fs.readFileSync("./_headers", { encoding: "utf-8" });
+      fs.mkdirSync("./_site", { recursive: true });
+      fs.writeFileSync("_site/_headers", headers);
+      console.log("_header copied");
+    } catch (error) {
+      console.log("[beforeBuild] Something went wrong with the _headers file\n", error);
+    }
+  });
   });
 
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
@@ -85,7 +97,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/video/");
   // copy original images to use with og, twitter metadata and json-ld
   eleventyConfig.addPassthroughCopy("src/images/");
-  eleventyConfig.addPassthroughCopy("_headers");
 
   // copy and optimize Images
   eleventyConfig.addTransform(
