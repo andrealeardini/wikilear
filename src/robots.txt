@@ -1,6 +1,4 @@
 User-agent: *
 
 Allow: /
-Disallow: /tag/
-Disallow: /page/
 Sitemap: https://www.wikilear.it/sitemap.xml
