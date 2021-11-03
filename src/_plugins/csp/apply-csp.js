@@ -86,20 +86,6 @@ const addCspHash = async (rawContent, outputPath) => {
       hashes.push.apply(hashes, AUTO_RELOAD_SCRIPTS);
     }
 
-    // write CSP meta tag only for 404.html
-    // this guarantees at least a minimum csp policy for pages not found
-    if (outputPath === "dist/404.html") {
-      const csp = dom.window.document.querySelector(
-        "meta[http-equiv='Content-Security-Policy']"
-      );
-      if (csp) {
-        csp.setAttribute(
-          "content",
-          csp.getAttribute("content").replace("HASHES", hashes.join(" "))
-        );
-      }
-    }
-
     content = dom.serialize();
 
     // write CSP Policy in headers file
