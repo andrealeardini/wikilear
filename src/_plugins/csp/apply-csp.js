@@ -125,7 +125,8 @@ const addCspHash = async (rawContent, outputPath) => {
           "\n", filePath, "\n  ", CSPPolicy,
           "\n", filePathPrettyURL, "\n  ", CSPPolicy)
         : oldCustomHeaders.concat(
-          "\n", "/404.html", "\n  ", CSPPolicy);
+          "\n", "/404.html", "\n  ", CSPPolicy,
+          "\n", "/*", "\n  ", CSPPolicy);
       fs.writeFileSync(headersPath, headers.replace(regExp, `$1${newCustomHeaders}\n$3`));
     } catch (error) {
       console.log("[apply-csp] Something went wrong with the creation of the csp headers\n", error);
