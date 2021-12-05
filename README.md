@@ -10,7 +10,7 @@ Puoi segnalare bug nel codice o errori nel testo [inoltrando un issue.](https://
 
 ## Crediti
 
-Per realizzare Wikilear ho tratto spunto principalmente dalle tecniche descritte da Andy Bell nel suo corso [Eleventy from Scratch.](https://piccalil.li/course/learn-eleventy-from-scratch/). Ho cercato di dare un tocco personale integrando quanto ho imparato con alcune soluzioni utilizzate da Malte nel suo ottimo template [Eleventy High Performance.](https://github.com/google/eleventy-high-performance-blog)
+Per realizzare Wikilear ho tratto spunto principalmente dalle tecniche descritte da Andy Bell nel suo corso [Eleventy from Scratch.](https://piccalil.li/course/learn-eleventy-from-scratch/) Ho cercato di dare un tocco personale integrando quanto ho imparato con alcune soluzioni utilizzate da Malte nel suo ottimo template [Eleventy High Performance.](https://github.com/google/eleventy-high-performance-blog)
 
 
 ## Licenza
