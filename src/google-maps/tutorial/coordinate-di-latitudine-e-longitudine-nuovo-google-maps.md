@@ -17,7 +17,7 @@ Se usi Google Maps sai quanto sia facile trovare una località o un'attività co
 
 - [Quando usare le coordinate geografiche in Google Maps](#quando-usare-le-coordinate-geografiche-in-google-maps)
 - [Come inserire le coordinate di latitudine e longitudine in Google Maps](#come-inserire-le-coordinate-di-latitudine-e-longitudine-in-google-maps)
-- [Come e condividere le coordinate di un luogo](#come-trovare-e-condividere-le-coordinate-di-un-luogo)
+- [Come trovare e condividere le coordinate di un luogo](#come-trovare-e-condividere-le-coordinate-di-un-luogo)
 
 </details>
 </nav>
