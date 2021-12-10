@@ -46,7 +46,7 @@ La griglia è etichettata lungo gli assi X e Y utilizzando un insieme specifico 
 
 Questa griglia di partenza forma quello che viene chiamato globo digitale. Ogni cella della griglia sul globo digitale viene quindi ulteriormente suddivisa, gli assi X e Y vengono nuovamente etichettati con i 20 caratteri sopra e il processo viene ripetuto per creare un Plus Code completo. Nel caso dell'ufficio di Google a Dublino ciò si tradurrebbe in un Plus Code completo di `9C5M8QQ7+V8R`.
 
-I Plus Code funzionano un po' come i numeri telefonici. Prendiamo ad esempio il numero italiano `+39 06 12345678`. Abbiamo un prefisso internazionale (`+39`), uno locale (`06` che corrisponde a Roma) e poi il numero dell'utente (`12345678`). Se mi trovo in Italia non c'è bisogno di comporre il prefisso internazionale (`+39`), mentre se sono all'estero devo specificarlo. Una volta si poteva omettere anche il prefisso locale, così che se mi trovavo a Roma avrei potuto digitare solamente `12345678`. Per i Plus Code si segue un principio simile. I primi quattro caratteri del codice possono essere omessi se ti trovi già in zona.
+I Plus Codes funzionano un po' come i numeri telefonici. Prendiamo ad esempio il numero italiano `+39(06)12345678`. Abbiamo un prefisso internazionale (`+39`), uno locale (`06` che corrisponde a Roma) e poi il numero dell'utente (`12345678`). Se mi trovo in Italia non c'è bisogno di comporre il prefisso internazionale (`+39`), mentre se sono all'estero devo specificarlo. Una volta si poteva omettere anche il prefisso locale, così che se mi trovavo a Roma avrei potuto digitare solamente `12345678`. Per i Plus Codes si segue un principio simile. I primi quattro caratteri del codice possono essere omessi se ti trovi già in zona.
 
 Per esempio, se mi trovo a Dublino, il Plus Code per l'ufficio di Google di Dublino può essere abbreviato in `8QQ7+V8R`. Se mi trovo invece in Irlanda, ma non a Dublino, devo specificare anche la città o in alternativa il terzo e il quarto carattere del codice (`5M`). Se cerco l'indirizzo e non sono in Irlanda devo specificare i primi quattro caratteri del codice (`9C5M`) o in alternativa la città (Dublino). I codici `9C5M8QQ7+V8R` e `8QQ7+V8R Dublino` rappresentano quindi lo stesso luogo e permettono di raggiungere la sede di Google a Dublino a partire da qualsiasi luogo del pianeta.
 
@@ -67,10 +67,10 @@ Per trovare il Plus Code di un qualsiasi punto sulla mappa:
 ![Riquadro informativo con le coordinate del luogo](/images/plus-code-riquadro-informativo.png 'Riquadro informativo con le coordinate del luogo'){.mt-4}
 
 3. Fai clic sulle coordinate del luogo nel riquadro informativo
-4. Verrà visualizzato un pannello sulla sinistra con varie informazioni tra cui il Plus Code  <img src="/images/ic_plus_code.png" width="16" height="16" class="w-4 inline-block">
+4. Verrà visualizzato un pannello sulla sinistra con varie informazioni tra cui il Plus Code&nbsp;<img src="/images/ic_plus_code.png" width="16" height="16" class="w-4 inline-block">
 ![Pannello informativo con il Plus Code del luogo](/images/plus-code-pannello-google-maps.png){.mt-4}
 
-5. Se vuoi copiare o condividere il codice fai clic sul Plus Code <img src="/images/ic_plus_code.png" width="16" height="16" class="w-4 inline-block">
+5. Se vuoi copiare o condividere il codice fai clic sul Plus Code&nbsp;<img src="/images/ic_plus_code.png" width="16" height="16" class="w-4 inline-block">
 6. Incolla il testo copiato in un messaggio email o invialo in un'app di messaggistica (WhatsApp, Chat, Messenger, Telegram, ecc.)
 
 ## Come trovare un luogo usando un Plus Code in Google Maps, Google Earth e Ricerca Google
