@@ -198,7 +198,7 @@ Vediamo cosa scrivere per calcolare la media del fatturato per ogni settore.
 
 - *intervallo_valori_da_filtrare* -> nella nostra tabella di esempio, le righe da 2 a 12 corrispondono al fatturato realizzato da un rappresentante per ciascun settore merceologico in ciascuna area (ogni riga è una registrazione). Ci interessa la media per ogni settore quindi i dati da filtrare si trovano nella **colonna C** (Settore).
 - *criterio* -> il criterio è il nome del settore di cui vogliamo calcolare la media (attrezzature, cancelleria, libri).
-- *intervallo_media* -> il terzo parametro è facoltativo e quando corrisponde a *intervallo_valori<WBR>_da_filtrare</WBR>* può essere ommesso. Nel nostro caso i valori di cui calcolare la media (il fatturato) si trovano in un'altra colonna **(colonna D)** rispetto ai valori da filtrare **(colonna C)** quindi dobbiamo specificare anche *intervallo_media*.
+- *intervallo_media* -> il terzo parametro è facoltativo e quando corrisponde a *intervallo_valori<wbr>_da_filtrare</wbr>* può essere ommesso. Nel nostro caso i valori di cui calcolare la media (il fatturato) si trovano in un'altra colonna **(colonna D)** rispetto ai valori da filtrare **(colonna C)** quindi dobbiamo specificare anche *intervallo_media*.
 
 La formula per calcolare la media del fatturato realizzato per un settore sarà `=MEDIA.SE(C2:C12; [criterio]; D2:D12)` dove al posto di [criterio] dobbiamo indicare il nome del settore.
 
