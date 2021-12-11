@@ -47,7 +47,7 @@ Per trovare le coordinate di un qualsiasi punto sulla mappa:
 ![Menu di scelta rapida, la prima voce riporta le coordinate del luogo](/images/google-maps-trovare-coordinate-luogo.png 'La prima voce del menu di scelta rapida indica le coordinate del luogo selezionato'){.mt-4}**Le coordinate del punto selezionato nella mappa sono 41.89017, 12.49165**
 
 3. Se vuoi condividere le coordinate con qualcun altro fai clic sulle coordinate per copiarle negli appunti
-4. Per condividere il luogo, incolla il testo copiato in un messaggio email o invialo in un'app di messagistica (WhatsApp, Chat, Messenger, Telegram, ecc.)
+4. Per condividere il luogo, incolla il testo copiato in un messaggio email o invialo in un'app di messaggistica (WhatsApp, Chat, Messenger, Telegram, ecc.)
 
 Ora che sai come utilizzare le coordinate di latitudine e longitudine potrai usare Google Maps per trovare e condividere qualsiasi punto o zona della mappa, anche quelle più remote! Se l'articolo ti è stato utile non dimenticare di condividerlo con i tuoi amici!
 
