@@ -237,10 +237,7 @@
   }
 
   .markdown table.responsive-table td.responsive-table-header {
-    @apply font-bold;
-    width: 20%;
-    flex-grow: 0;
-    flex-shrink: 0;
+    @apply w-1/5 font-bold grow-0 shrink-0;
   }
 
   .markdown table.responsive-table tr {
@@ -248,15 +245,11 @@
   }
 
   .markdown table.responsive-table td.first-column {
-    width: 15%;
-    flex-grow: 0;
-    flex-shrink: 0;
+    @apply w-1/6 font-bold grow-0 shrink-0;
   }
 
   .markdown table.responsive-table td.second-column {
-    width: 65%;
-    flex-grow: 0;
-    flex-shrink: 1;
+    @apply w-8/12 font-bold grow-0 shrink;
   }
 
   .markdown table.responsive-table td {
@@ -342,7 +335,7 @@
     flex-basis: 50%;
   }
 
-  @variants responsive {
+  responsive {
     .keep-tall {
       @apply max-h-3/4v w-auto;
     }
