@@ -26,7 +26,7 @@ Se usi Google Maps sai quanto sia facile trovare una località o un'attività co
 
 [Le coordinate geografiche](https://it.wikipedia.org/wiki/Coordinate_geografiche){rel="noopener noreferrer"} sono indispensabili quando vuoi individuare un punto sulla mappa con estrema precisione. Ma non basta avere l'indirizzo? In linea di massima sì. Comunque a volte l'indirizzo potrebbe essere incompleto (forse senza numero civico), oppure la via che stai cercando non è stata ancora mappata su Google Maps. In questi casi la posizione fornita è approssimativa, impossibile da trovare o nella peggiore delle ipotesi completamente sbagliata. Ma se hai a disposizione latitudine e longitudine di un luogo puoi visualizzarlo con precisione sulla mappa.
 
-> Per condividere un luogo senza indirizzo puoi utilizzare anche i [Plus Codes.](/google-maps/tutorial/#come-trovare-un-luogo-usando-un-plus-code-in-google-maps%2C-google-earth-e-ricerca-google/)
+> Per condividere un luogo senza indirizzo puoi utilizzare anche i [Plus Codes.](/google-maps/tutorial/cosa-sono-plus-code-come-usarli-con-google-maps-google-earth-ricerca-google/)
 
 ## Come inserire le coordinate di latitudine e longitudine in Google Maps
 
