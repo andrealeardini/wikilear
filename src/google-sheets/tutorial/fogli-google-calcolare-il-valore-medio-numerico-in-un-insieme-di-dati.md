@@ -40,7 +40,7 @@ Premi il pulsante **Formule** sotto la tabella per visualizzare le formule al po
 Fogli Google dispone di diverse funzioni per calcolare la media aritmetica. Consulta [gli esempi](#esempi) per capire quale usare in base all'insieme di dati che devi analizzare.
 
 | Funzione         | Descrizione |
-|-- | -- | -- |
+| --- | --- |
 | [MEDIA](#media-(average))  | Restituisce il valore numerico della media in un insieme di dati, ignorando il testo.|
 | [MEDIA.SE](#media.se-(averageif)) | Restituisce la media numerica di un intervallo in base a un criterio.|
 | [MEDIA.PIÙ.SE](#media.più.se-(averageifs)) | Restituisce la media numerica di un intervallo che dipende da più criteri.|

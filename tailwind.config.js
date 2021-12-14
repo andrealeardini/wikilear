@@ -1,12 +1,10 @@
 module.exports = {
   darkMode: "class",
-  purge: {
-    content: ["./src/**/*.md", "./src/**/*.njk", "./src/**/*.js"],
-    // direc-link class is added by markdown-anchor (eleventy) after purge process
-    options: {
-      safelist: ["direct-link"],
-    },
-  },
+  content: [
+    "./src/**/*.{md,njk,js}"
+  ],
+  // direc-link class is added by markdown-anchor (eleventy)
+  safelist: ["direct-link"],
   theme: {
     extend: {
       gridTemplateRows: {
@@ -41,13 +39,6 @@ module.exports = {
         "5/11": "45.45454%",
       },
     },
-  },
-  variants: {
-    extend: {
-      borderWidth: ['last'],
-      display: ['last'],
-      margin: ['last'],
-    }
   },
   plugins: [],
 };

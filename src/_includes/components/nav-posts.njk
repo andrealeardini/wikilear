@@ -8,7 +8,7 @@
     <nav class="my-10 bg-gray-100 dark:bg-gray-600 py-2 px-2 md:px-3 rounded-lg" aria-label="Link agli articoli">
       <ol class="w-full mt-4 flex justify-between font-bold">
         {% if previousPost %}
-        <li {% if nextPost %} class="flex-shrink-0 h-full w-1/2"{% endif %}>
+        <li {% if nextPost %} class="shrink-0 h-full w-1/2"{% endif %}>
           <a href="{{ previousPost.url }}" title="Articolo precedente">
             <div class="flex flex-row items-center">
             <svg
@@ -33,7 +33,7 @@
         </li>
         {% endif %}
         {% if nextPost %}
-        <li class="text-right h-full w-1/2 {% if previousPost %}flex-shrink-0{% else %}flex-grow{% endif %}">
+        <li class="text-right h-full w-1/2 {% if previousPost %}shrink-0{% else %}flex-grow{% endif %}">
           <div class="pl-4">
             <a href="{{ nextPost.url }}" title="Articolo successivo" class="flex flex-col items-end">
               <div class="flex flex-row items-center">
