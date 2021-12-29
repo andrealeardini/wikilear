@@ -16,9 +16,8 @@ image_description: Logo Plus Codes
 <details class="bg-gray-100 dark:bg-gray-800 text-sm lg:text-base p-4" open>
   <summary>Contenuto</summary>
 
-- [Cosa sono i Plus Codes](#cosa-sono-i-plus-code)
-- [Quando usare i Plus Codes in Google Maps](#quando-usare-i-plus-code-in-google-maps)
-- [Come trovare e condividere il Plus Code di un luogo](#trovare-e-condividere-il-plus-code-di-un-luogo)
+- [Cosa sono i Plus Codes](#cosa-sono-i-plus-codes)
+- [Come trovare e condividere il Plus Code di un luogo](#come-trovare-e-condividere-il-plus-code-di-un-luogo)
 - [Come trovare un luogo usando il Plus Code in Google Maps, Google Earth e Ricerca Google](#come-trovare-un-luogo-usando-un-plus-code-in-google-maps%2C-google-earth-e-ricerca-google)
 
 </details>
@@ -58,7 +57,7 @@ Tornando all'esempio della griglia, gli ultimi quattro caratteri del codice a si
 
 > I Plus Codes prendono il nome dal segno '+' che è una delle loro caratteristiche chiave. Un codice completo deve avere almeno due caratteri dopo il segno '+'.
 
-## Trovare e condividere il Plus Code di un luogo
+## Come trovare e condividere il Plus Code di un luogo
 
 Per trovare il Plus Code di un qualsiasi punto sulla mappa:
 
