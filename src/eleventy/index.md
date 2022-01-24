@@ -117,7 +117,7 @@ Per vedere il risultato di Eleventy apri la pagina [http://localhost:8080/README
 
 - [Documentazione ufficiale (in inglese)](https://www.11ty.dev/docs/){target="\_blank" rel="noopener noreferrer"} la guida di riferimento di Eleventy.
 - [Tutorial (in inglese)](https://www.11ty.dev/docs/tutorials/){target="\_blank" rel="noopener noreferrer"} un corposo elenco di tutorial di vari autori curato da Zach Leatherman (il creatore di Eleventy)
-- [Learn Eleventy From Scratch (in inglese, a pagamento)](https://piccalil.li/course/learn-eleventy-from-scratch/){target="\_blank" rel="noopener noreferrer"} uno dei migliori corsi online per costruire da zero un sito con Eleventy. Ringrazio [Andy Bell](https://twitter.com/piccalilli_) per avermi dato l'opportunita di accedervi gratuitamente.
+- [Learn Eleventy From Scratch (in inglese)](https://piccalil.li/course/learn-eleventy-from-scratch/){target="\_blank" rel="noopener noreferrer"} uno dei migliori corsi online per costruire da zero un sito con Eleventy.
 
 _Credit:_ alcune informazioni sono state tradotte e adattate dal [sito ufficiale di Eleventy](https://www.11ty.dev/){target="\_blank" rel="noopener noreferrer"}
 {class="text-sm mt-8 mb-0"}
