@@ -50,7 +50,7 @@ const stat = promisify(fs.stat);
 const execFile = promisify(require("child_process").execFile);
 const { minify } = require("terser");
 const environment = require("./src/_data/environment");
-const parse = require("csv-parse/lib/sync");
+const { parse } = require("csv-parse/sync");
 const postcss = require("postcss");
 const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
@@ -67,17 +67,19 @@ module.exports = function (eleventyConfig) {
   });
 
   // build CSS before build eleventy pages
-  eleventyConfig.on('beforeBuild', () => {
+  eleventyConfig.on("beforeBuild", () => {
     // Run me before the build starts
-    console.log("Building CSS...")
+    console.log("Building CSS...");
     let css = fs.readFileSync("src/css/styles.css", { encoding: "utf-8" });
-    result = postcss([tailwindcss, autoprefixer]).process(css.toString(), {
-      from: "src/css/styles.css"
-    }).then((result) => {
-      fs.mkdirSync("./dist/css", { recursive: true });
-      fs.writeFileSync("./dist/css/styles.css", result.css);
-      console.log("Done");
-    });
+    result = postcss([tailwindcss, autoprefixer])
+      .process(css.toString(), {
+        from: "src/css/styles.css",
+      })
+      .then((result) => {
+        fs.mkdirSync("./dist/css", { recursive: true });
+        fs.writeFileSync("./dist/css/styles.css", result.css);
+        console.log("Done");
+      });
 
     // Copy _header to dist
     // Don't use addPassthroughCopy to prevent apply-csp from running before the _header file has been copied
@@ -87,7 +89,10 @@ module.exports = function (eleventyConfig) {
       fs.writeFileSync("dist/_headers", headers);
       console.log("_header copied");
     } catch (error) {
-      console.log("[beforeBuild] Something went wrong with the _headers file\n", error);
+      console.log(
+        "[beforeBuild] Something went wrong with the _headers file\n",
+        error
+      );
     }
   });
 
@@ -115,7 +120,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"), {
     preAttributes: {
-      tabindex: 0
+      tabindex: 0,
     },
   });
   eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
@@ -155,7 +160,10 @@ module.exports = function (eleventyConfig) {
     "w3DateFilter",
     require("./src/_filters/w3-date-filter.js")
   );
-  eleventyConfig.addFilter("sheet", require("./src/_includes/components/sheet/filter.js"));
+  eleventyConfig.addFilter(
+    "sheet",
+    require("./src/_includes/components/sheet/filter.js")
+  );
   eleventyConfig.addFilter("trimHTML", require("./src/_filters/trimHTML.js"));
 
   // https://www.11ty.dev/docs/quicktips/inline-css/
@@ -179,21 +187,21 @@ module.exports = function (eleventyConfig) {
   );
 
   // https://github.com/google/eleventy-high-performance-blog/blob/90bd7820b010d9500830fa5bcb3f33578f700b24/.eleventy.js#L78
-  eleventyConfig.addNunjucksAsyncFilter("addHash", function (
-    absolutePath,
-    callback
-  ) {
-    readFile(`dist${absolutePath}`, {
-      encoding: "utf-8",
-    })
-      .then((content) => {
-        return hasha.async(content);
+  eleventyConfig.addNunjucksAsyncFilter(
+    "addHash",
+    function (absolutePath, callback) {
+      readFile(`dist${absolutePath}`, {
+        encoding: "utf-8",
       })
-      .then((hash) => {
-        callback(null, `${absolutePath}?hash=${hash.substr(0, 10)}`);
-      })
-      .catch((error) => callback(error));
-  });
+        .then((content) => {
+          return hasha.async(content);
+        })
+        .then((hash) => {
+          callback(null, `${absolutePath}?hash=${hash.substr(0, 10)}`);
+        })
+        .catch((error) => callback(error));
+    }
+  );
 
   // filter tags to shows
   eleventyConfig.addFilter(
@@ -283,18 +291,27 @@ module.exports = function (eleventyConfig) {
     middleware: function (req, res, next) {
       const url = new URL(req.originalUrl, `http://${req.headers.host}/)`);
       if (url.pathname.endsWith("/") || url.pathname.endsWith(".html")) {
-        const pathNameEscaped = url.pathname.replace(/[.*+?^${}()\/|[\]\\]/g, '\\$&');
+        const pathNameEscaped = url.pathname.replace(
+          /[.*+?^${}()\/|[\]\\]/g,
+          "\\$&"
+        );
         // add CSP Policy
         try {
-          let headers = fs.readFileSync("./dist/_headers", { encoding: "utf-8" });
+          let headers = fs.readFileSync("./dist/_headers", {
+            encoding: "utf-8",
+          });
           // don't use literals string to avoid double escape
-          const pattern = "(" + pathNameEscaped + "\n  Content-Security-Policy: )(.*)";
+          const pattern =
+            "(" + pathNameEscaped + "\n  Content-Security-Policy: )(.*)";
           const match = headers.match(new RegExp(pattern));
           if (match) {
             res.setHeader("Content-Security-Policy", match[2]);
           }
         } catch (error) {
-          console.log("[setBrowserSyncConfig] Something went wrong with the creation of the headers\n", error);
+          console.log(
+            "[setBrowserSyncConfig] Something went wrong with the creation of the headers\n",
+            error
+          );
         }
       }
       next();
