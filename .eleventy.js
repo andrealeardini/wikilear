@@ -139,10 +139,16 @@ module.exports = function (eleventyConfig) {
     .disable("code")
     .use(markdownItAttrs)
     .use(markdownItAnchor, {
-      permalink: true,
-      permalinkClass: "direct-link",
-      permalinkSymbol: "#",
+      permalink: markdownItAnchor.permalink.linkInsideHeader({
+        class: "direct-link",
+        symbol: `
+      <span class="sr-only">Jump to heading</span>
+      <span aria-hidden="true">🔗</span>
+    `,
+        placement: "after",
+      }),
     });
+
   eleventyConfig.setLibrary("md", markdownLib);
 
   // https://github.com/google/eleventy-high-performance-blog/blob/60902bfdaf764f5b16b2af62cf10f63e0e74efbc/.eleventy.js#L144
