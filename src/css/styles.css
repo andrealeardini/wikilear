@@ -198,7 +198,6 @@
   }
 
   /*! purgecss end ignore */
-
 }
 
 @layer components {
@@ -283,7 +282,7 @@
   .markdown table.responsive-table tr {
     @apply lg:table-row;
   }
- }
+}
 
 @layer utilities {
   :root {
@@ -291,7 +290,9 @@
   }
 
   /* https://twitter.com/JoshWComeau/status/1332015868725891076?s=20 */
-  h2, h3, .heading {
+  h2,
+  h3,
+  .heading {
     scroll-margin-top: 72px;
     scroll-snap-margin-top: 72px;
   }
@@ -303,7 +304,6 @@
   .dark img.invert {
     filter: invert(0);
   }
-
 
   /* TODO: use new Tailwind plugin */
   /* aspect ratio */
@@ -322,7 +322,7 @@
   [style*="--aspect-ratio"]::before {
     content: "";
     display: block;
-    padding-bottom: calc( 100% / (var(--aspect-ratio)) );
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
   }
   [style*="--aspect-ratio"] > :first-child {
     position: absolute;
