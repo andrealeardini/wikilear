@@ -236,7 +236,7 @@
   }
 
   .markdown table.responsive-table td.responsive-table-header {
-    @apply w-1/5 font-bold grow-0 shrink-0;
+    @apply w-[20%] font-bold grow-0 shrink-0;
   }
 
   .markdown table.responsive-table tr {
@@ -244,11 +244,11 @@
   }
 
   .markdown table.responsive-table td.first-column {
-    @apply w-1/6 font-bold grow-0 shrink-0;
+    @apply w-[15%] grow-0 shrink-0;
   }
 
   .markdown table.responsive-table td.second-column {
-    @apply w-8/12 font-bold grow-0 shrink;
+    @apply w-[65%] grow-0 shrink;
   }
 
   .markdown table.responsive-table td {
