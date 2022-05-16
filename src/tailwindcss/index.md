@@ -22,39 +22,79 @@ Contenuto
 
 ## Panoramica
 
-Tailwind CSS è un Framework CSS che si distingue dai competitor (Bootstrap in primis) per la sua filosofia [Utility-First](https://tailwindcss.com/docs/utility-first){rel="noopener noreferrer"}.
+Tailwind CSS è un Framework CSS che si distingue per il suo approccio [Utility-First](https://tailwindcss.com/docs/utility-first){rel="noopener noreferrer"}. Non dispone di componenti pronti all'uso ma fornisce delle classi predefinite per applicare gli stili CSS direttamente nel markup HTML. Il vantaggio principale è quello di non perdere tempo nell'inventarsi nomi di classi fantasiosi e allo stesso tempo permette di definire un design system completamente personalizzato ma vincolato a valori predefiniti.
+
+Superato il primo impatto, Tailwind CSS permette di creare velocemente prototipi di pagine o elementi HTML ma non si limita a questo. Può essere usato anche in progetti complessi con il notevole vantaggio che qualsiasi programmatore che conosce Tailwind CSS è in grado di comprendere gli stili applicati ai vari elementi leggendo direttamente il markup HTML.
 
 ## Per iniziare
 
-La configurazione di Tailwind varia in base al progetto in cui deve essere integrato. Nella maggior parte dei casi si ottiene la massima versatilità installandolo come plugin di **PostCSS.** Oltre a PostCSS è raccomdandata anche l'installazione di **autoprefixer** dal momento che Tailwind non aggiunge in automatico i prefissi per i vari vendor.
+Il modo più semplice e veloce per iniziare a utilizzare Tailwind CSS da zero è con lo strumento Tailwind CLI (l'interfaccia a riga di comando di Tailwind CSS).
 
-Installa Tailwind e le sue dipendenze con il comando:
+1. **Installa Tailwind CSS**
+Installa `tailwindcss` tramite npm e crea il file `tailwind.config.js`
 
-```bash
-npm install tailwindcss@latest postcss@latest autoprefixer@latest
-```
+   **Terminale**{class="text-sm"}
 
-Crea un file CSS e usa la direttiva `@tailwind` per iniettare gli stili per **base, component** e **utilities** di Tailwind.
+   ```bash
+   npm install -D tailwindcss
+   npx tailwindcss init
+   ```
 
-```bash
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
+2. **Configura i percorsi dei modelli**
+Aggiungi i percorsi a tutti i tuoi modelli nel file `tailwind.config.js`. Se utilizzi le classi di Tailwind CSS in altri file, ad esempio in file javascript, aggiungi anche i percorsi di questi file.
 
-Aggiungi le utility di Tailwind direttamente nel tuo markup HTML
+   **tailwind.config.js**{class="text-sm"}
 
-```html
-<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-  <div class="shrink-0">
-    <img class="h-12 w-12" src="/img/logo.svg" alt="WLChat Logo">
-  </div>
-  <div>
-    <div class="text-xl font-medium text-black">Wikilear Chat</div>
-    <p class="text-gray-500">Hai un nuovo messaggio!</p>
-  </div>
-</div>
-```
+   ```bash
+   module.exports = {
+     content: ["./src/**/*.{html,js}"],
+     theme: {
+       extend: {},
+     },
+     plugins: [],
+   }
+   ```
+
+3. **Aggiungi le direttive Tailwind al tuo CSS**
+Aggiungi le direttive `@tailwind` per ciascuno dei layer di Tailwind al tuo file CSS principale.
+
+   **src/input.css**{class="text-sm"}
+
+   ```css
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+   ```
+
+4. **Avvia il processo di compilazione di Tailwind CLI**
+Esegui lo strumento CLI per cercare le classi utilizzate nei tuoi modelli e creare il corrispondente codice CSS. Utilizza l'opzione `--watch` per indicare a Tailwind CLI di ricompilare il file CSS in caso di modifiche ai modelli.
+
+   **Terminale**{class="text-sm"}
+
+   ```bash
+   npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+   ```
+
+5. **Aggiungi le utility di Tailwind direttamente nel tuo markup HTML**
+Aggiungi il tuo file CSS compilato nella sezione `<head>` e inizia a utilizzare le classi di utilità di Tailwind per definire lo stile del tuo contenuto.
+
+   **src/index.html**{class="text-sm"}
+
+   ```html
+   <!doctype html>
+   <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/dist/output.css" rel="stylesheet">
+    </head>
+    <body>
+      <h1 class="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+    </body>
+   </html>
+   ```
 
 ## Risorse utili (siti esterni)
 
