@@ -24,7 +24,7 @@ Contenuto
 
 Tailwind CSS è un Framework CSS che si distingue per il suo approccio [Utility-First](https://tailwindcss.com/docs/utility-first){rel="noopener noreferrer"}. Non dispone di componenti pronti all'uso ma fornisce delle classi predefinite per applicare gli stili CSS direttamente nel markup HTML. Il vantaggio principale è quello di non perdere tempo nell'inventarsi nomi di classi fantasiosi e allo stesso tempo permette di definire un design system completamente personalizzato ma vincolato a valori predefiniti.
 
-Superato il primo impatto, Tailwind CSS permette di creare velocemente prototipi di pagine o elementi HTML ma non si limita a questo. Può essere usato anche in progetti complessi con il notevole vantaggio che qualsiasi programmatore che conosce Tailwind CSS è in grado di comprendere gli stili applicati ai vari elementi leggendo direttamente il markup HTML.
+Superato il primo impatto, Tailwind CSS permette di creare velocemente prototipi di pagine o elementi HTML. Ma non si limita a questo, può essere usato anche in progetti complessi con il notevole vantaggio che qualsiasi programmatore che conosce Tailwind CSS è in grado di comprendere gli stili applicati ai vari elementi leggendo direttamente il markup HTML.
 
 ## Per iniziare
 
