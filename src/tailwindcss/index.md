@@ -9,7 +9,7 @@ image: /images/tailwindcss.png
 style: markdown
 share: true
 ---
-<details>
+<details open>
 <summary>
 Contenuto
 </summary>

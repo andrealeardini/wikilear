@@ -11,7 +11,7 @@ style: markdown
 feed: ""
 share: true
 ---
-<details>
+<details open>
 <summary>
 Indice
 </summary>

@@ -17,7 +17,7 @@
 ---
 I tips and triks in poche righe ti spiegano come usare al meglio i programmi o semplificare alcune operazioni. Sono ordinati per data, dal più recente al più vecchio. Se cerchi un suggerimento per un prodotto specifico utilizza il filtro per prodotto o consulta la pagina dedicata negli [argomenti principali.](/#topics){.mt-4}
 
-<details class="markdown" role="navigation">
+<details class="markdown" role="navigation" open>
   <summary>
   Filtra per prodotto
   </summary>

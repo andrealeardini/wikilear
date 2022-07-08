@@ -11,7 +11,7 @@ feed:
 share: true
 ---
 
-<details>
+<details open>
 <summary>
 Contenuto
 </summary>
@@ -38,7 +38,7 @@ Un generatore di siti statici permette di creare con facilità un sito partendo 
 
 Eleventy **lascia ampia libertà sul linguaggio di template** che si può usare. Volendo puoi usarne anche più di uno contemporaneamente inserendo per esempio del codice Nunjucks in un file Markdown. I template inoltre possono essere integrati con **dati esterni** o tramite un **front matter** nel file.
 
-<details>
+<details open>
 <summary>
 Elenco dei linguaggi di template utilizzabili
 </summary>

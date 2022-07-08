@@ -8,7 +8,7 @@ image: /images/gmail_48dp.png
 feed: ""
 share: true
 ---
-<details>
+<details open>
 <summary>
 Contenuto
 </summary>
