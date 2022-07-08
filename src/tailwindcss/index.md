@@ -5,7 +5,7 @@ eleventyNavigation:
   showLast: (data) => data.showLast | false,
 layout: layouts/page.njk
 title: Tailwind CSS
-image: /images/tailwindcss-mark.svg
+image: /images/tailwindcss.png
 style: markdown
 share: true
 ---

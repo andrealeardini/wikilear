@@ -43,14 +43,14 @@ module.exports = [
   },
   {
     title: "Eleventy",
-    imageUrl: "/images/11ty.svg",
+    imageUrl: "/images/11ty.png",
     imageAlt: "Eleventy",
     more: "Articoli e tutorial...",
     url: "/11ty/",
   },
   {
     title: "Tailwind CSS",
-    imageUrl: "/images/tailwindcss-mark.svg",
+    imageUrl: "/images/tailwindcss.png",
     imageAlt: "Tailwind CSS",
     more: "Articoli e tutorial...",
     url: "/tailwindcss/",

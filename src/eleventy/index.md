@@ -6,7 +6,7 @@ override:tags: []
 description: Tutorial, Tips and Tricks su Eleventy
 permalink: "/11ty/"
 title: Eleventy
-image:  /images/11ty.svg
+image:  /images/11ty.png
 feed:
 share: true
 ---
