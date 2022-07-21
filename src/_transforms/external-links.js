@@ -35,7 +35,7 @@ const defaultOptions = {
  * External links
  * @param {string} content
  * @param {string} outputPath
- * @param {object} globalOptions
+ * @param {object} userOptions
  * @return {string} content
  */
 const externalLinks = (content, outputPath, userOptions = {}) => {
@@ -73,7 +73,7 @@ const externalLinks = (content, outputPath, userOptions = {}) => {
       link.rel = rel.join(" ");
       // console.log(link.rel);
     });
-    content = document.documentElement.outerHTML;
+    content = dom.serialize();
   }
   // console.log({ content });
   return content;
