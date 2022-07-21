@@ -20,19 +20,14 @@ schema:
 ---
 
 {% block content %}
-<!-- <div>
+<div>
   <img
     src="/images/home.jpg"
     alt="Concetto di apprendimento online"
     class="w-full rounded-lg shadow-lg"
   />
-</div> -->
+</div>
 <article class="mx-1 sm:mx-2 md:mx-4">
-  <p class="mb-0">
-    Leggi uno degli ultimi articoli pubblicati sul sito, consulta uno degli
-    <a href="#topics">argomenti principali</a> o vedi gli articoli
-    <a href="/tag/">suddivisi per etichetta.</a>
-  </p>
   <div id="all-articles" class="heading my-2">
     {% set postListItems = pagination.items %} {% include
     "partials/post-list.njk" %} {% include "partials/pagination.njk" %}
