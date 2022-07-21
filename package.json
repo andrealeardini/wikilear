@@ -9,7 +9,7 @@
     "build": "npm run eleventy",
     "clean": "set -e && find ./dist -mindepth 1 ! -regex '^./dist/images\\(/.*\\)?' -delete || echo dist not found",
     "eleventy": "NODE_ICU_DATA='./node_modules/full-icu' NODE_ENV=production npx @11ty/eleventy",
-    "eleventy-watch": "NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy --serve",
+    "eleventy-watch": "NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy --serve --incremental",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrea Leardini",
