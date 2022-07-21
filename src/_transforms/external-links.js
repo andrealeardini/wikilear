@@ -55,7 +55,11 @@ const externalLinks = (content, outputPath, userOptions = {}) => {
         hostname === options.domain;
       // console.log(href, isInternal);
       if (isInternal) return; // nothing to do
-      // add rel to external links
+
+      // this is an external link
+      // add target _blank
+      link.target = options.target;
+      // add rel
       if (options.overwrite || link.rel === "") {
         link.rel = options.rel;
         return;
