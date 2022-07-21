@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+dist
+coverage
+
+# Ignore all njk files:
+*.njk
+
+# Avoid format json escaped scripts
+package.json
