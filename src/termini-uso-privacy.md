@@ -9,14 +9,9 @@ Di seguito mi riferisco a me stesso (Andrea Leardini) come autore e proprietario
 
 ## Cookie
 
-Eventuali cookie salvati sul dispositivo sono da considerarsi di tipo tecnico, necessario quindi all'utilizzo stesso del sito. La disabilitazione dei cookie non comprommette l'utilizzo del sito anche se alcune funzionalità avanzate potrebbero non essere disponibili o funzionare solo in parte (salvataggio delle preferenze di visualizzazione, impostazioni del sito, ecc.).
+Wikilear rispetta la tua privacy, non traccia gli utenti e utilizza solo cookie tecnici. La disabilitazione dei cookie non comprommette l'utilizzo del sito anche se alcune funzionalità avanzate potrebbero non essere disponibili o funzionare solo in parte (salvataggio delle preferenze di visualizzazione, impostazioni del sito, ecc.).
 
-Saltuariamente potrebbero essere usati alcuni servizi di Google come Google Drive per l'hosting dei file, Google Maps per visualizzare mappe interattive o YouTube per i video (per quest'ultimo con impostazione di [privacy avanzata](https://support.google.com/youtube/answer/171780?expand=PrivacyEnhancedMode#privacy), i cookie vengono installati solo se guardi il video). Tutti questi servizi sono gestiti da Google e nessun dato viene condiviso con Wikilear. L'utilizzo dei cookie da parte di Google potrebbe includere alcune informazioni relative al tuo account Google se utilizzi Wikilear quando sei loggato nell'account. Per la gestione dei cookie da parte di Google puoi trovare maggiori informazioni leggendo queste pagine:
-
-- [In che modo Google utilizza i cookie](https://www.google.com/policies/technologies/cookies/)
-- [Modalità di utilizzo dei dati da parte di Google quando si utilizzano siti o app dei nostri partner](https://www.google.com/policies/privacy/partners/)
-
-Per maggiori informazioni su come disabilitare i cookies puoi consultare la documentazione relativa al tuo browser:
+Per maggiori informazioni su come disabilitare i cookie puoi consultare la documentazione relativa al tuo browser:
 
 - [Google Chrome](https://support.google.com/chrome)
 - [Microsoft Edge](https://support.microsoft.com/it-it/microsoft-edge)
