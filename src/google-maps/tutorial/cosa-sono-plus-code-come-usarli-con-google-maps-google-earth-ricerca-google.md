@@ -27,7 +27,7 @@ image_description: Logo Plus Codes
 
 I <dfn>Plus Codes</dfn> sono dei codici che identificano in modo preciso un punto del pianeta. Sono basati sulle coordinate geografiche di latitudine e longitudine ma risultano più facili da leggere e condividere. Ad esempio, il Plus Code `8QQ7+V8R Dublino` rappresenta l'ingresso principale dell'ufficio di Google a Dublino.
 
-![Latitudine e longitudine di un punto sul globo trasformati in un Plus Code](/images/plus-codes-latitudine-longitudine-globo.svg 'Un Plus Code è calcolato partendo da latitudine e longitudine di un punto sul globo'){.w-4/5}**Conversione delle coordinate in Plus Code.<br>Image credit: Google**
+![Latitudine e longitudine di un punto sul globo trasformati in un Plus Code](/images/plus-codes-latitudine-longitudine-globo.svg "Un Plus Code è calcolato partendo da latitudine e longitudine di un punto sul globo"){.w-4/5}**Conversione delle coordinate in Plus Code.<br>Image credit: Google**
 
 Spesso chi abita in un'area remota o anche in nuovo quartiere di una città si trova in difficoltà quando deve fornire il suo indirizzo a corrieri, operatori sanitari, forze dell'ordine, ecc. La zona potrebbe non essere stata mappata su Google Maps oppure non esiste proprio l'indirizzo perchè non è stato ancora assegnato dal comune. In questi casi condividere un Plus Codes diventa la cosa più semplice e immediata.
 
@@ -63,11 +63,11 @@ Per trovare il Plus Code di un qualsiasi punto sulla mappa:
 
 1. Fai clic sul luogo desiderato o su un'area della mappa
 2. Viene visualizzato un riquadro informativo simile a questo
-![Riquadro informativo con le coordinate del luogo](/images/plus-code-riquadro-informativo.png 'Riquadro informativo con le coordinate del luogo'){.mt-4}
+   ![Riquadro informativo con le coordinate del luogo](/images/plus-code-riquadro-informativo.png "Riquadro informativo con le coordinate del luogo"){.mt-4}
 
 3. Fai clic sulle coordinate del luogo nel riquadro informativo
 4. Verrà visualizzato un pannello sulla sinistra con varie informazioni tra cui il Plus Code&nbsp;<img src="/images/ic_plus_code.png" width="16" height="16" class="w-4 inline-block">
-![Pannello informativo con il Plus Code del luogo](/images/plus-code-pannello-google-maps.png){.mt-4}
+   ![Pannello informativo con il Plus Code del luogo](/images/plus-code-pannello-google-maps.png){.mt-4}
 
 5. Se vuoi copiare o condividere il codice fai clic sul Plus Code&nbsp;<img src="/images/ic_plus_code.png" width="16" height="16" class="w-4 inline-block">
 6. Incolla il testo copiato in un messaggio email o invialo in un'app di messaggistica (WhatsApp, Chat, Messenger, Telegram, ecc.)
@@ -75,12 +75,12 @@ Per trovare il Plus Code di un qualsiasi punto sulla mappa:
 ## Come trovare un luogo usando un Plus Code in Google Maps, Google Earth e Ricerca Google
 
 1. Per cercare un luogo con un Plus Code inserisci il codice nella casella di ricerca
-    - Se ti trovi in una citta diversa da quella che stai cercando inserisci il Plus Code completo (ad esempio: 8QQ7+V8R, Dublino).
-    - Se ti trovi nella stessa città puoi inserire solo il codice di sei o sette cifre (ad esempio: 8QQ7+V8R).
+   - Se ti trovi in una citta diversa da quella che stai cercando inserisci il Plus Code completo (ad esempio: 8QQ7+V8R, Dublino).
+   - Se ti trovi nella stessa città puoi inserire solo il codice di sei o sette cifre (ad esempio: 8QQ7+V8R).
 2. Premi INVIO per avviare la ricerca (o fai clic sulla lente di ingrandimento se presente)
 
 **Per approfondire:**
 
-- [Plus Codes (sito ufficiale in inglese)](https://maps.google.com/pluscodes/){rel="noopener noreferrer"}
-- [How we’re giving everyone, everywhere an address (Blog di Google)](https://www.blog.google/products/maps/google-maps-101-giving-everyone-everywhere-an-address/){rel="noopener noreferrer"}
-- [Trovare e condividere un luogo utilizzando i plus code (Guida di Google Maps)](https://support.google.com/maps/answer/7047426?hl=it&co=GENIE.Platform%3DDesktop&oco=0){rel="noopener noreferrer"}
+- [Plus Codes (sito ufficiale in inglese)](http://maps.google.com/pluscodes/)
+- [How we’re giving everyone, everywhere an address (Blog di Google)](https://www.blog.google/products/maps/google-maps-101-giving-everyone-everywhere-an-address/)
+- [Trovare e condividere un luogo utilizzando i plus code (Guida di Google Maps)](https://support.google.com/maps/answer/7047426?hl=it&co=GENIE.Platform%3DDesktop&oco=0)

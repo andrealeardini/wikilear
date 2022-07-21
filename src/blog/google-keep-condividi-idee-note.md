@@ -15,7 +15,8 @@ image_title:
 image_description:
 old_url: /2014/11/google-keep-condividi-idee-e-note.html
 ---
-Google Keep riceve due aggiornamenti nel giro di pochi giorni. Oltre al nuovo stile **Material Design,** Keep si arricchisce di importanti funzioni come la **condivisione delle note,**   la **modifica in real-time** con alti utenti e la **ricerca delle note tramite colore.**
+
+Google Keep riceve due aggiornamenti nel giro di pochi giorni. Oltre al nuovo stile **Material Design,** Keep si arricchisce di importanti funzioni come la **condivisione delle note,** la **modifica in real-time** con alti utenti e la **ricerca delle note tramite colore.**
 
 Grazie alla nuova funzione per condividere le note puoi creare una lista della spesa e condividerla con altri familiari per completarla o suddividere gli acquisti. Oppure puoi prendere nota al volo di un'idea interessante e condividerla con i tuoi colleghi per sentire la loro opinione.
 
@@ -39,12 +40,12 @@ Prendere un appunto al volo è utile, ma a cosa servirebbe avere tante note se p
 </div>
 </div>
 
- **Puoi cercare una nota in base al suo colore**{.caption}
+**Puoi cercare una nota in base al suo colore**{.caption}
 
-Le nuove funzioni di Google Keep sono già utilizzabili nella versione desktop (tramite [web](https://keep.google.com/){rel="noopener noreferrer"} o con l'apposita [app per Chrome](https://chrome.google.com/webstore/detail/google-keep/hmjkmjkepdijhoojdojkdfohbdgmmhki?hl=it){rel="noopener noreferrer"}).
+Le nuove funzioni di Google Keep sono già utilizzabili nella versione desktop (tramite [web](https://keep.google.com/) o con l'apposita [app per Chrome](https://chrome.google.com/webstore/detail/google-keep/hmjkmjkepdijhoojdojkdfohbdgmmhki?hl=it)).
 
-![Google Keep aperto dalla pagina web](/images/google-keep-web.png 'Vai alla pagina keep.google.com per accedere dal web'){.w-full}
+![Google Keep aperto dalla pagina web](/images/google-keep-web.png "Vai alla pagina keep.google.com per accedere dal web"){.w-full}
 
-![Google Keep aperto con lapp per Chrome](/images/google-keep-app-chrome.png 'Installa lapp per Chrome per accedere facilmente a Google Keep'){.w-full}**Accedi a Google Keep dal web o tramite l'apposita app per Chrome**
+![Google Keep aperto con lapp per Chrome](/images/google-keep-app-chrome.png "Installa lapp per Chrome per accedere facilmente a Google Keep"){.w-full}**Accedi a Google Keep dal web o tramite l'apposita app per Chrome**
 
-L'app per Android (versione 4.0, Ice Cream Sandwich o successive) si può scaricare gratuitamente dal [Play Store](https://play.google.com/store/apps/details?id=com.google.android.keep){rel="nopener noreferrer"} mentre per chi ha già installato l'app l'aggiornamento è in fase di rollout graduale.
+L'app per Android (versione 4.0, Ice Cream Sandwich o successive) si può scaricare gratuitamente dal [Play Store](https://play.google.com/store/apps/details?id=com.google.android.keep) mentre per chi ha già installato l'app l'aggiornamento è in fase di rollout graduale.

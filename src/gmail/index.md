@@ -8,6 +8,7 @@ image: /images/gmail_48dp.png
 feed: ""
 share: true
 ---
+
 <details open>
 <summary>
 Contenuto
@@ -15,12 +16,12 @@ Contenuto
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)
-{% if collections.gmailtutorial.length %}
+  {% if collections.gmailtutorial.length %}
 - [Tutorial](#tutorial)
-{% endif %}
-{% if collections.gmailtips.length %}
+  {% endif %}
+  {% if collections.gmailtips.length %}
 - [Tips and tricks](#tips-and-tricks)
-{% endif %}
+  {% endif %}
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
 </details>
@@ -31,12 +32,12 @@ Gmail è un servizio gratuito di posta elettronica di Google. Puoi accedere alla
 
 ## Per iniziare
 
-Per utilizzare Gmail sul tuo computer accedi al tuo account Google e visita la pagina [mail.google.com](https://mail.google.com){rel="noopener noreferrer"}
+Per utilizzare Gmail sul tuo computer accedi al tuo account Google e visita la pagina [mail.google.com](https://mail.google.com)
 
 Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca sul tuo dispositivo questa icona ![icona di Gmail]({{image}}){.inline .w-6 .ml-1}. Se non la trovi puoi installare l'app dallo store per il tuo dispositivo usando uno di questi link.
 
-- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.gm){rel="noopener noreferrer"}
-- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://apps.apple.com/it/app/gmail-email-by-google/id422689480){rel="noopener noreferrer"}
+- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.gm)
+- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://apps.apple.com/it/app/gmail-email-by-google/id422689480)
 
 {% set tutorials = collections.gmailtutorial %}
 {% include 'partials/tutorial.njk' %}
@@ -46,5 +47,5 @@ Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca s
 
 ## Risorse utili (siti esterni)
 
-- [Guida di Gmail](https://support.google.com/mail){rel="noopener noreferrer"}
-- [Community di assistenza](https://support.google.com/mail/community){rel="noopener noreferrer"}
+- [Guida di Gmail](https://support.google.com/mail)
+- [Community di assistenza](https://support.google.com/mail/community)

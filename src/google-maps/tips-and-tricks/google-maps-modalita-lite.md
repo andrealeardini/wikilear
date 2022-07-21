@@ -9,6 +9,7 @@ image_title:
 image_description:
 old_url: /2013/05/il-nuovo-google-maps-modalita-lite.html
 ---
+
 Il nuovo Google Maps può essere eseguito anche in **modalità Lite:** non include le funzionalità 3D ma permette di accedere alle mappe satellitari.
 
 Se usate un sistema operativo datato o il vostro browser non supporta WebGL la modalità Lite viene eseguita come impostazione predefinta. Quando il nuovo Google Maps è in modalità Lite viene indicato in basso a destra della mappa.
@@ -19,12 +20,12 @@ Se usate un sistema operativo datato o il vostro browser non supporta WebGL la m
 
 Se riscontrate problemi con la visualizzazione in 3D o il nuovo Google Maps sembra lento, provate a utilizzare la modalità Lite:
 
-- Fate clic su questo link per passare alla **modalità Lite:** [www.google.com/maps/preview/?force=canvas](www.google.com/maps/preview/?force=canvas){rel="noopener noreferrer"}
-- Fate clic su questo link per passare alla **modalità 3D completa:** [www.google.com/maps/preview/?force=webgl](www.google.com/maps/preview/?force=webgl){rel="noopener noreferrer"}
-- Fate clic su questo link per ripristinare le **impostazioni predefinite del sistema:** [www.google.com/maps/preview/?force=clear](www.google.com/maps/preview/?force=clear){rel="noopener noreferrer"}
+- Fate clic su questo link per passare alla **modalità Lite:** [www.google.com/maps/preview/?force=canvas](www.google.com/maps/preview/?force=canvas)
+- Fate clic su questo link per passare alla **modalità 3D completa:** [www.google.com/maps/preview/?force=webgl](www.google.com/maps/preview/?force=webgl)
+- Fate clic su questo link per ripristinare le **impostazioni predefinite del sistema:** [www.google.com/maps/preview/?force=clear](www.google.com/maps/preview/?force=clear)
 
 > Nota: se riscontrate problemi con i link provate a modificare l'URL indicando il dominio **.it**
 
 **Per approfondire**
 
-[Modalità Lite (Guida di Google Maps)](https://support.google.com/maps/answer/3031966?hl=it){rel="nopener noreferrer"}
+[Modalità Lite (Guida di Google Maps)](https://support.google.com/maps/answer/3031966?hl=it)

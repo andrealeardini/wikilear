@@ -9,7 +9,8 @@ image_title:
 image_description: Mappa di Google Maps con le coordinate per il Colosseo
 old_url: /2014/03/coordinate-di-latitudine-e-longitudine-nuovo-google-maps.html
 ---
-Se usi Google Maps sai quanto sia facile trovare una località o un'attività commerciale. Scrivi l'indirizzo, il nome o la categoria dell'attività e Google Maps trova quello che stai cercando. Non a caso, la maggior parte delle ricerche in Google Maps viene fatta utilizzando un indirizzo preciso o cercando per un'attività commerciale nelle vicinanze, per esempio una pizzeria o un ristorante. Ma lo sapevi che puoi cercare un luogo utilizzando le coordinate di [latitudine](https://it.wikipedia.org/wiki/Latitudine){rel="noopener noreferrer"} e [longitudine](https://it.wikipedia.org/wiki/Longitudine){rel="noopener noreferrer"}?
+
+Se usi Google Maps sai quanto sia facile trovare una località o un'attività commerciale. Scrivi l'indirizzo, il nome o la categoria dell'attività e Google Maps trova quello che stai cercando. Non a caso, la maggior parte delle ricerche in Google Maps viene fatta utilizzando un indirizzo preciso o cercando per un'attività commerciale nelle vicinanze, per esempio una pizzeria o un ristorante. Ma lo sapevi che puoi cercare un luogo utilizzando le coordinate di [latitudine](https://it.wikipedia.org/wiki/Latitudine) e [longitudine](https://it.wikipedia.org/wiki/Longitudine)?
 
 <nav class="mt-8">
 <details class="bg-gray-100 dark:bg-gray-800 text-sm lg:text-base p-4" open>
@@ -24,7 +25,7 @@ Se usi Google Maps sai quanto sia facile trovare una località o un'attività co
 
 ## Quando usare le coordinate geografiche in Google Maps
 
-[Le coordinate geografiche](https://it.wikipedia.org/wiki/Coordinate_geografiche){rel="noopener noreferrer"} sono indispensabili quando vuoi individuare un punto sulla mappa con estrema precisione. Ma non basta avere l'indirizzo? In linea di massima sì. Comunque a volte l'indirizzo potrebbe essere incompleto (forse senza numero civico), oppure la via che stai cercando non è stata ancora mappata su Google Maps. In questi casi la posizione fornita è approssimativa, impossibile da trovare o nella peggiore delle ipotesi completamente sbagliata. Ma se hai a disposizione latitudine e longitudine di un luogo puoi visualizzarlo con precisione sulla mappa.
+[Le coordinate geografiche](https://it.wikipedia.org/wiki/Coordinate_geografiche) sono indispensabili quando vuoi individuare un punto sulla mappa con estrema precisione. Ma non basta avere l'indirizzo? In linea di massima sì. Comunque a volte l'indirizzo potrebbe essere incompleto (forse senza numero civico), oppure la via che stai cercando non è stata ancora mappata su Google Maps. In questi casi la posizione fornita è approssimativa, impossibile da trovare o nella peggiore delle ipotesi completamente sbagliata. Ma se hai a disposizione latitudine e longitudine di un luogo puoi visualizzarlo con precisione sulla mappa.
 
 > Per condividere un luogo senza indirizzo puoi utilizzare anche i [Plus Codes.](/google-maps/tutorial/cosa-sono-plus-code-come-usarli-con-google-maps-google-earth-ricerca-google/)
 
@@ -34,7 +35,7 @@ Cercare un luogo per le coordinate è molto simile alla ricerca tramite indirizz
 
 Puoi utilizzare uno dei seguenti formati:
 
-- Gradi, minuti e secondi (DMS):  41° 53' 24.8", 12° 29' 32.8"  (oppure 41°53'24.8"N 12°29'32.8"E)
+- Gradi, minuti e secondi (DMS): 41° 53' 24.8", 12° 29' 32.8" (oppure 41°53'24.8"N 12°29'32.8"E)
 - Gradi e minuti decimali (DMM): 41° 53' 24.7842", 12° 29' 32.7618"
 - Gradi decimali (DDD): 41.890218, 12.492434
 
@@ -44,7 +45,7 @@ Per trovare le coordinate di un qualsiasi punto sulla mappa:
 
 1. Fai clic con il pulsante destro del mouse sull'area di interesse o su un luogo nella mappa
 2. La prima voce del menu di scelta rapida visualizza le coordinate del punto selezionato
-![Menu di scelta rapida, la prima voce riporta le coordinate del luogo](/images/google-maps-trovare-coordinate-luogo.png 'La prima voce del menu di scelta rapida indica le coordinate del luogo selezionato'){.mt-4}**Le coordinate del punto selezionato nella mappa sono 41.89017, 12.49165**
+   ![Menu di scelta rapida, la prima voce riporta le coordinate del luogo](/images/google-maps-trovare-coordinate-luogo.png "La prima voce del menu di scelta rapida indica le coordinate del luogo selezionato"){.mt-4}**Le coordinate del punto selezionato nella mappa sono 41.89017, 12.49165**
 
 3. Se vuoi condividere le coordinate con qualcun altro fai clic sulle coordinate per copiarle negli appunti
 4. Per condividere il luogo, incolla il testo copiato in un messaggio email o invialo in un'app di messaggistica (WhatsApp, Chat, Messenger, Telegram, ecc.)
@@ -53,4 +54,4 @@ Ora che sai come utilizzare le coordinate di latitudine e longitudine potrai usa
 
 **Per approfondire:**
 
-- [Coordinate di latitudine e longitudine (Guida di Google Maps)](https://support.google.com/maps/answer/18539?hl=it){rel="noopener noreferrer"}
+- [Coordinate di latitudine e longitudine (Guida di Google Maps)](https://support.google.com/maps/answer/18539?hl=it)

@@ -8,6 +8,7 @@ image_title:
 image_description:
 useSheetJS: true
 ---
+
 {% import 'components/sheet/sheet.njk' as sheet with context %}
 
 <nav>
@@ -16,10 +17,10 @@ useSheetJS: true
 
 - [Definizione di media aritmetica](#definizione-di-media-aritmetica)
 - [Elenco delle funzioni per calcolare la media aritmetica dei dati](#elenco-delle-funzioni-per-calcolare-la-media-aritmetica-dei-dati)
-  - [MEDIA (AVERAGE)](#media-(average))
-  - [MEDIA.SE (AVERAGEIF)](#media.se-(averageif))
-  - [MEDIA.PIÙ.SE (AVERAGEIFS)](#media.più.se-(averageifs))
-  - [MEDIA.VALORI (AVERAGEA)](#media.valori-(averagea))
+  - [MEDIA (AVERAGE)](<#media-(average)>)
+  - [MEDIA.SE (AVERAGEIF)](<#media.se-(averageif)>)
+  - [MEDIA.PIÙ.SE (AVERAGEIFS)](<#media.più.se-(averageifs)>)
+  - [MEDIA.VALORI (AVERAGEA)](<#media.valori-(averagea)>)
 - [Esempi di utilizzo](#esempi-di-utilizzo)
 
 </details>
@@ -39,12 +40,12 @@ Premi il pulsante **Formule** sotto la tabella per visualizzare le formule al po
 
 Fogli Google dispone di diverse funzioni per calcolare la media aritmetica. Consulta [gli esempi](#esempi) per capire quale usare in base all'insieme di dati che devi analizzare.
 
-| Funzione         | Descrizione |
-| --- | --- |
-| [MEDIA](#media-(average))  | Restituisce il valore numerico della media in un insieme di dati, ignorando il testo.|
-| [MEDIA.SE](#media.se-(averageif)) | Restituisce la media numerica di un intervallo in base a un criterio.|
-| [MEDIA.PIÙ.SE](#media.più.se-(averageifs)) | Restituisce la media numerica di un intervallo che dipende da più criteri.|
-| [MEDIA.VALORI](#media.valori-(averagea)) | Restituisce il valore medio numerico in un insieme di dati.|
+| Funzione                                     | Descrizione                                                                           |
+| -------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [MEDIA](<#media-(average)>)                  | Restituisce il valore numerico della media in un insieme di dati, ignorando il testo. |
+| [MEDIA.SE](<#media.se-(averageif)>)          | Restituisce la media numerica di un intervallo in base a un criterio.                 |
+| [MEDIA.PIÙ.SE](<#media.più.se-(averageifs)>) | Restituisce la media numerica di un intervallo che dipende da più criteri.            |
+| [MEDIA.VALORI](<#media.valori-(averagea)>)   | Restituisce il valore medio numerico in un insieme di dati.                           |
 
 {.text-sm .sm:text-base}
 
@@ -56,14 +57,14 @@ Restituisce il valore numerico della media in un insieme di dati, ignorando il t
 
 `MEDIA(valore1; [valore2; ...])`
 
-- *valore1* Il primo valore o intervallo da esaminare nel calcolo del valore medio.
-- *valore2; ...* [FACOLTATIVO] I valori o intervalli aggiuntivi da considerare per il calcolo del valore medio.
+- _valore1_ Il primo valore o intervallo da esaminare nel calcolo del valore medio.
+- _valore2; ..._ [FACOLTATIVO] I valori o intervalli aggiuntivi da considerare per il calcolo del valore medio.
 
 #### Esempio di utilizzo
 
 Vedi [l'esempio 1.](#calcolare-la-media-dei-voti-degli-studenti)
 
->`MEDIA` ignora le celle che contengono del testo. Se vuoi contare come valori anche le celle che contengono del testo usa la funzione `MEDIA.VALORI`.
+> `MEDIA` ignora le celle che contengono del testo. Se vuoi contare come valori anche le celle che contengono del testo usa la funzione `MEDIA.VALORI`.
 
 ### MEDIA.SE (AVERAGEIF)
 
@@ -73,9 +74,9 @@ Restituisce la media numerica di un intervallo in base a un criterio.
 
 `MEDIA.SE(intervallo_valori_da_filtrare; criterio; [intervallo_media])`
 
-- *intervallo_valori_da_filtrare* è l'intervallo che contiene i valori o criteri da filtrare.
-- *"criterio"* è il valore o criterio da usare come filtro.
-- *intervallo_media* [FACOLTATIVO] è l'intervallo di celle che contiene i valori di cui calcolare la media. Va specificato solo nel caso in cui non corrisponda a *intervallo_valori_da_filtrare*.
+- _intervallo_valori_da_filtrare_ è l'intervallo che contiene i valori o criteri da filtrare.
+- _"criterio"_ è il valore o criterio da usare come filtro.
+- _intervallo_media_ [FACOLTATIVO] è l'intervallo di celle che contiene i valori di cui calcolare la media. Va specificato solo nel caso in cui non corrisponda a _intervallo_valori_da_filtrare_.
 
 #### Esempio di utilizzo
 
@@ -89,16 +90,16 @@ restituisce la media numerica di un intervallo che dipende da più criteri
 
 `MEDIA.PIÙ.SE(intervallo_media; intervallo_valori_da_filtrare; criterio; [intervallo_aggiuntivo_valori; criterio_aggiuntivo; ...])`
 
-- *intervallo_media* è l'intervallo di valori di cui vogliamo calcolare la media. Questo intervallo sarà lo stesso per tutti i criteri aggiuntivi e quindi è il primo da specificare.
-- *intervallo_valori_da_filtrare* indica l'intervallo di dati che contiene i valori o criteri da filtrare.
-- *criterio* è il criterio o valore per cui vogliamo filtrare i dati.
-- *intervallo_aggiuntivo_valori*; *criterio_aggiuntivo* [FACOLTATIVO] possono essere ripetuti (sempre a coppia) per aggiungere ulteriori intervalli di criteri.
+- _intervallo_media_ è l'intervallo di valori di cui vogliamo calcolare la media. Questo intervallo sarà lo stesso per tutti i criteri aggiuntivi e quindi è il primo da specificare.
+- _intervallo_valori_da_filtrare_ indica l'intervallo di dati che contiene i valori o criteri da filtrare.
+- _criterio_ è il criterio o valore per cui vogliamo filtrare i dati.
+- _intervallo_aggiuntivo_valori_; _criterio_aggiuntivo_ [FACOLTATIVO] possono essere ripetuti (sempre a coppia) per aggiungere ulteriori intervalli di criteri.
 
 #### Esempio di utilizzo
 
 Vedi [l'esempio 4.](#calcolare-la-media-del-fatturato-per-rappresentante-aerea-e-categoria)
 
->Fai attenzione che l'ordine dei parametri cambia rispetto alla funzione `MEDIA.SE`.
+> Fai attenzione che l'ordine dei parametri cambia rispetto alla funzione `MEDIA.SE`.
 
 ### MEDIA.VALORI (AVERAGEA)
 
@@ -108,14 +109,14 @@ Restituisce il valore medio numerico in un insieme di dati.
 
 `MEDIA.VALORI(valore1, [valore2, ...])`
 
-- *valore1* il primo valore o l'intervallo di dati da esaminare per calcolare la media aritmetica.
-- *valore2, ...* [FACOLTATIVO] i valori o intervalli di dati aggiuntivi da esaminare.
+- _valore1_ il primo valore o l'intervallo di dati da esaminare per calcolare la media aritmetica.
+- _valore2, ..._ [FACOLTATIVO] i valori o intervalli di dati aggiuntivi da esaminare.
 
 #### Esempio di utilizzo
 
 Vedi [l'esempio 2.](#calcolare-la-media-dei-valori-in-un-set-di-dati-con-testo)
 
->`MEDIA.VALORI` considera le celle che contengono del testo come celle con valore 0, se vuoi ignorare le celle con testo usa la funzione `MEDIA`.
+> `MEDIA.VALORI` considera le celle che contengono del testo come celle con valore 0, se vuoi ignorare le celle con testo usa la funzione `MEDIA`.
 
 <nav>
 <details id="esempi" class="heading bg-gray-100 dark:bg-gray-800 text-sm lg:text-base p-4" open>
@@ -139,8 +140,8 @@ Supponi di voler registrare i risultati ottenuti dai tuoi studenti durante l'ann
 
 Vuoi calcolare la media aritmetica dei voti dei tuoi studenti per ogni trimestre (da aggiungere alla colonna E) e quella del singolo studente per i tre trimestri (da aggiungere rispettivamente nelle colonne B, C e D). In questo caso la funzione da usare è `MEDIA`. Questa funzione accetta uno o più parametri.
 
-- *valore1*
-- *valore2* [FACOLTATIVO]
+- _valore1_
+- _valore2_ [FACOLTATIVO]
 
 Entrambi i parametri possono essere un valore, una cella o un intervallo di celle. Ad esempio queste due formule restituiscono lo stesso risultato.
 
@@ -190,15 +191,15 @@ Il responsabile delle vendite ti chiede di calcolare:
 
 Ci vorrebbe una funzione che permetta di filtrare i dati di cui vogliamo calcolare la media, questo è proprio quello che fa la funzione `MEDIA.SE`. Questa funzione accetta tre parametri:
 
-- *intervallo_valori_da_filtrare*;
-- *criterio*;
-- *intervallo_media* [FACOLTATIVO].
+- _intervallo_valori_da_filtrare_;
+- _criterio_;
+- _intervallo_media_ [FACOLTATIVO].
 
 Vediamo cosa scrivere per calcolare la media del fatturato per ogni settore.
 
-- *intervallo_valori_da_filtrare* -> nella nostra tabella di esempio, le righe da 2 a 12 corrispondono al fatturato realizzato da un rappresentante per ciascun settore merceologico in ciascuna area (ogni riga è una registrazione). Ci interessa la media per ogni settore quindi i dati da filtrare si trovano nella **colonna C** (Settore).
-- *criterio* -> il criterio è il nome del settore di cui vogliamo calcolare la media (attrezzature, cancelleria, libri).
-- *intervallo_media* -> il terzo parametro è facoltativo e quando corrisponde a *intervallo_valori<wbr>_da_filtrare</wbr>* può essere ommesso. Nel nostro caso i valori di cui calcolare la media (il fatturato) si trovano in un'altra colonna **(colonna D)** rispetto ai valori da filtrare **(colonna C)** quindi dobbiamo specificare anche *intervallo_media*.
+- _intervallo_valori_da_filtrare_ -> nella nostra tabella di esempio, le righe da 2 a 12 corrispondono al fatturato realizzato da un rappresentante per ciascun settore merceologico in ciascuna area (ogni riga è una registrazione). Ci interessa la media per ogni settore quindi i dati da filtrare si trovano nella **colonna C** (Settore).
+- _criterio_ -> il criterio è il nome del settore di cui vogliamo calcolare la media (attrezzature, cancelleria, libri).
+- _intervallo_media_ -> il terzo parametro è facoltativo e quando corrisponde a _intervallo_valori<wbr>\_da_filtrare</wbr>_ può essere ommesso. Nel nostro caso i valori di cui calcolare la media (il fatturato) si trovano in un'altra colonna **(colonna D)** rispetto ai valori da filtrare **(colonna C)** quindi dobbiamo specificare anche _intervallo_media_.
 
 La formula per calcolare la media del fatturato realizzato per un settore sarà `=MEDIA.SE(C2:C12; [criterio]; D2:D12)` dove al posto di [criterio] dobbiamo indicare il nome del settore.
 
@@ -208,7 +209,7 @@ La formula per calcolare la media del fatturato realizzato per un settore sarà 
 =MEDIA.SE(C2:C12; "libri"; D2:D12)
 ```
 
->Se il criterio da verificare è un testo, la ricerca ignora le maiuscole o le minuscole. Per esempio, se il criterio è "libri" verrano incluse tutte le varianti: "Libri", "LIBRI", ecc.
+> Se il criterio da verificare è un testo, la ricerca ignora le maiuscole o le minuscole. Per esempio, se il criterio è "libri" verrano incluse tutte le varianti: "Libri", "LIBRI", ecc.
 
 Diamo un aspetto un po' più professionale a questa formula e utilizziamo una cella come riferimento per il nome del settore e blocchiamo gli intervalli per renderli assoluti. In questo modo possiamo scrivere la formula una sola volta e poi copiarla e incollarla (o trascinarla) nelle altre celle. Se questi concetti non ti sono chiari, non ti preoccupare, per il momento li puoi ignorare. In un prossimo articolo te li spiegherò nel dettaglio.
 
@@ -228,10 +229,10 @@ Ora che hai capito come funziona MEDIA.SE prova a scrivere le formule per calcol
 
 Nell'esempio 3 abbiamo visto come ricavare le medie del fatturato per settore e quelle per area geografica. Ora il responsabile delle vendite vuole analizzare nel dettaglio i dati e ti chiede di preparargli un prospetto con la media di ogni settore in base all'area geografica. Le cose si complicano, i criteri sono 2, ma la funzione `MEDIA.SE` accetta solo un criterio. In questo caso devi usare la funzione `MEDIA.PIÙ.SE` che accetta uno o più criteri. Vediamo nel dettagli i parametri da specificare:
 
-- *intervallo_media;*
-- *intervallo_valori_da_filtrare;*
-- *criterio;*
-- *intervallo_aggiuntivo_valori; criterio_aggiuntivo;* [FACOLTATIVO]
+- _intervallo_media;_
+- _intervallo_valori_da_filtrare;_
+- _criterio;_
+- _intervallo_aggiuntivo_valori; criterio_aggiuntivo;_ [FACOLTATIVO]
 
 I parametri obbligatori sono gli stessi previsti per la funzione `MEDIA.SE` ma cambia l'ordine. Il primo parametro da specificare è **intervallo_media**, in questo caso è obbligatorio e rimane sempre lo stesso per ogni criterio impostato. Gli altri due parametri ci permettono di definire i valori da filtrare e il relativo criterio. Se specifico una sola coppia di valori e criteri ottengo lo stesso risultato di `MEDIA.SE`. Ma ecco che entrano in gioco i parametri facoltativi, posso utilizzarli (sempre in coppia) per specificare altri criteri da soddisfare per filtrare i dati.
 
@@ -241,11 +242,11 @@ Per questo esempio utilizziamo questi dati.
 
 Vediamo insieme come calcolare la media del fatturato per il **settore Attrezzature** per la sola area geografica del **nord.** I parametri da usare sono:
 
-- *intervallo_media* -> indichiamo l'intervallo di celle in cui abbiamo registrato il fatturato (D2:D14).
-- *intervallo_valori_da_filtrare* -> l'intervallo di celle in cui è specificato il settore della registrazione (C2:C14).
-- *criterio* -> "attrezzature"
-- *intervallo_aggiuntivo_valori* -> l'intervallo di celle in cui è indicata l'area geografica della registrazione (B2:B14)
-- *criterio_aggiuntivo* -> "nord"
+- _intervallo_media_ -> indichiamo l'intervallo di celle in cui abbiamo registrato il fatturato (D2:D14).
+- _intervallo_valori_da_filtrare_ -> l'intervallo di celle in cui è specificato il settore della registrazione (C2:C14).
+- _criterio_ -> "attrezzature"
+- _intervallo_aggiuntivo_valori_ -> l'intervallo di celle in cui è indicata l'area geografica della registrazione (B2:B14)
+- _criterio_aggiuntivo_ -> "nord"
 
 Per calcolare la media di ciascun settore per il nord puoi usare queste formule.
 
@@ -267,10 +268,10 @@ Se hai scritto bene la formula nella cella B17, dopo aver copiato e incollato la
 
 ## Riferimenti
 
-[MEDIA (AVERAGE) - Guida di Editor di Documenti](https://support.google.com/docs/answer/3093615){rel="noopener noreferrer"}
+[MEDIA (AVERAGE) - Guida di Editor di Documenti](https://support.google.com/docs/answer/3093615)
 
-[MEDIA.SE (AVERAGEIF) - Guida di Editor di Documenti](https://support.google.com/docs/answer/3256529){rel="noopener noreferrer"}
+[MEDIA.SE (AVERAGEIF) - Guida di Editor di Documenti](https://support.google.com/docs/answer/3256529)
 
-[MEDIA.PIÙ.SE (AVERAGEIFS) - Guida di Editor di Documenti](https://support.google.com/docs/answer/3256534){rel="noopener noreferrer"}
+[MEDIA.PIÙ.SE (AVERAGEIFS) - Guida di Editor di Documenti](https://support.google.com/docs/answer/3256534)
 
-[MEDIA.VALORI (AVERAGEA) - Guida di Editor di Documenti](https://support.google.com/docs/answer/3093617){rel="noopener noreferrer"}
+[MEDIA.VALORI (AVERAGEA) - Guida di Editor di Documenti](https://support.google.com/docs/answer/3093617)

@@ -15,14 +15,14 @@ Osserva attentamente l’URL di Google Maps mostrato nella barra degli indirizzi
 
 ## Latitudine, longitudine e zoom (URL di Google Maps)
 
-Prendiamo come punto di riferimento il Colosseo; apri Google Maps e cerca per [[Colosseo]](https://www.google.com/maps/@41.89021,12.492231,17z){rel="noopener noreferrer"}. L’URL di Google Maps dovrebbe corrispondere a questo: [https://www.google.com/maps/@41.89021,12.492231,17z](https://www.google.com/maps/@41.89021,12.492231,17z){ .break-words rel="noopener noreferrer"}
+Prendiamo come punto di riferimento il Colosseo; apri Google Maps e cerca per [[Colosseo]](https://www.google.com/maps/@41.89021,12.492231,17z). L’URL di Google Maps dovrebbe corrispondere a questo: [https://www.google.com/maps/@41.89021,12.492231,17z](https://www.google.com/maps/@41.89021,12.492231,17z){ .break-words rel="noopener noreferrer"}
 
 Consideriamo nel dettaglio i due parametri dopo l’URL standard (<https://www.google.com/maps/>).
 
-| Parametro  | Descrizione  |
-|---|---|
-| @41.89021,12.492231  | Latitudine e longitudine del punto centrale della mappa (in questo caso il Colosseo)  |
-| 17z  | Livello dello zoom. I valori standard vanno da 0 a 21 ma agendo manualmente si riesce ad arrivare fino a 30  |
+| Parametro           | Descrizione                                                                                                 |
+| ------------------- | ----------------------------------------------------------------------------------------------------------- |
+| @41.89021,12.492231 | Latitudine e longitudine del punto centrale della mappa (in questo caso il Colosseo)                        |
+| 17z                 | Livello dello zoom. I valori standard vanno da 0 a 21 ma agendo manualmente si riesce ad arrivare fino a 30 |
 
 ## Altitudine, angolo di rotazione e inclinazione (URL di Google Maps)
 
@@ -32,27 +32,27 @@ Ora passiamo alla visualizzazione Earth, fai clic sulla miniatura Earth in basso
 
 Esaminiamo i parametri che si sono aggiunti ai precedenti.
 
-| Parametro  | Descrizione  |
-|---|---|
-| 502m  | Altitudine espressa in metri. Nella visualizzazione Earth, si passa dal livello dello zoom che esprime un valore in 2D all’altitudine che esprime una misura in 3D.  |
-| data=!3m1!1e3  | Indica che è attiva la visualizzazione Earth. Inserirlo manualmente nell’URL equivale a premere la **miniatura Earth** in Google Maps  |
+| Parametro     | Descrizione                                                                                                                                                         |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 502m          | Altitudine espressa in metri. Nella visualizzazione Earth, si passa dal livello dello zoom che esprime un valore in 2D all’altitudine che esprime una misura in 3D. |
+| data=!3m1!1e3 | Indica che è attiva la visualizzazione Earth. Inserirlo manualmente nell’URL equivale a premere la **miniatura Earth** in Google Maps                               |
 
 Ora **inclina** la vista (3D), l’URL di Google Maps diventa:
 [https://www.google.com/maps/@41.8852843,12.492231,772a,35y,39.29t/data=!3m1!1e3](https://www.google.com/maps/@41.8852843,12.492231,772a,35y,39.29t/data=!3m1!1e3){.break-words rel="noopener noreferrer"}
 
-| Parametro | Descrizione |
-|---|---|
-| 772a | Altitudine |
-| 39.29t | Angolo di inclinazione (t=tilt). Se non viene specificato la mappa sarà visualizzata con vista perpendicolare. Si possono impostare due valori: 39.29 (inclinazione leggera) o 78.6 (inclinazione panoramica) |
+| Parametro | Descrizione                                                                                                                                                                                                   |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 772a      | Altitudine                                                                                                                                                                                                    |
+| 39.29t    | Angolo di inclinazione (t=tilt). Se non viene specificato la mappa sarà visualizzata con vista perpendicolare. Si possono impostare due valori: 39.29 (inclinazione leggera) o 78.6 (inclinazione panoramica) |
 
 Ora **ruota** la vista, l’URL di Google Maps cambia e visualizza anche il grado di rotazione che hai apportato alla mappa, nel mio caso 180°:
 [https://www.google.com/maps/@41.8852843,12.492231,772a,35y,180h,39.29t/data=!3m1!1e3](https://www.google.com/maps/@41.8852843,12.492231,772a,35y,180h,39.29t/data=!3m1!1e3){.break-words rel="noopener noreferrer"}
 
-| Parametro | Descrizione |
-|---|---|
-| 180h | Angolo di rotazione della mappa (h=heading). I valori standard sono  90, 180 e 270. Manualmente si può inserire un qualsiasi valore compreso tra 0 e 360 |
+| Parametro | Descrizione                                                                                                                                             |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 180h      | Angolo di rotazione della mappa (h=heading). I valori standard sono 90, 180 e 270. Manualmente si può inserire un qualsiasi valore compreso tra 0 e 360 |
 
 Non essendoci una documentazione ufficiale che elenca tutti i parametri, l’elenco che ti ho proposto si basa più che altro sull’osservazione e la sperimentazione delle singole impostazioni. Se conosci il significato di altri parametri puoi segnalarmelo usando Twitter o tramite email. Il tuo contributo sarà prezioso per rendere ancora più completo e utile questo elenco!
 
 _Fonti:_
-[Cameras](https://developers.google.com/kml/documentation/cameras){rel="noopener noreferrer"}, [Altitude Modes](https://developers.google.com/kml/documentation/altitudemode){rel="noopener noreferrer"}
+[Cameras](https://developers.google.com/kml/documentation/cameras), [Altitude Modes](https://developers.google.com/kml/documentation/altitudemode)

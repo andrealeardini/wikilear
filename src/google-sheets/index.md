@@ -8,6 +8,7 @@ image: /images/sheets_48dp.png
 feed: ""
 share: true
 ---
+
 <details open>
 <summary>
 Contenuto
@@ -38,12 +39,12 @@ Un foglio di calcolo è uno strumento utile e versatile che ti permette di prese
 
 ## Per iniziare
 
-Per utilizzare Fogli Google sul tuo computer accedi al tuo account Google e visita la pagina [sheets.google.com](https://sheets.google.com){rel="noopener noreferrer"}
+Per utilizzare Fogli Google sul tuo computer accedi al tuo account Google e visita la pagina [sheets.google.com](https://sheets.google.com)
 
 Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca sul tuo dispositivo questa icona ![icona di Fogli Google]({{image}}){.inline .w-7 .ml-1}. Se non la trovi puoi installare l'app dallo store per il tuo dispositivo usando uno di questi link.
 
-- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.sheets){rel="noopener noreferrer"}
-- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/us/app/google-sheets/id842849113){rel="noopener noreferrer"}
+- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.sheets)
+- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/us/app/google-sheets/id842849113)
 
 {% set tutorials = collections.googlesheetstutorial %}
 {% include 'partials/tutorial.njk' %}
@@ -53,10 +54,10 @@ Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca s
 
 ## Risorse utili (siti esterni)
 
-- [Guida di Fogli Google](https://support.google.com/docs/topic/9054603){rel="noopener noreferrer"}
-- [Community di assistenza (in inglese)](https://support.google.com/docs/community){rel="noopener noreferrer"}
-- [BenCollins (in inglese)](https://www.benlcollins.com/){rel="noopener noreferrer"} sito curato da [Ben Collins](https://twitter.com/benlcollins){rel="noopener noreferrer"}, un Google Developer Expert per Fogli Google a Apps Script. Una miniera di informazioni e utili consigli per approfondire la propria conoscenza di Fogli Google.
-- [Google Workspace Developers](https://workspacedevs.com/){rel="noopener noreferrer"} un elenco di sviluppatori con competenze specifiche su Google Apps Script e/o i vari prodotti di Google Workspace.
+- [Guida di Fogli Google](https://support.google.com/docs/topic/9054603)
+- [Community di assistenza (in inglese)](https://support.google.com/docs/community)
+- [BenCollins (in inglese)](https://www.benlcollins.com/) sito curato da [Ben Collins](https://twitter.com/benlcollins), un Google Developer Expert per Fogli Google a Apps Script. Una miniera di informazioni e utili consigli per approfondire la propria conoscenza di Fogli Google.
+- [Google Workspace Developers](https://workspacedevs.com/) un elenco di sviluppatori con competenze specifiche su Google Apps Script e/o i vari prodotti di Google Workspace.
 
-_Credit:_ alcune informazioni sono state tradotte e adattate dal corso online di Google [**Applied Digital Skills**](https://applieddigitalskills.withgoogle.com/c/college-and-continuing-education/en/g-suite-certification-sheets-part-1/g-suite-certification-sheets-part-1/introduction-to-g-suite-certification-sheets-part-1.html){rel="noopener noreferrer"}
+_Credit:_ alcune informazioni sono state tradotte e adattate dal corso online di Google [**Applied Digital Skills**](https://applieddigitalskills.withgoogle.com/c/college-and-continuing-education/en/g-suite-certification-sheets-part-1/g-suite-certification-sheets-part-1/introduction-to-g-suite-certification-sheets-part-1.html)
 {.text-sm .mt-8 .mb-0}

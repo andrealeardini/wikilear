@@ -54,6 +54,7 @@ const { parse } = require("csv-parse/sync");
 const postcss = require("postcss");
 const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
+const externalLinks = require("./src/_transforms/external-links");
 
 module.exports = function (eleventyConfig) {
   // use csv files as data
@@ -109,6 +110,11 @@ module.exports = function (eleventyConfig) {
     "optimizeImages",
     require("./src/_transforms/images")
   );
+
+  // add noopener noreferrer to external links
+  eleventyConfig.addTransform("externalLinks", (content, outputPath) => {
+    return externalLinks(content, outputPath, { domain: "www.wikilear.it" });
+  });
 
   // minify HTML only in production
   // optional chaining require NODE 14 >

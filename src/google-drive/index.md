@@ -8,6 +8,7 @@ image: /images/drive_48dp.png
 feed:
 share: true
 ---
+
 <details open>
 <summary>
 Contenuto
@@ -15,12 +16,12 @@ Contenuto
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)
-{% if collections.googledrivestutorial.length %}
+  {% if collections.googledrivestutorial.length %}
 - [Tutorial](#tutorial)
-{% endif %}
-{% if collections.googledrivestips.length %}
+  {% endif %}
+  {% if collections.googledrivestips.length %}
 - [Tips and tricks](#tips-and-tricks)
-{% endif %}
+  {% endif %}
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
 </details>
@@ -31,12 +32,12 @@ Google Drive è un servizio di archiviazione file basato su cloud che ti consent
 
 ## Per iniziare
 
-Per utilizzare Drive accedi al tuo account Google e visita la pagina [drive.google.com](https://drive.google.com){rel="noopener noreferrer"}
+Per utilizzare Drive accedi al tuo account Google e visita la pagina [drive.google.com](https://drive.google.com)
 
 Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca sul tuo dispositivo questa icona ![icona di Google Drive]({{image}}){.inline .w-6 .ml-1}. Se non la trovi puoi installare l'app dallo store per il tuo dispositivo usando uno di questi link.
 
-- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs){rel="noopener noreferrer"}
-- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/us/app/google-drive-free-online-storage/id507874739){rel="noopener noreferrer"}
+- [Scarica l'app der dispositivi Android](https://play.google.com/store/apps/details?id=com.google.android.apps.docs)
+- [Scarica l'app per dispositivi iOS (iPhone e iPad)](https://itunes.apple.com/us/app/google-drive-free-online-storage/id507874739)
 
 {% set tutorials = collections.googledrivetutorial %}
 {% include 'partials/tutorial.njk' %}
@@ -46,10 +47,10 @@ Da disposivo mobile (tablet o telefono) puoi usare anche l'app dedicata. Cerca s
 
 ## Risorse utili (siti esterni)
 
-- [Guida di Google Drive](https://support.google.com/drive){rel="noopener noreferrer"}
-- [Community di assistenza (in inglese)](https://support.google.com/drive/community){rel="noopener noreferrer"}
+- [Guida di Google Drive](https://support.google.com/drive)
+- [Community di assistenza (in inglese)](https://support.google.com/drive/community)
 
 </details>
 
-_Credit:_ alcune informazioni sono state tradotte e adattate dal corso online di Google [**Applied Digital Skills**](https://applieddigitalskills.withgoogle.com/c/college-and-continuing-education/en/g-suite-certification-drive/g-suite-certification-drive/introduction-to-g-suite-certification-drive.html){rel="noopener noreferrer"}
+_Credit:_ alcune informazioni sono state tradotte e adattate dal corso online di Google [**Applied Digital Skills**](https://applieddigitalskills.withgoogle.com/c/college-and-continuing-education/en/g-suite-certification-drive/g-suite-certification-drive/introduction-to-g-suite-certification-drive.html)
 {class="text-sm mt-8 mb-0"}

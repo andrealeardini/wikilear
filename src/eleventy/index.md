@@ -6,7 +6,7 @@ override:tags: []
 description: Tutorial, Tips and Tricks su Eleventy
 permalink: "/11ty/"
 title: Eleventy
-image:  /images/11ty.png
+image: /images/11ty.png
 feed:
 share: true
 ---
@@ -18,12 +18,12 @@ Contenuto
 
 - [Panoramica](#panoramica)
 - [Per iniziare](#per-iniziare)
-{% if collections.eleventytutorial.length %}
+  {% if collections.eleventytutorial.length %}
 - [Tutorial](#tutorial)
-{% endif %}
-{% if collections.eleventytips.length %}
+  {% endif %}
+  {% if collections.eleventytips.length %}
 - [Tips and tricks](#tips-and-tricks)
-{% endif %}
+  {% endif %}
 - [Risorse utili](<#risorse-utili-(siti-esterni)>)
 
 </details>
@@ -115,9 +115,9 @@ Per vedere il risultato di Eleventy apri la pagina [http://localhost:8080/README
 
 ## Risorse utili (siti esterni)
 
-- [Documentazione ufficiale (in inglese)](https://www.11ty.dev/docs/){target="\_blank" rel="noopener noreferrer"} la guida di riferimento di Eleventy.
-- [Tutorial (in inglese)](https://www.11ty.dev/docs/tutorials/){target="\_blank" rel="noopener noreferrer"} un corposo elenco di tutorial di vari autori curato da Zach Leatherman (il creatore di Eleventy)
-- [Learn Eleventy From Scratch (in inglese)](https://piccalil.li/course/learn-eleventy-from-scratch/){target="\_blank" rel="noopener noreferrer"} uno dei migliori corsi online per costruire da zero un sito con Eleventy.
+- [Documentazione ufficiale (in inglese)](https://www.11ty.dev/docs/) la guida di riferimento di Eleventy.
+- [Tutorial (in inglese)](https://www.11ty.dev/docs/tutorials/) un corposo elenco di tutorial di vari autori curato da Zach Leatherman (il creatore di Eleventy)
+- [Learn Eleventy From Scratch (in inglese)](https://piccalil.li/course/learn-eleventy-from-scratch/) uno dei migliori corsi online per costruire da zero un sito con Eleventy.
 
-_Credit:_ alcune informazioni sono state tradotte e adattate dal [sito ufficiale di Eleventy](https://www.11ty.dev/){target="\_blank" rel="noopener noreferrer"}
+_Credit:_ alcune informazioni sono state tradotte e adattate dal [sito ufficiale di Eleventy](https://www.11ty.dev/)
 {class="text-sm mt-8 mb-0"}
