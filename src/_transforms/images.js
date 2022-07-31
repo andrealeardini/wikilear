@@ -19,7 +19,6 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
 //github.com/11ty/eleventy-img/issues/51#issuecomment-775186353
 
 const fs = require("fs");
@@ -42,17 +41,19 @@ const optimizeImages = async (content, outputPath = ".html") => {
 async function imageHTML(image) {
   // set standard format and element
   // create avif images only on Netlify
-  let formats = environment.NETLIFY ? ["avif", "webp", "jpeg"] : ["webp", "jpeg"];
+  let formats = environment.NETLIFY
+    ? ["avif", "webp", "jpeg"]
+    : ["webp", "jpeg"];
   let type = "picture";
 
   // with svg the element is a standard img, don't optimize
   // this avoid a bug with statsSync
   if (path.extname(image.src) === ".svg") {
-    return
+    return;
   }
 
   // the images source is relative, add the full path
-  let src = "./src"+image.src;
+  let src = "./src" + image.src;
 
   const options = {
     widths: [400, 500, 700, 900, 1100, 1300],
@@ -65,7 +66,6 @@ async function imageHTML(image) {
       return `${name}-${width}w.${format}`;
     },
   };
-
 
   const stats = Image.statsSync(src, options);
 
@@ -98,13 +98,13 @@ async function imageHTML(image) {
 
   const imageAttributes = {
     alt: image.alt,
-    sizes: image.sizes
-      ? image.sizes
-      : "(max-width: 550px) 100vw, 60ch",
+    sizes: image.sizes ? image.sizes : "(max-width: 550px) 100vw, 60ch",
     class: image.classList,
     // https://web.dev/lcp-lazy-loading/?utm_source=lighthouse&utm_medium=devtools
-    // loading: "lazy",
+    loading: image.dataset.lcp === "high" ? "eager" : "lazy",
     decoding: "async",
+    // https://web.dev/priority-hints/
+    fetchPriority: image.dataset.lcp === "high" ? "high" : "auto",
   };
 
   const text = Image.generateHTML(stats, imageAttributes, {
