@@ -2,7 +2,7 @@
   <div class="{% if style %} {{ style }}"{% endif %}>
     {%- if image -%}
       <img src="{{ image }}" {% if image-description %} alt="{{ image-description }}" {% else %} alt="" {% endif %} {% if
-        image_title %} title="{{ image_title }}" {% endif %} class="my-4 rounded-lg w-full " />
+        image_title %} title="{{ image_title }}" {% endif %} class="my-4 rounded-lg w-full" data-lcp="high" />
     {%- endif -%}
     <h1>{{ pageHeaderTitle or title | safe }}</h1>
   </div>
