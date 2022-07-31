@@ -101,7 +101,8 @@ async function imageHTML(image) {
     sizes: image.sizes ? image.sizes : "(max-width: 550px) 100vw, 60ch",
     class: image.classList,
     // https://web.dev/lcp-lazy-loading/?utm_source=lighthouse&utm_medium=devtools
-    loading: image.dataset.lcp === "high" ? "eager" : "lazy",
+    // avoid loading lazy if you use a CDN
+    // loading: image.dataset.lcp === "high" ? "eager" : "lazy",
     decoding: "async",
     // https://web.dev/priority-hints/
     fetchPriority: image.dataset.lcp === "high" ? "high" : "auto",
