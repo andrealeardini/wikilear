@@ -52,25 +52,23 @@ schema:
 ] %}
 
 <nav id="sections" aria-label="Sezioni prinicipali del sito">
-  <div class="flex flex-wrap justify-between mx-1 sm:mx-2 md:mx-4 my-4 gap-y-8">
+  <div class="mx-1 sm:mx-2 md:mx-4 grid sm:grid-cols-2 gap-8">
     {% for card in cards %}
-    <a class="w-full sm:w-5/11" href="{{ card.url }}">
       <div
-        class="h-full mb-6 flex flex-col border-gray-600 dark:bg-gray-300 border rounded-lg shadow-lg"
+        class="w-full aspect-[4/3] flex flex-col border-gray-600 dark:bg-gray-300 border rounded-lg shadow-lg"
       >
-        <div class="flex flex-col rounded-t-lg bg-gray-800 text-white">
-          <p class="text-center m-2">{{ card.title }}</p>
+        <div class="w-full h-12 flex flex-row justify-center items-center rounded-t-lg bg-gray-200 text-black font-semibold font text-xl">
+          <p class="m-0">{{ card.title }}</p>
         </div>
-        <div class="h-full relative pb-2/3">
+        <div class="flex flex-grow aspect-[5/4] items-center justify-center px-2">
           <img
-            class="p-6 sm:p-4 absolute h-full object-cover"
+            class="object-cover"
             src="{{ card.image }}"
             alt
             sizes="(max-width:640px) 300px, 600px"
           />
         </div>
       </div>
-    </a>
     {% endfor %}
   </div>
 </nav>
@@ -89,7 +87,6 @@ schema:
   <a href="https://www.11ty.dev/" aria-label="Eleventy (link al sito)">Eleventy</a> e
   <a href="https://tailwindcss.com/" aria-label="Tailwind CSS (link al sito)">Tailwind CSS,</a>
   è ospitato su <a href="https://www.netlify.com/">Netlify,</a> trovi il codice sorgente su <a href="https://github.com/andrealeardini/wikilear" rel="noopener noreferrer">GitHub.</a> Wikilear è stato testato
-  sui più moderni browser: Chrome, Edge e Firefox. Su Safari potresti
-  riscontrare qualche problema a livello grafico.
+  sulle ultime versioni dei più moderni browser: Chrome, Edge, Firefox e Safari. Se riscontri problemi grafici aggiorna il tuo browser.
 </p>
 {% endblock %}
