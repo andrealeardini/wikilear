@@ -27,7 +27,7 @@ schema:
     class="w-full rounded-lg shadow-lg"
     data-lcp="high"
   />
-<h1>Wikilear, tutorial, tips and tricks alla portata di tutti</h1>
+<h1>Wikilear, tutorial e tips and tricks alla portata di tutti</h1>
 <p>Su Wikilear trovi guide e suggerimenti su come usare al meglio Google Workspace (Documenti Google, Fogli Google, Gmail, Google Drive, ecc.)
   e altri prodotti Google. Trovi anche utili tutorial su Google Apps Script, Eleventy e Tailwind CSS.</p>
 </div>
@@ -61,17 +61,19 @@ schema:
       <div
         class="w-full aspect-[4/3] flex flex-col border-gray-600 dark:bg-gray-300 border rounded-lg shadow-lg"
       >
-        <div class="w-full h-12 flex flex-row justify-center items-center rounded-t-lg bg-gray-200 text-black font-semibold font text-xl">
-          <p class="m-0">{{ card.title }}</p>
-        </div>
-        <div class="flex flex-grow aspect-[5/4] items-center justify-center px-2">
-          <img
-            class="object-cover"
-            src="{{ card.image }}"
-            alt
-            sizes="(max-width:640px) 300px, 600px"
-          />
-        </div>
+        <a class=""" href="{{ card.url }}">
+          <div class="w-full h-12 flex flex-row justify-center items-center rounded-t-lg bg-gray-200 text-black font-semibold font text-xl">
+            <p class="m-0">{{ card.title }}</p>
+          </div>
+          <div class="flex flex-grow aspect-[5/4] items-center justify-center px-2">
+            <img
+              class="object-cover"
+              src="{{ card.image }}"
+              alt
+              sizes="(max-width:640px) 300px, 600px"
+            />
+          </div>
+        </a>
       </div>
     {% endfor %}
   </div>
