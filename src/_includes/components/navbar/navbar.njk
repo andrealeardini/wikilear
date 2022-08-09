@@ -1,42 +1,60 @@
-<header class="bg-gray-800 shadow-lg flex justify-between items-center p-2">
-  <div class="text-white">
-    {# https://tailwindcss.com/docs/screen-readers #}
-    <a href="#content" class="text-yellow-400 bg-black sr-only focus:absolute focus:not-sr-only">
-      Passa al contenuto
-    </a>
-    <a href="/" aria-label="Vai alla home page di Wikilear"
-      class="ml-4 text-xl text-white hover:text-gray-200 dark:text-white dark:hover:text-gray-200">Wikilear</a>
-  </div>
-  <div class="flex gap-3 justify-end items-center">
-    <div id="panel" class="hidden leading-10 md:flex md:gap-3">
-      <a href="/blog/"
-        class="block md:inline-block px-1 text-white hover:text-gray-100 font-semibold hover:bg-gray-600 dark:text-white dark:hover:text-gray-100 rounded">Blog</a>
-      <a href="/chi-sono/"
-        class="block md:inline-block px-1  text-white hover:text-gray-100 font-semibold hover:bg-gray-600 dark:text-white dark:hover:text-gray-100 rounded">Chi
-        sono</a>
-      <a href="/tag/"
-        class="block md:inline-block px-1  text-white hover:text-gray-100 font-semibold hover:bg-gray-600 dark:text-white dark:hover:text-gray-100 rounded">Etichette</a>
-      <a href="/tips-and-tricks/"
-        class="block md:inline-block px-1  text-white hover:text-gray-100 font-semibold hover:bg-gray-600 dark:text-white dark:hover:text-gray-100 rounded">Tips
-        and Tricks</a>
-      <a href="/tutorial/"
-        class="block md:inline-block px-1  text-white hover:text-gray-100 font-semibold hover:bg-gray-600 dark:text-white dark:hover:text-gray-100 rounded">Tutorial</a>
-    </div>
-    <a href="/search/" aria-label="Cerca sul sito"
-      class="md:mr-4 block w-6 h-6 md:inline-block text-white hover:text-gray-100 font-semibold hover:bg-gray-600 dark:text-white dark:hover:text-gray-100 rounded"><svg
-        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-      </svg></a>
-    <button id="menuBtn" type="button" class="mr-4 block md:hidden text-white hover:text-gray-500" aria-label="Menu">
-      <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" fill="currentColor">
-        <path id="close" class="hidden" fill-rule="evenodd"
-          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-          clip-rule="evenodd" />
-        <path id="menu" fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd" />
+{% set logo %}
+<a href="/" aria-label="Vai alla home page di Wikilear"
+  class="md:ml-2 text-[24px] leading-[0.75] text-white hover:text-gray-200 dark:text-white dark:hover:text-gray-200"
+  >Wikilear
+</a>
+{% endset %}
+
+<header class="fixed z-50 top-0 left-0 w-full bg-gray-800 shadow-lg flex justify-between items-center px-4 min-h-[4rem] dark:text-white">
+
+    <label class="relative w-6 text-white md:w-full md:h-full flex gap-6 items-center justify-between" for="menuBtn">
+      <input id="menuBtn" type="checkbox" class="md:hidden peer invisible" />
+
+      <div class="hidden md:block">
+        {{logo | safe}}
+      </div>
+
+      <svg class="md:hidden w-6 absolute top-0 visible peer-checked:invisible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <g fill='currentColor'>
+          <path d="M19 14H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2zM19 7H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2zM19 21H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2z">
+          </path>
+        </g>
       </svg>
-    </button>
-  </div>
+
+      <svg class="md:hidden w-6 absolute top-0 invisible peer-checked:visible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <g fill='currentColor'>
+          <path d="M19.5 4.5c-.8-.8-2.2-.8-3 0L12 9 7.5 4.5c-.8-.8-2.2-.8-3 0-.8.8-.8 2.2 0 3L9 12l-4.5 4.5c-.8.8-.8 2.2 0 3 .8.8 2.2.8 3 0L12 15l4.5 4.5c.8.8 2.2.8 3 0 .8-.8.8-2.2 0-3L15 12l4.5-4.5c.8-.8.8-2.2 0-3z">
+          </path>
+        </g>
+      </svg>
+
+      {% set items = [
+        { name: "Blog", url: "/blog/"},
+        { name: "Chi sono", url: "/chi-sono/"},
+        { name: "Etichette", url: "/tag/"},
+        { name: "Tips and Tricks", url: "/tips-and-tricks/"},
+        { name: "Tutorial", url: "/tutorial/"}
+      ] %}
+
+      <div class="md:hidden fixed h-screen top-16 left-0 w-full bg-black/30 invisible peer-checked:visible backdrop-blur-sm"></div>
+
+      <nav
+        class="fixed h-screen top-16 left-0 w-fit min-w-[16rem]  -translate-x-full md:translate-x-0 peer-checked:translate-x-0 bg-gray-50  md:bg-gray-800 transition-transform md:flex md:static md:h-full md:w-full dark:bg-gray-500 md:dark:bg-gray-800" aria-label="menu principale">
+        {% for item in items %}
+        <a href="{{ item.url }}" class="text-gray-800 hover:bg-gray-100 md:hover:bg-gray-700 md:hover:text-gray-50 md:text-white md:h-full md:py-6 block px-5 py-6 md:px-4  dark:text-white  dark:hover:text-gray-200  dark:hover:bg-gray-600">{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+
+      <div class="block md:hidden">
+        {{logo | safe}}
+      </div>
+
+    </label>
+
+  <a href="/search/" aria-label="Cerca sul sito"
+    class="block w-6 h-6 md:inline-block text-white hover:text-gray-100 font-semibold hover:bg-gray-600 dark:text-white dark:hover:text-gray-100 rounded"><svg
+      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg></a>
 </header>
