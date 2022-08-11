@@ -81,25 +81,19 @@
   {% endblock %}
 </head>
 
-<body class="h-screen box-border bg-gray-200">
-  <div class="min-h-full grid grid-cols-12 grid-rows-layout dark:bg-gray-600">
-    <div class="col-start-1 col-end-13">
-      <div class="z-50 w-full">
-        {# https://tailwindcss.com/docs/screen-readers #}
-        <a href="#content" class="text-yellow-400 bg-black sr-only focus:absolute focus:not-sr-only">
-          Passa al contenuto
-        </a>
-        {% include "components/navbar/navbar.njk" %}
-      </div>
-      <main id="content"
-        class="mt-12 h-full mx-auto pt-6 px-4 md:px-8 max-w-ch-70 text-base bg-white dark:bg-gray-900 xl:text-lg">
-        {% include "components/breadcrumbs.njk" %}
-        {% block content %}
-        {% endblock %}
-      </main>
-    </div>
+<body class="h-screen box-border min-h-full grid grid-cols-12 grid-rows-layout dark:bg-gray-600">
+    {# https://tailwindcss.com/docs/screen-readers #}
+    <a href="#content" class="inline-block z-[100] text-white hover:text-white hover:shadow-lg  bg-blue-600 dark:bg-slate-600 sr-only focus:not-sr-only focus:fixed top-2 left-2 focus:p-4 focus:m-4">
+      Passa al contenuto
+    </a>
+    {% include "components/navbar/navbar.njk" %}
+    <main id="content"
+      class="col-start-1 col-end-13 w-full mt-16 h-full mx-auto pt-6 px-4 md:px-8 max-w-ch-70 text-base bg-white dark:bg-gray-900 xl:text-lg">
+      {% include "components/breadcrumbs.njk" %}
+      {% block content %}
+      {% endblock %}
+    </main>
     {% include "partials/footer.njk" %}
-  </div>
   {% if environment.NODE_ENV=="production" %}
   {# capture the JS content as a Nunjucks variable #}
   {% set js %}
