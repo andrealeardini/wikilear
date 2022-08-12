@@ -1,60 +1,55 @@
-{% set logo %}
-<a href="/" aria-label="Vai alla home page di Wikilear"
-  class="md:ml-2 text-[24px] leading-[0.75] text-gray-800 hover:text-gray-600 dark:text-white dark:hover:text-gray-200"
+<header id="header" class="col-start-1 col-end-13 fixed z-50 top-0 left-0 w-full text-gray-800 bg-gray-100 shadow-lg flex justify-between items-center px-4 min-h-[4rem] dark:text-white dark:bg-gray-800">
+
+  <a href="/" aria-label="Vai alla home page di Wikilear"
+    class="hidden md:block md:ml-2 text-[24px] leading-[0.75] text-gray-800 hover:text-gray-600 dark:text-white dark:hover:text-gray-200"
   >Wikilear
-</a>
-{% endset %}
+  </a>
 
-<header class="col-start-1 col-end-13 fixed z-50 top-0 left-0 w-full text-gray-800 bg-gray-100 shadow-lg flex justify-between items-center px-4 min-h-[4rem] dark:text-white dark:bg-gray-800">
-    <div class="w-16 hidden md:block">
-      {{logo | safe}}
-    </div>
-    <label class="relative w-6 h-6 md:w-max md:h-full flex gap-6 items-center justify-between" for="menuBtn">
-      <input id="menuBtn" type="checkbox" class="md:hidden peer invisible" />
+  <label id="hamburger-menu" class="relative w-6 h-6 md:w-max md:h-full flex gap-6 items-center justify-between" for="checkbox-menu">
+    <input id="checkbox-menu" type="checkbox" class="md:hidden peer invisible" />
 
+    <svg role="button" aria-label="Apri menu" id="open" tabindex="0" class="md:hidden w-6 absolute top-0 visible peer-checked:invisible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <g fill='currentColor'>
+        <path d="M19 14H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2zM19 7H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2zM19 21H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2z">
+        </path>
+      </g>
+    </svg>
 
+    <svg role="button" aria-label="Chiudi menu" id="close" tabindex="0" class="md:hidden w-6 absolute top-0 invisible peer-checked:visible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <g fill='currentColor'>
+        <path d="M19.5 4.5c-.8-.8-2.2-.8-3 0L12 9 7.5 4.5c-.8-.8-2.2-.8-3 0-.8.8-.8 2.2 0 3L9 12l-4.5 4.5c-.8.8-.8 2.2 0 3 .8.8 2.2.8 3 0L12 15l4.5 4.5c.8.8 2.2.8 3 0 .8-.8.8-2.2 0-3L15 12l4.5-4.5c.8-.8.8-2.2 0-3z">
+        </path>
+      </g>
+    </svg>
 
-      <svg tabindex="0" class="md:hidden w-6 absolute top-0 visible peer-checked:invisible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <g fill='currentColor'>
-          <path d="M19 14H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2zM19 7H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2zM19 21H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2z">
-          </path>
-        </g>
-      </svg>
+    {% set items = [
+      { name: "Blog", url: "/blog/"},
+      { name: "Chi sono", url: "/chi-sono/"},
+      { name: "Etichette", url: "/tag/"},
+      { name: "Tips and Tricks", url: "/tips-and-tricks/"},
+      { name: "Tutorial", url: "/tutorial/"}
+    ] %}
 
-      <svg tabindex="0" class="md:hidden w-6 absolute top-0 invisible peer-checked:visible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <g fill='currentColor'>
-          <path d="M19.5 4.5c-.8-.8-2.2-.8-3 0L12 9 7.5 4.5c-.8-.8-2.2-.8-3 0-.8.8-.8 2.2 0 3L9 12l-4.5 4.5c-.8.8-.8 2.2 0 3 .8.8 2.2.8 3 0L12 15l4.5 4.5c.8.8 2.2.8 3 0 .8-.8.8-2.2 0-3L15 12l4.5-4.5c.8-.8.8-2.2 0-3z">
-          </path>
-        </g>
-      </svg>
+    {# the inert panel #}
+    <div class="md:hidden fixed h-screen top-16 left-0 w-full bg-black/30 invisible peer-checked:visible backdrop-blur-sm"></div>
 
-      {% set items = [
-        { name: "Blog", url: "/blog/"},
-        { name: "Chi sono", url: "/chi-sono/"},
-        { name: "Etichette", url: "/tag/"},
-        { name: "Tips and Tricks", url: "/tips-and-tricks/"},
-        { name: "Tutorial", url: "/tutorial/"}
-      ] %}
+    {# https://www.w3.org/WAI/tutorials/menus/structure/ #}
+    <nav
+      class="fixed h-screen top-16 left-0 w-fit min-w-[16rem]  -translate-x-full md:translate-x-0 peer-checked:translate-x-0 bg-gray-50  md:bg-gray-100 md:text-gray-800 transition-transform md:static md:h-full md:w-max dark:bg-gray-500 md:dark:bg-gray-800" aria-label="menu principale">
+      <ul class="md:flex md:gap-2 lg:gap-8">
+        {% for item in items %}
+        <li><a href="{{ item.url }}" {% if page.url == item.url %} aria-current="page"{% endif %} class="{% if page.url == item.url %} font-bold underline underline-offset-8 decoration-4 {% endif %} text-gray-800 hover:bg-gray-200  md:hover:text-gray-600 md:text-gray-800 md:h-full md:py-6 block px-5 py-6 md:px-4  dark:text-white  dark:hover:text-gray-200  dark:hover:bg-gray-600">{{ item.name}}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
 
-      <div class="md:hidden fixed h-screen top-16 left-0 w-full bg-black/30 invisible peer-checked:visible backdrop-blur-sm"></div>
-
-      <nav
-        class="fixed h-screen top-16 left-0 w-fit min-w-[16rem]  -translate-x-full md:translate-x-0 peer-checked:translate-x-0 bg-gray-50  md:bg-gray-100 md:text-gray-800 transition-transform md:static md:h-full md:w-max dark:bg-gray-500 md:dark:bg-gray-800" aria-label="menu principale">
-        <ul class="md:flex md:gap-2 lg:gap-8">
-          {% for item in items %}
-          <li><a href="{{ item.url }}" {% if page.url == item.url %} aria-current="page"{% endif %} class="{% if page.url == item.url %} font-bold underline underline-offset-8 decoration-4 {% endif %} text-gray-800 hover:bg-gray-200  md:hover:text-gray-600 md:text-gray-800 md:h-full md:py-6 block px-5 py-6 md:px-4  dark:text-white  dark:hover:text-gray-200  dark:hover:bg-gray-600">{{ item.name}}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
-
-    </label>
-    <div class="w-16 block md:hidden">
-        {{logo | safe}}
-    </div>
-
+  </label>
+  <a id="logo" href="/" aria-label="Vai alla home page di Wikilear"
+    class="md:hidden md:ml-2 text-[24px] leading-[0.75] text-gray-800 hover:text-gray-600 dark:text-white dark:hover:text-gray-200">Wikilear
+  </a>
 
   <div class="w-6 md:w-16">
-    <a href="/search/" aria-label="Cerca sul sito"
+    <a id="search" href="/search/" aria-label="Cerca sul sito"
       class="block w-6 h-6 md:inline-block text-gray-800 font-semibold  dark:text-white rounded">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
