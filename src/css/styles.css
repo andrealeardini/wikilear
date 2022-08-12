@@ -25,7 +25,7 @@
   }
 
   a {
-    @apply text-blue-700 hover:text-blue-900 dark:text-yellow-400 dark:hover:text-yellow-600;
+    @apply text-blue-700 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-500;
   }
 
   a[href].direct-link,
@@ -39,7 +39,7 @@
   :hover > a[href].direct-link:visited,
   a[href].direct-link:focus,
   a[href].direct-link:focus:visited {
-    @apply text-blue-700 dark:text-yellow-400 font-bold visible;
+    @apply text-blue-700 font-bold visible;
   }
 
   img {

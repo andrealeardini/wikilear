@@ -1,40 +1,63 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // gestisco il pulsante del menu
-  let inert = document.getElementById("inert");
-  let menuBtn = document.getElementById("menuBtn");
-  let menu = document.getElementById("menu");
-  let panel = document.getElementById("panel");
-  let close = document.getElementById("close");
-  let isOpen = false;
-  menuBtn.addEventListener("click", () => {
-    if (!isOpen) {
-      showMenu();
-      inert.addEventListener(
-        "click",
-        () => {
-          hideMenu();
-        },
-        { once: true }
-      );
-    } else {
-      hideMenu();
-    }
-  });
+const header = document.getElementById("header");
+const hamburger = document.getElementById("hamburger-menu");
+const logo = document.getElementById("logo");
+const menu = document.getElementById("checkbox-menu");
+const open = document.getElementById("open");
+const close = document.getElementById("close");
 
-  function showMenu() {
-    panel.classList.remove("hidden");
-    menu.classList.add("hidden");
-    close.classList.remove("hidden");
-    inert.classList.remove("hidden");
-    isOpen = !isOpen;
+// TODO: Gestire i tab quando l'utente si trova nel menu e lo chiude
+
+open.addEventListener("keydown", (event) => {
+  if (event.defaultPrevented) {
+    return; // Do nothing if the event was already processed
   }
-
-  function hideMenu() {
-    panel.classList.add("hidden");
-    menu.classList.remove("hidden");
-    close.classList.add("hidden");
-    inert.classList.add("hidden");
-    isOpen = !isOpen;
+  if (event.key == "Enter" || event.key == " " || event.key == "Spacebar") {
+    event.preventDefault();
+    menu.checked = true;
+    header.ariaExpanded = "true";
+    close.focus();
+  }
+  if (event.key == "Tab" && !event.shiftKey) {
+    event.preventDefault();
+    logo.focus();
   }
 });
 
+logo.addEventListener("keydown", (event) => {
+  if (event.defaultPrevented) {
+    return; // Do nothing if the event was already processed
+  }
+  if (event.key == "Tab" && event.shiftKey && !menu.checked) {
+    event.preventDefault();
+    open.focus();
+  }
+});
+
+hamburger.addEventListener("keydown", (event) => {
+  if (event.defaultPrevented) {
+    return; // Do nothing if the event was already processed
+  }
+  if ((event.key == "Esc" || event.key == "Escape") && menu.checked) {
+    event.preventDefault();
+    menu.checked = false;
+    open.focus();
+  }
+});
+
+close.addEventListener("keydown", (event) => {
+  if (event.defaultPrevented) {
+    return; // Do nothing if the event was already processed
+  }
+  if (event.key == "Enter" || event.key == " " || event.key == "Spacebar") {
+    event.preventDefault();
+    menu.checked = false;
+    header.ariaExpanded = "false";
+    open.focus();
+  }
+  if (event.key == "Esc" || event.key == "Escape") {
+    event.preventDefault();
+    menu.checked = false;
+    header.removeAttribute("aria-expanded");
+    open.focus();
+  }
+});
