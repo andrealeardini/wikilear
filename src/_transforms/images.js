@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2021 Andrea Leardini
+ * Copyright (c) 2022 Andrea Leardini
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -45,12 +45,6 @@ async function imageHTML(image) {
     ? ["avif", "webp", "jpeg"]
     : ["webp", "jpeg"];
   let type = "picture";
-
-  // with svg the element is a standard img, don't optimize
-  // this avoid a bug with statsSync
-  if (path.extname(image.src) === ".svg") {
-    return;
-  }
 
   // the images source is relative, add the full path
   let src = "./src" + image.src;
@@ -98,11 +92,12 @@ async function imageHTML(image) {
 
   const imageAttributes = {
     alt: image.alt,
-    sizes: image.sizes ? image.sizes : "(max-width: 550px) 100vw, 60ch",
+    sizes: image.sizes
+      ? image.sizes
+      : "(min-width: 1280px) 615px, (min-width: 640px) calc(-5.16vw + 605px), calc(95vw - 17px)",
     class: image.classList,
     // https://web.dev/lcp-lazy-loading/?utm_source=lighthouse&utm_medium=devtools
-    // avoid loading lazy if you use a CDN
-    // loading: image.dataset.lcp === "high" ? "eager" : "lazy",
+    loading: image.dataset.lcp === "high" ? "eager" : "lazy",
     decoding: "async",
     // https://web.dev/priority-hints/
     fetchPriority: image.dataset.lcp === "high" ? "high" : "auto",
