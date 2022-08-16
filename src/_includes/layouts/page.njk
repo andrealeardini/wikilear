@@ -24,8 +24,11 @@ schema:
               {% if image_title %}
               title="{{ image_title }}"
               {% endif %}
-              class="flex-none w-14 m-0 mr-4 rounded-lg
-                {% if image =="/images/11ty.svg" %}w-16 bg-gray-900{% endif %}"
+              class="flex-none w-14 m-0 mr-4 rounded-lg"
+              {% if image_sizes %}
+              sizes="{{ image_sizes }}"
+              {% endif %}
+
             />
             <h1>{{title}}</h1>
           </div>

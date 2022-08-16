@@ -65,15 +65,15 @@ In alternativa puoi navigare nella visualizzazione 3D usando i **controlli di na
 
 <table>
   <tr>
-    <td class="w-1/3"><img alt="Bussola con frecce di rotazione" src="/images/google-maps-visualizzazione-earth-pulsante-bussola-frecce-rotazione.png"></td>
+    <td class="w-1/3"><img alt="Bussola con frecce di rotazione" src="/images/google-maps-visualizzazione-earth-pulsante-bussola-frecce-rotazione.png" sizes="54px"></td>
     <td>Fai clic sulle frecce per ruotare la mappa. Ogni clic corrisponde a una rotazione di 90° nel senso della freccia. Fai clic sull'icona della bussola (al centro) per orientare la mappa con il nord in alto</td>
   </tr>
   <tr>
-    <td><img alt="Pulsante inclinazione" src="/images/google-maps-visualizzazione-earth-pulsante-inclinazione.png"></td>
+    <td><img alt="Pulsante inclinazione" src="/images/google-maps-visualizzazione-earth-pulsante-inclinazione.png" sizes="32px"></td>
     <td>Fai clic sul pulsante d'inclinazione per inclinare la mappa e dare un effetto tipo paesaggio. Puoi impostare tre livelli di inclinazione (vista perpendicolare, inclinazione leggera, inclinazione panoramica)</td>
   </tr>
   <tr>
-    <td><img alt="Pulsante zoom" src="/images/google-maps-visualizzazione-earth-pulsanti-zoom.png"></td>
+    <td><img alt="Pulsante zoom" src="/images/google-maps-visualizzazione-earth-pulsanti-zoom.png" sizes="32px"></td>
     <td>Utilizza i pulsanti + e - per aumentare o diminuire il livello di zoom. Ogni volta che fai clic aumenti o riduci lo zoom del 100% rispetto alla visualizzazione attuale.</td>
   </tr>
 </table>

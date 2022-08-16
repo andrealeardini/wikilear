@@ -7,6 +7,7 @@ description: Tutorial, Tips and Tricks su Eleventy
 permalink: "/11ty/"
 title: Eleventy
 image: /images/11ty.png
+image_sizes: 56px
 feed:
 share: true
 ---

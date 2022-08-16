@@ -5,6 +5,7 @@ layout: layouts/page.njk
 override:tags: []
 title: Google Drive
 image: /images/drive_48dp.png
+image_sizes: 56px
 feed:
 share: true
 ---

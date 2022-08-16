@@ -13,6 +13,7 @@ image_title: Affiancare due finestre permette di copiare i file trascinandoli da
 image_description: copia di file da due finestre affiancate mediante il trascinamento della selezione
 old_url: /2012/07/affiancare-due-o-piu-finestre-in-Windows-7.html
 ---
+
 Quando si confrontano due documenti o si devono copiare dei file da una cartella all'altra è utile disporre le finestre in modo che siano affiancate. Sarà così possibile leggere il testo senza dover passare da una finestra all'altra oppure si potranno copiare o spostare elementi (testo o anche file) semplicemente trascinandoli tra le due finestre. In questo articolo vi illustro alcuni modi in cui è possibile **affiancare due o più finestre in Windows 7.**
 
 ## Affiancare due o più finestre con il menu di scelta rapida della barra delle applicazioni
@@ -20,7 +21,7 @@ Quando si confrontano due documenti o si devono copiare dei file da una cartella
 1. Fate clic con il pulsante destro del mouse su un'area vuota della barra delle applicazioni
 2. Scegliete **Mostra le finestre affiancate**
 
-![Menu Mostra le finestre affiancate](/images/windows-mostra-finestre-affiancate.png 'Tramite il menu della barra delle applicazioni è possibile affiancare le finestre aperte sul desktop'){.w-auto}
+![Menu Mostra le finestre affiancate](/images/windows-mostra-finestre-affiancate.png "Tramite il menu della barra delle applicazioni è possibile affiancare le finestre aperte sul desktop"){.w-auto}
 
 Il comando Mostra le finestra affiancate agisce solo sulle finestra aperte, eventuali finestre ridotte ad icona rimarranno nascoste sulla barra delle applicazioni. Alcuni programmi non permettono di affiancare automaticamente le finestre. Ad esempio se utilizzate Chrome noterete che la finestra del browser rimane nella sua posizione originale.
 
@@ -30,19 +31,19 @@ Snap è uno strumento introdotto con Windows 7 che permette di ridimensionare e 
 
 1. Fate clic con il pulsante sinistro del mouse sulla barra del titolo della finestra che volete posizionare a sinistra. Trascinate la finestra (senza rilasciare il pulsante) verso il lato sinistro dello schermo fino a quando vedrete il contorno della finestra espansa.
 
-![Contorno della finestra espansa a sinistra](/images/windows-affiancare-finestra-a-sinistra-con-Snap.png 'Trascinando la finestra verso sinistra compare la sagoma del contorno della finestra espansa'){.w-auto}
+![Contorno della finestra espansa a sinistra](/images/windows-affiancare-finestra-a-sinistra-con-Snap.png "Trascinando la finestra verso sinistra compare la sagoma del contorno della finestra espansa"){.w-auto}
 
 2. Rilasciate il pulsante del mouse. La finestra verrà espansa fino a metà schermo partendo dal lato sinistro.
 
-![Finestra affiancata a sinistra](/images/windows-finestra-affiancata-a-sinistra-con-Snap.png 'Rilasciando il pulsante del mouse la finestra sarà ridimensionata e affiancata a sinistra'){.w-auto}
+![Finestra affiancata a sinistra](/images/windows-finestra-affiancata-a-sinistra-con-Snap.png "Rilasciando il pulsante del mouse la finestra sarà ridimensionata e affiancata a sinistra"){.w-auto}
 
 3. Fate clic con il pulsante sinistro del mouse sulla barra del titolo della finestra che volete posizionare a destra. Trascinate la finestra (senza rilasciare il pulsante) verso il lato destro dello schermo fino a quando vedrete il contorno della finestra espansa.
 
-![Contorno della finestra espansa a destra](/images/windows-affiancare-finestra-a-destra-con-Snap.png 'Trascinando la finestra verso destra compare la sagoma del contorno della finestra espansa'){.w-auto}
+![Contorno della finestra espansa a destra](/images/windows-affiancare-finestra-a-destra-con-Snap.png "Trascinando la finestra verso destra compare la sagoma del contorno della finestra espansa"){.w-auto}
 
 4. Rilasciate il pulsante del mouse. La finestra verrà espansa fino a metà schermo partendo dal lato destro.
 
-![Finestra affiancata a destra](/images/windows-finestra-affiancata-a-destra-con-Snap.png 'Rilasciando il pulsante del mouse la finestra sarà ridimensionata e affiancata a destra'){.w-auto}
+![Finestra affiancata a destra](/images/windows-finestra-affiancata-a-destra-con-Snap.png "Rilasciando il pulsante del mouse la finestra sarà ridimensionata e affiancata a destra"){.w-auto}
 
 In qualsiasi momento potete ripristinare le dimensioni originali della finestra trascinandola dalla la barra del titolo e allontanandola dalla parte superiore del desktop.
 
@@ -50,9 +51,9 @@ In qualsiasi momento potete ripristinare le dimensioni originali della finestra 
 
 In alternativa è possibile usare i tasti di scelta rapida **[Logo Windows] + [Freccia a sinistra]** o **[Logo Windows] + [Freccia a destra]** per posizionare la finestra attiva sul lato sinistro destro dello schermo.
 
-![Logo Windows + Freccia a sinistra](/images/logo-windows+freccia-sinistra.jpg 'La combinazione di tasti [Logo Windows] + [Freccia a sinistra] posiziona la finestra attiva sul lato sinistro dello schermo')**[Logo Windows] + [Freccia a sinistra] posiziona la finestra attiva sul lato sinistro dello schermo**
+![Logo Windows + Freccia a sinistra](/images/logo-windows+freccia-sinistra.jpg "La combinazione di tasti [Logo Windows] + [Freccia a sinistra] posiziona la finestra attiva sul lato sinistro dello schermo"){sizes="(min-width: 460px) 400px, calc(94.29vw - 15px)"}**[Logo Windows] + [Freccia a sinistra] posiziona la finestra attiva sul lato sinistro dello schermo**
 
-![Logo Windows + Freccia a destra](/images/logo-windows+freccia-destra.jpg 'La combinazione di tasti [Logo Windows] + [Freccia a destra] posiziona la finestra attiva sul lato destro dello schermo')**[Logo Windows] + [Freccia a destra] posiziona la finestra attiva sul lato destro dello schermo**
+![Logo Windows + Freccia a destra](/images/logo-windows+freccia-destra.jpg "La combinazione di tasti [Logo Windows] + [Freccia a destra] posiziona la finestra attiva sul lato destro dello schermo"){sizes="(min-width: 460px) 400px, calc(94.29vw - 15px)"}**[Logo Windows] + [Freccia a destra] posiziona la finestra attiva sul lato destro dello schermo**
 
 Da notare che se la finestra attiva è già stata posizionata su uno dei lati dello schermo tramite la funzione Snap, la combinazione [Logo Windows] + [Freccia x] la riporterà alle dimensioni originali o la sposterà sul lato opposto a seconda del lato su cui si trova e del tasto freccia premuto. Non avete capito? Fate qualche prova e capirete subito.
 

@@ -27,10 +27,14 @@ schema:
     class="w-full rounded-lg shadow-lg"
     data-lcp="high"
   />
-<h1>Wikilear, tutorial e tips and tricks alla portata di tutti</h1>
+<h1>Wikilear: tutorial, suggerimenti e trucchi alla portata di tutti</h1>
 <p>Su Wikilear trovi guide e suggerimenti su come usare al meglio Google Workspace (Documenti Google, Fogli Google, Gmail, Google Drive, ecc.)
   e altri prodotti Google. Trovi anche utili tutorial su Google Apps Script, Eleventy e Tailwind CSS.</p>
 </div>
+<ul class="list-disc mx-4 p-4">
+  <li><a href="#all-articles">Ultimi articoli</a></li>
+  <li><a href="#topics">Argomenti principali</a></li>
+</ul>
 <article class="mx-1 sm:mx-2 md:mx-4">
   <div id="all-articles" class="heading my-2">
     {% set postListHeadline = 'Ultimi articoli pubblicati sul sito' %}
@@ -39,11 +43,10 @@ schema:
   </div>
 </article>
 <nav
-  id="topics"
-  class="heading my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-bold"
+   class="heading my-8 mx-1 sm:mx-2 md:mx-4 text-center border rounded-lg shadow-lg font-bold"
 >
 
-  <h2 class="mt-4 font-bold">Argomenti principali</h2>
+  <h2 id="topics" class="mt-4 font-bold">Argomenti principali</h2>
   {% include 'components/card.njk' %}
 
 </nav>
@@ -70,7 +73,7 @@ schema:
               class="object-cover"
               src="{{ card.image }}"
               alt
-              sizes="(max-width:640px) 300px, 600px"
+              sizes="(min-width: 1280px) 258px, (min-width: 780px) 220px, (min-width: 680px) 244px, (min-width: 560px) calc(22vw + 99px), calc(100vw - 58px)"
             />
           </div>
         </a>
@@ -92,7 +95,7 @@ schema:
   Wikilear è un progetto open source creato con
   <a href="https://www.11ty.dev/" aria-label="Eleventy (link al sito)">Eleventy</a> e
   <a href="https://tailwindcss.com/" aria-label="Tailwind CSS (link al sito)">Tailwind CSS,</a>
-  è ospitato su <a href="https://www.netlify.com/">Netlify,</a> trovi il codice sorgente su <a href="https://github.com/andrealeardini/wikilear" rel="noopener noreferrer">GitHub.</a> Wikilear è stato testato
-  sulle ultime versioni dei più moderni browser: Chrome, Edge, Firefox e Safari. Se riscontri problemi grafici aggiorna il tuo browser.
+  e ospitato su <a href="https://www.netlify.com/">Netlify.</a> Trovi il codice sorgente su <a href="https://github.com/andrealeardini/wikilear" rel="noopener noreferrer">GitHub.</a> Wikilear è stato testato
+  sulle ultime versioni dei più moderni browser: Chrome, Edge, Firefox, Opera e Safari. Se riscontri problemi grafici aggiorna il tuo browser.
 </p>
 {% endblock %}

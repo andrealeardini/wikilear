@@ -3,7 +3,7 @@
   <li class="w-20 font-semibold text-gray-700 dark:text-gray-100 text-sm md:text-base">
     <a href="{{ card.url | url }}">
       <div class="h-full flex flex-col">
-        <img class="h-20" src="{{ card.imageUrl | url }}" alt aria-label="Vai alla sezione dedicata a {{ card.title | safe }}"/>
+        <img class="h-20" src="{{ card.imageUrl | url }}" alt aria-label="Vai alla sezione dedicata a {{ card.title | safe }}" sizes="80px"/>
         <p>{{ card.title | safe }}</p>
       </div>
     </a>

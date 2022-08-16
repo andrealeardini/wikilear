@@ -10,6 +10,7 @@ description: Con gli ultimi aggiornamenti Google Keep veste il Material Design e
 subtitle: Con gli ultimi aggiornamenti Google Keep veste il Material Design e si arricchisce di importanti funzioni tra cui la condivisione delle note, la modifica real-time e la ricerca tramite colore.
 snippet_image: /images/google-keep-web.png
 snippet_description: Google Keep versione web
+snippet_sizes: "16px"
 image:
 image_title:
 image_description:
@@ -22,9 +23,9 @@ Grazie alla nuova funzione per condividere le note puoi creare una lista della s
 
 <div class="flex justify-between h-2/5 w-auto">
 
-![Elenchi e note condivisi su Google Keep](/images/google-keep-condivisione-note.png "Condividi note ed elenchi con amici e parenti")
+![Elenchi e note condivisi su Google Keep](/images/google-keep-condivisione-note.png "Condividi note ed elenchi con amici e parenti"){sizes="(min-width: 1280px) 308px, (min-width: 640px) calc(-2.58vw + 303px), calc(47.5vw - 9px)"}
 
-![Elenco della spesa condiviso con Google Keep](/images/google-keep-condivisione-elenco-spesa.png "Elenco della spesa condiviso con altri utenti")
+![Elenco della spesa condiviso con Google Keep](/images/google-keep-condivisione-elenco-spesa.png "Elenco della spesa condiviso con altri utenti"){sizes="(min-width: 1280px) 308px, (min-width: 640px) calc(-2.58vw + 303px), calc(47.5vw - 9px)"}
 
 </div>
 
@@ -35,7 +36,7 @@ Prendere un appunto al volo è utile, ma a cosa servirebbe avere tante note se p
 <div class="flex justify-center h-2/5 w-auto">
 <div class="basis">
 
-![Ricerca di una nota in base al colore in Google Keep](/images/google-keep-ricerca-note-per-colore.png "Assegna colori diversi alle note per suddividerle in categorie")
+![Ricerca di una nota in base al colore in Google Keep](/images/google-keep-ricerca-note-per-colore.png "Assegna colori diversi alle note per suddividerle in categorie"){sizes="(min-width: 1280px) 308px, (min-width: 640px) calc(-2.58vw + 303px), calc(47.5vw - 9px)"}
 
 </div>
 </div>
