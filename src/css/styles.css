@@ -294,8 +294,8 @@
   h3,
   h4,
   .heading {
-    scroll-margin-top: 72px;
-    scroll-snap-margin-top: 72px;
+    scroll-margin-top: 6rem;
+    scroll-snap-margin-top: 6rem;
   }
 
   .dark img:not([src*=".svg"]) {
