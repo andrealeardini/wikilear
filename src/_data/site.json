@@ -1,7 +1,7 @@
 {
   "name": "Wikilear",
   "url": "https://www.wikilear.it",
-  "title": "Wikilear, codelab e tutorial",
+  "title": "Wikilear",
   "genre": "CreativeWork",
   "author": {
     "name": "Andrea Leardini",
@@ -12,7 +12,7 @@
     "name": "Wikilear"
   },
   "feed": {
-    "subtitle": "Gli ultimi articoli, tutorial e codelab da Wikilear",
+    "subtitle": "Gli ultimi articoli e tutorial da Wikilear",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://www.wikilear.it"
