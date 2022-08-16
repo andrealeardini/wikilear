@@ -305,40 +305,4 @@
   .dark img.invert {
     filter: invert(0);
   }
-
-  /* TODO: use new Tailwind plugin */
-  /* aspect ratio */
-  /* https://css-tricks.com/aspect-ratio-boxes/#using-custom-properties */
-
-  [style*="--aspect-ratio"] > :first-child {
-    width: 100%;
-  }
-  [style*="--aspect-ratio"] > img {
-    height: auto;
-  }
-
-  [style*="--aspect-ratio"] {
-    position: relative;
-  }
-  [style*="--aspect-ratio"]::before {
-    content: "";
-    display: block;
-    padding-bottom: calc(100% / (var(--aspect-ratio)));
-  }
-  [style*="--aspect-ratio"] > :first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
-
-  .basis {
-    flex-basis: 50%;
-  }
-
-  responsive {
-    .keep-tall {
-      @apply max-h-3/4v w-auto;
-    }
-  }
 }
