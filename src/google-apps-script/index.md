@@ -7,6 +7,7 @@ override:tags: []
 layout: layouts/page.njk
 title: Google Apps Script
 image: /images/apps_script_48dp.png
+image_sizes: 56px
 style: markdown
 feed: ""
 share: true

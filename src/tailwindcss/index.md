@@ -6,6 +6,7 @@ eleventyNavigation:
 layout: layouts/page.njk
 title: Tailwind CSS
 image: /images/tailwindcss.png
+image_sizes: 56px
 style: markdown
 share: true
 ---

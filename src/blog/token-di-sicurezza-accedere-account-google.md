@@ -30,7 +30,7 @@ Consideriamo insieme i vantaggi e i requisiti per utilizzare il token di sicurez
 - Non richiede connessione al tuo operatore telefonico e quindi puoi usarlo in zone dove la ricezione del segnale è scarsa o assente
 - È facilmente trasportabile, puoi agganciarlo ad un mazzo di chiavi o metterlo nel taschino del portafoglio
 
-![Token di sicurezza agganciato ad un portachiavi](/images/token-di-sicurezza-portachiavi.jpg){.md:w-3/4 .mx-auto} **Il token di sicurezza può essere agganciato a qualsiasi portachiavi**
+![Token di sicurezza agganciato ad un portachiavi](/images/token-di-sicurezza-portachiavi.jpg){sizes="(min-width: 1280px) 461px, (min-width: 780px) 405px, (min-width: 640px) 572px, calc(95vw - 17px)" .md:w-3/4 .mx-auto} **Il token di sicurezza può essere agganciato a qualsiasi portachiavi**
 
 ## Requisiti per utilizzare il token di sicurezza
 
@@ -40,7 +40,7 @@ Un aspetto da tenere in considerazione è che il token di sicurezza funziona sol
 
 ## Dove posso comprare il token di sicurezza?
 
-![Logo FIDO U2F](/images/marchio-FIDO-U2F-token-di-sicurezza.png)
+![Logo FIDO U2F](/images/marchio-FIDO-U2F-token-di-sicurezza.png){sizes="178px"}
 
 Come token di sicurezza puoi utilizzare qualsiasi dispositivo che sia conforme allo standard aperto (open standard) "FIDO Universal 2nd Factor (U2F)". Se non lo trovi nel tuo negozio di fiducia puoi [cercarlo su Amazon](https://www.amazon.it/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=FIDO%20U2F%20Security%20Key){rel='noopener noreferrer'} o altri vendor online.
 

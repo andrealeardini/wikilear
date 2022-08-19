@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -81,18 +81,23 @@
   {% endblock %}
 </head>
 
-<body class="h-screen box-border min-h-full grid grid-cols-12 grid-rows-layout dark:bg-gray-600">
+<body class="h-screen box-border min-h-full grid grid-cols-12 grid-rows-[80px_auto_360px] dark:bg-gray-600">
     {# https://tailwindcss.com/docs/screen-readers #}
     <a href="#content" class="inline-block z-[100] text-white hover:text-white hover:shadow-lg  bg-blue-600 dark:bg-slate-600 sr-only focus:not-sr-only focus:fixed top-2 left-2 focus:p-4 focus:m-4">
       Passa al contenuto
     </a>
     {% include "components/navbar/navbar.njk" %}
     <main id="content"
-      class="col-start-1 col-end-13 w-full mt-16 h-full mx-auto pt-6 px-4 md:px-8 max-w-ch-70 text-base bg-white dark:bg-gray-900 xl:text-lg">
+      class="col-start-1 col-end-13 row-start-2 w-full h-full mx-auto  px-4 md:px-8 max-w-ch-70 text-base bg-white dark:bg-gray-900 xl:text-lg">
       {% include "components/breadcrumbs.njk" %}
       {% block content %}
       {% endblock %}
     </main>
+    <div id="back-to-top" class="col-start-1 row-start-3 self-end sticky mt-[100vh] hover:shadow-2xl shadow-md lg:shadow-xl left-[calc(100vw-48px-10vw)] bottom-6 md:bottom-16  w-14 h-14 p-2 md:w-16 md:h-16 md:p-3 rounded-full bg-blue-800 text-white" title="Vai a inizio pagina">
+      <a href="#" class="text-white hover:text-white" role="button" aria-label="Vai a inizio pagina">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='currentColor'><path d="M5.8 16.4c.4 0 .7-.1.9-.4l4.3-4.6c.5-.5 1.4-.5 1.9 0l4.3 4.6c.2.3.6.4.9.4 1.1 0 1.7-1.3.9-2.1l-6.2-6.8c-.5-.6-1.4-.6-1.9 0l-6.2 6.8c-.5.8.1 2.1 1.1 2.1z"></path></g></svg>
+      </a>
+    </div>
     {% include "partials/footer.njk" %}
   {% if environment.NODE_ENV=="production" %}
   {# capture the JS content as a Nunjucks variable #}

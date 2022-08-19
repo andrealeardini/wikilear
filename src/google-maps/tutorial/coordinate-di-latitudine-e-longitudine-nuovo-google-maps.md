@@ -45,7 +45,7 @@ Per trovare le coordinate di un qualsiasi punto sulla mappa:
 
 1. Fai clic con il pulsante destro del mouse sull'area di interesse o su un luogo nella mappa
 2. La prima voce del menu di scelta rapida visualizza le coordinate del punto selezionato
-   ![Menu di scelta rapida, la prima voce riporta le coordinate del luogo](/images/google-maps-trovare-coordinate-luogo.png "La prima voce del menu di scelta rapida indica le coordinate del luogo selezionato"){.mt-4}**Le coordinate del punto selezionato nella mappa sono 41.89017, 12.49165**
+   ![Menu di scelta rapida, la prima voce riporta le coordinate del luogo](/images/google-maps-trovare-coordinate-luogo.png "La prima voce del menu di scelta rapida indica le coordinate del luogo selezionato"){sizes="(min-width: 520px) 399px, calc(93.5vw - 69px)" .mt-4}**Le coordinate del punto selezionato nella mappa sono 41.89017, 12.49165**
 
 3. Se vuoi condividere le coordinate con qualcun altro fai clic sulle coordinate per copiarle negli appunti
 4. Per condividere il luogo, incolla il testo copiato in un messaggio email o invialo in un'app di messaggistica (WhatsApp, Chat, Messenger, Telegram, ecc.)

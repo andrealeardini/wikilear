@@ -27,21 +27,21 @@ image_description: Logo Plus Codes
 
 I <dfn>Plus Codes</dfn> sono dei codici che identificano in modo preciso un punto del pianeta. Sono basati sulle coordinate geografiche di latitudine e longitudine ma risultano più facili da leggere e condividere. Ad esempio, il Plus Code `8QQ7+V8R Dublino` rappresenta l'ingresso principale dell'ufficio di Google a Dublino.
 
-![Latitudine e longitudine di un punto sul globo trasformati in un Plus Code](/images/plus-codes-latitudine-longitudine-globo.svg "Un Plus Code è calcolato partendo da latitudine e longitudine di un punto sul globo"){.w-4/5}**Conversione delle coordinate in Plus Code.<br>Image credit: Google**
+![Latitudine e longitudine di un punto sul globo trasformati in un Plus Code](/images/plus-codes-latitudine-longitudine-globo.svg "Un Plus Code è calcolato partendo da latitudine e longitudine di un punto sul globo"){sizes="(min-width: 1280px) 492px, (min-width: 640px) calc(-4.03vw + 483px), calc(75.94vw - 14px)" .w-4/5}**Conversione delle coordinate in Plus Code.<br>Image credit: Google**
 
 Spesso chi abita in un'area remota o anche in nuovo quartiere di una città si trova in difficoltà quando deve fornire il suo indirizzo a corrieri, operatori sanitari, forze dell'ordine, ecc. La zona potrebbe non essere stata mappata su Google Maps oppure non esiste proprio l'indirizzo perchè non è stato ancora assegnato dal comune. In questi casi condividere un Plus Codes diventa la cosa più semplice e immediata.
 
 In assenza di nomi di vie e indirizzi precisi, come vengono creati i Plus Codes?
 
-![Il pianeta rappresentato come una griglia formata dall'intersezione di meridiani e paralleli](/images/plus-codes-grid.svg){.w-4/5}**Visualizzazione della griglia.<br>Image credit: Google**
+![Il pianeta rappresentato come una griglia formata dall'intersezione di meridiani e paralleli](/images/plus-codes-grid.svg){sizes="(min-width: 1280px) 492px, (min-width: 640px) calc(-4.03vw + 483px), calc(75.94vw - 14px)" .w-4/5}**Visualizzazione della griglia.<br>Image credit: Google**
 
 Il sistema ideato da Google si basa sull'uso di griglie. Una prima suddivisone divide il pianeta lungo le linee di latitudine e longitudine per formare una griglia di partenza.
 
-![Caratteri assegnati agli assi X e Y della griglia](/images/plus-codes-grid-axis-x-y.svg){.w-4/5}**Griglia di livello superiore di un Plus Code.<br>Image credit: Google**
+![Caratteri assegnati agli assi X e Y della griglia](/images/plus-codes-grid-axis-x-y.svg){sizes="(min-width: 1280px) 492px, (min-width: 640px) calc(-4.03vw + 483px), calc(75.94vw - 14px)" .w-4/5}**Griglia di livello superiore di un Plus Code.<br>Image credit: Google**
 
 La griglia è etichettata lungo gli assi X e Y utilizzando un insieme specifico di 20 caratteri alfanumerici <wbr>{2,3,4,5,</wbr>6,7,8,9,<wbr>C,F,G,H,J,M,P,<wbr>Q,R,V,</wbr>W,X}. Una scelta ben studiata da parte di Google che impedisce di fare confusione con i caratteri. Spesso infatti caratteri come "1", "L" e "l" vengono scambiati tra di loro causando non pochi grattacapi a chi li usa. Basti pensare a quante volte ci siamo trovati in difficoltà nell'inserire una password e il problema era che avevamo scambiato un "1" (uno) per una "`l`" (elle) o una "i" maiuscola per una "l" (elle) minuscola. Tra i caratteri scelti per il Code Plus mancano anche le vocali in modo che non siano formate accidentalmente parole di senso compiuto in una qualche lingua. Grazie a questi accorgimenti i Plus Codes possono essere utilizzati da chiunque, indipendentemente dalla lingua parlata.
 
-![Cella della griglia all'ultimo livello](/images/plus-codes-zooming-into-an-individual-cell.svg){.w-4/5}**Zoom in una singola cella.<br>Image credit: Google**
+![Cella della griglia all'ultimo livello](/images/plus-codes-zooming-into-an-individual-cell.svg){sizes="(min-width: 1280px) 492px, (min-width: 640px) calc(-4.03vw + 483px), calc(75.94vw - 14px)" .w-4/5}**Zoom in una singola cella.<br>Image credit: Google**
 
 Questa griglia di partenza forma quello che viene chiamato globo digitale. Ogni cella della griglia sul globo digitale viene quindi ulteriormente suddivisa, gli assi X e Y vengono nuovamente etichettati con i 20 caratteri sopra e il processo viene ripetuto per creare un Plus Code completo. Nel caso dell'ufficio di Google a Dublino ciò si tradurrebbe in un Plus Code completo di `9C5M8QQ7+V8R`.
 
@@ -51,7 +51,7 @@ Per esempio, se mi trovo a Dublino, il Plus Code per l'ufficio di Google di Dubl
 
 > Nell'esempio qui sopra `9C` e `5M` rappresentano le suddivioni della griglia, non corrispondono fisicamente all'Irlanda o a Dublino ma identificano l'area della cella che li comprende.
 
-![Mappa con indicata la posizione corrispondente al Plus Code 8QQ7+V8R Dublino](/images/plus-codes-mappa-google.png)**Mappa per 8QQ7+V8R Dublino**
+![Mappa con indicata la posizione corrispondente al Plus Code 8QQ7+V8R Dublino](/images/plus-codes-mappa-google.png){sizes="(min-width: 580px) 500px, 89.23vw"}**Mappa per 8QQ7+V8R Dublino**
 
 Tornando all'esempio della griglia, gli ultimi quattro caratteri del codice a sinistra del segno '+' (nel nostro caso `8QQ7`) rappresentano la cella di destinazione del reticolato di griglie. L'area sarebbe ancora troppo grande per definire con precisione un indirizzo. Ecco che entra in gioco il fattore di zoom che è specificato dai caratteri a destra del segno '+'. Ad esempio, un Plus Code con due caratteri dopo il segno '+' rappresenta un'area di circa 13m x 13m, circa le dimensioni di mezzo campo da basket. L'aggiunta di un carattere aggiuntivo riduce questa dimensione a circa 3m x 3m, restituendo un punto della mappa con una buona precisione.
 
@@ -63,13 +63,13 @@ Per trovare il Plus Code di un qualsiasi punto sulla mappa:
 
 1. Fai clic sul luogo desiderato o su un'area della mappa
 2. Viene visualizzato un riquadro informativo simile a questo
-   ![Riquadro informativo con le coordinate del luogo](/images/plus-code-riquadro-informativo.png "Riquadro informativo con le coordinate del luogo"){.mt-4}
+   ![Riquadro informativo con le coordinate del luogo](/images/plus-code-riquadro-informativo.png "Riquadro informativo con le coordinate del luogo"){sizes="(min-width: 520px) 399px, calc(93.5vw - 69px)" .mt-4}
 
 3. Fai clic sulle coordinate del luogo nel riquadro informativo
-4. Verrà visualizzato un pannello sulla sinistra con varie informazioni tra cui il Plus Code&nbsp;<img src="/images/ic_plus_code.png" width="16" height="16" class="w-4 inline-block">
-   ![Pannello informativo con il Plus Code del luogo](/images/plus-code-pannello-google-maps.png){.mt-4}
+4. Verrà visualizzato un pannello sulla sinistra con varie informazioni tra cui il Plus Code&nbsp;<img src="/images/ic_plus_code.png" width="16" height="16" class="w-4 inline-block" sizes="16px">
+   ![Pannello informativo con il Plus Code del luogo](/images/plus-code-pannello-google-maps.png){sizes="(min-width: 520px) 400px, calc(94vw - 70px)" .mt-4}
 
-5. Se vuoi copiare o condividere il codice fai clic sul Plus Code&nbsp;<img src="/images/ic_plus_code.png" width="16" height="16" class="w-4 inline-block">
+5. Se vuoi copiare o condividere il codice fai clic sul Plus Code&nbsp;<img src="/images/ic_plus_code.png" width="16" height="16" class="w-4 inline-block" sizes="16px">
 6. Incolla il testo copiato in un messaggio email o invialo in un'app di messaggistica (WhatsApp, Chat, Messenger, Telegram, ecc.)
 
 ## Come trovare un luogo usando un Plus Code in Google Maps, Google Earth e Ricerca Google
