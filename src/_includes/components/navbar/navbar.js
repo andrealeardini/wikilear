@@ -5,8 +5,6 @@ const menu = document.getElementById("checkbox-menu");
 const open = document.getElementById("open");
 const close = document.getElementById("close");
 
-// TODO: Gestire i tab quando l'utente si trova nel menu e lo chiude
-
 open.addEventListener("keydown", (event) => {
   if (event.defaultPrevented) {
     return; // Do nothing if the event was already processed
