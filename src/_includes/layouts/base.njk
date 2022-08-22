@@ -108,11 +108,11 @@
   {% endif %}
   {% endset %}
   {# feed it through our jsmin filter to minify #}
-  <script async csp-hash>
+  <script defer csp-hash>
     {{ js | jsmin | safe }}
   </script>
   {% else %}
-  <script type="module" async src="{{'/js/main.js' | addHash}}"></script>
+  <script type="module" defer src="{{'/js/main.js' | addHash}}"></script>
   {% if useSheetJS %}
   <script csp-hash>
   {% include "components/sheet/code.js" %}
