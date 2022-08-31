@@ -1,36 +1,34 @@
 <div class="m-auto mb-4 px-2 py-1 text-center items-center text-sm">
   <fieldset id="themeSwitch" class="text-gray-700 dark:text-gray-300 flex place-content-center">
-    <label tabindex="0">
+    <label title="Modalità scura" aria-label="Modalità scura">
       <input id="darkMode" name="theme" value="dark" type="radio"
-        class="hidden peer">
+        class="absolute t-0 w-0 h-0 peer">
       </input>
-      <div role="radio" title="Modalità scura" class="peer-checked:border-2 peer-checked:rounded-lg hover:bg-gray-100 hover:border rounded-lg py-2 pr-1 pl-2 dark:hover:bg-gray-500">
-        <svg  class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <div class="peer-checked:border-2 peer-checked:rounded-lg hover:bg-gray-100 hover:border rounded-lg py-2 pr-1 pl-2 dark:hover:bg-gray-500">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path fill-rule="evenodd" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
             clip-rule="evenodd" />
         </svg>
       </div>
-
     </label>
-    <label tabindex="0">
+    <label title="Modalità chiara" aria-label="Modalità chiara">
       <input id="lightMode" name="theme" value="light" type="radio"
-        class="hidden peer">
+        class="absolute t-0 w-0 h-0 peer">
       </input>
-      <div title="Modalità chiara" role="radio" class="peer-checked:border-2 peer-checked:rounded-lg hover:bg-gray-100 hover:border rounded-lg py-2 pr-1 pl-2 dark:hover:bg-gray-500">
-        <svg  class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <div class="peer-checked:border-2 peer-checked:rounded-lg hover:bg-gray-100 hover:border rounded-lg py-2 pr-1 pl-2 dark:hover:bg-gray-500">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path fill-rule="evenodd"
             d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"
             clip-rule="evenodd" />
         </svg>
       </div>
-
     </label>
-    <label tabindex="0">
+    <label title="Modalità scura automatica" aria-label="Modalità scura automatica">
       <input id="systemMode" name="theme" value="system" type="radio"
-        class="hidden peer">
+        class="absolute t-0 w-0 h-0 peer">
       </input>
-      <div role="radio" title="Modalità scura automatica" class="peer-checked:border-2 peer-checked:rounded-lg hover:bg-gray-100 hover:border rounded-lg py-2 pr-1 pl-2 dark:hover:bg-gray-500">
-        <svg  class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <div class="peer-checked:border-2 peer-checked:rounded-lg hover:bg-gray-100 hover:border rounded-lg py-2 pr-1 pl-2 dark:hover:bg-gray-500">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path fill-rule="evenodd"
             d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"
             clip-rule="evenodd" />
