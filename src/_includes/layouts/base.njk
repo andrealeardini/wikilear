@@ -35,34 +35,12 @@
   <link rel="canonical" href="{{ site.url }}{{ canonicalUrl or page.url }}">
   <link rel="alternate" href="{{ site.feed.path | url }}" type="application/atom+xml" title="{{ site.title }}">
   <link rel="preconnect" href="/" crossorigin>
+  <link rel="preconnect" href="/js/main.js" crossorigin>
   {% if environment.NODE_ENV=="production" %}
   <link rel="preconnect" href="https://d33wubrfki0l68.cloudfront.net/" crossorigin>
   {% endif %}
   {# capture the JS content as a Nunjucks variable #}
-  {% set js %}
-  // detect dark mode settings (dark, light, system preference)
-  const theme = localStorage.getItem('theme');
-  if (theme === "dark") {
-    document.querySelector("html").classList.add("dark");
-  } else if (theme === "light") {
-    document.querySelector("html").classList.remove("dark");
-  } else if (theme === "system" || !theme) {
-    localStorage.setItem('theme', 'system');
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      document.querySelector("html").classList.add("dark");
-    }
-  }
-  {% endset %}
-  {% if environment.NODE_ENV=="production" %}
-  {# feed it through our jsmin filter to minify #}
-  <script csp-hash>
-    {{ js | jsmin | safe }}
-  </script>
-  {% else %}
-  <script csp-hash>
-    {{ js | safe }}
-  </script>
-  {% endif %}
+  {% set js %}{% include 'components/darkMode/inline.js' %}{% endset %}
   {% if environment.NODE_ENV=="production" %}
   {# capture the CSS content as a Nunjucks variable #}
   {% set css %} {% include "../../../dist/css/styles.css" %} {% endset %}
@@ -70,8 +48,14 @@
   <style>
     {{ css | cssmin | safe }}
   </style>
+  <script csp-hash>
+    {{js | jsmin | safe}}
+  </script>
   {% else %}
   <link rel="stylesheet" href="{{'/css/styles.css' | addHash }}" />
+  <script csp-hash>
+    {{js | safe }}
+  </script>
   {% endif %}
   {% block schema %}
   {% include "components/schema.org/schema.njk" %}
@@ -94,31 +78,24 @@
       {% endblock %}
     </main>
     <div id="back-to-top" class="col-start-1 row-start-3 self-end sticky mt-[100vh] hover:shadow-2xl shadow-md lg:shadow-xl left-[calc(100vw-48px-10vw)] bottom-6 md:bottom-16  w-14 h-14 p-2 md:w-16 md:h-16 md:p-3 rounded-full bg-blue-800 text-white" title="Vai a inizio pagina">
-      <a href="#" class="text-white hover:text-white" role="button" aria-label="Vai a inizio pagina">
+      <a href="#" class="text-white hover:text-white dark:text-white dark:hover:text-white" role="button" aria-label="Vai a inizio pagina">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill='currentColor'><path d="M5.8 16.4c.4 0 .7-.1.9-.4l4.3-4.6c.5-.5 1.4-.5 1.9 0l4.3 4.6c.2.3.6.4.9.4 1.1 0 1.7-1.3.9-2.1l-6.2-6.8c-.5-.6-1.4-.6-1.9 0l-6.2 6.8c-.5.8.1 2.1 1.1 2.1z"></path></g></svg>
       </a>
     </div>
     {% include "partials/footer.njk" %}
-  {% if environment.NODE_ENV=="production" %}
-  {# capture the JS content as a Nunjucks variable #}
-  {% set js %}
-  {% include "../../js/main.njk" %}
-  {% if useSheetJS %}
-  {% include "components/sheet/code.js" %}
-  {% endif %}
-  {% endset %}
-  {# feed it through our jsmin filter to minify #}
-  <script defer csp-hash>
-    {{ js | jsmin | safe }}
-  </script>
-  {% else %}
-  <script type="module" defer src="{{'/js/main.js' | addHash}}"></script>
-  {% if useSheetJS %}
-  <script csp-hash>
-  {% include "components/sheet/code.js" %}
-  </script>
-  {% endif %}
-  {% endif %}
+    <script type="module" async src="{{'/js/main.js' | addHash }}"></script>
+    {% if useSheetJS %}
+    {% set sheetJS %}
+    {% include "components/sheet/code.js" %}
+    {% endset %}
+    <script type="module" csp-hash>
+      {% if environment.NODE_ENV=="production" %}
+      {{ sheetJS | jsmin | safe }}
+      {% else %}
+      {{ sheetJS | safe }}
+      {% endif %}
+    </script>
+    {% endif %}
 </body>
 
 </html>
