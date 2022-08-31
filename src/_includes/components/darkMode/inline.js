@@ -1,5 +1,5 @@
 // this code should be execute as a inline script in the head section
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", () => {
   let html = document.getElementsByTagName("html")[0];
   let darkMode = document.getElementById("darkMode");
   let lightMode = document.getElementById("lightMode");
