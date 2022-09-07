@@ -1,11 +1,5 @@
 {# merge all external js #}
-{% set js %}
 {% include 'components/darkMode/darkmode.js' %};
 {% include 'components/navbar/navbar.js' %};
-{% endset %}
-{# in production feed it through the jsmin filter to minify #}
-{% if environment.NODE_ENV=="production" %}
-{{ js | jsmin | safe }}
-{% else %}
-{{ js | safe }}
-{% endif %}
+
+
