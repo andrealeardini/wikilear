@@ -83,13 +83,10 @@
       </a>
     </div>
     {% include "partials/footer.njk" %}
-    {% if environment.NODE_ENV=="production" %}
+  {% if environment.NODE_ENV=="production" %}
   {# capture the JS content as a Nunjucks variable #}
   {% set js %}
   {% include "../../js/main.njk" %}
-  {% if useSheetJS %}
-  {% include "components/sheet/code.js" %}
-  {% endif %}
   {% endset %}
   {# feed it through our jsmin filter to minify #}
   <script type="module" async csp-hash>
@@ -97,12 +94,20 @@
   </script>
   {% else %}
   <script type="module" async src="{{'/js/main.js' | addHash}}"></script>
+  {% endif %}
+
   {% if useSheetJS %}
-  <script csp-hash>
-  {% include "components/sheet/code.js" %}
-  </script>
-  {% endif %}
-  {% endif %}
+    {% set sheetJS %}
+    {% include "components/sheet/code.js" %}
+    {% endset %}
+    <script type="module" csp-hash>
+      {% if environment.NODE_ENV=="production" %}
+      {{ sheetJS | jsmin | safe }}
+      {% else %}
+      {{ sheetJS | safe }}
+      {% endif %}
+    </script>
+    {% endif %}
 </body>
 
 </html>
