@@ -21,6 +21,7 @@
   {% endif %}
   {% if desc %}
   <meta name="description" content="{{ desc | escape  }}">
+  <meta name="author" content="{{ site.author.name }}">
   <meta property="og:description" content="{{ desc | escape }}">
   {% endif %}
   <meta name="twitter:card" content="summary_large_image">
@@ -35,7 +36,6 @@
   <link rel="canonical" href="{{ site.url }}{{ canonicalUrl or page.url }}">
   <link rel="alternate" href="{{ site.feed.path | url }}" type="application/atom+xml" title="{{ site.title }}">
   <link rel="preconnect" href="/" crossorigin>
-  <link rel="preconnect" href="/js/main.js" crossorigin>
   {% if environment.NODE_ENV=="production" %}
   <link rel="preconnect" href="https://d33wubrfki0l68.cloudfront.net/" crossorigin>
   {% endif %}
