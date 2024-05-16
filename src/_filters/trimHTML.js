@@ -9,7 +9,7 @@ module.exports = (html = "") => {
   const lines = html.split("\n");
   let result = [];
   for (const line of lines) {
-    result.push(line.trimLeft());
+    result.push(line.trimStart());
   }
   return result.join("\n");
 };
