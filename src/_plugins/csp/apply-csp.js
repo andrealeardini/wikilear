@@ -42,7 +42,6 @@
 
 const { JSDOM } = require("jsdom");
 const cspHashGen = require("csp-hash-generator");
-const syncPackage = require("browser-sync/package.json");
 const fs = require("fs");
 const CSP = require("../../_data/csp");
 
@@ -51,18 +50,6 @@ const CSP = require("../../_data/csp");
  * loaded JS files.
  * The ACTUAL CSP is configured in `_data/csp.js`.
  */
-
-// Allow the auto-reload script in local dev. Would be good to get rid of this magic
-// string which would break on ungrades of 11ty.
-const AUTO_RELOAD_SCRIPTS = [
-  quote(
-    cspHashGen(
-      "//<![CDATA[\n    document.write(\"<script async src='/browser-sync/browser-sync-client.js?v=" +
-      syncPackage.version +
-      '\'><\\/script>".replace("HOST", location.hostname));\n//]]>'
-    )
-  ),
-];
 
 function quote(str) {
   return `'${str}'`;
@@ -82,9 +69,6 @@ const addCspHash = async (rawContent, outputPath) => {
       element.setAttribute("csp-hash", hash);
       return quote(hash);
     });
-    if (isDevelopmentMode()) {
-      hashes.push.apply(hashes, AUTO_RELOAD_SCRIPTS);
-    }
 
     content = dom.serialize();
 
@@ -103,19 +87,43 @@ const addCspHash = async (rawContent, outputPath) => {
           # [end csp headers]`;
       }
       const oldCustomHeaders = headers.match(regExp)[2].toString();
-      const CSPPolicy = `Content-Security-Policy: ${CSP.apply().regular.replace("HASHES", hashes.join(" "))}`;
+      const CSPPolicy = `Content-Security-Policy: ${CSP.apply().regular.replace(
+        "HASHES",
+        hashes.join(" ")
+      )}`;
       // write headers for full path (/blog/index.html) and pretty url (/blog/)
       // 404.html require a different pattern.
-      const newCustomHeaders = (outputPath != "dist/404.html")
-        ? oldCustomHeaders.concat(
-          "\n", filePath, "\n  ", CSPPolicy,
-          "\n", filePathPrettyURL, "\n  ", CSPPolicy)
-        : oldCustomHeaders.concat(
-          "\n", "/404.html", "\n  ", CSPPolicy,
-          "\n", "/*", "\n  ", CSPPolicy);
-      fs.writeFileSync(headersPath, headers.replace(regExp, `$1${newCustomHeaders}\n$3`));
+      const newCustomHeaders =
+        outputPath != "dist/404.html"
+          ? oldCustomHeaders.concat(
+              "\n",
+              filePath,
+              "\n  ",
+              CSPPolicy,
+              "\n",
+              filePathPrettyURL,
+              "\n  ",
+              CSPPolicy
+            )
+          : oldCustomHeaders.concat(
+              "\n",
+              "/404.html",
+              "\n  ",
+              CSPPolicy,
+              "\n",
+              "/*",
+              "\n  ",
+              CSPPolicy
+            );
+      fs.writeFileSync(
+        headersPath,
+        headers.replace(regExp, `$1${newCustomHeaders}\n$3`)
+      );
     } catch (error) {
-      console.log("[apply-csp] Something went wrong with the creation of the csp headers\n", error);
+      console.log(
+        "[apply-csp] Something went wrong with the creation of the csp headers\n",
+        error
+      );
     }
   }
 
@@ -128,7 +136,3 @@ module.exports = {
     eleventyConfig.addTransform("csp", addCspHash);
   },
 };
-
-function isDevelopmentMode() {
-  return /serve/.test(process.argv.join());
-}
