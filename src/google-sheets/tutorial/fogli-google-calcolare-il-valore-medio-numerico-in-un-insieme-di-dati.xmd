@@ -17,10 +17,10 @@ useSheetJS: true
 
 - [Definizione di media aritmetica](#definizione-di-media-aritmetica)
 - [Elenco delle funzioni per calcolare la media aritmetica dei dati](#elenco-delle-funzioni-per-calcolare-la-media-aritmetica-dei-dati)
-  - [MEDIA (AVERAGE)](<#media-(average)>)
-  - [MEDIA.SE (AVERAGEIF)](<#media.se-(averageif)>)
-  - [MEDIA.PIÙ.SE (AVERAGEIFS)](<#media.più.se-(averageifs)>)
-  - [MEDIA.VALORI (AVERAGEA)](<#media.valori-(averagea)>)
+  - [MEDIA (AVERAGE)](#media-(average)>)
+  - [MEDIA.SE (AVERAGEIF)](#media.se-(averageif))
+  - [MEDIA.PIÙ.SE (AVERAGEIFS)](#media.più.se-(averageifs))
+  - [MEDIA.VALORI (AVERAGEA)](#media.valori-(averagea))
 - [Esempi di utilizzo](#esempi-di-utilizzo)
 
 </details>
@@ -42,10 +42,10 @@ Fogli Google dispone di diverse funzioni per calcolare la media aritmetica. Cons
 
 | Funzione                                     | Descrizione                                                                           |
 | -------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [MEDIA](<#media-(average)>)                  | Restituisce il valore numerico della media in un insieme di dati, ignorando il testo. |
-| [MEDIA.SE](<#media.se-(averageif)>)          | Restituisce la media numerica di un intervallo in base a un criterio.                 |
-| [MEDIA.PIÙ.SE](<#media.più.se-(averageifs)>) | Restituisce la media numerica di un intervallo che dipende da più criteri.            |
-| [MEDIA.VALORI](<#media.valori-(averagea)>)   | Restituisce il valore medio numerico in un insieme di dati.                           |
+| [MEDIA](#media-(average))                  | Restituisce il valore numerico della media in un insieme di dati, ignorando il testo. |
+| [MEDIA.SE](#media.se-(averageif))          | Restituisce la media numerica di un intervallo in base a un criterio.                 |
+| [MEDIA.PIÙ.SE](#media.più.se-(averageifs)) | Restituisce la media numerica di un intervallo che dipende da più criteri.            |
+| [MEDIA.VALORI](#media.valori-(averagea))   | Restituisce il valore medio numerico in un insieme di dati.                           |
 
 {.text-sm .sm:text-base}
 
