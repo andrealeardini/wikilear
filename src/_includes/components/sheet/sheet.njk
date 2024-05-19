@@ -9,7 +9,7 @@
 {% set gridData = data | sheet('grid') %}
 {% if gridData %}{% set grid = gridData %}{% endif %}
 
-{% set filterStart = rowStart or 0 %}
+{% set filterStart = rowStart or 1 %}
 {% set filterEnd =  rowEnd or rowsNumber %}
 
 {% set cellMerged = [] %}
