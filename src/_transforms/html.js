@@ -19,16 +19,16 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const htmlmin = require("html-minifier");
+const {minify} = require("html-minifier-terser");
 
-const htmlMinify = (content, outputPath) => {
+const htmlMinify = async (content, outputPath) => {
   if (outputPath.endsWith(".html")) {
-    let minified = htmlmin.minify(content, {
+    const result = await minify(content, {
       useShortDoctype: true,
       removeComments: true,
       collapseWhitespace: true,
     });
-    return minified;
+    return result;
   }
 
   return content;
