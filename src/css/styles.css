@@ -127,11 +127,11 @@
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    @apply text-green-800;
+    @apply text-green-900;
   }
 
   .token.punctuation {
-    @apply text-red-800;
+    @apply text-red-900
   }
 
   .token.namespace {
@@ -166,7 +166,7 @@
   .language-css .token.string,
   .style .token.string,
   .token.variable {
-    @apply text-yellow-700;
+    @apply text-yellow-900;
   }
 
   .token.atrule,

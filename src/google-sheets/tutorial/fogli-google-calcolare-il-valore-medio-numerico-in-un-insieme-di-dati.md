@@ -260,7 +260,7 @@ Ora crea la formula per la cella B17. Sostituisci area e settore con il riferime
 
 Se hai scritto bene la formula nella cella B17, dopo aver copiato e incollato la formula nelle altre celle, dovresti ottenere le medie riportate qui sotto. In caso contrario controlla bene i riferimenti. Se non riesci a trovare l'errore puoi sempre dare una sbirciatina alle formule della tabella.
 
-// sheet.render(media_piu_se, on, 16, 19) | trimHTML | safe //
+{{ sheet.render(media_piu_se, on, 16, 19) | trimHTML | safe }}
 
 ## Riferimenti
 
