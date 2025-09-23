@@ -1,62 +1,30 @@
-/**
- * Copyright (c) 2021 Andrea Leardini
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of
- * this software and associated documentation files (the "Software"), to deal in
- * the Software without restriction, including without limitation the rights to
- * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
- * the Software, and to permit persons to whom the Software is furnished to do so,
- * subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
- * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
- * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
- * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
- * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- */
+import CleanCSS from "clean-css";
+import { DateTime } from "luxon";
+import { readFileSync, writeFileSync, mkdirSync } from "fs";
+import { readFile, stat } from "fs/promises"; // Using fs/promises for async file operations
+import { execFile } from "child_process";
+import { hash } from 'hasha';
+import { minify } from "terser";
+import { NODE_ENV, NETLIFY } from "./src/_data/environment.js";
+import { parse } from "csv-parse/sync";
+import externalLinks from "./src/_transforms/external-links.js";
+import optimizeImages from "./src/_transforms/images.js";
+import minifyHTML from "./src/_transforms/html.js";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import applyCsp from "./src/_plugins/csp/apply-csp.js";
+import markdownIt from "markdown-it";
+import markdownItAttrs from "markdown-it-attrs";
+import markdownItAnchor from "markdown-it-anchor";
+import dateFilter from "./src/_filters/date-filter.js";
+import w3DateFilter from "./src/_filters/w3-date-filter.js";
+import sheetFilter from "./src/_includes/components/sheet/filter.js";
+import trimHTML from "./src/_filters/trimHTML.js";
+import tagIsValid from "./src/_includes/components/tagsList/filter.js";
+import includesFilter from "./src/_filters/includes.js";
 
-/**
- * Copyright (c) 2020 Google Inc
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of
- * this software and associated documentation files (the "Software"), to deal in
- * the Software without restriction, including without limitation the rights to
- * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
- * the Software, and to permit persons to whom the Software is furnished to do so,
- * subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
- * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
- * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
- * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
- * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- */
-
-const CleanCSS = require("clean-css");
-const { DateTime } = require("luxon");
-const fs = require("fs");
-const { promisify } = require("util");
-const hasha = require("hasha");
-const readFile = promisify(fs.readFile);
-const stat = promisify(fs.stat);
-const execFile = promisify(require("child_process").execFile);
-const { minify } = require("terser");
-const environment = require("./src/_data/environment");
-const { parse } = require("csv-parse/sync");
-const postcss = require("postcss");
-const tailwindcss = require("tailwindcss");
-const autoprefixer = require("autoprefixer");
-const externalLinks = require("./src/_transforms/external-links");
-
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   // use csv files as data
   // https://maxkoehler.com/posts/eleventy-csv/
   eleventyConfig.addDataExtension("csv", (contents) => {
@@ -69,25 +37,13 @@ module.exports = function (eleventyConfig) {
 
   // build CSS before build eleventy pages
   eleventyConfig.on("beforeBuild", () => {
-    // Run me before the build starts
-    console.log("Building CSS...");
-    let css = fs.readFileSync("src/css/styles.css", { encoding: "utf-8" });
-    result = postcss([tailwindcss, autoprefixer])
-      .process(css.toString(), {
-        from: "src/css/styles.css",
-      })
-      .then((result) => {
-        fs.mkdirSync("./dist/css", { recursive: true });
-        fs.writeFileSync("./dist/css/styles.css", result.css);
-        console.log("Done");
-      });
 
     // Copy _header to dist
     // Don't use addPassthroughCopy to prevent apply-csp from running before the _header file has been copied
     try {
-      const headers = fs.readFileSync("./_headers", { encoding: "utf-8" });
-      fs.mkdirSync("./dist", { recursive: true });
-      fs.writeFileSync("dist/_headers", headers);
+      const headers = readFileSync("./_headers", { encoding: "utf-8" });
+      mkdirSync("./dist", { recursive: true });
+      writeFileSync("dist/_headers", headers);
       console.log("_header copied");
     } catch (error) {
       console.log(
@@ -108,7 +64,7 @@ module.exports = function (eleventyConfig) {
   // copy and optimize Images
   eleventyConfig.addTransform(
     "optimizeImages",
-    require("./src/_transforms/images")
+    optimizeImages
   );
 
   // add noopener noreferrer to external links
@@ -118,26 +74,23 @@ module.exports = function (eleventyConfig) {
 
   // minify HTML only in production
   // optional chaining require NODE 14 >
-  if (environment?.NODE_ENV?.toUpperCase() == "PRODUCTION") {
+  if (NODE_ENV?.toUpperCase() == "PRODUCTION") {
     eleventyConfig.addTransform(
       "minifyHTML",
-      require("./src/_transforms/html")
+      minifyHTML
     );
   }
 
-  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
-  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"), {
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight, {
     preAttributes: {
       tabindex: 0,
     },
   });
-  eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
+  eleventyConfig.addPlugin(pluginNavigation);
 
-  eleventyConfig.addPlugin(require("./src/_plugins/csp/apply-csp.js"));
+  eleventyConfig.addPlugin(applyCsp);
 
-  const markdownIt = require("markdown-it");
-  const markdownItAttrs = require("markdown-it-attrs");
-  const markdownItAnchor = require("markdown-it-anchor");
   const options = {
     html: true,
     breaks: true,
@@ -165,17 +118,17 @@ module.exports = function (eleventyConfig) {
   // Add filters
   eleventyConfig.addFilter(
     "dateFilter",
-    require("./src/_filters/date-filter.js")
+    dateFilter
   );
   eleventyConfig.addFilter(
     "w3DateFilter",
-    require("./src/_filters/w3-date-filter.js")
+    w3DateFilter
   );
   eleventyConfig.addFilter(
     "sheet",
-    require("./src/_includes/components/sheet/filter.js")
+    sheetFilter
   );
-  eleventyConfig.addFilter("trimHTML", require("./src/_filters/trimHTML.js"));
+  eleventyConfig.addFilter("trimHTML", trimHTML);
 
   // https://www.11ty.dev/docs/quicktips/inline-css/
   eleventyConfig.addFilter("cssmin", function (code) {
@@ -205,10 +158,10 @@ module.exports = function (eleventyConfig) {
         encoding: "utf-8",
       })
         .then((content) => {
-          return hasha.async(content);
+          return hash(content);
         })
         .then((hash) => {
-          callback(null, `${absolutePath}?hash=${hash.substr(0, 10)}`);
+          callback(null, `${absolutePath}?hash=${hash.substring(0, 10)}`);
         })
         .catch((error) => callback(error));
     }
@@ -217,11 +170,16 @@ module.exports = function (eleventyConfig) {
   // filter tags to shows
   eleventyConfig.addFilter(
     "tagIsValid",
-    require("./src/_includes/components/tagsList/filter")
+    tagIsValid
   );
 
   // return true if an array includes the searched value
-  eleventyConfig.addFilter("includes", require("./src/_filters/includes"));
+  eleventyConfig.addFilter("includes", includesFilter);
+
+  // Custom filter to check if a string starts with a prefix
+  eleventyConfig.addFilter("startsWith", (str, prefix) => {
+    return str.startsWith(prefix);
+  });
 
   // https://github.com/google/eleventy-high-performance-blog/blob/624aaa9ede9df609e2d4656f23d819621f5cb464/.eleventy.js#L94
 

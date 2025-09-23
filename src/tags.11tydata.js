@@ -1,8 +1,8 @@
-module.exports = {
+export default {
   eleventyComputed: {
     eleventyNavigation: {
       key: function (data) {
-          return 123;
+          return String(data.tag);
       },
       parent: (data) => data.parent,
       title: function (data) {

@@ -19,7 +19,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const {minify} = require("html-minifier-terser");
+import { minify } from "html-minifier-terser";
 
 const htmlMinify = async (content, outputPath) => {
   if (outputPath.endsWith(".html")) {
@@ -34,4 +34,4 @@ const htmlMinify = async (content, outputPath) => {
   return content;
 };
 
-module.exports = htmlMinify;
+export default htmlMinify;

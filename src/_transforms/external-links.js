@@ -19,8 +19,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { JSDOM } = require("jsdom");
-const path = require("path");
+import { JSDOM } from "jsdom";
+import { extname } from "path";
 
 const defaultOptions = {
   domain: "",
@@ -40,7 +40,7 @@ const defaultOptions = {
  */
 const externalLinks = (content, outputPath, userOptions = {}) => {
   const options = { ...defaultOptions, ...userOptions };
-  const extension = path.extname(outputPath);
+  const extension = extname(outputPath);
   if (outputPath && options.extensions.includes(extension)) {
     const dom = new JSDOM(content);
     const document = Object.assign(dom.window.document);
@@ -79,4 +79,4 @@ const externalLinks = (content, outputPath, userOptions = {}) => {
   return content;
 };
 
-module.exports = externalLinks;
+export default externalLinks;

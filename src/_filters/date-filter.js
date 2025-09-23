@@ -1,5 +1,5 @@
-var { DateTime } = require('luxon');
+import { DateTime } from 'luxon';
 
-module.exports = value => {
+export default value => {
   return DateTime.fromJSDate(value).setLocale("it").toLocaleString(DateTime.DATE_FULL);
 };

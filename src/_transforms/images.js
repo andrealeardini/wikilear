@@ -21,11 +21,15 @@
 
 //github.com/11ty/eleventy-img/issues/51#issuecomment-775186353
 
-const fs = require("fs");
-const Image = require("@11ty/eleventy-img");
-const path = require("path");
-const { JSDOM } = require("jsdom");
-const environment = require("../_data/environment");
+import { existsSync } from "fs";
+import Image, { statsSync, generateHTML } from "@11ty/eleventy-img";
+import { extname, basename, resolve as _resolve, dirname } from "path";
+import { fileURLToPath } from 'url';
+import { JSDOM } from "jsdom";
+import { NETLIFY } from "../_data/environment.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const optimizeImages = async (content, outputPath = ".html") => {
   if (!String(outputPath).endsWith(".html")) return content;
@@ -41,7 +45,7 @@ const optimizeImages = async (content, outputPath = ".html") => {
 async function imageHTML(image) {
   // set standard format and element
   // create avif images only on Netlify
-  let formats = environment.NETLIFY
+  let formats = NETLIFY
     ? ["avif", "webp", "jpeg"]
     : ["webp", "jpeg"];
   let type = "picture";
@@ -55,13 +59,13 @@ async function imageHTML(image) {
     urlPath: "/images/",
     outputDir: "./dist/images/",
     filenameFormat: function (id, src, width, format) {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension);
+      const extension = extname(src);
+      const name = basename(src, extension);
       return `${name}-${width}w.${format}`;
     },
   };
 
-  const stats = Image.statsSync(src, options);
+  const stats = statsSync(src, options);
 
   /** Creating a flat array of all the output paths from the stats object. */
   const outputPaths = Object.keys(stats).reduce((acc, key) => {
@@ -77,11 +81,11 @@ async function imageHTML(image) {
   let hasImageBeenOptimized = true;
   for (const outputPath of outputPaths) {
     /** Edit the output file path resolving, depending of this file */
-    const resolve = path.resolve(__dirname, "..", "..", outputPath);
+    const resolve = _resolve(__dirname, "..", "..", outputPath);
     // console.log({ __dirname });
     // console.log({ outputPath });
     // console.log("Resolve to:", resolve);
-    if (!fs.existsSync(resolve)) {
+    if (!existsSync(resolve)) {
       hasImageBeenOptimized = false;
     }
   }
@@ -104,7 +108,7 @@ async function imageHTML(image) {
     fetchPriority: image.dataset.lcp === "high" ? "high" : "auto",
   };
 
-  const text = Image.generateHTML(stats, imageAttributes, {
+  const text = generateHTML(stats, imageAttributes, {
     whitespaceMode: "inline",
   });
   const html = new JSDOM(text);
@@ -112,4 +116,4 @@ async function imageHTML(image) {
   image.parentElement.replaceChild(element[0], image);
 }
 
-module.exports = optimizeImages;
+export default optimizeImages;

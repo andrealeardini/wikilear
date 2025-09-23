@@ -21,7 +21,7 @@
 
 // node -e 'require("./links.test.js")'
 
-const externalLinks = require("./external-links");
+import externalLinks from "./external-links";
 
 const test = () => {
   const testOptions = {
@@ -40,4 +40,4 @@ const test = () => {
   externalLinks(testContent, testPath, testOptions);
 };
 
-module.exports = test();
+export default test();

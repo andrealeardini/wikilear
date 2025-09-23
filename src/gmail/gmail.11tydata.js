@@ -1,11 +1,11 @@
-module.exports = {
+export default {
   eleventyComputed: {
     eleventyNavigation: {
       key: function (data) {
         if (data.key) {
-          return data.key;
+          return String(data.key);
         } else {
-          return data.title;
+          return String(data.title);
         }
       },
       parent: (data) => data.parent,
@@ -16,6 +16,14 @@ module.exports = {
       },
       showLast: (data) => data.showLast | false,
     },
+    "eleventyNavigation.key": (data) => {
+      if (data.key) {
+        return String(data.key);
+      } else {
+        return String(data.title);
+      }
+    },
+    "eleventyNavigation.parent": (data) => data.parent,
   },
   layout: "layouts/post.njk",
   feed: "true",

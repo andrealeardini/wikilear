@@ -54,4 +54,4 @@ function serialize(csp) {
   return csp.map((src) => src.join(" ")).join(";");
 }
 
-module.exports = () => CSP;
+export default () => CSP;

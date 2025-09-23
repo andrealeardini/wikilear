@@ -43,4 +43,4 @@ const tagIsValid =  (value) => {
     ];
 return !reject.includes(value)};
 
-module.exports = tagIsValid;
+export default tagIsValid;

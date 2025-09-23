@@ -1,5 +1,6 @@
 ---
 eleventyNavigation:
+  key: Etichette
   parent: Tag
   showLast: (data) => data.showLast | false,
 title: "Tag Archive"

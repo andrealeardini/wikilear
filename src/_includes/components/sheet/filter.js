@@ -1,4 +1,4 @@
-module.exports = (data, command) => {
+export default (data, command) => {
   if (command) {
     if (command === "length") {
       return Object.getOwnPropertyNames(data[0]).length - 1;

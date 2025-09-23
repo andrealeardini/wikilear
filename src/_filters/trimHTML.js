@@ -5,7 +5,7 @@
  * @param {string} html - The HTML code to parse.
  * @return {string} The HTML code unformatted
  */
-module.exports = (html = "") => {
+export default (html = "") => {
   const lines = html.split("\n");
   let result = [];
   for (const line of lines) {

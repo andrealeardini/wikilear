@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     title: "Google Apps Script",
     imageUrl: "/images/apps_script_48dp.png",

@@ -2,11 +2,15 @@
   "name": "wikilear",
   "version": "0.0.1",
   "description": "The Wikilear web site",
+  "type": "module",
   "main": "main.js",
   "scripts": {
-    "start": "npm run eleventy-watch",
+    "start": "npm run eleventy-watch & npm run start:css",
+    "dev": "npm run start",
+    "start:css": "npx tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --watch",
     "serve": "web-dev-server --root-dir dist --node-resolve --open",
-    "build": "npm run eleventy",
+    "build:css": "npx tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --minify",
+    "build": "npm run eleventy && npm run build:css",
     "clean": "set -e && find ./dist -mindepth 1 ! -regex '^./dist/images\\(/.*\\)?' -delete || echo dist not found",
     "eleventy": "NODE_ICU_DATA='./node_modules/full-icu' NODE_ENV=production npx @11ty/eleventy",
     "eleventy-watch": "NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy --serve --incremental",
@@ -15,6 +19,7 @@
   "author": "Andrea Leardini",
   "license": "MIT",
   "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
     "netlify-plugin-cache": "^1.0.3"
   },
   "devDependencies": {
@@ -25,7 +30,6 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@types/luxon": "^3.7.1",
     "@web/dev-server": "^0.4.6",
-    "autoprefixer": "^10.4.21",
     "clean-css": "^5.3.3",
     "csp-hash-generator": "^0.0.3",
     "csv-parse": "^6.1.0",
@@ -41,7 +45,6 @@
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.3.1",
     "normalize.css": "^8.0.1",
-    "postcss": "^8.5.6",
     "sharp": "^0.34.4",
     "socket.io": "^4.8.1",
     "tailwindcss": "^4.1.13",

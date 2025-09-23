@@ -40,10 +40,10 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { JSDOM } = require("jsdom");
-const cspHashGen = require("csp-hash-generator");
-const fs = require("fs");
-const CSP = require("../../_data/csp");
+import { JSDOM } from "jsdom";
+import cspHashGen from "csp-hash-generator";
+import { readFileSync, writeFileSync } from "fs";
+import CSP from "../../_data/csp.js";
 
 /**
  * Substitute the magic `HASHES` string in the CSP with the actual values of the
@@ -77,7 +77,7 @@ const addCspHash = async (rawContent, outputPath) => {
     const filePath = outputPath.replace("dist/", "/"); // dist/blog/index.html ->  /blog/index.html
     const filePathPrettyURL = filePath.slice(0, -10); // blog/index.html ->  /blog/
     try {
-      const headers = fs.readFileSync(headersPath, { encoding: "utf-8" });
+      const headers = readFileSync(headersPath, { encoding: "utf-8" });
       const regExp = /(# \[csp headers\]\n)([\s\S]*)(# \[end csp headers\])/;
       const match = headers.match(regExp);
       if (!match) {
@@ -115,7 +115,7 @@ const addCspHash = async (rawContent, outputPath) => {
               "\n  ",
               CSPPolicy
             );
-      fs.writeFileSync(
+      writeFileSync(
         headersPath,
         headers.replace(regExp, `$1${newCustomHeaders}\n$3`)
       );
@@ -130,9 +130,6 @@ const addCspHash = async (rawContent, outputPath) => {
   return content;
 };
 
-module.exports = {
-  initArguments: {},
-  configFunction: async (eleventyConfig, pluginOptions = {}) => {
-    eleventyConfig.addTransform("csp", addCspHash);
-  },
+export default async (eleventyConfig, pluginOptions = {}) => {
+  eleventyConfig.addTransform("csp", addCspHash);
 };
