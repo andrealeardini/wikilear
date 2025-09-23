@@ -46,9 +46,8 @@
   {% set css %} {% include "../../../dist/css/styles.css" %} {% endset %}
   {# feed it through our cssmin filter to minify #}
   <style>
-    {{ css | cssmin | safe }}
-  </style>
-  <script csp-hash>
+  {{ css | safe }}
+  </style>  <script csp-hash>
     {{js | jsmin | safe}}
   </script>
   {% else %}

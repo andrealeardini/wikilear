@@ -29,7 +29,6 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@types/luxon": "^3.7.1",
     "@web/dev-server": "^0.4.6",
-    "clean-css": "^5.3.3",
     "csp-hash-generator": "^0.0.3",
     "csv-parse": "^6.1.0",
     "datauri": "^4.1.0",

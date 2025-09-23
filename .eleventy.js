@@ -1,4 +1,4 @@
-import CleanCSS from "clean-css";
+
 import { DateTime } from "luxon";
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { readFile, stat } from "fs/promises"; // Using fs/promises for async file operations
@@ -144,10 +144,7 @@ export default function (eleventyConfig) {
   );
   eleventyConfig.addFilter("trimHTML", trimHTML);
 
-  // https://www.11ty.dev/docs/quicktips/inline-css/
-  eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
+
 
   // https://www.11ty.dev/docs/quicktips/inline-js/
   eleventyConfig.addNunjucksAsyncFilter(
