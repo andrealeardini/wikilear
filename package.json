@@ -5,22 +5,21 @@
   "type": "module",
   "main": "main.js",
   "scripts": {
-    "start": "npm run eleventy-watch & npm run start:css",
+    "start": "npm run eleventy-watch",
     "dev": "npm run start",
-    "start:css": "npx tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --watch",
     "serve": "web-dev-server --root-dir dist --node-resolve --open",
-    "build:css": "npx tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --minify",
-    "build": "npm run eleventy && npm run build:css",
+    "build": "npm run eleventy",
     "clean": "set -e && find ./dist -mindepth 1 ! -regex '^./dist/images\\(/.*\\)?' -delete || echo dist not found",
-    "eleventy": "NODE_ICU_DATA='./node_modules/full-icu' NODE_ENV=production npx @11ty/eleventy",
-    "eleventy-watch": "NODE_ICU_DATA='./node_modules/full-icu' npx @11ty/eleventy --serve --incremental",
+    "eleventy": "NODE_ENV=production npx @11ty/eleventy",
+    "eleventy-watch": "npx @11ty/eleventy --serve --incremental",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrea Leardini",
   "license": "MIT",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.13",
-    "netlify-plugin-cache": "^1.0.3"
+    "@tailwindcss/postcss": "^4.1.13",
+    "netlify-plugin-cache": "^1.0.3",
+    "postcss": "^8.5.6"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",

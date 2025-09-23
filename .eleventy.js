@@ -23,6 +23,9 @@ import sheetFilter from "./src/_includes/components/sheet/filter.js";
 import trimHTML from "./src/_filters/trimHTML.js";
 import tagIsValid from "./src/_includes/components/tagsList/filter.js";
 import includesFilter from "./src/_filters/includes.js";
+import postcss from "postcss";
+import TailwindCSS from "@tailwindcss/postcss";
+
 
 export default function (eleventyConfig) {
   // use csv files as data
@@ -37,7 +40,18 @@ export default function (eleventyConfig) {
 
   // build CSS before build eleventy pages
   eleventyConfig.on("beforeBuild", () => {
-
+    // Run me before the build starts
+    console.log("Building CSS...");
+    let css = readFileSync("./src/css/styles.css", { encoding: "utf-8" });
+    let result = postcss([TailwindCSS])
+      .process(css.toString(), {
+        from: "src/css/styles.css",
+      })
+      .then((result) => {
+        mkdirSync("./dist/css", { recursive: true });
+        writeFileSync("./dist/css/styles.css", result.css);
+        console.log("Done");
+      });
     // Copy _header to dist
     // Don't use addPassthroughCopy to prevent apply-csp from running before the _header file has been copied
     try {
