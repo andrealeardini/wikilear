@@ -1,0 +1,21 @@
+<aside class="pwa-sidebar">
+  <h2 class="text-lg font-bold mb-4">Lezioni del Corso</h2>
+  <nav aria-label="Lezioni del corso PWA">
+    <ol class="space-y-2">
+      {% for lesson in collections.pwaCourse %}
+        {# In development, show all lessons. In production, only show published lessons. #}
+        {% if environment.NODE_ENV != "production" or lesson.data.date <= helpers.currentDate() %}
+          <li>
+            <a 
+              href="{{ lesson.url | url }}" 
+              class="block p-2 rounded-md text-gray-700 dark:text-gray-300 {% if page.url == lesson.url %} bg-blue-100 dark:bg-blue-900 font-bold {% else %} hover:bg-gray-200 dark:hover:bg-gray-700 {% endif %}"
+              {% if page.url == lesson.url %} aria-current="page" {% endif %}
+            >
+              {{ lesson.data.eleventyNavigation.key or lesson.data.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </nav>
+</aside>

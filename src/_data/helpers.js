@@ -1,64 +1,45 @@
-export default {
-  /**
-   * Returns back some attributes based on wether the
-   * link is active or a parent of an active item
-   *
-   * @param {String} itemUrl The link in question
-   * @param {String} pageUrl The page context
-   * @returns {String} The attributes or empty
-   */
-  getLinkActiveState(itemUrl, pageUrl) {
-    let response = "";
+import { DateTime } from "luxon";
 
-    if (itemUrl === pageUrl) {
-      response = ' aria-current="page"';
-    }
+export function getSiblingContent(collection, page) {
+  if (!collection || !collection.length) {
+    return;
+  }
 
-    if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
-      response += ' data-state="active"';
-    }
+  const today = new Date();
 
-    return response;
-  },
-  /**
-   * Filters out the passed item from the passed collection
-   * and randomises and limits them based on flags
-   *
-   * @param {Array} collection The 11ty collection we want to take from
-   * @param {Object} item The item we want to exclude (often current page)
-   * @param {Number} limit=3 How many items we want back
-   * @param {Boolean} random=true Wether or not this should be randomised
-   * @returns {Array} The resulting collection
-   */
-  getSiblingContent(collection, item, limit = 3, random = true) {
-    let filteredItems = collection.filter((x) => x.url !== item.url);
+  let previous = null;
+  let next = null;
 
-    if (random) {
-      let counter = filteredItems.length;
+  const posts = collection.filter((item) => {
+    return item.date <= today;
+  });
 
-      while (counter > 0) {
-        // Pick a random index
-        let index = Math.floor(Math.random() * counter);
+  if (posts.length < 2) {
+    return;
+  }
 
-        counter--;
-
-        let temp = filteredItems[counter];
-
-        // Swap the last element with the random one
-        filteredItems[counter] = filteredItems[index];
-        filteredItems[index] = temp;
+  for (let i = 0; i < posts.length; i++) {
+    const current = posts[i];
+    if (current.url === page.url) {
+      if (i > 0) {
+        previous = posts[i - 1];
       }
+      if (i < posts.length - 1) {
+        next = posts[i + 1];
+      }
+      break;
     }
+  }
 
-    // Lastly, trim to length
-    if (limit > 0) {
-      filteredItems = filteredItems.slice(0, limit);
-    }
+  if (previous || next) {
+    return [previous, next];
+  }
+}
 
-    return filteredItems;
-  },
-  currentYear() {
-    const today = new Date();
-    return today.getFullYear();
-  },
-};
+export function currentDate() {
+    return new Date();
+}
+
+export function currentYear() {
+    return new Date().getFullYear();
+}

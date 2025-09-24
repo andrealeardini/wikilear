@@ -266,6 +266,13 @@ export default function (eleventyConfig) {
       .reverse();
   });
 
+  // Returns a collection of PWA course lessons in order
+  eleventyConfig.addCollection("pwaCourse", (collection) => {
+    return collection.getFilteredByTag("pwa-course").sort((a, b) => {
+      return a.data.order - b.data.order;
+    });
+  });
+
   return {
     markdownTemplateEngine: "njk",
     dir: {

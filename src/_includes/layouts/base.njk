@@ -71,7 +71,7 @@
     </a>
     {% include "components/navbar/navbar.njk" %}
     <main id="content"
-      class="col-start-1 col-end-13 row-start-2 w-full h-full mx-auto pb-6 px-4 md:px-8 max-w-prose text-base bg-white dark:bg-gray-900 xl:text-lg">
+      class="relative pt-12 md:pt-14 col-start-1 col-end-13 row-start-2 w-full h-full mx-auto pb-6 px-4 md:px-8 {% if wideLayout %}max-w-screen-xl{% else %}max-w-prose{% endif %} text-base bg-white dark:bg-gray-900 xl:text-lg">
       {% include "components/breadcrumbs.njk" %}
       {% block content %}
       {% endblock %}
@@ -92,21 +92,21 @@
     {{ js | jsmin | safe }}
   </script>
   {% else %}
-  <script type="module" async src="{{'/js/main.js' | addHash}}"></script>
-  {% endif %}
-
-  {% if useSheetJS %}
-    {% set sheetJS %}
-    {% include "components/sheet/code.js" %}
-    {% endset %}
-    <script type="module" csp-hash>
-      {% if environment.NODE_ENV=="production" %}
-      {{ sheetJS | jsmin | safe }}
-      {% else %}
-      {{ sheetJS | safe }}
+      <script type="module" async src="{{'/js/main.js' | addHash}}"></script>
       {% endif %}
-    </script>
-    {% endif %}
-</body>
-
+  
+      {% if useSheetJS %}
+        {% set sheetJS %}
+        {% include "components/sheet/code.js" %}
+        {% endset %}
+        <script type="module" csp-hash>
+          {% if environment.NODE_ENV=="production" %}
+          {{ sheetJS | jsmin | safe }}
+          {% else %}
+          {{ sheetJS | safe }}
+          {% endif %}
+        </script>
+      {% endif %}
+      {% block page_scripts %}{% endblock %}
+    </body>
 </html>
